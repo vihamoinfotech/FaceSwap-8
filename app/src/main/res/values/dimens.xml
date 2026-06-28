@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bottom nav bar margin from screen bottom (matches layout_marginBottom on bar) -->
+    <dimen name="floating_bottom_bar_margin_bottom">12dp</dimen>
+    <!-- Total vertical space reserved for floating bar + its margin (bar ~72dp + margin 12dp) -->
+    <dimen name="main_scroll_content_bottom_padding">@dimen/_150sdp</dimen>
+    <dimen name="main_scroll_content_bottom_padding_no_ads">@dimen/_130sdp</dimen>
+
+    <dimen name="header_text_size">@dimen/_17sdp</dimen>
+
+    <dimen name="ads_headline_size">15dp</dimen>
+    <dimen name="ads_body_size">11dp</dimen>
+    <dimen name="ads_cta_size">16dp</dimen>
+
+</resources>

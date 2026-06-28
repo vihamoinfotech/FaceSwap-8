@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.facechanger.faceswap.enhance.app-mergeDebugResources-73:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/vasusavaliya/.gradle/caches/9.3.1/transforms/ca0c5abab2a9e2d06d006460d435a473/transformed/appcompat-1.7.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

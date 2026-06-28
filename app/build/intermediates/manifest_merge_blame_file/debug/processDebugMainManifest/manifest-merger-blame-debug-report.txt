@@ -1,0 +1,1182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.facechanger.faceswap.enhance"
+4    android:versionCode="17"
+5    android:versionName="1.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Network -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:7:22-76
+14
+15    <!-- Camera -->
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:10:5-65
+16-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:10:22-62
+17
+18    <uses-feature
+18-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:11:5-13:36
+19        android:name="android.hardware.camera"
+19-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:12:9-47
+20        android:required="false" />
+20-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:13:9-33
+21
+22    <!-- Gallery / Storage (pre-API 33) -->
+23    <uses-permission
+23-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:16:5-18:38
+24        android:name="android.permission.READ_EXTERNAL_STORAGE"
+24-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:17:9-64
+25        android:maxSdkVersion="32" />
+25-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:18:9-35
+26
+27    <!-- Gallery / Storage (API 33+) -->
+28    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+28-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:21:5-76
+28-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:21:22-73
+29    <uses-permission android:name="com.android.vending.BILLING" />
+29-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:22:5-67
+29-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:22:22-64
+30
+31    <!-- Storage write (for saving to gallery on API < 29) -->
+32    <uses-permission
+32-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:25:5-27:38
+33        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+33-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:26:9-65
+34        android:maxSdkVersion="28" />
+34-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:27:9-35
+35
+36    <!-- Notifications -->
+37    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+37-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:30:5-77
+37-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:30:22-74
+38    <uses-permission android:name="android.permission.WAKE_LOCK" />
+38-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:31:5-68
+38-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:31:22-65
+39    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+39-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:26:5-79
+39-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:26:22-76
+40    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+40-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:27:5-82
+40-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:27:22-79
+41    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+41-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:28:5-88
+41-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:28:22-85
+42    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" /> <!-- Android package visibility setting -->
+42-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:29:5-83
+42-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:29:22-80
+43    <queries>
+43-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:35:5-68:15
+44
+45        <!-- For browser content -->
+46        <intent>
+46-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:38:9-44:18
+47            <action android:name="android.intent.action.VIEW" />
+47-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:13-65
+47-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:21-62
+48
+49            <category android:name="android.intent.category.BROWSABLE" />
+49-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:41:13-74
+49-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:41:23-71
+50
+51            <data android:scheme="https" />
+51-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:13-44
+51-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:19-41
+52        </intent>
+53        <!-- End of browser content -->
+54        <!-- For CustomTabsService -->
+55        <intent>
+55-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:47:9-49:18
+56            <action android:name="android.support.customtabs.action.CustomTabsService" />
+56-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:48:13-90
+56-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:48:21-87
+57        </intent>
+58        <!-- End of CustomTabsService -->
+59        <!-- For MRAID capabilities -->
+60        <intent>
+60-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:52:9-56:18
+61            <action android:name="android.intent.action.INSERT" />
+61-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:53:13-67
+61-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:53:21-64
+62
+63            <data android:mimeType="vnd.android.cursor.dir/event" />
+63-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:13-44
+64        </intent>
+65        <intent>
+65-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:57:9-61:18
+66            <action android:name="android.intent.action.VIEW" />
+66-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:13-65
+66-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:21-62
+67
+68            <data android:scheme="sms" />
+68-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:13-44
+68-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:19-41
+69        </intent>
+70        <intent>
+70-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:62:9-66:18
+71            <action android:name="android.intent.action.DIAL" />
+71-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:63:13-65
+71-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:63:21-62
+72
+73            <data android:path="tel:" />
+73-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:13-44
+74        </intent>
+75        <!-- End of MRAID capabilities -->
+76        <package android:name="com.facebook.katana" />
+76-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:18:9-55
+76-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:18:18-52
+77
+78        <intent>
+78-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:13:9-15:18
+79            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+79-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:14:13-91
+79-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:14:21-88
+80        </intent>
+81        <intent>
+81-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:16:9-18:18
+82            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+82-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:17:13-116
+82-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:17:21-113
+83        </intent>
+84    </queries>
+85
+86    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+86-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
+86-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:22-74
+87    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+87-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:26:5-110
+87-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:26:22-107
+88    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+88-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:26:5-82
+88-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:26:22-79
+89
+90    <permission
+90-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+91        android:name="com.facechanger.faceswap.enhance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+91-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+92        android:protectionLevel="signature" />
+92-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+93
+94    <uses-permission android:name="com.facechanger.faceswap.enhance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+94-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+94-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+95
+96    <application
+96-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:33:5-223:19
+97        android:name="com.facechanger.faceswap.enhance.FaceSwap"
+97-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:34:9-33
+98        android:allowBackup="true"
+98-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:35:9-35
+99        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+99-->[androidx.core:core:1.16.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+100        android:dataExtractionRules="@xml/face_data_file_extraction_rules"
+100-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:36:9-75
+101        android:debuggable="true"
+102        android:extractNativeLibs="false"
+103        android:fullBackupContent="@xml/face_backup_file_rules"
+103-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:37:9-64
+104        android:icon="@mipmap/ic_launcher"
+104-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:38:9-43
+105        android:label="@string/app_builder_name"
+105-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:39:9-49
+106        android:roundIcon="@mipmap/ic_launcher_round"
+106-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:40:9-54
+107        android:supportsRtl="true"
+107-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:41:9-35
+108        android:theme="@style/Theme.FaceSwap" >
+108-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:42:9-46
+109
+110        <!-- Workaround for Google Play Billing Library crash (NullPointerException on PendingIntent) -->
+111        <!-- Adding additional configChanges prevents activity recreation on Dark Mode/Locale/Font changes -->
+112        <activity
+112-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:46:9-50:53
+113            android:name="com.android.billingclient.api.ProxyBillingActivity"
+113-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:47:13-78
+114            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation|uiMode|fontScale|density|locale|layoutDirection"
+114-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:48:13-144
+115            android:exported="false"
+115-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:49:13-37
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:30:13-72
+117        <activity
+117-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:52:9-56:53
+118            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+118-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:53:13-80
+119            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation|uiMode|fontScale|density|locale|layoutDirection"
+119-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:54:13-144
+120            android:exported="false"
+120-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:55:13-37
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+121-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:35:13-72
+122
+123        <!-- Splash Screen (Launcher) -->
+124        <activity
+124-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:59:9-68:20
+125            android:name="com.facechanger.faceswap.enhance.view.SplashActivity"
+125-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:60:13-48
+126            android:exported="true"
+126-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:63:13-36
+127            android:screenOrientation="portrait"
+127-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:61:13-49
+128            android:theme="@style/Theme.FaceSwap.Splash" >
+128-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:62:13-57
+129            <intent-filter>
+129-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:64:13-67:29
+130                <action android:name="android.intent.action.MAIN" />
+130-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:65:17-69
+130-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:65:25-66
+131
+132                <category android:name="android.intent.category.LAUNCHER" />
+132-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:66:17-77
+132-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:66:27-74
+133            </intent-filter>
+134        </activity>
+135
+136        <!-- Main -->
+137        <activity
+137-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:71:9-74:39
+138            android:name="com.facechanger.faceswap.enhance.view.MainActivity"
+138-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:72:13-46
+139            android:exported="false"
+139-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:74:13-37
+140            android:screenOrientation="portrait" />
+140-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:73:13-49
+141        <activity
+141-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:75:9-78:40
+142            android:name="com.facechanger.faceswap.enhance.view.OnboardingActivity"
+142-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:76:13-52
+143            android:exported="false"
+143-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:78:13-37
+144            android:screenOrientation="portrait" />
+144-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:77:13-49
+145        <activity
+145-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:79:9-82:40
+146            android:name="com.facechanger.faceswap.enhance.view.AppUpdateActivity"
+146-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:80:13-51
+147            android:exported="false"
+147-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:82:13-37
+148            android:screenOrientation="portrait" />
+148-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:81:13-49
+149        <activity
+149-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:83:9-86:40
+150            android:name="com.facechanger.faceswap.enhance.view.LottieLoadingActivity"
+150-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:84:13-55
+151            android:exported="false"
+151-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:86:13-37
+152            android:screenOrientation="portrait" />
+152-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:85:13-49
+153
+154        <!-- Features -->
+155        <activity
+155-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:89:9-92:40
+156            android:name="com.facechanger.faceswap.enhance.view.SectionDetailActivity"
+156-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:90:13-55
+157            android:exported="false"
+157-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:92:13-37
+158            android:screenOrientation="portrait" />
+158-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:91:13-49
+159        <activity
+159-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:93:9-96:40
+160            android:name="com.facechanger.faceswap.enhance.view.FaceSwapActivity"
+160-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:94:13-50
+161            android:exported="false"
+161-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:96:13-37
+162            android:screenOrientation="portrait" />
+162-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:95:13-49
+163        <activity
+163-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:97:9-100:40
+164            android:name="com.facechanger.faceswap.enhance.view.DownloadShareActivity"
+164-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:98:13-55
+165            android:exported="false"
+165-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:100:13-37
+166            android:screenOrientation="portrait" />
+166-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:99:13-49
+167        <activity
+167-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:101:9-104:40
+168            android:name="com.facechanger.faceswap.enhance.view.FaceSelectionActivity"
+168-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:102:13-55
+169            android:exported="false"
+169-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:104:13-37
+170            android:screenOrientation="portrait" />
+170-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:103:13-49
+171        <activity
+171-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:105:9-108:40
+172            android:name="com.facechanger.faceswap.enhance.view.EditImageActivity"
+172-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:106:13-51
+173            android:exported="false"
+173-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:108:13-37
+174            android:screenOrientation="portrait" />
+174-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:107:13-49
+175        <activity
+175-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:109:9-112:40
+176            android:name="com.facechanger.faceswap.enhance.view.MultiSwapActivity"
+176-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:110:13-51
+177            android:exported="false"
+177-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:112:13-37
+178            android:screenOrientation="portrait" />
+178-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:111:13-49
+179        <activity
+179-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:113:9-116:40
+180            android:name="com.facechanger.faceswap.enhance.view.MyWorkActivity"
+180-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:114:13-48
+181            android:exported="false"
+181-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:116:13-37
+182            android:screenOrientation="portrait" />
+182-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:115:13-49
+183        <activity
+183-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:117:9-120:40
+184            android:name="com.facechanger.faceswap.enhance.view.AiImageGenActivity"
+184-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:118:13-52
+185            android:exported="false"
+185-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:120:13-37
+186            android:screenOrientation="portrait" />
+186-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:119:13-49
+187        <activity
+187-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:121:9-124:40
+188            android:name="com.facechanger.faceswap.enhance.view.SettingsActivity"
+188-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:122:13-50
+189            android:exported="false"
+189-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:124:13-37
+190            android:screenOrientation="portrait" />
+190-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:123:13-49
+191        <activity
+191-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:125:9-129:53
+192            android:name="com.facechanger.faceswap.enhance.view.BackgroundPickerActivity"
+192-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:126:13-58
+193            android:exported="false"
+193-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:128:13-37
+194            android:screenOrientation="portrait"
+194-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:127:13-49
+195            android:theme="@style/Theme.FaceSwap" />
+195-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:129:13-50
+196        <activity
+196-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:130:9-133:40
+197            android:name="com.facechanger.faceswap.enhance.view.StoreActivity"
+197-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:131:13-47
+198            android:exported="false"
+198-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:133:13-37
+199            android:screenOrientation="portrait" />
+199-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:132:13-49
+200        <activity
+200-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:134:9-137:40
+201            android:name="com.facechanger.faceswap.enhance.view.CoinHistoryActivity"
+201-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:135:13-53
+202            android:exported="false"
+202-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:137:13-37
+203            android:screenOrientation="portrait" />
+203-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:136:13-49
+204        <activity
+204-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:138:9-141:40
+205            android:name="com.facechanger.faceswap.enhance.view.LanguageActivity"
+205-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:139:13-50
+206            android:exported="false"
+206-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:141:13-37
+207            android:screenOrientation="portrait" />
+207-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:140:13-49
+208
+209        <!-- New AI Tool Activities -->
+210        <activity
+210-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:144:9-147:40
+211            android:name="com.facechanger.faceswap.enhance.view.FaceEnhanceActivity"
+211-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:145:13-53
+212            android:exported="false"
+212-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:147:13-37
+213            android:screenOrientation="portrait" />
+213-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:146:13-49
+214        <activity
+214-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:148:9-151:40
+215            android:name="com.facechanger.faceswap.enhance.view.BackgroundReplaceActivity"
+215-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:149:13-59
+216            android:exported="false"
+216-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:151:13-37
+217            android:screenOrientation="portrait" />
+217-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:150:13-49
+218        <activity
+218-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:152:9-155:40
+219            android:name="com.facechanger.faceswap.enhance.view.CoupleFaceSwapActivity"
+219-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:153:13-56
+220            android:exported="false"
+220-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:155:13-37
+221            android:screenOrientation="portrait" />
+221-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:154:13-49
+222        <activity
+222-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:156:9-159:40
+223            android:name="com.facechanger.faceswap.enhance.view.TextToImageActivity"
+223-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:157:13-53
+224            android:exported="false"
+224-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:159:13-37
+225            android:screenOrientation="portrait" />
+225-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:158:13-49
+226        <activity
+226-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:160:9-163:40
+227            android:name="com.facechanger.faceswap.enhance.view.VideoFaceSwapActivity"
+227-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:161:13-55
+228            android:exported="false"
+228-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:163:13-37
+229            android:screenOrientation="portrait" />
+229-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:162:13-49
+230        <activity
+230-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:164:9-168:53
+231            android:name="com.facechanger.faceswap.enhance.view.PaywallActivity"
+231-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:165:13-49
+232            android:exported="false"
+232-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:167:13-37
+233            android:screenOrientation="portrait"
+233-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:166:13-49
+234            android:theme="@style/Theme.FaceSwap" />
+234-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:168:13-50
+235
+236        <meta-data
+236-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:170:9-172:69
+237            android:name="com.google.android.gms.ads.APPLICATION_ID"
+237-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:171:13-69
+238            android:value="ca-app-pub-3940256099942544~3347511713" />
+238-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:172:13-67
+239        <meta-data
+239-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:174:9-175:37
+240            android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+240-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:174:20-93
+241            android:value="false" />
+241-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:175:13-34
+242
+243        <!-- Facebook SDK Metadata Configurations -->
+244        <meta-data
+244-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:178:9-180:55
+245            android:name="com.facebook.sdk.ApplicationId"
+245-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:179:13-58
+246            android:value="@string/facebook_app_id" />
+246-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:180:13-52
+247        <meta-data
+247-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:181:9-183:61
+248            android:name="com.facebook.sdk.ClientToken"
+248-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:182:13-56
+249            android:value="@string/facebook_client_token" />
+249-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:183:13-58
+250        <meta-data
+250-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:184:9-186:36
+251            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+251-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:185:13-68
+252            android:value="true" />
+252-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:186:13-33
+253        <meta-data
+253-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:187:9-189:36
+254            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+254-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:188:13-74
+255            android:value="true" />
+255-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:189:13-33
+256
+257        <!-- Firebase Cloud Messaging default notification config -->
+258        <!-- These are used when the app is in background/killed and FCM auto-displays -->
+259        <meta-data
+259-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:193:9-195:59
+260            android:name="com.google.firebase.messaging.default_notification_icon"
+260-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:194:13-83
+261            android:resource="@drawable/ic_notif_small" />
+261-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:195:13-56
+262        <meta-data
+262-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:196:9-198:53
+263            android:name="com.google.firebase.messaging.default_notification_channel_id"
+263-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:197:13-89
+264            android:value="faceswap_push_channel" />
+264-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:198:13-50
+265
+266        <!-- FileProvider for image sharing -->
+267        <provider
+268            android:name="androidx.core.content.FileProvider"
+268-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:202:13-62
+269            android:authorities="com.facechanger.faceswap.enhance.fileprovider"
+269-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:203:13-64
+270            android:exported="false"
+270-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:204:13-37
+271            android:grantUriPermissions="true" >
+271-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:205:13-47
+272            <meta-data
+272-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:206:13-208:54
+273                android:name="android.support.FILE_PROVIDER_PATHS"
+273-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:207:17-67
+274                android:resource="@xml/file_paths" />
+274-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:208:17-51
+275        </provider>
+276
+277        <!-- Firebase Messaging Service -->
+278        <service
+278-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:212:9-218:19
+279            android:name="com.facechanger.faceswap.enhance.service.MyFirebaseMessagingService"
+279-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:213:13-63
+280            android:exported="true" >
+280-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:214:13-36
+281            <intent-filter>
+281-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:215:13-217:29
+282                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+282-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:17-78
+282-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:25-75
+283            </intent-filter>
+284        </service>
+285
+286        <!-- Local Notification Receiver -->
+287        <receiver
+287-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:9-95
+288            android:name="com.facechanger.faceswap.enhance.worker.LocalNotificationReceiver"
+288-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:19-67
+289            android:exported="false" />
+289-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:68-92
+290
+291        <activity
+291-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:10:9-13:75
+292            android:name="com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity"
+292-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:11:13-97
+293            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+293-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:12:13-96
+294            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+294-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:13:13-72
+295        <activity
+295-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:14:9-18:74
+296            android:name="com.revenuecat.purchases.SimulatedStoreErrorDialogActivity"
+296-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:15:13-86
+297            android:configChanges="orientation|screenSize"
+297-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:16:13-59
+298            android:excludeFromRecents="true"
+298-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:17:13-46
+299            android:theme="@android:style/Theme.Material.Dialog.Alert" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+299-->[com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:18:13-71
+300        <activity
+300-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:73:9-79:43
+301            android:name="com.google.android.gms.ads.AdActivity"
+301-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:74:13-65
+302            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+302-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:75:13-122
+303            android:enableOnBackInvokedCallback="false"
+303-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:76:13-56
+304            android:exported="false"
+304-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:77:13-37
+305            android:theme="@android:style/Theme.Translucent" />
+305-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:78:13-61
+306
+307        <provider
+307-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:81:9-86:43
+308            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+308-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:82:13-76
+309            android:authorities="com.facechanger.faceswap.enhance.mobileadsinitprovider"
+309-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:83:13-73
+310            android:exported="false"
+310-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:84:13-37
+311            android:initOrder="100" />
+311-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:85:13-36
+312
+313        <service
+313-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:88:9-92:43
+314            android:name="com.google.android.gms.ads.AdService"
+314-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:89:13-64
+315            android:enabled="true"
+315-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:90:13-35
+316            android:exported="false" />
+316-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:91:13-37
+317
+318        <activity
+318-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:94:9-98:43
+319            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+319-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:95:13-82
+320            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+320-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:96:13-122
+321            android:exported="false" />
+321-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:97:13-37
+322        <activity
+322-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:99:9-106:43
+323            android:name="com.google.android.gms.ads.NotificationHandlerActivity"
+323-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:100:13-82
+324            android:excludeFromRecents="true"
+324-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:101:13-46
+325            android:exported="false"
+325-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:102:13-37
+326            android:launchMode="singleTask"
+326-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:103:13-44
+327            android:taskAffinity=""
+327-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:104:13-36
+328            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+328-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:105:13-72
+329
+330        <meta-data
+330-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:108:9-110:36
+331            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+331-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:109:13-79
+332            android:value="true" />
+332-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:110:13-33
+333        <meta-data
+333-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:111:9-113:36
+334            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+334-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:112:13-83
+335            android:value="true" />
+335-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:113:13-33
+336
+337        <provider
+337-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+338            android:name="androidx.startup.InitializationProvider"
+338-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:30:13-67
+339            android:authorities="com.facechanger.faceswap.enhance.androidx-startup"
+339-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:31:13-68
+340            android:exported="false" >
+340-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:32:13-37
+341            <meta-data
+341-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+342                android:name="androidx.work.WorkManagerInitializer"
+342-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+343                android:value="androidx.startup" />
+343-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+344            <meta-data
+344-->[androidx.emoji2:emoji2:1.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/54dc47c18470b0b602f7561b813b572b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+345                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+345-->[androidx.emoji2:emoji2:1.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/54dc47c18470b0b602f7561b813b572b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+346                android:value="androidx.startup" />
+346-->[androidx.emoji2:emoji2:1.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/54dc47c18470b0b602f7561b813b572b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+347            <meta-data
+347-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8a02cca72b7c4e619b395a08dbd2adf5/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+348                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+348-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8a02cca72b7c4e619b395a08dbd2adf5/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+349                android:value="androidx.startup" />
+349-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8a02cca72b7c4e619b395a08dbd2adf5/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+350            <meta-data
+350-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+351                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+351-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+352                android:value="androidx.startup" />
+352-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+353        </provider>
+354
+355        <service
+355-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+356            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+356-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+357            android:directBootAware="false"
+357-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+358            android:enabled="@bool/enable_system_alarm_service_default"
+358-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+359            android:exported="false" />
+359-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+360        <service
+360-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+361            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+361-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+362            android:directBootAware="false"
+362-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+363            android:enabled="@bool/enable_system_job_service_default"
+363-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+364            android:exported="true"
+364-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+365            android:permission="android.permission.BIND_JOB_SERVICE" />
+365-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+366        <service
+366-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+367            android:name="androidx.work.impl.foreground.SystemForegroundService"
+367-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+368            android:directBootAware="false"
+368-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+369            android:enabled="@bool/enable_system_foreground_service_default"
+369-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+370            android:exported="false" />
+370-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+371
+372        <receiver
+372-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+373            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+373-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+374            android:directBootAware="false"
+374-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+375            android:enabled="true"
+375-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+376            android:exported="false" />
+376-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+377        <receiver
+377-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+378            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+378-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+379            android:directBootAware="false"
+379-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+380            android:enabled="false"
+380-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+381            android:exported="false" >
+381-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+382            <intent-filter>
+382-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+383                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+383-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+383-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+384                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+384-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+384-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+385            </intent-filter>
+386        </receiver>
+387        <receiver
+387-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+388            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+388-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+389            android:directBootAware="false"
+389-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+390            android:enabled="false"
+390-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+391            android:exported="false" >
+391-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+392            <intent-filter>
+392-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+393                <action android:name="android.intent.action.BATTERY_OKAY" />
+393-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+393-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+394                <action android:name="android.intent.action.BATTERY_LOW" />
+394-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+394-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+395            </intent-filter>
+396        </receiver>
+397        <receiver
+397-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+398            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+398-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+399            android:directBootAware="false"
+399-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+400            android:enabled="false"
+400-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+401            android:exported="false" >
+401-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+402            <intent-filter>
+402-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+403                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+403-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+403-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+404                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+404-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+404-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+405            </intent-filter>
+406        </receiver>
+407        <receiver
+407-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+408            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+408-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+409            android:directBootAware="false"
+409-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+410            android:enabled="false"
+410-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+411            android:exported="false" >
+411-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+412            <intent-filter>
+412-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+413                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+413-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+413-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+414            </intent-filter>
+415        </receiver>
+416        <receiver
+416-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+417            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+417-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+418            android:directBootAware="false"
+418-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+419            android:enabled="false"
+419-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+420            android:exported="false" >
+420-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+421            <intent-filter>
+421-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+422                <action android:name="android.intent.action.BOOT_COMPLETED" />
+422-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:17-79
+422-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:117:25-76
+423                <action android:name="android.intent.action.TIME_SET" />
+423-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+423-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+424                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+424-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+424-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+425            </intent-filter>
+426        </receiver>
+427        <receiver
+427-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+428            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+428-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+429            android:directBootAware="false"
+429-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+430            android:enabled="@bool/enable_system_alarm_service_default"
+430-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+431            android:exported="false" >
+431-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+432            <intent-filter>
+432-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+433                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+433-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+433-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+434            </intent-filter>
+435        </receiver>
+436        <receiver
+436-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+437            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+437-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+438            android:directBootAware="false"
+438-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+439            android:enabled="true"
+439-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+440            android:exported="true"
+440-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+441            android:permission="android.permission.DUMP" >
+441-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+442            <intent-filter>
+442-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+443                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+443-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+443-->[androidx.work:work-runtime:2.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
+444            </intent-filter>
+445        </receiver>
+446
+447        <activity
+447-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:22:9-25:66
+448            android:name="com.facebook.FacebookActivity"
+448-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:23:13-57
+449            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+449-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:24:13-96
+450            android:theme="@style/com_facebook_activity_theme" />
+450-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:25:13-63
+451        <activity android:name="com.facebook.CustomTabMainActivity" />
+451-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:26:9-71
+451-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:26:19-68
+452        <activity
+452-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:27:9-41:20
+453            android:name="com.facebook.CustomTabActivity"
+453-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:28:13-58
+454            android:exported="true" >
+454-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:29:13-36
+455            <intent-filter>
+455-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:31:13-40:29
+456                <action android:name="android.intent.action.VIEW" />
+456-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:13-65
+456-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:39:21-62
+457
+458                <category android:name="android.intent.category.DEFAULT" />
+458-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:34:17-76
+458-->[com.facebook.android:facebook-common:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/AndroidManifest.xml:34:27-73
+459                <category android:name="android.intent.category.BROWSABLE" />
+459-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:41:13-74
+459-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:41:23-71
+460
+461                <data
+461-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:13-44
+462                    android:host="cct.com.facechanger.faceswap.enhance"
+463                    android:scheme="fbconnect" />
+463-->[com.google.android.gms:play-services-ads-api:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/AndroidManifest.xml:43:19-41
+464            </intent-filter>
+465        </activity>
+466
+467        <receiver
+467-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:29:9-33:20
+468            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+468-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:30:13-85
+469            android:enabled="true"
+469-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:31:13-35
+470            android:exported="false" >
+470-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:32:13-37
+471        </receiver>
+472
+473        <service
+473-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:35:9-38:40
+474            android:name="com.google.android.gms.measurement.AppMeasurementService"
+474-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:36:13-84
+475            android:enabled="true"
+475-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:37:13-35
+476            android:exported="false" />
+476-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:38:13-37
+477        <service
+477-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:39:9-43:72
+478            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+478-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:40:13-87
+479            android:enabled="true"
+479-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:41:13-35
+480            android:exported="false"
+480-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:42:13-37
+481            android:permission="android.permission.BIND_JOB_SERVICE" />
+481-->[com.google.android.gms:play-services-measurement:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5571b9bcb964d7b672273b28eda68ee/transformed/play-services-measurement-23.2.0/AndroidManifest.xml:43:13-69
+482        <service
+482-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:30:9-36:19
+483            android:name="com.google.firebase.components.ComponentDiscoveryService"
+483-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:31:13-84
+484            android:directBootAware="true"
+484-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:32:13-43
+485            android:exported="false" >
+485-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:32:13-37
+486            <meta-data
+486-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:33:13-35:85
+487                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+487-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:34:17-139
+488                android:value="com.google.firebase.components.ComponentRegistrar" />
+488-->[com.google.android.gms:play-services-measurement-api:23.2.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f85db4dbf724494fca740f29e72a3844/transformed/play-services-measurement-api-23.2.0/AndroidManifest.xml:35:17-82
+489            <meta-data
+489-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:57:13-59:85
+490                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+490-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:58:17-122
+491                android:value="com.google.firebase.components.ComponentRegistrar" />
+491-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:59:17-82
+492            <meta-data
+492-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:60:13-62:85
+493                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+493-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:61:17-119
+494                android:value="com.google.firebase.components.ComponentRegistrar" />
+494-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:62:17-82
+495            <meta-data
+495-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:15:13-17:85
+496                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+496-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:16:17-126
+497                android:value="com.google.firebase.components.ComponentRegistrar" />
+497-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:17:17-82
+498            <meta-data
+498-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:18:13-20:85
+499                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+499-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:19:17-115
+500                android:value="com.google.firebase.components.ComponentRegistrar" />
+500-->[com.google.firebase:firebase-crashlytics:20.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/AndroidManifest.xml:20:17-82
+501            <meta-data
+501-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:29:13-31:85
+502                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+502-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:30:17-117
+503                android:value="com.google.firebase.components.ComponentRegistrar" />
+503-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:31:17-82
+504            <meta-data
+504-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:15:13-17:85
+505                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+505-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:16:17-130
+506                android:value="com.google.firebase.components.ComponentRegistrar" />
+506-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:17:17-82
+507            <meta-data
+507-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:18:13-20:85
+508                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+508-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:19:17-127
+509                android:value="com.google.firebase.components.ComponentRegistrar" />
+509-->[com.google.firebase:firebase-installations:19.1.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/93d78a290e0e462696cf5ff92232d8f3/transformed/firebase-installations-19.1.0/AndroidManifest.xml:20:17-82
+510            <meta-data
+510-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:35:13-37:85
+511                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+511-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:36:17-109
+512                android:value="com.google.firebase.components.ComponentRegistrar" />
+512-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:37:17-82
+513            <meta-data
+513-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/bb5e23ea24ceff34cf22e114e68f2bda/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:25:13-27:85
+514                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+514-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/bb5e23ea24ceff34cf22e114e68f2bda/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:26:17-115
+515                android:value="com.google.firebase.components.ComponentRegistrar" />
+515-->[com.google.firebase:firebase-datatransport:19.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/bb5e23ea24ceff34cf22e114e68f2bda/transformed/firebase-datatransport-19.0.0/AndroidManifest.xml:27:17-82
+516        </service>
+517
+518        <receiver
+518-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:29:9-40:20
+519            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+519-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:30:13-78
+520            android:exported="true"
+520-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:31:13-36
+521            android:permission="com.google.android.c2dm.permission.SEND" >
+521-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:32:13-73
+522            <intent-filter>
+522-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:33:13-35:29
+523                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+523-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:34:17-81
+523-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:34:25-78
+524            </intent-filter>
+525
+526            <meta-data
+526-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:37:13-39:40
+527                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+527-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:38:17-92
+528                android:value="true" />
+528-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:39:17-37
+529        </receiver>
+530        <!--
+531             FirebaseMessagingService performs security checks at runtime,
+532             but set to not exported to explicitly avoid allowing another app to call it.
+533        -->
+534        <service
+534-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:46:9-53:19
+535            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+535-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:47:13-82
+536            android:directBootAware="true"
+536-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:48:13-43
+537            android:exported="false" >
+537-->[com.google.firebase:firebase-messaging:25.0.2] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/AndroidManifest.xml:49:13-37
+538            <intent-filter android:priority="-500" >
+538-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:215:13-217:29
+539                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+539-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:17-78
+539-->/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:25-75
+540            </intent-filter>
+541        </service>
+542
+543        <meta-data
+543-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:22:9-24:37
+544            android:name="com.google.android.play.billingclient.version"
+544-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:23:13-73
+545            android:value="8.0.0" />
+545-->[com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:24:13-34
+546
+547        <service
+547-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:22:9-25:40
+548            android:name="com.google.firebase.sessions.SessionLifecycleService"
+548-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:23:13-80
+549            android:enabled="false"
+549-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:24:13-36
+550            android:exported="false" />
+550-->[com.google.firebase:firebase-sessions:3.0.6] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/be8e493b1b1254ab71ace967e7752676/transformed/firebase-sessions-3.0.6/AndroidManifest.xml:25:13-37
+551
+552        <provider
+552-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:23:9-28:39
+553            android:name="com.google.firebase.provider.FirebaseInitProvider"
+553-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:24:13-77
+554            android:authorities="com.facechanger.faceswap.enhance.firebaseinitprovider"
+554-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:25:13-72
+555            android:directBootAware="true"
+555-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:26:13-43
+556            android:exported="false"
+556-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:27:13-37
+557            android:initOrder="100" />
+557-->[com.google.firebase:firebase-common:22.0.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/AndroidManifest.xml:28:13-36
+558
+559        <activity
+559-->[com.google.android.gms:play-services-base:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2a646daf3e9e1ab42de63b6c61d65b18/transformed/play-services-base-18.9.0/AndroidManifest.xml:20:9-22:45
+560            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+560-->[com.google.android.gms:play-services-base:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2a646daf3e9e1ab42de63b6c61d65b18/transformed/play-services-base-18.9.0/AndroidManifest.xml:20:19-85
+561            android:exported="false"
+561-->[com.google.android.gms:play-services-base:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2a646daf3e9e1ab42de63b6c61d65b18/transformed/play-services-base-18.9.0/AndroidManifest.xml:22:19-43
+562            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+562-->[com.google.android.gms:play-services-base:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2a646daf3e9e1ab42de63b6c61d65b18/transformed/play-services-base-18.9.0/AndroidManifest.xml:21:19-78
+563        <!--
+564         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+565         with the application context. This config is merged in with the host app's manifest,
+566         but there can only be one provider with the same authority activated at any given
+567         point; so if the end user has two or more different apps that use Facebook SDK, only the
+568         first one will be able to use the provider. To work around this problem, we use the
+569         following placeholder in the authority to identify each host application as if it was
+570         a completely different provider.
+571        -->
+572        <provider
+572-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:29:9-32:40
+573            android:name="com.facebook.internal.FacebookInitProvider"
+573-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:30:13-70
+574            android:authorities="com.facechanger.faceswap.enhance.FacebookInitProvider"
+574-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:31:13-72
+575            android:exported="false" />
+575-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:32:13-37
+576
+577        <receiver
+577-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:34:9-40:20
+578            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+578-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:35:13-86
+579            android:exported="false" >
+579-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:36:13-37
+580            <intent-filter>
+580-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:37:13-39:29
+581                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+581-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:38:17-95
+581-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:38:25-92
+582            </intent-filter>
+583        </receiver>
+584        <receiver
+584-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:41:9-47:20
+585            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+585-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:42:13-118
+586            android:exported="false" >
+586-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:43:13-37
+587            <intent-filter>
+587-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:44:13-46:29
+588                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+588-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:45:17-103
+588-->[com.facebook.android:facebook-core:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/782ad5fb843b2e498513379f43839b3f/transformed/facebook-core-17.0.0/AndroidManifest.xml:45:25-100
+589            </intent-filter>
+590        </receiver>
+591
+592        <uses-library
+592-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b71fc23651d6a22532d3b03ccc36a952/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:23:9-25:40
+593            android:name="android.ext.adservices"
+593-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b71fc23651d6a22532d3b03ccc36a952/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:24:13-50
+594            android:required="false" />
+594-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b71fc23651d6a22532d3b03ccc36a952/transformed/ads-adservices-1.1.0-beta11/AndroidManifest.xml:25:13-37
+595
+596        <meta-data
+596-->[com.google.android.gms:play-services-basement:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b8ce0992a9514be5de26571d4aa14ab2/transformed/play-services-basement-18.9.0/AndroidManifest.xml:21:9-23:69
+597            android:name="com.google.android.gms.version"
+597-->[com.google.android.gms:play-services-basement:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b8ce0992a9514be5de26571d4aa14ab2/transformed/play-services-basement-18.9.0/AndroidManifest.xml:22:13-58
+598            android:value="@integer/google_play_services_version" />
+598-->[com.google.android.gms:play-services-basement:18.9.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b8ce0992a9514be5de26571d4aa14ab2/transformed/play-services-basement-18.9.0/AndroidManifest.xml:23:13-66
+599
+600        <receiver
+600-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+601            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+601-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+602            android:directBootAware="false"
+602-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+603            android:enabled="true"
+603-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+604            android:exported="true"
+604-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+605            android:permission="android.permission.DUMP" >
+605-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+606            <intent-filter>
+606-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+607                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+607-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+607-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+608            </intent-filter>
+609            <intent-filter>
+609-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+610                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+610-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+610-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+611            </intent-filter>
+612            <intent-filter>
+612-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+613                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+613-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+613-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+614            </intent-filter>
+615            <intent-filter>
+615-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+616                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+616-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+616-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+617            </intent-filter>
+618        </receiver>
+619
+620        <service
+620-->[androidx.room:room-runtime:2.5.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a9a1c69f35eb59a2ecf84a28e892980b/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+621            android:name="androidx.room.MultiInstanceInvalidationService"
+621-->[androidx.room:room-runtime:2.5.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a9a1c69f35eb59a2ecf84a28e892980b/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+622            android:directBootAware="true"
+622-->[androidx.room:room-runtime:2.5.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a9a1c69f35eb59a2ecf84a28e892980b/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+623            android:exported="false" />
+623-->[androidx.room:room-runtime:2.5.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a9a1c69f35eb59a2ecf84a28e892980b/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+624        <service
+624-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:26:9-32:19
+625            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+625-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:27:13-103
+626            android:exported="false" >
+626-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:28:13-37
+627            <meta-data
+627-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:29:13-31:39
+628                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+628-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:30:17-94
+629                android:value="cct" />
+629-->[com.google.android.datatransport:transport-backend-cct:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fb0c35e6b657d5992fc8332846389954/transformed/transport-backend-cct-3.3.0/AndroidManifest.xml:31:17-36
+630        </service>
+631        <service
+631-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:24:9-28:19
+632            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+632-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:25:13-117
+633            android:exported="false"
+633-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:26:13-37
+634            android:permission="android.permission.BIND_JOB_SERVICE" >
+634-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:27:13-69
+635        </service>
+636
+637        <receiver
+637-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:30:9-32:40
+638            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+638-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:31:13-132
+639            android:exported="false" />
+639-->[com.google.android.datatransport:transport-runtime:3.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5d565ef49800bd0112ea0998f69b4e1f/transformed/transport-runtime-3.3.0/AndroidManifest.xml:32:13-37
+640    </application>
+641
+642</manifest>

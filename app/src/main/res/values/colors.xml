@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Neutrals ── -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ── Surface palette ── -->
+    <color name="background_dark">#0A0A14</color>
+    <color name="surface_base">#0A0A14</color>
+    <color name="surface_raised">#13131F</color>
+    <color name="surface_elevated">#1C1C2E</color>
+    <color name="card_background">#14141F</color>
+    <color name="card_background_alt">#1C1C2E</color>
+    <color name="border_color">#2A2A42</color>
+    <color name="border_soft">#1E1E36</color>
+
+    <!-- ── Text ── -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0A0C0</color>
+    <color name="text_tertiary">#606080</color>
+    <color name="text_disabled">#404060</color>
+
+    <!-- ── Brand / accent ── -->
+    <color name="brand_primary">#7C5CFF</color>
+    <color name="brand_secondary">#FF4E8C</color>
+    <color name="brand_tertiary">#4C55FF</color>
+
+    <!-- ── Legacy aliases (kept for compatibility) ── -->
+    <color name="orange_primary">#FF8A3D</color>
+    <color name="orange_secondary">#FF6B35</color>
+    <color name="purple_main">#7C5CFF</color>
+    <color name="purple_dark">#15102E</color>
+    <color name="coin_yellow">#FFD700</color>
+    <color name="nav_active">#7C5CFF</color>
+    <color name="app_style_primary">#FF4E8C</color>
+
+    <!-- ── Gradient anchors ── -->
+    <color name="dashed_border_gradient_start">#7C5CFF</color>
+    <color name="dashed_border_gradient_end">#FF4E8C</color>
+    <color name="gradient_start">#7C5CFF</color>
+    <color name="gradient_middle">#B45CFF</color>
+    <color name="gradient_end">#FF4E8C</color>
+
+    <!-- ── Store / plan ── -->
+    <color name="store_card_highlight">#1A1A30</color>
+    <color name="badge_popular_start">#FFB84A</color>
+    <color name="badge_popular_end">#FF4E8C</color>
+    <color name="badge_best_value_start">#4C55FF</color>
+    <color name="badge_best_value_end">#7C5CFF</color>
+
+    <!-- ── Semantic ── -->
+    <color name="success">#4AE3B5</color>
+    <color name="warning">#FFB84A</color>
+    <color name="error">#FF5C7A</color>
+    <color name="info">#4AA7FF</color>
+
+    <!-- ── Overlay helpers ── -->
+    <color name="overlay_scrim">#B3000000</color>
+    <color name="overlay_light">#33FFFFFF</color>
+    <color name="overlay_medium">#66000000</color>
+    <color name="divider_subtle">#1E1E36</color>
+
+
+    <!-- ── Paywall (Stitch "Lumina Face AI Premium" — exact MCP design tokens) ── -->
+    <color name="paywall_bg">#0e141a</color>                <!-- background / surface -->
+    <color name="paywall_glass_fill">#1AA855F7</color>       <!-- rgba(168,85,247, 0.10) from .glass-panel CSS -->
+    <color name="paywall_glass_stroke">#26FFFFFF</color>     <!-- rgba(255,255,255, 0.15) from .glass-panel CSS -->
+    <color name="paywall_primary">#ddb7ff</color>            <!-- primary token -->
+    <color name="paywall_primary_light">#D8B4FE</color>     <!-- CTA gradient endpoint (from HTML) -->
+    <color name="paywall_primary_container">#b76dff</color>  <!-- primary-container token -->
+    <color name="paywall_on_primary">#490080</color>         <!-- on-primary token (Pro header text) -->
+    <color name="paywall_on_primary_fixed">#2c0051</color>   <!-- on-primary-fixed token (CTA button text) -->
+    <color name="paywall_on_surface">#dde3eb</color>         <!-- on-surface token -->
+    <color name="paywall_on_surface_variant">#cfc2d6</color> <!-- on-surface-variant token -->
+    <color name="paywall_outline">#988d9f</color>            <!-- outline token -->
+    <color name="paywall_outline_variant">#D7D7D7</color>    <!-- outline-variant token -->
+    <color name="paywall_pro_column_bg">#33ddb7ff</color>    <!-- primary at 20% opacity -->
+    <color name="paywall_pro_column_border">#66ddb7ff</color><!-- primary at 40% opacity -->
+    <color name="paywall_row_divider">#0DFFFFFF</color>      <!-- rgba(255,255,255, 0.05) -->
+    <color name="paywall_footer_bg">#E60e141a</color>        <!-- background at 90% opacity -->
+    <color name="paywall_footer_border">#1AFFFFFF</color>    <!-- rgba(255,255,255, 0.10) -->
+    <color name="paywall_surface_container">#1a2026</color>  <!-- surface-container token -->
+
+
+
+
+    <color name="ads_text_color">#FFFFFF</color>
+    <color name="ads_cta_text_color">#FFFFFF</color>
+    <color name="ads_ad_tag_color">#2A2A42</color>
+    <color name="ads_ad_tag_text_color">#606080</color>
+    <color name="ads_background_color">#14141F</color>
+
+</resources>

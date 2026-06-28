@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "24518999969",
+    "project_id": "ai-faceswap-2f9df",
+    "storage_bucket": "ai-faceswap-2f9df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24518999969:android:b5de1c2bbb0685640e15e0",
+        "android_client_info": {
+          "package_name": "com.facechanger.faceswap.enhance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHDXU5mr01Yw0-sEdlisOqy4hX0MfTpAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

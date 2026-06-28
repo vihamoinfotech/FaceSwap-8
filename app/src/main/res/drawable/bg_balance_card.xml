@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient border (outer) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="@color/gradient_start"
+                android:centerColor="@color/gradient_middle"
+                android:endColor="@color/gradient_end" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <!-- Inner fill -->
+    <item
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#12102A" />
+            <corners android:radius="19dp" />
+        </shape>
+    </item>
+</layer-list>

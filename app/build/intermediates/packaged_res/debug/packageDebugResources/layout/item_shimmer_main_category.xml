@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_12sdp">
+
+    <!-- Category Header Placeholder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Title placeholder -->
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:background="@drawable/bg_shimmer_placeholder" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- View all placeholder -->
+        <View
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/bg_shimmer_rect_placeholder" />
+    </LinearLayout>
+
+    <!-- Horizontal scroll placeholder -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingHorizontal="@dimen/_14sdp">
+
+        <!-- Card 1 -->
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_shimmer_rect_placeholder" />
+
+        <!-- Card 2 -->
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_shimmer_rect_placeholder" />
+
+        <!-- Card 3 -->
+        <View
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/bg_shimmer_rect_placeholder" />
+    </LinearLayout>
+
+</LinearLayout>

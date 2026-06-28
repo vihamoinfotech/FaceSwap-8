@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="@drawable/bg_language_item_unselected"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/_14sdp">
+
+    <!-- Selection Radio Indicator (Top Right) -->
+    <ImageView
+        android:id="@+id/viewRadio"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_radio_unselected"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_check"
+        app:tint="@android:color/transparent" />
+
+    <!-- Content Container (Center) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewRadio"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Flag Emoji Container -->
+        <FrameLayout
+            android:id="@+id/flIconContainer"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:background="@drawable/bg_flag_circle">
+
+            <TextView
+                android:id="@+id/tvLangFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="🇺🇸"
+                android:textSize="@dimen/_24sdp" />
+        </FrameLayout>
+
+        <!-- Language Labels -->
+        <TextView
+            android:id="@+id/tvNativeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="English"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/tvEnglishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="English"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+</RelativeLayout>

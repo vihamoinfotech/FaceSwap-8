@@ -1,0 +1,79 @@
+com.facechanger.faceswap.enhance.app-play-services-ads-25.3.0-0 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/00d7b9f51bca89af3420ab82ccf3f31e/transformed/play-services-ads-25.3.0/res
+com.facechanger.faceswap.enhance.app-media3-ui-1.6.1-1 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/060c5ea7b3edf7e2142d2ae8989b2f65/transformed/media3-ui-1.6.1/res
+com.facechanger.faceswap.enhance.app-savedstate-2 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/0d65c286a864519a5b6f28ffad2028de/transformed/savedstate/res
+com.facechanger.faceswap.enhance.app-shimmer-0.5.0-3 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/120c08469ff62871318615c6ab4a3d72/transformed/shimmer-0.5.0/res
+com.facechanger.faceswap.enhance.app-facebook-share-17.0.0-4 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/1456c1bf19332184e5b1ccf2ad82a530/transformed/facebook-share-17.0.0/res
+com.facechanger.faceswap.enhance.app-browser-1.8.0-5 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/1605847cf571d645c29c749d788c3d48/transformed/browser-1.8.0/res
+com.facechanger.faceswap.enhance.app-lifecycle-viewmodel-6 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2815cbd6de610ed49ee8e69bf1986a6e/transformed/lifecycle-viewmodel/res
+com.facechanger.faceswap.enhance.app-media-1.0.0-7 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/29de49a3b75ea8a8cd7f97c52b1ef05c/transformed/media-1.0.0/res
+com.facechanger.faceswap.enhance.app-play-services-base-18.9.0-8 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/2a646daf3e9e1ab42de63b6c61d65b18/transformed/play-services-base-18.9.0/res
+com.facechanger.faceswap.enhance.app-recyclerview-1.3.0-9 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/34eb9f30e94fb042bbae46116bf4ec51/transformed/recyclerview-1.3.0/res
+com.facechanger.faceswap.enhance.app-drawerlayout-1.1.1-10 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/419a66eb7fecc12d3b6dad0549b1ec5d/transformed/drawerlayout-1.1.1/res
+com.facechanger.faceswap.enhance.app-datastore-release-11 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/466805765dc2450f3bf2031f6d60a841/transformed/datastore-release/res
+com.facechanger.faceswap.enhance.app-lifecycle-livedata-core-2.10.0-12 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4925c444dce05d6f91e382dec5bf326d/transformed/lifecycle-livedata-core-2.10.0/res
+com.facechanger.faceswap.enhance.app-emoji2-views-helper-1.3.0-13 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4eecf7403b7ba2ca530c66c97f957bb4/transformed/emoji2-views-helper-1.3.0/res
+com.facechanger.faceswap.enhance.app-facebook-common-17.0.0-14 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/4f005e8b4fef0f153940836ffcb3d0fc/transformed/facebook-common-17.0.0/res
+com.facechanger.faceswap.enhance.app-activity-1.12.4-15 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/50f61f7e370a87fce40a4e368272123a/transformed/activity-1.12.4/res
+com.facechanger.faceswap.enhance.app-firebase-messaging-25.0.2-16 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/515ded46fc18e34f9a82ff48ebfaa9dd/transformed/firebase-messaging-25.0.2/res
+com.facechanger.faceswap.enhance.app-lottie-6.4.0-17 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5216309a641c1d92f4d66d52db768a5f/transformed/lottie-6.4.0/res
+com.facechanger.faceswap.enhance.app-appcompat-resources-1.7.1-18 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/52e0eae385129af4dee151f90438572e/transformed/appcompat-resources-1.7.1/res
+com.facechanger.faceswap.enhance.app-annotation-experimental-1.4.1-19 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/549edbf95d5b136baf4191cce51427cd/transformed/annotation-experimental-1.4.1/res
+com.facechanger.faceswap.enhance.app-emoji2-1.3.0-20 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/54dc47c18470b0b602f7561b813b572b/transformed/emoji2-1.3.0/res
+com.facechanger.faceswap.enhance.app-media3-exoplayer-1.6.1-21 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/551b30e99b7dcc5a7a41a31a2c014d3c/transformed/media3-exoplayer-1.6.1/res
+com.facechanger.faceswap.enhance.app-profileinstaller-1.4.0-22 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/561dab602d3809c0c2987a3fa9a8ec40/transformed/profileinstaller-1.4.0/res
+com.facechanger.faceswap.enhance.app-webkit-1.12.1-23 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/57f27b7ff4c87943433fbd12c3b2c89b/transformed/webkit-1.12.1/res
+com.facechanger.faceswap.enhance.app-ads-adservices-java-1.1.0-beta11-24 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5b9bc6ed62b7ce5d9366e132aaf972fc/transformed/ads-adservices-java-1.1.0-beta11/res
+com.facechanger.faceswap.enhance.app-datastore-preferences-core-release-25 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5f617db585d9fab868a3c439c41239eb/transformed/datastore-preferences-core-release/res
+com.facechanger.faceswap.enhance.app-graphics-shapes-release-26 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/5f65a1aa20ad790bbf89c8230dbf46dd/transformed/graphics-shapes-release/res
+com.facechanger.faceswap.enhance.app-core-ktx-1.16.0-27 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/600dd94cf0e36267aa3e12c609e85dc3/transformed/core-ktx-1.16.0/res
+com.facechanger.faceswap.enhance.app-cardview-1.0.0-28 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6a922ffcd27408f2a03ce3ba51715542/transformed/cardview-1.0.0/res
+com.facechanger.faceswap.enhance.app-billing-8.0.0-29 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/res
+com.facechanger.faceswap.enhance.app-core-viewtree-1.0.0-30 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6c642764b8d2f6ff5fed98163811f631/transformed/core-viewtree-1.0.0/res
+com.facechanger.faceswap.enhance.app-lifecycle-livedata-2.10.0-31 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6ea919fa144ed1bffce02d5ce8c68689/transformed/lifecycle-livedata-2.10.0/res
+com.facechanger.faceswap.enhance.app-datastore-preferences-release-32 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/75f419daf47374fdc6949057060640e7/transformed/datastore-preferences-release/res
+com.facechanger.faceswap.enhance.app-material-1.13.0-33 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/773b1326b9a507c919f917256e8e6472/transformed/material-1.13.0/res
+com.facechanger.faceswap.enhance.app-faceswap_2_v1.0.4-34 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/808197cce70d3d174a7bf89af0a535ae/transformed/faceswap_2_v1.0.4/res
+com.facechanger.faceswap.enhance.app-work-runtime-2.9.0-35 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8441ff3bb12f7cf01e41985dbbd3ff02/transformed/work-runtime-2.9.0/res
+com.facechanger.faceswap.enhance.app-lifecycle-process-2.10.0-36 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8a02cca72b7c4e619b395a08dbd2adf5/transformed/lifecycle-process-2.10.0/res
+com.facechanger.faceswap.enhance.app-core-1.16.0-37 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/8f91409fb35b283f1411a92d659888a3/transformed/core-1.16.0/res
+com.facechanger.faceswap.enhance.app-play-services-ads-api-25.3.0-38 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/95065e408c86cc03cd1356fcebe41e18/transformed/play-services-ads-api-25.3.0/res
+com.facechanger.faceswap.enhance.app-startup-runtime-1.1.1-39 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/9584ad21c7e0ff77e9fb63a91c669b9b/transformed/startup-runtime-1.1.1/res
+com.facechanger.faceswap.enhance.app-customview-poolingcontainer-1.0.0-40 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/958f228101032089f31db54d027f3010/transformed/customview-poolingcontainer-1.0.0/res
+com.facechanger.faceswap.enhance.app-transition-1.5.0-41 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/97135aa85c14153b87c681b524ecd0a6/transformed/transition-1.5.0/res
+com.facechanger.faceswap.enhance.app-sqlite-2.3.0-42 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/9caaf9d7310a5097b3607220418d6bf0/transformed/sqlite-2.3.0/res
+com.facechanger.faceswap.enhance.app-navigationevent-43 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/9d9e5207fc390b668ab655d2a4cf0253/transformed/navigationevent/res
+com.facechanger.faceswap.enhance.app-sdp-android-1.1.1-44 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a967c79269d22ec0dcaccc5a2a21d0fa/transformed/sdp-android-1.1.1/res
+com.facechanger.faceswap.enhance.app-room-runtime-2.5.0-45 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/a9a1c69f35eb59a2ecf84a28e892980b/transformed/room-runtime-2.5.0/res
+com.facechanger.faceswap.enhance.app-tracing-1.2.0-46 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/add6485b39ef40f47edc8600a42d1ce4/transformed/tracing-1.2.0/res
+com.facechanger.faceswap.enhance.app-core-splashscreen-1.0.1-47 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5688ef4b4749b668dd252e713b496ab/transformed/core-splashscreen-1.0.1/res
+com.facechanger.faceswap.enhance.app-ads-adservices-1.1.0-beta11-48 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b71fc23651d6a22532d3b03ccc36a952/transformed/ads-adservices-1.1.0-beta11/res
+com.facechanger.faceswap.enhance.app-play-services-basement-18.9.0-49 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b8ce0992a9514be5de26571d4aa14ab2/transformed/play-services-basement-18.9.0/res
+com.facechanger.faceswap.enhance.app-fragment-1.5.4-50 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b8e727d426b5ea0f45cfd34b8986f3de/transformed/fragment-1.5.4/res
+com.facechanger.faceswap.enhance.app-core-runtime-2.2.0-51 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b9bcbe458494017888ce539e64b3b36a/transformed/core-runtime-2.2.0/res
+com.facechanger.faceswap.enhance.app-viewpager2-1.0.0-52 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/ba931ce42df9e8d25728d1ec0850dba3/transformed/viewpager2-1.0.0/res
+com.facechanger.faceswap.enhance.app-constraintlayout-2.2.1-53 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/bcb13abd90a254cd4553b401f93f6522/transformed/constraintlayout-2.2.1/res
+com.facechanger.faceswap.enhance.app-firebase-common-22.0.1-54 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c154828c92a9cb120423ac321b6855c3/transformed/firebase-common-22.0.1/res
+com.facechanger.faceswap.enhance.app-sqlite-framework-2.3.0-55 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c6015a74e418015a71890be2230969cc/transformed/sqlite-framework-2.3.0/res
+com.facechanger.faceswap.enhance.app-room-ktx-2.5.0-56 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c64bdca59957f2645a6ce72262c86dfd/transformed/room-ktx-2.5.0/res
+com.facechanger.faceswap.enhance.app-datastore-core-release-57 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/c736b3dbd554100e9a2e0a4e37d801c9/transformed/datastore-core-release/res
+com.facechanger.faceswap.enhance.app-appcompat-1.7.1-58 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/ca0c5abab2a9e2d06d006460d435a473/transformed/appcompat-1.7.1/res
+com.facechanger.faceswap.enhance.app-dynamicanimation-1.1.0-59 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/caef4403332ac37921ec1503ce144a5c/transformed/dynamicanimation-1.1.0/res
+com.facechanger.faceswap.enhance.app-coordinatorlayout-1.1.0-60 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d8153f46cd7cd21acd5c197700432f52/transformed/coordinatorlayout-1.1.0/res
+com.facechanger.faceswap.enhance.app-purchases-9.23.1-61 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/res
+com.facechanger.faceswap.enhance.app-lifecycle-runtime-62 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/dc5b713ed2c8bb91f11f5781ab0e5dcb/transformed/lifecycle-runtime/res
+com.facechanger.faceswap.enhance.app-facebook-login-17.0.0-63 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/dcb4dcee864e9c559dcf82bf160863b9/transformed/facebook-login-17.0.0/res
+com.facechanger.faceswap.enhance.app-lifecycle-livedata-core-ktx-2.10.0-64 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/eb79f6b7ce537a95b39a7cb60db22ae1/transformed/lifecycle-livedata-core-ktx-2.10.0/res
+com.facechanger.faceswap.enhance.app-lifecycle-service-2.10.0-65 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f25400e74e079ba7057bab6d8832c1a9/transformed/lifecycle-service-2.10.0/res
+com.facechanger.faceswap.enhance.app-firebase-crashlytics-20.0.6-66 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f7a10e85d179cfc9cbbc5f9941d071c4/transformed/firebase-crashlytics-20.0.6/res
+com.facechanger.faceswap.enhance.app-facebook-messenger-17.0.0-67 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/f8a37eac862f6001ad5b42f76d0f29bd/transformed/facebook-messenger-17.0.0/res
+com.facechanger.faceswap.enhance.app-glide-4.16.0-68 /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/fee121a159d4dca1824a0a3b338970f8/transformed/glide-4.16.0/res
+com.facechanger.faceswap.enhance.app-res-69 /Users/vasusavaliya/Documents/Face Swap 2/app/build/generated/res/injectCrashlyticsMappingFileIdDebug
+com.facechanger.faceswap.enhance.app-pngs-70 /Users/vasusavaliya/Documents/Face Swap 2/app/build/generated/res/pngs/debug
+com.facechanger.faceswap.enhance.app-res-71 /Users/vasusavaliya/Documents/Face Swap 2/app/build/generated/res/processDebugGoogleServices
+com.facechanger.faceswap.enhance.app-resValues-72 /Users/vasusavaliya/Documents/Face Swap 2/app/build/generated/res/resValues/debug
+com.facechanger.faceswap.enhance.app-updated_navigation_xml-73 /Users/vasusavaliya/Documents/Face Swap 2/app/build/generated/updated_navigation_xml/debug
+com.facechanger.faceswap.enhance.app-packageDebugResources-74 /Users/vasusavaliya/Documents/Face Swap 2/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.facechanger.faceswap.enhance.app-packageDebugResources-75 /Users/vasusavaliya/Documents/Face Swap 2/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.facechanger.faceswap.enhance.app-debug-76 /Users/vasusavaliya/Documents/Face Swap 2/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.facechanger.faceswap.enhance.app-debug-77 /Users/vasusavaliya/Documents/Face Swap 2/app/src/debug/res
+com.facechanger.faceswap.enhance.app-main-78 /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/res

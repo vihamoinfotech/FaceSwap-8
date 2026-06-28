@@ -1,0 +1,174 @@
+package com.facechanger.faceswap.enhance.view.adapter;
+
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.facechanger.faceswap.enhance.R;
+import com.facechanger.faceswap.enhance.model.SectionData;
+import com.facechanger.faceswap.enhance.model.api.TemplateCategory;
+import com.facechanger.faceswap.enhance.model.api.TemplateItem;
+import com.facechanger.faceswap.enhance.utils.ApiRepository;
+import com.facechanger.faceswap.enhance.utils.GlideHelper;
+import com.facechanger.faceswap.enhance.view.FaceSwapActivity;
+import com.facechanger.faceswap.enhance.view.SectionDetailActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    private static final int TYPE_HEADER = 0;
+    private static final int TYPE_CATEGORY = 1;
+
+    private final Context context;
+    private List<TemplateCategory> categories = new ArrayList<>();
+    private final String baseUrl = ApiRepository.getBaseUrl();
+
+    public interface OnHeaderClickListener {
+        void onGenerateNowClicked();
+    }
+
+    private OnHeaderClickListener headerClickListener;
+
+    public MainCategoryAdapter(Context context) {
+        this.context = context;
+    }
+
+    public void setCategories(List<TemplateCategory> categories) {
+        this.categories = categories;
+        notifyDataSetChanged();
+    }
+
+    public void setHeaderClickListener(OnHeaderClickListener listener) {
+        this.headerClickListener = listener;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position == 0 ? TYPE_HEADER : TYPE_CATEGORY;
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(context);
+        if (viewType == TYPE_HEADER) {
+            View view = inflater.inflate(R.layout.item_home_header, parent, false);
+            return new HeaderViewHolder(view);
+        }
+
+        View view = inflater.inflate(R.layout.item_category_row, parent, false);
+        return new CategoryViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        if (getItemViewType(position) == TYPE_HEADER) {
+            HeaderViewHolder headerHolder = (HeaderViewHolder) holder;
+            headerHolder.btnGenerateNow.setOnClickListener(v -> {
+                if (headerClickListener != null) {
+                    headerClickListener.onGenerateNowClicked();
+                }
+            });
+            return;
+        }
+
+        CategoryViewHolder catHolder = (CategoryViewHolder) holder;
+        TemplateCategory category = categories.get(position - 1);
+        catHolder.bind(category);
+    }
+
+    @Override
+    public int getItemCount() {
+        return 1 + categories.size();
+    }
+
+    class HeaderViewHolder extends RecyclerView.ViewHolder {
+        final View btnGenerateNow;
+
+        HeaderViewHolder(@NonNull View itemView) {
+            super(itemView);
+            btnGenerateNow = itemView.findViewById(R.id.btnGenerateNow);
+        }
+    }
+
+    class CategoryViewHolder extends RecyclerView.ViewHolder {
+
+        final TextView tvTitle;
+        final View btnViewAll;
+        final ImageView image1;
+        final ImageView image2;
+        final ImageView image3;
+
+        CategoryViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tvTitle = itemView.findViewById(R.id.tvSectionTitle);
+            btnViewAll = itemView.findViewById(R.id.btnViewAll);
+            image1 = (ImageView) itemView.findViewById(R.id.image1);
+            image2 = (ImageView) itemView.findViewById(R.id.image2);
+            image3 = (ImageView) itemView.findViewById(R.id.image3);
+        }
+
+        void bind(TemplateCategory category) {
+            tvTitle.setText(category.getCategoryName());
+
+            btnViewAll.setOnClickListener(v -> {
+                com.facechanger.faceswap.enhance.model.TemplateCache.setCurrentTemplates(category.getTemplates());
+                SectionData sectionData = new SectionData(category.getCategoryName(), new ArrayList<>());
+
+                Intent intent = new Intent(context, SectionDetailActivity.class);
+                intent.putExtra("section_data", sectionData);
+                context.startActivity(intent);
+            });
+
+            List<TemplateItem> templates = category.getTemplates();
+            int previewCount = Math.min(3, templates.size());
+
+            bindImage(image1, templates, 0, previewCount);
+            bindImage(image2, templates, 1, previewCount);
+            bindImage(image3, templates, 2, previewCount);
+        }
+
+        private void bindImage(ImageView imageView, List<TemplateItem> templates, int index, int previewCount) {
+            if (index < previewCount) {
+                imageView.setVisibility(View.VISIBLE);
+                TemplateItem template = templates.get(index);
+                String imageUrl = template.getImageUrl(baseUrl);
+
+                Glide.with(context)
+                        .load(GlideHelper.authorizedUrl(imageUrl))
+                        .placeholder(R.color.card_background)
+                        .error(R.color.card_background)
+                        .transition(DrawableTransitionOptions.withCrossFade())
+                        .centerCrop()
+                        .into(imageView);
+
+                final int templateId = template.getId();
+                imageView.setOnClickListener(v -> {
+
+                    Log.e("#######", "11");
+
+                    Intent intent = new Intent(context, FaceSwapActivity.class);
+                    intent.putExtra("image_url", imageUrl);
+                    intent.putExtra("template_id", templateId);
+                    intent.putExtra("is_edit_image", true);
+                    intent.putExtra("prompt", template.getPrompt());
+                    context.startActivity(intent);
+                });
+            } else {
+                imageView.setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+}

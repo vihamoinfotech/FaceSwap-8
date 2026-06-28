@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FaceSwap" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.FaceSwap" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@color/background_dark</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0090FF</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="color">#FAF2F2F2</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0091EA</item>
+        <item name="colorSecondaryVariant">#015386</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <style name="RoundedCornerImage">
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedImageMedium">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Splash screen: use Android SplashScreen API to fix lag and remove system icon -->
+    <style name="Theme.FaceSwap.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <item name="postSplashScreenTheme">@style/Theme.FaceSwap</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="HeaderTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+    </style>
+
+</resources>

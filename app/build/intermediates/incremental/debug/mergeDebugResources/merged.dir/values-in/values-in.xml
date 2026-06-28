@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="exo_controls_playback_speeds">
+    <item>0,25x</item>
+    <item>0,5x</item>
+    <item>0,75x</item>
+    <item>Normal</item>
+    <item>1,25x</item>
+    <item>1,5x</item>
+    <item>2x</item>
+  </string-array>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+    <item quantity="one">Maju cepat %d detik</item>
+    <item quantity="other">Maju cepat %d detik</item>
+  </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+    <item quantity="one">Mundur %d detik</item>
+    <item quantity="other">Mundur %d detik</item>
+  </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notifikasi baru</item>
+    <item quantity="other">%d notifikasi baru</item>
+  </plurals>
+    <string name="AiImageGenActivity_an_error_occurred_please">Terjadi kesalahan. Silakan coba lagi.</string>
+    <string name="AiImageGenActivity_failed_to_read_image">Gagal membaca gambar.</string>
+    <string name="AiImageGenActivity_image_generation_failed_please">Pembuatan gambar gagal. Silakan coba lagi.</string>
+    <string name="AiImageGenActivity_permission_granted">✓ Izin diberikan!</string>
+    <string name="AiImageGenActivity_please_enter_a_prompt">Silakan masukkan perintah.</string>
+    <string name="AiImageGenActivity_please_upload_your_image">Silakan unggah gambar Anda.</string>
+    <string name="BackgroundReplaceActivity_failed_to_read_image">Gagal membaca gambar</string>
+    <string name="BackgroundReplaceActivity_please_describe_the_new">Silakan jelaskan latar belakang baru</string>
+    <string name="BackgroundReplaceActivity_please_upload_a_photo">Silakan unggah foto terlebih dahulu</string>
+    <string name="CoupleFaceSwapActivity_failed_to_prepare_target">Gagal menyiapkan foto target</string>
+    <string name="CoupleFaceSwapActivity_failed_to_read_face">Gagal membaca foto wajah</string>
+    <string name="CoupleFaceSwapActivity_please_select_the_coupletar">Silakan pilih foto pasangan/target terlebih dahulu</string>
+    <string name="CoupleFaceSwapActivity_please_upload_your_face">Silakan unggah foto wajah Anda</string>
+    <string name="DownloadShareActivity_failed_to_prepare_image">Gagal menyiapkan gambar untuk dibagikan</string>
+    <string name="DownloadShareActivity_no_image_to_download">Tidak ada gambar untuk diunduh</string>
+    <string name="DownloadShareActivity_no_image_to_share">Tidak ada gambar untuk dibagikan</string>
+    <string name="DownloadShareActivity_storage_permission_is_needed">Izin penyimpanan diperlukan untuk menyimpan gambar</string>
+    <string name="EditImageActivity_background_selected">Latar belakang terpilih</string>
+    <string name="EditImageActivity_permission_granted">✓ Izin diberikan!</string>
+    <string name="FaceEnhanceActivity_failed_to_read_image">Gagal membaca gambar</string>
+    <string name="FaceEnhanceActivity_please_upload_a_photo">Silakan unggah foto terlebih dahulu</string>
+    <string name="FaceSelectionActivity_face_selected">Wajah Terpilih</string>
+    <string name="FaceSwapActivity_an_error_occurred_please">Terjadi kesalahan. Silakan coba lagi.</string>
+    <string name="FaceSwapActivity_failed_to_prepare_template">Gagal menyiapkan gambar templat</string>
+    <string name="FaceSwapActivity_failed_to_read_face">Gagal membaca foto wajah</string>
+    <string name="FaceSwapActivity_operation_failed_please_try">Operasi gagal. Silakan coba lagi.</string>
+    <string name="FaceSwapActivity_please_add_your_face">Silakan tambahkan foto wajah Anda</string>
+    <string name="FaceSwapActivity_please_select_a_target">Silakan pilih gambar templat target terlebih dahulu</string>
+    <string name="LottieLoadingActivity_please_wait_generation_in">Silakan tunggu, pembuatan sedang berlangsung...</string>
+    <string name="MainActivity_could_not_load_templates">Tidak dapat memuat templat. Tarik untuk mencoba lagi.</string>
+    <string name="MultiSwapActivity_failed_to_prepare_target">Gagal menyiapkan templat target</string>
+    <string name="MultiSwapActivity_failed_to_read_face">Gagal membaca foto wajah</string>
+    <string name="MultiSwapActivity_please_add_your_face">Silakan tambahkan foto wajah Anda</string>
+    <string name="MultiSwapActivity_please_select_a_target">Silakan pilih gambar templat target terlebih dahulu</string>
+    <string name="MyWorkActivity_this_image_link_has">Tautan gambar ini telah kedaluwarsa</string>
+    <string name="SettingsActivity_coming_soon">Segera hadir</string>
+    <string name="SettingsActivity_no_browser_found">Browser tidak ditemukan</string>
+    <string name="SettingsActivity_no_email_app_found">Aplikasi email tidak ditemukan</string>
+    <string name="TextToImageActivity_please_enter_a_prompt">Silakan masukkan perintah untuk membuat gambar</string>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Kembali ke atas"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Opsi lainnya"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pilih aplikasi"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"NONAKTIF"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AKTIF"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spasi"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Telusuri..."</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Hapus kueri"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Telusuri kueri"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Telusuri"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Kirim kueri"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Penelusuran suara"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="ai_image_gen_10_coins">10 Koin</string>
+    <string name="ai_image_gen_ai_image_gen">Pembuatan Gambar AI</string>
+    <string name="ai_image_gen_describe_what_you_want">Jelaskan apa yang Anda inginkan dan saksikan itu menjadi nyata.</string>
+    <string name="ai_image_gen_describe_your_image">Jelaskan gambar Anda</string>
+    <string name="ai_image_gen_generate_image">✦  Buat Gambar</string>
+    <string name="ai_image_gen_guides_the_style_and">Panduan gaya dan komposisi</string>
+    <string name="ai_image_gen_into_art"> Menjadi Seni</string>
+    <string name="ai_image_gen_optional">OPSIONAL</string>
+    <string name="ai_image_gen_png_jpg_supported">Mendukung PNG, JPG</string>
+    <string name="ai_image_gen_reference_image">Gambar Referensi</string>
+    <string name="ai_image_gen_required">WAJIB</string>
+    <string name="ai_image_gen_tap_to_upload_image">Ketuk untuk mengunggah gambar</string>
+    <string name="ai_image_gen_text_prompt">Perintah Teks</string>
+    <string name="ai_image_gen_turn_your_ideas">Ubah ide Anda</string>
+    <string name="app_builder_name">FaceSwap</string>
+    <string name="app_coins_dialog_desc_text">Melanjutkan akan menggunakan 10 koin dari saldo Anda. Konfirmasikan untuk melanjutkan.</string>
+    <string name="app_download_share_text">Unduh &amp; Bagikan</string>
+    <string name="app_edit_image_text">Edit Gambar</string>
+    <string name="app_edit_text">Edit</string>
+    <string name="app_face_back_text">Kembali</string>
+    <string name="app_face_coins_dialog_title_text">Koin Diperlukan!</string>
+    <string name="app_face_multiple_swap_hint_text">Tukar banyak wajah dalam satu proyek.</string>
+    <string name="app_face_my_work_hint_text">Karya yang Anda simpan akan muncul di sini.</string>
+    <string name="app_face_nav_multi_swap_text">Tukar Video</string>
+    <string name="app_face_nav_my_work_text">Karya Saya</string>
+    <string name="app_face_settings_text">Pengaturan</string>
+    <string name="app_face_title_my_work_text">Karya Saya</string>
+    <string name="app_nav_face_ai_image">Gambar AI</string>
+    <string name="app_nav_face_swap_text">Tukar Wajah</string>
+    <string name="app_select_face_text">Pilih Wajah</string>
+    <string name="app_single_face_swap_text">Tukar Satu Wajah</string>
+    <string name="app_update_text">🚀</string>
+    <string name="app_update_text_1">✨</string>
+    <string name="app_update_text_2">🛡️</string>
+    <string name="app_video_swap_text">Tukar Video</string>
+    <string name="background_picker_choose_background">Pilih Latar Belakang</string>
+    <string name="background_picker_tap_any_background_to">Ketuk latar belakang apa saja untuk menerapkannya</string>
+    <string name="bg_replace_10_coins">10 Koin</string>
+    <string name="bg_replace_any_photo_with_a">Foto apa saja dengan subjek jelas</string>
+    <string name="bg_replace_background">Latar Belakang</string>
+    <string name="bg_replace_background_replace">Ganti Latar Belakang</string>
+    <string name="bg_replace_be_descriptive_for_best">Berikan deskripsi detail untuk hasil terbaik</string>
+    <string name="bg_replace_describe_new_background">Jelaskan Latar Belakang Baru</string>
+    <string name="bg_replace_replace">Replace </string>
+    <string name="bg_replace_replace_background">✦  Ganti Latar Belakang</string>
+    <string name="bg_replace_step_1">LANGKAH 1</string>
+    <string name="bg_replace_step_2">LANGKAH 2</string>
+    <string name="bg_replace_subject_should_be_clearly">Subjek harus terlihat jelas</string>
+    <string name="bg_replace_tap_to_upload_your">Ketuk untuk mengunggah foto Anda</string>
+    <string name="bg_replace_upload_a_photo_and">Unggah foto dan jelaskan latar belakang yang Anda inginkan.</string>
+    <string name="bg_replace_your_photo">Foto Anda</string>
+    <string name="bottomsheet_action_collapse">Menciutkan sheet bawah</string>
+    <string name="bottomsheet_action_expand">Meluaskan sheet bawah</string>
+    <string name="bottomsheet_action_expand_halfway">Luaskan setengah</string>
+    <string name="bottomsheet_drag_handle_content_description">Handel geser</string>
+    <string name="btn_buy_now">Beli Sekarang</string>
+    <string name="btn_restore">Pulihkan Pembelian</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Jawab"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Tolak"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Tutup"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Panggilan masuk"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Panggilan sedang berlangsung"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Menyaring panggilan masuk"</string>
+    <string name="cd_coin_balance">Saldo koin</string>
+    <string name="cd_dialog_close">Tutup dialog</string>
+    <string name="cd_dialog_icon">Ikon dialog</string>
+    <string name="cd_dialog_image">Gambar dialog</string>
+    <string name="cd_share">Bagikan</string>
+    <string name="cd_splash_logo">Logo aplikasi</string>
+    <string name="character_counter_content_description">Karakter yang dimasukkan %1$d dari %2$d</string>
+    <string name="character_counter_overflowed_content_description">Melebihi batas karakter %1$d dari %2$d</string>
+    <string name="clear_text_end_icon_content_description">Menghapus teks</string>
+    <string name="coin_balance_label">Saldo Saat Ini</string>
+    <string name="coin_history_empty">Belum ada transaksi</string>
+    <string name="coin_history_subtitle">Riwayat transaksi Anda</string>
+    <string name="coin_history_title">Riwayat Koin</string>
+    <string name="coin_total_earned">Total Didapat</string>
+    <string name="coin_total_spent">Total Dibelanjakan</string>
+    <string name="coin_transaction_face_swap">Tukar Wajah</string>
+    <string name="coin_transaction_today_1230_pm">Hari ini, 12:30 PM</string>
+    <string name="coins_unit">%d Koin</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Buka &lt;b>facebook.com/device&lt;/b> dan masukkan kode yang ditunjukkan di atas.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Kesalahan tak terduga ketika mengunduh gambar.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">Masuk Tampilan Web memerlukan izin INTERNET</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">Terjadi Kesalahan AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Suka</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Suka</string>
+    <string gender="unknown" name="com_facebook_loading">Memuat…</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Batal</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Masuk</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Lanjutkan dengan Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Masuk dengan Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Keluar</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Keluar</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Masuk sebagai: %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Masuk menggunakan Facebook</string>
+    <string gender="unknown" name="com_facebook_send_button_text">Kirim</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Bagikan</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">Untuk menghubungkan akun Anda, buka aplikasi Facebook di perangkat seluler Anda dan lihat pemberitahuan.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- ATAU -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Bukan Anda?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Lanjutkan sebagai %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Konfirmasikan Masuk</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Anda memegang kendali - pilih info apa yang ingin Anda bagikan dengan aplikasi.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktifkan</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s tidak akan berfungsi jika layanan Google Play tidak diaktifkan.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instal</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak ada di perangkat Anda.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Ketersediaan layanan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Kesalahan layanan Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s mengalami masalah dengan layanan Google Play. Coba lagi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak didukung oleh perangkat Anda.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s tidak akan berjalan jika layanan Google Play tidak diperbarui.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui.</string>
+    <string name="common_google_play_services_wear_update_text">Perlu versi baru layanan Google Play. Akan segera memperbarui sendiri.</string>
+    <string name="common_open_on_phone">Buka di ponsel</string>
+    <string name="common_signin_button_text">Login</string>
+    <string name="common_signin_button_text_long">Login dengan Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link disalin ke papan klip"</string>
+    <string name="couple_swap_10_coins">10 Koin</string>
+    <string name="couple_swap_any_photo_with_12">Foto apa saja dengan 1-2 wajah</string>
+    <string name="couple_swap_clear_frontal_face_works">Foto wajah depan yang jelas bekerja paling baik</string>
+    <string name="couple_swap_couple">Couple </string>
+    <string name="couple_swap_couple_face_swap">Tukar Wajah Pasangan</string>
+    <string name="couple_swap_couple_target_photo">Foto Pasangan / Target</string>
+    <string name="couple_swap_face_swap">Tukar Wajah</string>
+    <string name="couple_swap_generate_image">✦  Buat Gambar</string>
+    <string name="couple_swap_step_1">LANGKAH 1</string>
+    <string name="couple_swap_step_2">LANGKAH 2</string>
+    <string name="couple_swap_swap_your_face_into">Tukar wajah Anda ke dalam foto pasangan atau duo apa pun.</string>
+    <string name="couple_swap_tap_to_select_couple">Ketuk untuk memilih foto pasangan</string>
+    <string name="couple_swap_the_photo_you_want">Foto yang ingin Anda tukar wajahnya</string>
+    <string name="couple_swap_upload_your_face_photo">Unggah foto wajah Anda</string>
+    <string name="couple_swap_your_face_photo">Foto Wajah Anda</string>
+    <string name="current_balance">Saldo Saat Ini</string>
+    <string name="dialog_api_error_msg">Terjadi kesalahan saat menghubungkan ke server kami. Silakan coba lagi.</string>
+    <string name="dialog_api_error_title">Kesalahan Koneksi</string>
+    <string name="dialog_buy_coins">Beli Koin</string>
+    <string name="dialog_coins_button">Oke, Lanjutkan</string>
+    <string name="dialog_info_button">Mengerti, Ayo!</string>
+    <string name="dialog_info_message">Untuk hasil tukar wajah terbaik, gunakan foto yang jelas, menghadap ke depan dengan pencahayaan yang baik. Hindari foto grup, kacamata hitam, atau apa pun yang menyembunyikan wajah Anda.</string>
+    <string name="dialog_info_title">Unggah Foto yang Benar!</string>
+    <string name="dialog_insufficient_balance">Saldo Anda: %s koin</string>
+    <string name="dialog_insufficient_cost">Diperlukan: %s koin</string>
+    <string name="dialog_insufficient_title">Koin Tidak Cukup</string>
+    <string name="dialog_no_internet_msg">Silakan periksa koneksi internet Anda dan coba lagi.</string>
+    <string name="dialog_no_internet_title">Tidak Ada Internet</string>
+    <string name="dialog_retry_button">Coba Lagi</string>
+    <string name="dialog_watch_ad">Tonton Iklan untuk Melanjutkan</string>
+    <string name="download_failed">Gagal menyimpan gambar</string>
+    <string name="download_saved">✓ Disimpan ke Galeri!</string>
+    <string name="download_share_save_to_gallery">Simpan ke Galeri</string>
+    <string name="download_share_your_result_is_ready">Hasil Anda sudah siap ✦</string>
+    <string name="edit_image_change_bg">Ganti Latar Belakang</string>
+    <string name="edit_image_enhance">Tingkatkan</string>
+    <string name="edit_image_remove_bg">Hapus Latar Belakang</string>
+    <string name="error_a11y_label">Error: tidak valid</string>
+    <string name="error_fetching_offerings">Gagal mengambil penawaran toko. Silakan coba lagi.</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exit_are_you_sure_you">Apakah Anda yakin ingin keluar dari aplikasi? Kami ingin Anda bertahan dan membuat lebih banyak wajah menakjubkan!</string>
+    <string name="exit_exit_app">Keluar Aplikasi</string>
+    <string name="exit_leaving_so_soon">Pergi begitu cepat?</string>
+    <string name="exit_stay_in_app">Tetap di Aplikasi</string>
+    <string name="exo_controls_cc_disabled_description">Aktifkan subtitel</string>
+    <string name="exo_controls_cc_enabled_description">Nonaktifkan subtitel</string>
+    <string name="exo_controls_fastforward_description">Maju cepat</string>
+    <string name="exo_controls_fullscreen_enter_description">Masuk layar penuh</string>
+    <string name="exo_controls_fullscreen_exit_description">Keluar dari layar penuh</string>
+    <string name="exo_controls_hide">Menyembunyikan kontrol pemutar</string>
+    <string name="exo_controls_next_description">Berikutnya</string>
+    <string name="exo_controls_overflow_hide_description">Sembunyikan setelan tambahan</string>
+    <string name="exo_controls_overflow_show_description">Tampilkan setelan tambahan</string>
+    <string name="exo_controls_pause_description">Jeda</string>
+    <string name="exo_controls_play_description">Putar</string>
+    <string name="exo_controls_playback_speed">Kecepatan</string>
+    <string name="exo_controls_previous_description">Sebelumnya</string>
+    <string name="exo_controls_repeat_all_description">Mode saat ini: Ulang semua. Alihkan mode berulang.</string>
+    <string name="exo_controls_repeat_off_description">Mode saat ini: Tidak berulang. Alihkan mode berulang.</string>
+    <string name="exo_controls_repeat_one_description">Mode saat ini: Ulang sekali. Alihkan mode berulang.</string>
+    <string name="exo_controls_rewind_description">Putar Ulang</string>
+    <string name="exo_controls_seek_bar_description">Progres pemutaran</string>
+    <string name="exo_controls_settings_description">Setelan</string>
+    <string name="exo_controls_show">Menampilkan kontrol pemutar</string>
+    <string name="exo_controls_shuffle_off_description">Aktifkan mode acak</string>
+    <string name="exo_controls_shuffle_on_description">Nonaktifkan mode acak</string>
+    <string name="exo_controls_stop_description">Berhenti</string>
+    <string name="exo_controls_vr_description">Mode VR</string>
+    <string name="exo_download_completed">Download selesai</string>
+    <string name="exo_download_description">Download</string>
+    <string name="exo_download_downloading">Mendownload</string>
+    <string name="exo_download_failed">Download gagal</string>
+    <string name="exo_download_notification_channel_name">Download</string>
+    <string name="exo_download_paused">Download dijeda</string>
+    <string name="exo_download_paused_for_network">Download menunggu konektivitas jaringan</string>
+    <string name="exo_download_paused_for_wifi">Download menunggu konektivitas Wi-Fi</string>
+    <string name="exo_download_removing">Menghapus download</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">Alternatif</string>
+    <string name="exo_track_role_closed_captions">CC</string>
+    <string name="exo_track_role_commentary">Komentar</string>
+    <string name="exo_track_role_supplementary">Tambahan</string>
+    <string name="exo_track_selection_auto">Otomatis</string>
+    <string name="exo_track_selection_none">Tidak ada</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_stereo">Stereo</string>
+    <string name="exo_track_surround">Suara surround</string>
+    <string name="exo_track_surround_5_point_1">5.1 surround sound</string>
+    <string name="exo_track_surround_7_point_1">7.1 surround sound</string>
+    <string name="exo_track_unknown">Tidak diketahui</string>
+    <string name="exo_track_unknown_name">Tidak diketahui (%1$s)</string>
+    <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
+    <string name="face_enhance_10_coins">10 Koin</string>
+    <string name="face_enhance_ai_face">AI Face </string>
+    <string name="face_enhance_ai_face_enhance">Peningkat Wajah AI</string>
+    <string name="face_enhance_enhance_face">✦  Tingkatkan Wajah</string>
+    <string name="face_enhance_enhancer">Peningkat</string>
+    <string name="face_enhance_gfpgan_face_restoration">✨ Restorasi Wajah GFPGAN</string>
+    <string name="face_enhance_portrait_or_selfie_works">Foto potret atau selfie bekerja paling baik</string>
+    <string name="face_enhance_restore_and_sharpen_facial">Pulihkan dan pertajam detail wajah menggunakan AI.</string>
+    <string name="face_enhance_tap_to_upload_your">Ketuk untuk mengunggah foto Anda</string>
+    <string name="face_enhance_upload_photo">Unggah Foto</string>
+    <string name="face_enhance_uses_stateoftheart_ai_to">Menggunakan AI tercanggih untuk memulihkan wajah yang buram atau berkualitas rendah. Sempurna untuk foto lama, gambar pindaian, atau selfie beresolusi rendah.</string>
+    <string name="face_enhance_works_best_with_portraits">Bekerja paling baik dengan foto potret dan selfie</string>
+    <string name="face_selection_select_which_face_you">Pilih wajah mana yang ingin Anda gunakan</string>
+    <string name="face_swap_10_coins">10 Koin</string>
+    <string name="face_swap_choose_from_gallery_or">Pilih dari galeri atau preset</string>
+    <string name="face_swap_clear_frontal_photo_works">Foto depan yang jelas bekerja paling baik</string>
+    <string name="face_swap_face">Wajah</string>
+    <string name="face_swap_gallery_or_preset">Galeri atau preset</string>
+    <string name="face_swap_pick_a_template_upload">Pilih templat, unggah foto Anda — selesai.</string>
+    <string name="face_swap_start_swapping">✦  Mulai Menukar</string>
+    <string name="face_swap_step_1">LANGKAH 1</string>
+    <string name="face_swap_step_2">LANGKAH 2</string>
+    <string name="face_swap_swap_your">Swap Your </string>
+    <string name="face_swap_tap_to_select_template">Ketuk untuk memilih templat</string>
+    <string name="face_swap_target_template">Templat Target</string>
+    <string name="face_swap_your_face_photo">Foto Wajah Anda</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Salin link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Buka di browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Bagikan link"</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="home_header_become_anyone_in_just">Menjadi siapa saja hanya dengan satu ketukan</string>
+    <string name="home_header_face_swap">TUKAR WAJAH</string>
+    <string name="home_header_swap_your_face">Tukar Wajah Anda</string>
+    <string name="home_header_try_now">Coba Sekarang</string>
+    <string name="icon_content_description">Ikon Dialog</string>
+    <string name="image_source_cancel">Batal</string>
+    <string name="image_source_choose_from_gallery">Pilih dari Galeri</string>
+    <string name="image_source_choose_image_source">Pilih Sumber Gambar</string>
+    <string name="image_source_select_from_your_photos">Pilih dari foto Anda</string>
+    <string name="image_source_take_photo">Ambil Foto</string>
+    <string name="image_source_use_your_camera">Gunakan kamera Anda</string>
+    <string name="insufficient_coins_required_10_coins">Diperlukan: 10 koin</string>
+    <string name="insufficient_coins_your_balance_0_coins">Saldo Anda: 0 koin</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="label_best_value">💎 Nilai Terbaik</string>
+    <string name="label_popular">⭐ Paling Populer</string>
+    <string name="language_english">Inggris</string>
+    <string name="language_language">Bahasa-bahasa</string>
+    <string name="language_save">Simpan</string>
+    <string name="layout_section_header_section_title">Judul Bagian</string>
+    <string name="layout_section_header_see_all">Lihat Semua</string>
+    <string name="lottie_loading_creating_your_ai_image">Membuat Gambar AI Anda…</string>
+    <string name="lottie_loading_this_may_take_a">Ini mungkin memakan waktu beberapa detik</string>
+    <string name="m3_loading_indicator_content_description">Memuat</string>
+    <string name="main_ai_image">Gambar AI</string>
+    <string name="main_face_swap">Tukar Wajah</string>
+    <string name="main_multi_swap">Tukar Video</string>
+    <string name="main_my_work">Karya Saya</string>
+    <string name="material_clock_toggle_content_description">Pilih AM atau PM</string>
+    <string name="material_hour_24h_suffix">%1$s jam</string>
+    <string name="material_hour_selection">Pilih jam</string>
+    <string name="material_hour_suffix">Pukul %1$s</string>
+    <string name="material_minute_selection">Pilih menit</string>
+    <string name="material_minute_suffix">%1$s menit</string>
+    <string name="material_slider_range_end">Rentang akhir</string>
+    <string name="material_slider_range_start">Rentang awal</string>
+    <string name="material_slider_value">Nilai</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Beralih ke mode jam untuk masukan waktu.</string>
+    <string name="material_timepicker_hour">Jam</string>
+    <string name="material_timepicker_minute">Menit</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Pilih waktu</string>
+    <string name="material_timepicker_text_input_mode_description">Beralih ke mode masukan teks untuk masukan waktu.</string>
+    <string name="mtrl_badge_numberless_content_description">Notifikasi baru</string>
+    <string name="mtrl_checkbox_state_description_checked">Dicentang</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Dicentang sebagian</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Tidak dicentang</string>
+    <string name="mtrl_chip_close_icon_content_description">Menghapus %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Lebih dari %1$d notifikasi baru</string>
+    <string name="mtrl_picker_a11y_next_month">Ubah ke bulan berikutnya</string>
+    <string name="mtrl_picker_a11y_prev_month">Ubah ke bulan sebelumnya</string>
+    <string name="mtrl_picker_announce_current_range_selection">Pilihan tanggal mulai: %1$s – Pilihan tanggal akhir: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Pilihan saat ini: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">tidak ada</string>
+    <string name="mtrl_picker_cancel">Batal</string>
+    <string name="mtrl_picker_confirm">Oke</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Pilih Tanggal</string>
+    <string name="mtrl_picker_date_header_unselected">Tanggal yang dipilih</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Tanggal akhir %1$s</string>
+    <string name="mtrl_picker_invalid_format">Format tidak valid.</string>
+    <string name="mtrl_picker_invalid_format_example">Contoh: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Gunakan: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Rentang tidak valid.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Pilih tahun ini %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Buka tahun %1$d</string>
+    <string name="mtrl_picker_out_of_range">Di luar rentang: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Tanggal mulai – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Tanggal akhir</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Pilih Rentang</string>
+    <string name="mtrl_picker_range_header_unselected">Tanggal mulai – Tanggal akhir</string>
+    <string name="mtrl_picker_save">Simpan</string>
+    <string name="mtrl_picker_start_date_description">Tanggal mulai %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Tanggal</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Tanggal akhir</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Tanggal mulai</string>
+    <string name="mtrl_picker_text_input_day_abbr">h</string>
+    <string name="mtrl_picker_text_input_month_abbr">b</string>
+    <string name="mtrl_picker_text_input_year_abbr">t</string>
+    <string name="mtrl_picker_today_description">Hari ini %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Beralih ke mode masukan kalender</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Beralih ke tampilan Kalender</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Beralih ke mode masukan teks</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Beralih ke tampilan tahun</string>
+    <string name="mtrl_picker_toggled_to_day_selection">Beralih ke tampilan Kalender</string>
+    <string name="mtrl_picker_toggled_to_year_selection">Beralih ke tampilan tahun</string>
+    <string name="mtrl_timepicker_cancel">Batal</string>
+    <string name="mtrl_timepicker_confirm">Oke</string>
+    <string name="multi_swap_10_coins">10 Koin</string>
+    <string name="multi_swap_all_faces_detected_automatically">Semua wajah terdeteksi secara otomatis</string>
+    <string name="multi_swap_all_faces_will_be">Semua wajah akan terdeteksi secara otomatis</string>
+    <string name="multi_swap_clear_frontal_face_works">Foto wajah depan yang jelas bekerja paling baik</string>
+    <string name="multi_swap_every_face_in_the">Setiap wajah di foto grup akan ditukar sekaligus.</string>
+    <string name="multi_swap_face">Wajah</string>
+    <string name="multi_swap_generate_image">✦  Buat Gambar</string>
+    <string name="multi_swap_group_photo_target">Foto Grup (Target)</string>
+    <string name="multi_swap_multi_face_swap">Tukar Banyak Wajah</string>
+    <string name="multi_swap_step_1">LANGKAH 1</string>
+    <string name="multi_swap_step_2">LANGKAH 2</string>
+    <string name="multi_swap_swap_every">Swap every </string>
+    <string name="multi_swap_tap_to_select_group">Ketuk untuk memilih foto grup</string>
+    <string name="multi_swap_upload_your_face_photo">Unggah foto wajah Anda</string>
+    <string name="multi_swap_your_face_photo">Foto Wajah Anda</string>
+    <string name="my_work_no_creations_yet">Belum ada karya</string>
+    <string name="my_work_retention_notice">Gambar hanya tersedia selama 7 hari. Silakan unduh kreasi Anda sebelum dihapus secara otomatis.</string>
+    <string name="native_body">Isi</string>
+    <string name="native_headline">Judul</string>
+    <string name="native_media_view">Tampilan Media</string>
+    <string name="notifications_permission_confirm">Izinkan</string>
+    <string name="notifications_permission_decline">Jangan izinkan</string>
+    <string name="notifications_permission_title">Izinkan aplikasi mengirim notifikasi kepada Anda?</string>
+    <string name="offline_dialog_image_description">Ikon</string>
+    <string name="offline_dialog_text">Terima kasih atas minat Anda.\nKami akan membagikan lebih banyak informasi setelah Anda kembali online.</string>
+    <string name="offline_notification_title">Anda kembali online. Mari kita lanjutkan progres sebelumnya</string>
+    <string name="offline_notification_title_with_advertiser">Anda kembali online. Lanjutkan mempelajari tentang %s</string>
+    <string name="offline_opt_in_confirm">Oke</string>
+    <string name="offline_opt_in_decline">Tidak</string>
+    <string name="offline_opt_in_message">Kami akan mengirimkan notifikasi kepada Anda berisi link ke situs pengiklan.</string>
+    <string name="offline_opt_in_title">Buka iklan ketika Anda kembali online.</string>
+    <string name="onboarding_continue">Lanjutkan</string>
+    <string name="onboarding_get_started">Mulai</string>
+    <string name="onboarding_page_skip">Lewati</string>
+    <string name="onboarding_subtitle_1">Ubah ide Anda menjadi gambar buatan AI\nyang menakjubkan dalam hitungan detik.</string>
+    <string name="onboarding_subtitle_2">Lihat kreasi AI Anda dan unduh gambar\ndalam resolusi penuh.</string>
+    <string name="onboarding_title_1">Generator Gambar AI</string>
+    <string name="onboarding_title_2">Pratinjau &amp; Unduh</string>
+    <string name="password_toggle_content_description">Tampilkan sandi</string>
+    <string name="permission_denied_camera_and_gallery_access">Akses kamera dan galeri diperlukan untuk mengunggah gambar. Silakan aktifkan di Pengaturan.</string>
+    <string name="permission_denied_cancel">Batal</string>
+    <string name="permission_denied_open_settings">Buka Pengaturan</string>
+    <string name="permission_denied_permission_required">Izin Diperlukan</string>
+    <string name="purchase_error">Pembelian gagal: %s</string>
+    <string name="purchase_restore_success">Pembelian berhasil dipulihkan.</string>
+    <string name="purchase_success">Pembelian berhasil! Koin ditambahkan ke saldo Anda.</string>
+    <string name="s1">Simpan gambar</string>
+    <string name="s2">Izinkan Iklan menyimpan gambar di Galeri foto?</string>
+    <string name="s3">Terima</string>
+    <string name="s4">Tolak</string>
+    <string name="s5">Buat acara kalender</string>
+    <string name="s6">Izinkan Iklan membuat acara kalender?</string>
+    <string name="s7">Tes Iklan</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
+    <string name="searchview_clear_text_content_description">Hapus teks</string>
+    <string name="searchview_navigation_content_description">Kembali</string>
+    <string name="server_busy_go_back">Kembali</string>
+    <string name="server_busy_message">Server kami sedang menangani banyak permintaan saat ini. Silakan tunggu sebentar dan coba lagi.</string>
+    <string name="server_busy_retry">Coba Lagi</string>
+    <string name="server_busy_title">Kami Mengalami Permintaan Tinggi</string>
+    <string name="settings_buy_coins">Beli Koin</string>
+    <string name="settings_coin_history">Riwayat Koin</string>
+    <string name="settings_coins">KOIN</string>
+    <string name="settings_feedback">Umpan Balik</string>
+    <string name="settings_language">Bahasa-bahasa</string>
+    <string name="settings_legal">LEGAL</string>
+    <string name="settings_privacy_policy">Kebijakan Privasi</string>
+    <string name="settings_rate_app">Nilai Aplikasi</string>
+    <string name="settings_settings">Pengaturan</string>
+    <string name="settings_share_app">Bagikan Aplikasi</string>
+    <string name="settings_terms_amp_conditions">Syarat &amp; Ketentuan</string>
+    <string name="share_preparing">Menyiapkan untuk membagikan…</string>
+    <string name="side_sheet_accessibility_pane_title">Sheet Samping</string>
+    <string name="splash_tagline">Tindakan ini mungkin mengandung iklan</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="store_choose_a_package">Pilih Paket</string>
+    <string name="store_credits">Kredit</string>
+    <string name="store_instant_delivery_secure_payment">Pengiriman instan • Pembayaran aman via Google Play</string>
+    <string name="store_retry">Coba Lagi</string>
+    <string name="store_subtitle">Beli koin untuk menggunakan fitur premium</string>
+    <string name="store_your_balance">Saldo Anda</string>
+    <string name="text_to_image_10_coins">10 Koin</string>
+    <string name="text_to_image_be_descriptive_for_best">Berikan deskripsi detail untuk hasil terbaik</string>
+    <string name="text_to_image_describe_anything_and_watch">Jelaskan apa saja dan saksikan itu menjadi nyata.</string>
+    <string name="text_to_image_generate_image">✦  Buat Gambar</string>
+    <string name="text_to_image_image">Gambar</string>
+    <string name="text_to_image_quick_ideas">Ide Cepat</string>
+    <string name="text_to_image_required">WAJIB</string>
+    <string name="text_to_image_text_to">Text to </string>
+    <string name="text_to_image_text_to_image">Teks ke Gambar</string>
+    <string name="text_to_image_your_prompt">Perintah Anda</string>
+    <string name="title_store">Toko Koin</string>
+    <string name="update_button">Perbarui Sekarang</string>
+    <string name="update_feature_1_desc">Pemrosesan gambar lebih cepat dan pengalaman lebih lancar</string>
+    <string name="update_feature_1_title">Performa Lebih Baik</string>
+    <string name="update_feature_2_desc">Alat baru yang menarik dan hasil AI yang ditingkatkan</string>
+    <string name="update_feature_2_title">Fitur Baru</string>
+    <string name="update_feature_3_desc">Perbaikan penting untuk aplikasi yang lebih stabil dan aman</string>
+    <string name="update_feature_3_title">Perbaikan Bug &amp; Keamanan</string>
+    <string name="update_subtitle">Kami telah bekerja keras untuk membuat pengalaman Anda lebih baik. Perbarui sekarang untuk menikmati fitur dan peningkatan terbaru.</string>
+    <string name="update_title">Versi Baru Tersedia!</string>
+    <string name="view_before_after_slider_after">Sesudah</string>
+    <string name="view_before_after_slider_before">Sebelum</string>
+    <string name="watermark_label_prefix">AdMob - </string>
+</resources>

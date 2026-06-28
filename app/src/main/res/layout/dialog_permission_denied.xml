@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_permission_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:layout_marginHorizontal="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="24dp">
+
+    <!-- Icon in a circular container -->
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_circle_dark"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivPermIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_settings"
+            android:tint="#7B61FF" />
+
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvPermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/permission_denied_permission_required"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:includeFontPadding="false" />
+
+    <!-- Accent bar -->
+    <View
+        android:layout_width="28dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#7B61FF" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/tvPermMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/permission_denied_camera_and_gallery_access"
+        android:textColor="#99FFFFFF"
+        android:textSize="@dimen/_12sdp"
+        android:includeFontPadding="false" />
+
+    <!-- Open Settings button -->
+    <TextView
+        android:id="@+id/btnOpenSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bg_dialog_button_gradient"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:paddingVertical="14dp"
+        android:text="@string/permission_denied_open_settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+    <!-- Cancel -->
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:text="@string/permission_denied_cancel"
+        android:textColor="#66FFFFFF"
+        android:textSize="@dimen/_12sdp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

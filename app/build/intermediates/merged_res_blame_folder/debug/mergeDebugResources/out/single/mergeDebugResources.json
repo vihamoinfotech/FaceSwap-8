@@ -1,0 +1,798 @@
+[
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_ai_image_gen.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_ai_image_gen.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_main.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_update_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_update_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_update_feature_card.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_update_feature_card.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_privacy.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_privacy.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dialog_rounded.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dialog_rounded.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_video_source.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_video_source.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_bottom_sheet.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_footer.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_footer.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/xml_face_backup_file_rules.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/xml/face_backup_file_rules.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_gradient_plus.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_gradient_plus.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_notif_small.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_notif_small.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_shimmer_rect_placeholder.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_shimmer_rect_placeholder.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_face_enhance.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_face_enhance.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_background.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_background.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_camera.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dot_inactive.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dot_inactive.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_pill_solid.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_pill_solid.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_background_grid.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_background_grid.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_diamond_paywall.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_diamond_paywall.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_select_image.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_select_image.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_store.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_store.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_featured.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_featured.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_face_swap.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_face_swap.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_info_outline.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_info_outline.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_language_screen.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_language_screen.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_selected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_selected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_coin.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_coin.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_permission_denied.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_permission_denied.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_coin_transaction.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_coin_transaction.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_rate_app.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_rate_app.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_premium_icon.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_premium_icon.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_balance_card.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_balance_card.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_share.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_share.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_text_to_image.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_text_to_image.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_change_bg.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_change_bg.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/xml_face_data_file_extraction_rules.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/xml/face_data_file_extraction_rules.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_radio_unselected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_radio_unselected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_app_update.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_app_update.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_language.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_language.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_badge_best_value.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_badge_best_value.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_pro_column.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_pro_column.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_shimmer_placeholder.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_shimmer_placeholder.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_regular.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_regular.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_watch_ad_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_watch_ad_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_insufficient_coins.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_insufficient_coins.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_enhance.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_enhance.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_badge_orange.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_badge_orange.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_home_ai_card.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_home_ai_card.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_coins_required.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_coins_required.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_logo_spread_glow.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_logo_spread_glow.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_language.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_language.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ads_cta_button_bg.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ads_cta_button_bg.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_close_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_close_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_logo_glow.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_logo_glow.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_star_empty.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_star_empty.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_terms.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_terms.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_save_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_save_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_language.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_language.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_history.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_history.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dialog_button_gradient.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dialog_button_gradient.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_text_promt.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_text_promt.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_slider_label.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_slider_label.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_bold.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_bold.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_coin_history.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_coin_history.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/color_nav_tab_tint.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/color/nav_tab_tint.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_semibold.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_semibold.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_gallery.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_gallery.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_arrow.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_arrow.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_gradient.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_gradient.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_flag_circle.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_flag_circle.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_language_item_unselected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_language_item_unselected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_generate_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_generate_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_rating.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_rating.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_restore_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_restore_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_img_photo_tip_11.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/img_photo_tip_11.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_plan.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_plan.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_settings_header.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_settings_header.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_splash.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_settings.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_settings.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_circle_translucent.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_circle_translucent.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_edit_overlay.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_edit_overlay.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_check.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_badge_pink.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_badge_pink.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_onboarding.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_info_with_images.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_info_with_images.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable-ldrtl_ic_arrow_back.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable-ldrtl/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_history_loading.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_history_loading.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_paywall_diamond.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_paywall_diamond.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_shimmer_main_category.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_shimmer_main_category.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_arrow_img.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_arrow_img.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_pro_header.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_pro_header.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_first_on_board.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/first_on_board.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_update_glow.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_update_glow.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_home_ai.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_home_ai.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_layout_section_header.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/layout_section_header.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_category_row.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_category_row.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_chip_unselected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_chip_unselected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_video_reverse.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_video_reverse.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_splash_logo.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_splash_logo.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_trans_close.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_trans_close.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_grid_image.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_grid_image.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_face_swap.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_face_swap.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_remove_bg.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_remove_bg.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_app_logo.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_app_logo.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_best_value.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_best_value.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_my_work.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_my_work.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_paywall.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_paywall.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_grid_detail.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_grid_detail.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_update_icon_circle.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_update_icon_circle.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_clear_bg_border.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/clear_bg_border.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_retry.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_retry.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_text_promp.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_text_promp.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_home_faceswap_card.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_home_faceswap_card.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_second_on_board.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/second_on_board.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_highlighted.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_highlighted.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/anim_slide_down_exit.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/anim/slide_down_exit.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_image_source.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_image_source.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_badge_popular.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_badge_popular.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_bg_replace.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_bg_replace.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_view_all_bg.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/view_all_bg.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_undo.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_undo.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_face_grid.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_face_grid.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_play.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_radio_selected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_radio_selected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_section_detail.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_section_detail.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_view_before_after_slider.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/view_before_after_slider.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_secure_lock.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_secure_lock.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_pro_column_bottom.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_pro_column_bottom.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_glass_panel.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_glass_panel.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_feedback.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_feedback.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_settings.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_onboarding_page.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_onboarding_page.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_coin_glow_gold.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_coin_glow_gold.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_square_rounded.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_square_rounded.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_slider_handle.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_slider_handle.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_server_busy.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_server_busy.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dialog_button_gradient_intro.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dialog_button_gradient_intro.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_circle_dark.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_circle_dark.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_fragment_onboard_frg_one.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/fragment_onboard_frg_one.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_background_picker.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_background_picker.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_multi_swap.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_multi_swap.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_language_item_selected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_language_item_selected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_edit_image.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_edit_image.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_permission_dialog.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_permission_dialog.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_video_face_swap.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_video_face_swap.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_button_secondary.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_button_secondary.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_noti_face.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_noti_face.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_pill_bordered.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_pill_bordered.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_item_home_header.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/item_home_header.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/anim_nav_fade_in.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/anim/nav_fade_in.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_arrow_back_img.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_arrow_back_img.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_multi_swap.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_multi_swap.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_flag_circle_selected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_flag_circle_selected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_plan_card_unselected.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_plan_card_unselected.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_dialog_exit.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/dialog_exit.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/anim_slide_up_enter.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/anim/slide_up_enter.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_button_primary.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_light.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_light.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_lottie_loading.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_lottie_loading.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_paywall_bg_cta_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/paywall_bg_cta_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_face_selection.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_face_selection.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_upload.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_upload.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_background_picker.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_background_picker.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable-ldrtl_ic_arrow.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable-ldrtl/ic_arrow.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_couple_swap.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_couple_swap.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_extrabold.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_extrabold.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_my_work.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_my_work.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_generative_ai.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_generative_ai.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/xml_file_paths.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_buy_button.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_buy_button.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_bottom_nav_bar.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_bottom_nav_bar.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_badge_red.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_badge_red.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/layout_activity_download_share.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/layout/activity_download_share.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/anim_nav_fade_out.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/anim/nav_fade_out.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_common_border.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/common_border.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/font_poppins_medium.ttf.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/font/poppins_medium.ttf"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dot_active.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dot_active.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_star_filled.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_star_filled.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_splash_gradient.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_splash_gradient.xml"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_ic_logo_transparent.png.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/ic_logo_transparent.png"
+    },
+    {
+        "merged": "com.facechanger.faceswap.enhance.app-debug-75:/drawable_bg_dashed_border.xml.flat",
+        "source": "com.facechanger.faceswap.enhance.app-main-77:/drawable/bg_dashed_border.xml"
+    }
+]
