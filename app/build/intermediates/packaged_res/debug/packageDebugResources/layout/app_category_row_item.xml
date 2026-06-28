@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="4dp">
+
+    <include layout="@layout/app_section_header_layout" />
+
+    <LinearLayout
+        android:id="@+id/llImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="4dp">
+
+        <include
+            android:id="@+id/image1"
+            layout="@layout/app_grid_image_item" />
+
+        <include
+            android:id="@+id/image2"
+            layout="@layout/app_grid_image_item" />
+
+        <include
+            android:id="@+id/image3"
+            layout="@layout/app_grid_image_item" />
+
+    </LinearLayout>
+
+</LinearLayout>

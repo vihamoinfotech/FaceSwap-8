@@ -6,6 +6,75 @@
                 {
                     "source": "/Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5688ef4b4749b668dd252e713b496ab/transformed/core-splashscreen-1.0.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "395",
+                        "endColumns": "85",
+                        "endOffsets": "476"
+                    }
+                },
+                {
+                    "source": "/Users/vasusavaliya/.gradle/caches/9.3.1/transforms/ca0c5abab2a9e2d06d006460d435a473/transformed/appcompat-1.7.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "8,9,10,11,12,13,14,41",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "481,551,635,719,815,917,1019,4001",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "546,630,714,810,912,1014,1108,4085"
+                    }
+                },
+                {
+                    "source": "/Users/vasusavaliya/Documents/Face Swap 2/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "63",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "398"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "390"
+                    }
+                },
+                {
+                    "source": "/Users/vasusavaliya/.gradle/caches/9.3.1/transforms/773b1326b9a507c919f917256e8e6472/transformed/material-1.13.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,42,43,44,45,46,47,48,49",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1113,1188,1299,1388,1489,1596,1703,1802,1909,2012,2139,2227,2351,2453,2555,2671,2773,2887,3015,3131,3253,3389,3509,3643,3763,3875,4090,4207,4331,4461,4583,4721,4855,4971",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,126,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1183,1294,1383,1484,1591,1698,1797,1904,2007,2134,2222,2346,2448,2550,2666,2768,2882,3010,3126,3248,3384,3504,3638,3758,3870,3996,4202,4326,4456,4578,4716,4850,4966,5086"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/vasusavaliya/.gradle/daemon/9.3.1/com.facechanger.faceswap.enhance.app-mergeDebugResources-73:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/vasusavaliya/.gradle/caches/9.3.1/transforms/b5688ef4b4749b668dd252e713b496ab/transformed/core-splashscreen-1.0.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

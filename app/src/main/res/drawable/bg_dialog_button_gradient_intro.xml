@@ -4,8 +4,8 @@
 
     <gradient
         android:angle="0"
-        android:endColor="@color/dashed_border_gradient_start"
-        android:startColor="@color/dashed_border_gradient_start" />
+        android:endColor="@color/app_start_dashed_border_gradient"
+        android:startColor="@color/app_start_dashed_border_gradient" />
 
     <corners android:radius="100dp" />
 

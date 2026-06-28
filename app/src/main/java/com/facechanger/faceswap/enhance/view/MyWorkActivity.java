@@ -60,7 +60,7 @@ public class MyWorkActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_work);
+        setContentView(R.layout.app_face_activity_my_work_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.myWorkContent), false);
 
         loadAds();
@@ -142,7 +142,7 @@ public class MyWorkActivity extends BaseAppActivity {
                 }
                 startActivity(intent);
             } else if (item.isSuccess() && item.isUrlExpired()) {
-                Toast.makeText(MyWorkActivity.this, getString(R.string.MyWorkActivity_this_image_link_has), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyWorkActivity.this, getString(R.string.app_ai_face_this_image_link_has_text), Toast.LENGTH_SHORT).show();
             } else {
                 AppSystem.showDebugToast(MyWorkActivity.this,
                         "Status: " + item.getStatus() +
@@ -268,9 +268,9 @@ public class MyWorkActivity extends BaseAppActivity {
         AppDialogController.showRetryDialog(
                 this,
                 R.drawable.ic_trans_close,
-                getString(R.string.dialog_no_internet_title),
-                getString(R.string.dialog_no_internet_msg),
-                getString(R.string.dialog_retry_button),
+                getString(R.string.app_face_no_internet_title_text),
+                getString(R.string.app_no_internet_desc_text),
+                getString(R.string.app_api_retry_button_text),
                 new OnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {

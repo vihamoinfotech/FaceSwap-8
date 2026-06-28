@@ -20,7 +20,6 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.Glide;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.google.android.material.imageview.ShapeableImageView;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -28,7 +27,6 @@ import com.facechanger.faceswap.enhance.controller.OnDialogActionListener;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
 import com.facechanger.faceswap.enhance.utils.ImagePickerHelper;
 import com.facechanger.faceswap.enhance.utils.PermissionHelper;
-import com.facechanger.faceswap.enhance.utils.RewardedAdHelper;
 import com.facechanger.faceswap.enhance.utils.Tools;
 
 import java.io.File;
@@ -66,7 +64,7 @@ public class BackgroundReplaceActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bg_replace);
+        setContentView(R.layout.app_face_activity_background_replace);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.bgReplaceContent), false);
 
         loadAds();
@@ -163,11 +161,11 @@ public class BackgroundReplaceActivity extends BaseAppActivity {
     private void handleGenerate() {
         String prompt = etPrompt.getText().toString().trim();
         if (selectedImageUri == null) {
-            Toast.makeText(this, getString(R.string.BackgroundReplaceActivity_please_upload_a_photo), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_background_please_upload_a_photo_text), Toast.LENGTH_SHORT).show();
             return;
         }
         if (prompt.isEmpty()) {
-            Toast.makeText(this, getString(R.string.BackgroundReplaceActivity_please_describe_the_new), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_background_please_describe_the_new_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -178,7 +176,7 @@ public class BackgroundReplaceActivity extends BaseAppActivity {
             if (imageFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.BackgroundReplaceActivity_failed_to_read_image), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_background_failed_to_read_image_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }

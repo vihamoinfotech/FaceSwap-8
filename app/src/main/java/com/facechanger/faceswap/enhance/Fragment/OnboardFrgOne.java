@@ -43,7 +43,7 @@ public class OnboardFrgOne extends BaseAdFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.item_onboarding_page, container, false);
+        return inflater.inflate(R.layout.app_onboarding_page_item, container, false);
     }
 
     @Override
@@ -89,15 +89,15 @@ public class OnboardFrgOne extends BaseAdFragment {
         if (currentIndex != null && currentIndex == 1) {
 
             ivOnboardImage.setImageResource(R.drawable.first_on_board);
-            tvOnboardTitle.setText(R.string.onboarding_title_1);
-            tvOnboardSubtitle.setText(R.string.onboarding_subtitle_1);
+            tvOnboardTitle.setText(R.string.app_onboard_first_text);
+            tvOnboardSubtitle.setText(R.string.app_onboard_first_subtitle_text);
             btnNext.setVisibility(View.GONE);
             btnContinue.setVisibility(View.VISIBLE);
 
         } else {
             ivOnboardImage.setImageResource(R.drawable.second_on_board);
-            tvOnboardTitle.setText(R.string.onboarding_title_2);
-            tvOnboardSubtitle.setText(R.string.onboarding_subtitle_2);
+            tvOnboardTitle.setText(R.string.app_onboard_second_text);
+            tvOnboardSubtitle.setText(R.string.app_onboard_second_subtitle_text);
 
             btnNext.setVisibility(View.GONE);
             btnContinue.setVisibility(View.VISIBLE);
@@ -113,8 +113,8 @@ public class OnboardFrgOne extends BaseAdFragment {
 //            }
         }
 
-        btnContinue.setText(R.string.onboarding_continue);
-        btnNext.setText(R.string.onboarding_continue);
+        btnContinue.setText(R.string.app_onboard_continue_text);
+        btnNext.setText(R.string.app_onboard_continue_text);
 
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override

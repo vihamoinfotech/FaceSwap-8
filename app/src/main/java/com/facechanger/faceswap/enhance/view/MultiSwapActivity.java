@@ -20,7 +20,6 @@ import com.bumptech.glide.Glide;
 
 import com.faceenhance.facechanger.controller.AdManager;
 import com.google.android.material.imageview.ShapeableImageView;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -72,7 +71,7 @@ public class MultiSwapActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multi_swap);
+        setContentView(R.layout.app_face_activity_multi_swap_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.multiSwapContent), false);
 
         loadAds();
@@ -233,12 +232,12 @@ public class MultiSwapActivity extends BaseAppActivity {
 
     private void handleGenerateClick() {
         if (selectedTargetUri == null) {
-            Toast.makeText(this, getString(R.string.MultiSwapActivity_please_select_a_target), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_face_ai_please_select_a_target_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (selectedFaceUri == null) {
-            Toast.makeText(this, getString(R.string.MultiSwapActivity_please_add_your_face), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_ai_face_please_add_your_face_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -249,7 +248,7 @@ public class MultiSwapActivity extends BaseAppActivity {
             if (targetFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.MultiSwapActivity_failed_to_prepare_target), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_failed_to_prepare_target_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }
@@ -258,7 +257,7 @@ public class MultiSwapActivity extends BaseAppActivity {
             if (faceFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.MultiSwapActivity_failed_to_read_face), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_ai_face_failed_to_read_face_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }

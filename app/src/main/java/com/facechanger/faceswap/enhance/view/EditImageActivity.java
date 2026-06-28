@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -26,10 +25,8 @@ import com.facechanger.faceswap.enhance.utils.AppSystem;
 import com.facechanger.faceswap.enhance.utils.NetworkUtils;
 import com.facechanger.faceswap.enhance.utils.PermissionHelper;
 import com.facechanger.faceswap.enhance.utils.Tools;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
 import com.faceenhance.facechanger.controller.AdManager;
-import com.google.android.gms.ads.AdActivity;
 
 import java.io.File;
 import java.util.Stack;
@@ -62,7 +59,7 @@ public class EditImageActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_image);
+        setContentView(R.layout.app_face_activity_image_edit);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.editImageContent), false);
 
         String imageUrl = getIntent().getStringExtra("image_url");
@@ -104,7 +101,7 @@ public class EditImageActivity extends BaseAppActivity {
         if (isFinishing() || isDestroyed()) return;
         Glide.with(this)
                 .load(url)
-                .placeholder(R.color.card_background)
+                .placeholder(R.color.app_base_card_background)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(ivEditPreview);
         updateUndoButton();
@@ -160,7 +157,7 @@ public class EditImageActivity extends BaseAppActivity {
             String bgUrl = data.getStringExtra(BackgroundPickerActivity.EXTRA_SELECTED_BG_URL);
             if (bgUrl != null) {
                 editImageData.setSelectedBackgroundUrl(bgUrl);
-                Toast.makeText(this, getString(R.string.EditImageActivity_background_selected), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_edit_background_selected_text), Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -173,7 +170,7 @@ public class EditImageActivity extends BaseAppActivity {
             if (PermissionHelper.hasCameraAndGalleryPermission(this)) {
                 permissionDialog.dismiss();
                 permissionDialog = null;
-                Toast.makeText(this, getString(R.string.EditImageActivity_permission_granted), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_edit_permission_granted_text), Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -184,7 +181,7 @@ public class EditImageActivity extends BaseAppActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PermissionHelper.RC_CAMERA_GALLERY) {
             if (PermissionHelper.hasCameraAndGalleryPermission(this)) {
-                Toast.makeText(this, getString(R.string.EditImageActivity_permission_granted), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_edit_permission_granted_text), Toast.LENGTH_SHORT).show();
             } else {
                 showPermissionDeniedDialog();
             }
@@ -398,9 +395,9 @@ public class EditImageActivity extends BaseAppActivity {
             AppDialogController.showRetryDialog(
                     this,
                     R.drawable.ic_trans_close,
-                    getString(R.string.dialog_api_error_title),
-                    getString(R.string.dialog_api_error_msg),
-                    getString(R.string.dialog_retry_button),
+                    getString(R.string.app_api_error_title_text),
+                    getString(R.string.app_api_error_text),
+                    getString(R.string.app_api_retry_button_text),
                     new OnDialogActionListener() {
                         @Override
                         public void onPositiveClick() {
@@ -420,9 +417,9 @@ public class EditImageActivity extends BaseAppActivity {
         AppDialogController.showRetryDialog(
                 this,
                 R.drawable.ic_trans_close,
-                getString(R.string.dialog_no_internet_title),
-                getString(R.string.dialog_no_internet_msg),
-                getString(R.string.dialog_retry_button),
+                getString(R.string.app_face_no_internet_title_text),
+                getString(R.string.app_no_internet_desc_text),
+                getString(R.string.app_api_retry_button_text),
                 new OnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {

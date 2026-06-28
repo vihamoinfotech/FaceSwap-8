@@ -3,7 +3,7 @@
     android:shape="rectangle">
     <gradient
         android:angle="135"
-        android:startColor="@color/badge_popular_start"
-        android:endColor="@color/badge_popular_end" />
+        android:startColor="@color/app_start_badge_popular"
+        android:endColor="@color/app_end_badge_popular" />
     <corners android:radius="100dp" />
 </shape>

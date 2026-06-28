@@ -19,7 +19,6 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.Glide;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.google.android.material.imageview.ShapeableImageView;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -64,7 +63,7 @@ public class FaceEnhanceActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_face_enhance);
+        setContentView(R.layout.app_face_activity_enhance_face);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.faceEnhanceContent), false);
 
         loadAds();
@@ -162,7 +161,7 @@ public class FaceEnhanceActivity extends BaseAppActivity {
 
     private void handleGenerate() {
         if (selectedImageUri == null) {
-            Toast.makeText(this, getString(R.string.FaceEnhanceActivity_please_upload_a_photo), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_face_please_upload_a_photo_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -173,7 +172,7 @@ public class FaceEnhanceActivity extends BaseAppActivity {
             if (imageFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.FaceEnhanceActivity_failed_to_read_image), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_face_failed_to_read_image_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }

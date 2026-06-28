@@ -12,7 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
 import com.facechanger.faceswap.enhance.controller.OnDialogActionListener;
@@ -74,7 +73,7 @@ public class LottieLoadingActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lottie_loading);
+        setContentView(R.layout.app_face_common_activity_lottie_loading_screen);
         Tools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
 
         loadAds();
@@ -653,9 +652,9 @@ public class LottieLoadingActivity extends BaseAppActivity {
             AppDialogController.showRetryDialog(
                     this,
                     R.drawable.ic_trans_close,
-                    getString(R.string.dialog_api_error_title),
-                    getString(R.string.dialog_api_error_msg),
-                    getString(R.string.dialog_retry_button),
+                    getString(R.string.app_api_error_title_text),
+                    getString(R.string.app_api_error_text),
+                    getString(R.string.app_api_retry_button_text),
                     new OnDialogActionListener() {
                         @Override
                         public void onPositiveClick() {
@@ -680,9 +679,9 @@ public class LottieLoadingActivity extends BaseAppActivity {
         AppDialogController.showRetryDialog(
                 this,
                 R.drawable.ic_trans_close,
-                getString(R.string.dialog_no_internet_title),
-                getString(R.string.dialog_no_internet_msg),
-                getString(R.string.dialog_retry_button),
+                getString(R.string.app_face_no_internet_title_text),
+                getString(R.string.app_no_internet_desc_text),
+                getString(R.string.app_api_retry_button_text),
                 new OnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {
@@ -761,7 +760,7 @@ public class LottieLoadingActivity extends BaseAppActivity {
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                Toast.makeText(LottieLoadingActivity.this, getString(R.string.LottieLoadingActivity_please_wait_generation_in), Toast.LENGTH_SHORT).show();
+                Toast.makeText(LottieLoadingActivity.this, getString(R.string.app_loader_please_wait_generation_text), Toast.LENGTH_SHORT).show();
             }
         });
     }

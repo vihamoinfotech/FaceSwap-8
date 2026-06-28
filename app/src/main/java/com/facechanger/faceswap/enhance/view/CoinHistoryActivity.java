@@ -7,7 +7,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
 import com.facechanger.faceswap.enhance.utils.SessionManager;
@@ -39,7 +38,7 @@ public class CoinHistoryActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coin_history);
+        setContentView(R.layout.app_face_coin_history_activity);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.coinHistoryRoot), false);
 
         loadAds();

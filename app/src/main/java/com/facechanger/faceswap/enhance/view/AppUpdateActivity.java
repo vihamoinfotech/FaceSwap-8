@@ -31,7 +31,7 @@ public class AppUpdateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_update);
+        setContentView(R.layout.app_face_activity_app_update_screen);
         Tools.setEdgetoEdge(getWindow(), findViewById(R.id.appUpdateContent), false, true);
 
         String currentVersion = getIntent().getStringExtra(EXTRA_CURRENT_VERSION);

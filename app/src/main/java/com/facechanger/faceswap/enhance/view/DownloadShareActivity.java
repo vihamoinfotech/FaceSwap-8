@@ -20,7 +20,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
@@ -29,13 +28,11 @@ import androidx.media3.exoplayer.ExoPlayer;
 import androidx.media3.ui.PlayerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.AppSystem;
 import com.facechanger.faceswap.enhance.utils.SessionManager;
 import com.facechanger.faceswap.enhance.utils.Tools;
 import com.facechanger.faceswap.enhance.view.widget.BeforeAfterSliderView;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -86,7 +83,7 @@ public class DownloadShareActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_download_share);
+        setContentView(R.layout.app_face_activity_share_and_download);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.downloadShareContent), false);
 
         imageUrl = getIntent().getStringExtra(EXTRA_IMAGE_URL);
@@ -162,8 +159,8 @@ public class DownloadShareActivity extends BaseAppActivity {
 
             Glide.with(this)
                     .load(afterModel)
-                    .placeholder(R.color.card_background)
-                    .error(R.color.card_background)
+                    .placeholder(R.color.app_base_card_background)
+                    .error(R.color.app_base_card_background)
                     .into(ivResultPreview);
         }
     }
@@ -216,7 +213,7 @@ public class DownloadShareActivity extends BaseAppActivity {
 
     private void handleDownloadClick() {
         if (imageUrl == null || imageUrl.isEmpty()) {
-            Toast.makeText(this, getString(R.string.DownloadShareActivity_no_image_to_download), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_face_no_image_to_download_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -242,7 +239,7 @@ public class DownloadShareActivity extends BaseAppActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 downloadImageToGallery();
             } else {
-                Toast.makeText(this, getString(R.string.DownloadShareActivity_storage_permission_is_needed), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_face_storage_permission_is_needed_text), Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -264,7 +261,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                     runOnUiThread(() -> {
                         progressDialog.dismiss();
                         if (saved) {
-                            Toast.makeText(this, getString(R.string.download_saved), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, getString(R.string.app_face_gallery_save_text), Toast.LENGTH_SHORT).show();
                             // Show rating dialog if it hasn't been shown yet
                             if (!com.facechanger.faceswap.enhance.utils.RatingPrefs.hasShownRatingDialog(this)) {
                                 com.facechanger.faceswap.enhance.utils.RatingPrefs.markRatingDialogShown(this);
@@ -275,7 +272,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                                 }, 600);
                             }
                         } else {
-                            Toast.makeText(this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
                         }
                     });
                     return;
@@ -299,7 +296,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                 if (bitmap == null) {
                     runOnUiThread(() -> {
                         progressDialog.dismiss();
-                        Toast.makeText(this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
                     });
                     return;
                 }
@@ -312,7 +309,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                 runOnUiThread(() -> {
                     progressDialog.dismiss();
                     if (saved) {
-                        Toast.makeText(this, getString(R.string.download_saved), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.app_face_gallery_save_text), Toast.LENGTH_SHORT).show();
                         // Show rating dialog if it hasn't been shown yet
                         if (!com.facechanger.faceswap.enhance.utils.RatingPrefs.hasShownRatingDialog(this)) {
                             com.facechanger.faceswap.enhance.utils.RatingPrefs.markRatingDialogShown(this);
@@ -324,7 +321,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                             }, 600);
                         }
                     } else {
-                        Toast.makeText(this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -333,7 +330,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                 runOnUiThread(() -> {
                     progressDialog.dismiss();
                     AppSystem.showDebugToast(this, "Download error: " + e.getMessage());
-                    Toast.makeText(this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
                 });
             }
         });
@@ -569,11 +566,11 @@ public class DownloadShareActivity extends BaseAppActivity {
 
     private void handleShareClick() {
         if (imageUrl == null || imageUrl.isEmpty()) {
-            Toast.makeText(this, getString(R.string.DownloadShareActivity_no_image_to_share), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_face_no_image_to_share_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
-        Toast.makeText(this, getString(R.string.share_preparing), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.app_face_image_share_preparing_text), Toast.LENGTH_SHORT).show();
 
         executor.execute(() -> {
             try {
@@ -589,7 +586,7 @@ public class DownloadShareActivity extends BaseAppActivity {
 
                     try (OutputStream output = new FileOutputStream(shareFile)) {
                         if (!downloadUrlToStream(imageUrl, output)) {
-                            runOnUiThread(() -> Toast.makeText(this, getString(R.string.download_failed), Toast.LENGTH_SHORT).show());
+                            runOnUiThread(() -> Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show());
                             return;
                         }
                     }
@@ -629,7 +626,7 @@ public class DownloadShareActivity extends BaseAppActivity {
                 }
 
                 if (bitmap == null) {
-                    runOnUiThread(() -> Toast.makeText(this, getString(R.string.DownloadShareActivity_failed_to_prepare_image), Toast.LENGTH_SHORT)
+                    runOnUiThread(() -> Toast.makeText(this, getString(R.string.app_face_failed_to_prepare_image_text), Toast.LENGTH_SHORT)
                             .show());
                     return;
                 }

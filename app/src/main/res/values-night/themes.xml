@@ -1,16 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.FaceSwap" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-
-        <!-- Force default ProgressBar style -->
         <item name="android:progressBarStyle">@android:style/Widget.ProgressBar.Large</item>
-
-        <!-- Optional: remove weird tinting -->
         <item name="colorControlActivated">@color/white</item>
-
-        <item name="android:windowBackground">@color/background_dark</item>
-
+        <item name="android:windowBackground">@color/app_theme_dark_background</item>
     </style>
 </resources>

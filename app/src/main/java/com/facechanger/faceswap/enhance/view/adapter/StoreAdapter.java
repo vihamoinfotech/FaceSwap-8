@@ -41,7 +41,7 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_plan, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.app_plan_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -98,12 +98,12 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
         if (totalItems >= 3 && position == totalItems - 2) {
             // Most Popular badge
             holder.tvBadge.setVisibility(View.VISIBLE);
-            holder.tvBadge.setText(R.string.label_popular);
+            holder.tvBadge.setText(R.string.app_face_multi_popular_text);
             holder.tvBadge.setBackgroundResource(R.drawable.bg_badge_popular);
         } else if (totalItems >= 2 && position == totalItems - 1) {
             // Best Value badge
             holder.tvBadge.setVisibility(View.VISIBLE);
-            holder.tvBadge.setText(R.string.label_best_value);
+            holder.tvBadge.setText(R.string.face_app_best_value_text);
             holder.tvBadge.setBackgroundResource(R.drawable.bg_badge_best_value);
         } else {
             // Standard badge hidden

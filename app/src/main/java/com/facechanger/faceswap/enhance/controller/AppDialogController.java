@@ -21,7 +21,6 @@ import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.AppSystem;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
 import com.facechanger.faceswap.enhance.utils.PhotoTipsPrefs;
-import com.facechanger.faceswap.enhance.utils.RewardedAdHelper;
 import com.facechanger.faceswap.enhance.utils.StaticValue;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 
@@ -87,7 +86,7 @@ public final class AppDialogController {
         Dialog dialog = createBaseDialog(context);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_coins_required, null);
+                .inflate(R.layout.app_coins_required_dialog, null);
 
         // Bind views
         ImageView ivIcon = view.findViewById(R.id.ivDialogIcon);
@@ -156,7 +155,7 @@ public final class AppDialogController {
         dialog.setCanceledOnTouchOutside(false);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_retry, null);
+                .inflate(R.layout.app_retry_dialog, null);
 
         ImageView ivIcon = view.findViewById(R.id.ivDialogIcon);
         TextView tvTitle = view.findViewById(R.id.tvDialogTitle);
@@ -217,7 +216,7 @@ public final class AppDialogController {
         Dialog dialog = createBaseDialog(context);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_info_with_images, null);
+                .inflate(R.layout.app_info_with_images_dialog, null);
 
         // Bind views
         ImageView ivImage = view.findViewById(R.id.ivDialogImage);
@@ -290,9 +289,9 @@ public final class AppDialogController {
         showInfoWithImagesDialog(
                 context,
                 R.drawable.img_photo_tip_11,
-                context.getString(R.string.dialog_info_title),
-                context.getString(R.string.dialog_info_message),
-                context.getString(R.string.dialog_info_button),
+                context.getString(R.string.app_info_dialog_title_text),
+                context.getString(R.string.app_info_dialog_message_text),
+                context.getString(R.string.app_info_dialog_button_text),
                 new OnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {
@@ -330,7 +329,7 @@ public final class AppDialogController {
         Dialog dialog = createBaseDialog(context);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_permission_denied, null);
+                .inflate(R.layout.app_permission_denied_dialog, null);
 
         TextView tvTitle = view.findViewById(R.id.tvPermTitle);
         TextView tvMessage = view.findViewById(R.id.tvPermMessage);
@@ -389,7 +388,7 @@ public final class AppDialogController {
         dialog.setCanceledOnTouchOutside(false);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_server_busy, null);
+                .inflate(R.layout.app_server_busy_dialog, null);
 
         TextView btnRetry = view.findViewById(R.id.btnRetry);
         TextView btnGoBack = view.findViewById(R.id.btnGoBack);
@@ -437,7 +436,7 @@ public final class AppDialogController {
         dialog.setCanceledOnTouchOutside(false);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_rate_app, null);
+                .inflate(R.layout.app_rate_app_dialog, null);
 
         ImageView ivStar1 = view.findViewById(R.id.ivStar1);
         ImageView ivStar2 = view.findViewById(R.id.ivStar2);
@@ -545,7 +544,7 @@ public final class AppDialogController {
         Dialog dialog = createBaseDialog(context);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_exit, null);
+                .inflate(R.layout.app_exit_dialog, null);
 
         TextView btnYes = view.findViewById(R.id.btnExitYes);
         TextView btnNo  = view.findViewById(R.id.btnExitNo);
@@ -651,7 +650,7 @@ public final class AppDialogController {
         Dialog dialog = createBaseDialog(context);
 
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.dialog_insufficient_coins, null);
+                .inflate(R.layout.app_insufficient_coins_dialog, null);
 
         TextView tvDialogTitle = view.findViewById(R.id.tvDialogTitle);
         TextView tvCostInfo = view.findViewById(R.id.tvCostInfo);

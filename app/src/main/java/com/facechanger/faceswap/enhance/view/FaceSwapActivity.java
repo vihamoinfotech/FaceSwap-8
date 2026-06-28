@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,7 +19,6 @@ import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -104,7 +102,7 @@ public class FaceSwapActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_face_swap);
+        setContentView(R.layout.app_face_activity_face_swap_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
 
         loadAds();
@@ -237,12 +235,12 @@ public class FaceSwapActivity extends BaseAppActivity {
      */
     private void performFaceSwap() {
         if (!isEditImage && (imageUrl == null || imageUrl.isEmpty()) && selectedTargetUri == null) {
-            Toast.makeText(this, getString(R.string.FaceSwapActivity_please_select_a_target), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_ai_please_select_a_target_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (selectedFaceUri == null) {
-            Toast.makeText(this, getString(R.string.FaceSwapActivity_please_add_your_face), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_ai_please_add_your_face_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -266,7 +264,7 @@ public class FaceSwapActivity extends BaseAppActivity {
                     if (templateFile == null) {
                         runOnUiThread(() -> {
                             if (!USE_LOTTIE_LOADER) progressDialog.dismiss();
-                            Toast.makeText(this, getString(R.string.FaceSwapActivity_failed_to_prepare_template), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, getString(R.string.app_ai_failed_to_prepare_template_text), Toast.LENGTH_SHORT).show();
                         });
                         return;
                     }
@@ -276,7 +274,7 @@ public class FaceSwapActivity extends BaseAppActivity {
                 if (faceFile == null) {
                     runOnUiThread(() -> {
                         if (!USE_LOTTIE_LOADER) progressDialog.dismiss();
-                        Toast.makeText(this, getString(R.string.FaceSwapActivity_failed_to_read_face), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.app_face_failed_to_read_face_text), Toast.LENGTH_SHORT).show();
                     });
                     return;
                 }
@@ -366,7 +364,7 @@ public class FaceSwapActivity extends BaseAppActivity {
                 Log.e(TAG, "File preparation failed", e);
                 runOnUiThread(() -> {
                     if (!USE_LOTTIE_LOADER) progressDialog.dismiss();
-                    Toast.makeText(this, getString(R.string.FaceSwapActivity_an_error_occurred_please),
+                    Toast.makeText(this, getString(R.string.app_ai_face_error_occurred_please_text),
                             Toast.LENGTH_SHORT).show();
                 });
             }
@@ -415,7 +413,7 @@ public class FaceSwapActivity extends BaseAppActivity {
         progressDialog.dismiss();
         cleanupTempFiles(f1, f2);
         Log.e(TAG, "API error: " + errorMessage);
-        Toast.makeText(FaceSwapActivity.this, getString(R.string.FaceSwapActivity_operation_failed_please_try), Toast.LENGTH_SHORT).show();
+        Toast.makeText(FaceSwapActivity.this, getString(R.string.app_ai_face_operation_failed_please_try_again_text), Toast.LENGTH_SHORT).show();
     }
 
     // ──────────────────────────────────────────────
@@ -513,8 +511,8 @@ public class FaceSwapActivity extends BaseAppActivity {
 
     private void setupAddFaceDashedGradientBorder() {
         View addFace = findViewById(R.id.btnAddFace);
-        int start = ContextCompat.getColor(this, R.color.dashed_border_gradient_start);
-        int end = ContextCompat.getColor(this, R.color.dashed_border_gradient_end);
+        int start = ContextCompat.getColor(this, R.color.app_start_dashed_border_gradient);
+        int end = ContextCompat.getColor(this, R.color.app_end_dashed_border_gradient);
         addFace.setBackground(new DashedGradientBorderDrawable(
                 getResources(),
                 start,
@@ -536,8 +534,8 @@ public class FaceSwapActivity extends BaseAppActivity {
 
             Glide.with(this)
                     .load(GlideHelper.authorizedUrl(imageUrl))
-                    .placeholder(R.color.card_background)
-                    .error(R.color.card_background)
+                    .placeholder(R.color.app_base_card_background)
+                    .error(R.color.app_base_card_background)
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(ivMainPreview);
@@ -546,7 +544,7 @@ public class FaceSwapActivity extends BaseAppActivity {
             if (ivMainPreview != null) {
                 ivMainPreview.setVisibility(View.GONE);
                 Glide.with(ivMainPreview).clear(ivMainPreview);
-                int bg = ContextCompat.getColor(this, R.color.card_background);
+                int bg = ContextCompat.getColor(this, R.color.app_base_card_background);
                 ivMainPreview.setBackgroundColor(bg);
             }
         }

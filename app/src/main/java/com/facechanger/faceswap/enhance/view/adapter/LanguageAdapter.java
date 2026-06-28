@@ -57,7 +57,7 @@ public class LanguageAdapter extends RecyclerView.Adapter<LanguageAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_language, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.app_language_item, parent, false);
         return new ViewHolder(view);
     }
 

@@ -23,7 +23,7 @@ public class SettingsActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.app_face_activity_settings_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
 
         loadAds();
@@ -46,7 +46,7 @@ public class SettingsActivity extends BaseAppActivity {
             try {
                 startActivity(intent);
             } catch (ActivityNotFoundException e) {
-                Toast.makeText(this, getString(R.string.SettingsActivity_no_email_app_found), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_face_no_email_app_found_text), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -63,13 +63,13 @@ public class SettingsActivity extends BaseAppActivity {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
             } catch (ActivityNotFoundException e) {
-                Toast.makeText(this, getString(R.string.SettingsActivity_coming_soon), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_open_coming_soon_text), Toast.LENGTH_SHORT).show();
             }
         });
 
-        findViewById(R.id.llTerms).setOnClickListener(v -> openBrowser("https://prod-faceswapstudioai.runasp.net/terms.html"));
+        findViewById(R.id.llTerms).setOnClickListener(v -> openBrowser("https://resumebuilder-2.blogspot.com/2026/06/terms-faceswap-2.html"));
 
-        findViewById(R.id.llPrivacy).setOnClickListener(v -> openBrowser("https://prod-faceswapstudioai.runasp.net/privacy-policy.html"));
+        findViewById(R.id.llPrivacy).setOnClickListener(v -> openBrowser("https://resumebuilder-2.blogspot.com/2026/06/privacy-faceswap-2.html"));
 
         // Coins Section
         View sectionCoins = findViewById(R.id.sectionCoins);
@@ -107,7 +107,7 @@ public class SettingsActivity extends BaseAppActivity {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, getString(R.string.SettingsActivity_no_browser_found), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_open_no_browser_found_text), Toast.LENGTH_SHORT).show();
         }
     }
 }

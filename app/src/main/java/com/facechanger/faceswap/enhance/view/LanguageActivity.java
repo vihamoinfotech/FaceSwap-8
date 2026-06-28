@@ -1,16 +1,13 @@
 package com.facechanger.faceswap.enhance.view;
 
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.facechanger.faceswap.enhance.R;
@@ -18,7 +15,6 @@ import com.facechanger.faceswap.enhance.utils.LocaleHelper;
 import com.facechanger.faceswap.enhance.utils.LanguagePrefs;
 import com.facechanger.faceswap.enhance.utils.Tools;
 import com.facechanger.faceswap.enhance.view.adapter.LanguageAdapter;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 
 import java.util.ArrayList;
@@ -42,7 +38,7 @@ public class LanguageActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_language);
+        setContentView(R.layout.app_face_activity_language);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
 
         // Load premium layout ads automatically via base class

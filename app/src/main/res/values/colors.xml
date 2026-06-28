@@ -1,88 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- ── Neutrals ── -->
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <!-- ── Surface palette ── -->
-    <color name="background_dark">#0A0A14</color>
-    <color name="surface_base">#0A0A14</color>
-    <color name="surface_raised">#13131F</color>
-    <color name="surface_elevated">#1C1C2E</color>
-    <color name="card_background">#14141F</color>
-    <color name="card_background_alt">#1C1C2E</color>
-    <color name="border_color">#2A2A42</color>
-    <color name="border_soft">#1E1E36</color>
-
-    <!-- ── Text ── -->
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#A0A0C0</color>
-    <color name="text_tertiary">#606080</color>
-    <color name="text_disabled">#404060</color>
-
-    <!-- ── Brand / accent ── -->
-    <color name="brand_primary">#7C5CFF</color>
-    <color name="brand_secondary">#FF4E8C</color>
-    <color name="brand_tertiary">#4C55FF</color>
-
-    <!-- ── Legacy aliases (kept for compatibility) ── -->
-    <color name="orange_primary">#FF8A3D</color>
-    <color name="orange_secondary">#FF6B35</color>
-    <color name="purple_main">#7C5CFF</color>
-    <color name="purple_dark">#15102E</color>
-    <color name="coin_yellow">#FFD700</color>
-    <color name="nav_active">#7C5CFF</color>
-    <color name="app_style_primary">#FF4E8C</color>
-
-    <!-- ── Gradient anchors ── -->
-    <color name="dashed_border_gradient_start">#7C5CFF</color>
-    <color name="dashed_border_gradient_end">#FF4E8C</color>
-    <color name="gradient_start">#7C5CFF</color>
-    <color name="gradient_middle">#B45CFF</color>
-    <color name="gradient_end">#FF4E8C</color>
-
-    <!-- ── Store / plan ── -->
-    <color name="store_card_highlight">#1A1A30</color>
-    <color name="badge_popular_start">#FFB84A</color>
-    <color name="badge_popular_end">#FF4E8C</color>
-    <color name="badge_best_value_start">#4C55FF</color>
-    <color name="badge_best_value_end">#7C5CFF</color>
-
-    <!-- ── Semantic ── -->
-    <color name="success">#4AE3B5</color>
-    <color name="warning">#FFB84A</color>
-    <color name="error">#FF5C7A</color>
-    <color name="info">#4AA7FF</color>
-
-    <!-- ── Overlay helpers ── -->
-    <color name="overlay_scrim">#B3000000</color>
-    <color name="overlay_light">#33FFFFFF</color>
-    <color name="overlay_medium">#66000000</color>
-    <color name="divider_subtle">#1E1E36</color>
+    <color name="app_theme_dark_background">#0A0A14</color>
+    <color name="app_screen_base_surface">#0A0A14</color>
+    <color name="app_base_raised_surface">#13131F</color>
+    <color name="app_elevated_surface">#1C1C2E</color>
+    <color name="app_primary_brand">#7C5CFF</color>
+    <color name="app_secondary_brand">#FF4E8C</color>
+    <color name="app_tertiary_brand">#4C55FF</color>
+    <color name="app_item_border_color">#2A2A42</color>
+    <color name="app_soft_border">#1E1E36</color>
+    <color name="app_start_badge_best_value">#4C55FF</color>
+    <color name="app_end_badge_best_value">#7C5CFF</color>
+    <color name="app_primary_orange">#FF8A3D</color>
+    <color name="app_secondary_orange">#FF6B35</color>
+    <color name="app_success_color">#4AE3B5</color>
+    <color name="app_warning_color">#FFB84A</color>
+    <color name="app_error_color">#FF5C7A</color>
+    <color name="app_info_color">#4AA7FF</color>
+    <color name="app_yellow_coin">#FFD700</color>
+    <color name="app_active_navbar">#7C5CFF</color>
+    <color name="app_primary_style">#FF4E8C</color>
+    <color name="app_start_dashed_border_gradient">#7C5CFF</color>
+    <color name="app_end_dashed_border_gradient">#FF4E8C</color>
+    <color name="app_main_purple">#7C5CFF</color>
+    <color name="app_dark_purple">#15102E</color>
+    <color name="app_tertiary_text">#606080</color>
+    <color name="app_secondary_text">#A0A0C0</color>
+    <color name="app_primary_text">#FFFFFF</color>
+    <color name="app_disabled_text">#404060</color>
 
 
-    <!-- ── Paywall (Stitch "Lumina Face AI Premium" — exact MCP design tokens) ── -->
-    <color name="paywall_bg">#0e141a</color>                <!-- background / surface -->
-    <color name="paywall_glass_fill">#1AA855F7</color>       <!-- rgba(168,85,247, 0.10) from .glass-panel CSS -->
-    <color name="paywall_glass_stroke">#26FFFFFF</color>     <!-- rgba(255,255,255, 0.15) from .glass-panel CSS -->
-    <color name="paywall_primary">#ddb7ff</color>            <!-- primary token -->
-    <color name="paywall_primary_light">#D8B4FE</color>     <!-- CTA gradient endpoint (from HTML) -->
-    <color name="paywall_primary_container">#b76dff</color>  <!-- primary-container token -->
-    <color name="paywall_on_primary">#490080</color>         <!-- on-primary token (Pro header text) -->
-    <color name="paywall_on_primary_fixed">#2c0051</color>   <!-- on-primary-fixed token (CTA button text) -->
-    <color name="paywall_on_surface">#dde3eb</color>         <!-- on-surface token -->
-    <color name="paywall_on_surface_variant">#cfc2d6</color> <!-- on-surface-variant token -->
-    <color name="paywall_outline">#988d9f</color>            <!-- outline token -->
-    <color name="paywall_outline_variant">#D7D7D7</color>    <!-- outline-variant token -->
-    <color name="paywall_pro_column_bg">#33ddb7ff</color>    <!-- primary at 20% opacity -->
-    <color name="paywall_pro_column_border">#66ddb7ff</color><!-- primary at 40% opacity -->
-    <color name="paywall_row_divider">#0DFFFFFF</color>      <!-- rgba(255,255,255, 0.05) -->
-    <color name="paywall_footer_bg">#E60e141a</color>        <!-- background at 90% opacity -->
-    <color name="paywall_footer_border">#1AFFFFFF</color>    <!-- rgba(255,255,255, 0.10) -->
-    <color name="paywall_surface_container">#1a2026</color>  <!-- surface-container token -->
+    <color name="app_glass_fill_paywall">#1AA855F7</color>
+    <color name="app_glass_stroke_paywall">#26FFFFFF</color>
+    <color name="app_footer_border_paywall">#1AFFFFFF</color>
+    <color name="app_primary_light_paywall">#D8B4FE</color>
+    <color name="app_surface_container_paywall">#1a2026</color>
+    <color name="app_pro_column_bg_paywall">#33ddb7ff</color>
+    <color name="app_on_primary_paywall">#490080</color>
+    <color name="app_outline_paywall">#988d9f</color>
+    <color name="app_on_surface_variant_paywall">#cfc2d6</color>
+    <color name="app_on_primary_fixed_paywall">#2c0051</color>
+    <color name="app_outline_variant_paywall">#D7D7D7</color>
+    <color name="app_on_surface_paywall">#dde3eb</color>
+    <color name="app_pro_column_border_paywall">#66ddb7ff</color>
+    <color name="app_primary_container_paywall">#b76dff</color>
+    <color name="app_row_divider_paywall">#0DFFFFFF</color>
+    <color name="app_primary_paywall">#ddb7ff</color>
+    <color name="app_footer_bg_paywall">#E60e141a</color>
+    <color name="app_bg_paywall">#0e141a</color>
 
 
+    <color name="app_start_badge_popular">#FFB84A</color>
+    <color name="app_end_badge_popular">#FF4E8C</color>
+    <color name="app_highlight_store_card">#1A1A30</color>
+    <color name="app_start_gradient">#7C5CFF</color>
+    <color name="app_middle_gradient">#B45CFF</color>
+    <color name="app_end_gradient">#FF4E8C</color>
+    <color name="app_base_card_background">#14141F</color>
+    <color name="app_alt_card_background">#1C1C2E</color>
+    <color name="app_scrim_overlay">#B3000000</color>
+    <color name="app_light_overlay">#33FFFFFF</color>
+    <color name="app_medium_overlay">#66000000</color>
+    <color name="app_subtle_divider">#1E1E36</color>
 
+
+                <!--    ads Color-->
 
     <color name="ads_text_color">#FFFFFF</color>
     <color name="ads_cta_text_color">#FFFFFF</color>

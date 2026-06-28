@@ -19,7 +19,6 @@ import androidx.annotation.NonNull;
 import com.bumptech.glide.Glide;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.google.android.material.imageview.ShapeableImageView;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -73,7 +72,7 @@ public class CoupleFaceSwapActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_couple_swap);
+        setContentView(R.layout.app_face_activity_swap_couple);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.coupleSwapContent), false);
 
         loadAds();
@@ -233,11 +232,11 @@ public class CoupleFaceSwapActivity extends BaseAppActivity {
 
     private void handleGenerateClick() {
         if (selectedTargetUri == null) {
-            Toast.makeText(this, getString(R.string.CoupleFaceSwapActivity_please_select_the_coupletar), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_couple_face_please_select_the_couple_text), Toast.LENGTH_SHORT).show();
             return;
         }
         if (selectedFaceUri == null) {
-            Toast.makeText(this, getString(R.string.CoupleFaceSwapActivity_please_upload_your_face), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_couple_face_please_upload_your_face_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -248,7 +247,7 @@ public class CoupleFaceSwapActivity extends BaseAppActivity {
             if (targetFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.CoupleFaceSwapActivity_failed_to_prepare_target), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_couple_face_failed_to_prepare_target_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }
@@ -257,7 +256,7 @@ public class CoupleFaceSwapActivity extends BaseAppActivity {
             if (faceFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
-                    Toast.makeText(this, getString(R.string.CoupleFaceSwapActivity_failed_to_read_face), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_couple_face_failed_to_read_face_text), Toast.LENGTH_SHORT).show();
                 });
                 return;
             }

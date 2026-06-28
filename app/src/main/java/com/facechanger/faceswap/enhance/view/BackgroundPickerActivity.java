@@ -49,7 +49,7 @@ public class BackgroundPickerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.anim.slide_up_enter, 0);
-        setContentView(R.layout.activity_background_picker);
+        setContentView(R.layout.app_face_background_picker);
         Tools.setStatusBarBleed(getWindow(), findViewById(android.R.id.content), false);
 
         setupToolbar();
@@ -95,7 +95,7 @@ public class BackgroundPickerActivity extends AppCompatActivity {
         @Override
         public VH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View v = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.item_background_grid, parent, false);
+                    .inflate(R.layout.app_background_grid_item, parent, false);
             return new VH(v);
         }
 
@@ -104,7 +104,7 @@ public class BackgroundPickerActivity extends AppCompatActivity {
             String url = urls.get(position);
             Glide.with(holder.iv.getContext())
                     .load(url)
-                    .placeholder(R.color.card_background)
+                    .placeholder(R.color.app_base_card_background)
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(holder.iv);

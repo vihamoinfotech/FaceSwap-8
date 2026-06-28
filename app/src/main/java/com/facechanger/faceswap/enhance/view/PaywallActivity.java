@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
@@ -80,7 +79,7 @@ public class PaywallActivity extends AppCompatActivity {
         // Force LTR to prevent Google Play strings from getting corrupted in RTL
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
-        setContentView(R.layout.activity_paywall);
+        setContentView(R.layout.app_face_activity_paywall_screen);
 
         Tools.setEdgetoEdge(getWindow(), findViewById(R.id.paywallRoot), false, true);
 

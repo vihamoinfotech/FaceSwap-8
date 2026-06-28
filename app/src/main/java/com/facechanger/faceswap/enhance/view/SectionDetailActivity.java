@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.model.SectionData;
@@ -39,7 +38,7 @@ public class SectionDetailActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section_detail);
+        setContentView(R.layout.app_face_activity_section_detail_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.sectionDetailContent), false);
 
         loadAds();
@@ -93,7 +92,7 @@ public class SectionDetailActivity extends BaseAppActivity {
         @NonNull
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_grid_detail, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.app_grid_detail_item, parent, false);
             return new ViewHolder(view);
         }
 
@@ -106,7 +105,7 @@ public class SectionDetailActivity extends BaseAppActivity {
             // Load with auth header for API template images
             Glide.with(holder.imageView.getContext())
                     .load(GlideHelper.authorizedUrl(url))
-                    .placeholder(R.color.card_background)
+                    .placeholder(R.color.app_base_card_background)
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(holder.imageView);

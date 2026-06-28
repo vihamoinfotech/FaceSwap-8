@@ -58,7 +58,7 @@ public final class VideoPickerHelper {
      */
     public static void show(Context context, Runnable onCamera, Runnable onGallery) {
         BottomSheetDialog sheet = new BottomSheetDialog(context);
-        sheet.setContentView(R.layout.dialog_video_source);
+        sheet.setContentView(R.layout.app_video_source_dialog);
 
         // Clear the default Material container background so our rounded drawable shows
         View container = sheet.findViewById(com.google.android.material.R.id.design_bottom_sheet);

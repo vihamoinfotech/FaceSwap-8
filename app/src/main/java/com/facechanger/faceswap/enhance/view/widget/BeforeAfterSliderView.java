@@ -3,7 +3,6 @@ package com.facechanger.faceswap.enhance.view.widget;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
@@ -24,8 +23,6 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.facechanger.faceswap.enhance.R;
-
-import java.io.File;
 
 /**
  * Production-quality "Before / After" image comparison slider.
@@ -92,7 +89,7 @@ public class BeforeAfterSliderView extends FrameLayout {
     // ── Initialisation ──
 
     private void init(Context context) {
-        LayoutInflater.from(context).inflate(R.layout.view_before_after_slider, this, true);
+        LayoutInflater.from(context).inflate(R.layout.app_face_before_after_slider_view, this, true);
         setClickable(true);
         setFocusable(true);
     }

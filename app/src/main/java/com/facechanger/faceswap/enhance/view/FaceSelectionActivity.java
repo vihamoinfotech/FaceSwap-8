@@ -33,7 +33,7 @@ public class FaceSelectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_face_selection);
+        setContentView(R.layout.app_face_activity_selection_face);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSelectionContent), false);
 
         setupToolbar();
@@ -85,7 +85,7 @@ public class FaceSelectionActivity extends AppCompatActivity {
         @NonNull
         @Override
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_face_grid, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.app_face_grid_item, parent, false);
             return new ViewHolder(view);
         }
 
@@ -93,13 +93,13 @@ public class FaceSelectionActivity extends AppCompatActivity {
         public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             Glide.with(holder.imageView.getContext())
                     .load(imageUrls.get(position))
-                    .placeholder(R.color.card_background)
+                    .placeholder(R.color.app_base_card_background)
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .centerCrop()
                     .into(holder.imageView);
 
             holder.imageView.setOnClickListener(v -> {
-                Toast.makeText(FaceSelectionActivity.this, getString(R.string.FaceSelectionActivity_face_selected), Toast.LENGTH_SHORT).show();
+                Toast.makeText(FaceSelectionActivity.this, getString(R.string.app_face_ai_face_selected_text), Toast.LENGTH_SHORT).show();
                 finish();
             });
         }

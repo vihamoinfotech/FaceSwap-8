@@ -7,5 +7,5 @@
         android:centerY="0.47"
         android:startColor="#3A1D5C"
         android:centerColor="#1A0D3A"
-        android:endColor="@color/background_dark" />
+        android:endColor="@color/app_theme_dark_background" />
 </shape>

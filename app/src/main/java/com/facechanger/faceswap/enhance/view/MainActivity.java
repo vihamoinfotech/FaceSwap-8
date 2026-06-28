@@ -4,16 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.facechanger.faceswap.enhance.controller.AppDialogController;
-import com.facechanger.faceswap.enhance.controller.OnCoinDialogListener;
-import com.facechanger.faceswap.enhance.utils.ImagePickerHelper;
-import com.facechanger.faceswap.enhance.utils.PermissionHelper;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.model.api.TemplateCategory;
@@ -64,7 +58,7 @@ public class MainActivity extends BaseAppActivity {
         super.onCreate(savedInstanceState);
 
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.app_face_activity_main_screen);
         Tools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), false, true);
 
         shimmerViewContainer = findViewById(R.id.shimmer_view_container);
@@ -176,7 +170,7 @@ public class MainActivity extends BaseAppActivity {
                 if (rvMainCategories != null) rvMainCategories.setVisibility(View.VISIBLE);
 
                 Log.e(TAG, "Failed to load templates: " + errorMessage);
-                Toast.makeText(MainActivity.this, getString(R.string.MainActivity_could_not_load_templates),
+                Toast.makeText(MainActivity.this, getString(R.string.app_main_app_could_not_load_templates_text),
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -337,7 +331,7 @@ public class MainActivity extends BaseAppActivity {
 
         if (!showAds) {
             // Reduce bottom padding when no ads are shown
-            int paddingBottom = getResources().getDimensionPixelSize(R.dimen.main_scroll_content_bottom_padding_no_ads);
+            int paddingBottom = getResources().getDimensionPixelSize(R.dimen.app_clip_home_main_scroll_content_bottom_padding_points_no_ads);
             if (rvMainCategories != null) {
                 rvMainCategories.setPadding(
                     rvMainCategories.getPaddingLeft(),

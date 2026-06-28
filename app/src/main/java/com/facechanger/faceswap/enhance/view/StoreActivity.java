@@ -48,7 +48,7 @@ public class StoreActivity extends AppCompatActivity implements PurchaseListener
         // Force LTR layout direction to prevent Google Play strings from getting corrupted in RTL
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
         
-        setContentView(R.layout.activity_store);
+        setContentView(R.layout.app_face_activity_store_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
 
         initViews();
@@ -125,7 +125,7 @@ public class StoreActivity extends AppCompatActivity implements PurchaseListener
             showLoading(false);
             if (packages.isEmpty()) {
                 if (llRetry != null) llRetry.setVisibility(View.VISIBLE);
-                if (tvErrorMessage != null) tvErrorMessage.setText(R.string.error_fetching_offerings);
+                if (tvErrorMessage != null) tvErrorMessage.setText(R.string.app_face_coins_fetching_offerings_error_text);
             } else {
                 if (llRetry != null) llRetry.setVisibility(View.GONE);
 
@@ -154,7 +154,7 @@ public class StoreActivity extends AppCompatActivity implements PurchaseListener
     public void onPurchaseVerified() {
         runOnUiThread(() -> {
             showLoading(false);
-            showSnackbar(getString(R.string.purchase_success));
+            showSnackbar(getString(R.string.app_face_coins_purchase_success_text));
             finish();
         });
     }
@@ -173,9 +173,9 @@ public class StoreActivity extends AppCompatActivity implements PurchaseListener
             showLoading(false);
             if (rvStore.getAdapter() == null || rvStore.getAdapter().getItemCount() == 0) {
                 if (llRetry != null) llRetry.setVisibility(View.VISIBLE);
-                if (tvErrorMessage != null) tvErrorMessage.setText(getString(R.string.purchase_error, message));
+                if (tvErrorMessage != null) tvErrorMessage.setText(getString(R.string.app_coins_purchase_failed_text, message));
             } else {
-                showSnackbar(getString(R.string.purchase_error, message));
+                showSnackbar(getString(R.string.app_coins_purchase_failed_text, message));
             }
         });
     }

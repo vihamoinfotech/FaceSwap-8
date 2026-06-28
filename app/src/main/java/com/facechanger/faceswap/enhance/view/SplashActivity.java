@@ -25,7 +25,6 @@ import com.facechanger.faceswap.enhance.utils.ApiRepository;
 import com.facechanger.faceswap.enhance.utils.NetworkUtils;
 import com.facechanger.faceswap.enhance.utils.SessionManager;
 import com.facechanger.faceswap.enhance.utils.Tools;
-import com.google.android.gms.ads.AdActivity;
 
 /**
  * Splash screen shown on app launch.
@@ -58,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.app_face_activity_splash_screen);
         Tools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
 
         startTime = System.currentTimeMillis();
@@ -103,8 +102,8 @@ public class SplashActivity extends AppCompatActivity {
             Log.w(TAG, "No internet connection on splash.");
             showRetryDialog(
                     R.drawable.ic_trans_close,
-                    getString(R.string.dialog_no_internet_title),
-                    getString(R.string.dialog_no_internet_msg));
+                    getString(R.string.app_face_no_internet_title_text),
+                    getString(R.string.app_no_internet_desc_text));
             return;
         }
 
@@ -164,10 +163,10 @@ public class SplashActivity extends AppCompatActivity {
                             GlobleMMKVManager.getInstance().putInt(StaticValue.APP_EXP, 1);
 
                             Log.w(TAG, "Splash data returned isSuccess=false: " + response.getMessage());
-                            showRetryDialog(R.drawable.ic_trans_close, getString(R.string.dialog_api_error_title),
+                            showRetryDialog(R.drawable.ic_trans_close, getString(R.string.app_api_error_title_text),
                                     response.getMessage() != null && !response.getMessage().isEmpty()
                                             ? response.getMessage()
-                                            : getString(R.string.dialog_api_error_msg));
+                                            : getString(R.string.app_api_error_text));
                         }
                     }
 
@@ -176,8 +175,8 @@ public class SplashActivity extends AppCompatActivity {
                         Log.e(TAG, "Splash data error: " + errorMessage);
                         showRetryDialog(
                                 R.drawable.ic_trans_close,
-                                getString(R.string.dialog_api_error_title),
-                                getString(R.string.dialog_api_error_msg));
+                                getString(R.string.app_api_error_title_text),
+                                getString(R.string.app_api_error_text));
                     }
                 });
             }
@@ -193,7 +192,7 @@ public class SplashActivity extends AppCompatActivity {
                 iconRes,
                 title,
                 message,
-                getString(R.string.dialog_retry_button),
+                getString(R.string.app_api_retry_button_text),
                 new OnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {

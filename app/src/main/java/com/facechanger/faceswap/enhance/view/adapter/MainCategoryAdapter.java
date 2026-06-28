@@ -64,11 +64,11 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         if (viewType == TYPE_HEADER) {
-            View view = inflater.inflate(R.layout.item_home_header, parent, false);
+            View view = inflater.inflate(R.layout.app_home_header_item, parent, false);
             return new HeaderViewHolder(view);
         }
 
-        View view = inflater.inflate(R.layout.item_category_row, parent, false);
+        View view = inflater.inflate(R.layout.app_category_row_item, parent, false);
         return new CategoryViewHolder(view);
     }
 
@@ -148,8 +148,8 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                 Glide.with(context)
                         .load(GlideHelper.authorizedUrl(imageUrl))
-                        .placeholder(R.color.card_background)
-                        .error(R.color.card_background)
+                        .placeholder(R.color.app_base_card_background)
+                        .error(R.color.app_base_card_background)
                         .transition(DrawableTransitionOptions.withCrossFade())
                         .centerCrop()
                         .into(imageView);

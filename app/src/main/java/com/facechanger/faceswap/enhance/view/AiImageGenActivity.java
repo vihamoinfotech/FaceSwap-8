@@ -17,7 +17,6 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
 import com.bumptech.glide.Glide;
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppDialogController;
@@ -28,7 +27,6 @@ import com.facechanger.faceswap.enhance.utils.ApiRepository;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
 import com.facechanger.faceswap.enhance.utils.ImagePickerHelper;
 import com.facechanger.faceswap.enhance.utils.PermissionHelper;
-import com.facechanger.faceswap.enhance.utils.RewardedAdHelper;
 import com.facechanger.faceswap.enhance.utils.Tools;
 import com.faceenhance.facechanger.controller.AdManager;
 
@@ -65,7 +63,7 @@ public class AiImageGenActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ai_image_gen);
+        setContentView(R.layout.app_face_ai_activity_image_generation);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
 
         loadAds();
@@ -182,11 +180,11 @@ public class AiImageGenActivity extends BaseAppActivity {
     private void performGenerate() {
         String prompt = etPrompt.getText().toString().trim();
         if (prompt.isEmpty()) {
-            Toast.makeText(this, getString(R.string.AiImageGenActivity_please_enter_a_prompt), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_ai_please_enter_a_prompt_text), Toast.LENGTH_SHORT).show();
             return;
         }
         if (selectedFaceUri == null) {
-            Toast.makeText(this, getString(R.string.AiImageGenActivity_please_upload_your_image), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_ai_please_upload_your_image_text), Toast.LENGTH_SHORT).show();
             return;
         }
         
@@ -200,7 +198,7 @@ public class AiImageGenActivity extends BaseAppActivity {
                 if (imageFile == null) {
                     runOnUiThread(() -> {
                         if (!USE_LOTTIE_LOADER) showLoader(false);
-                        Toast.makeText(this, getString(R.string.AiImageGenActivity_failed_to_read_image), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.app_ai_failed_to_read_image_text), Toast.LENGTH_SHORT).show();
                     });
                     return;
                 }
@@ -252,7 +250,7 @@ public class AiImageGenActivity extends BaseAppActivity {
                                 showLoader(false);
                                 cleanupTempFiles(imageFile);
                                 Log.e(TAG, "Image generation error: " + errorMessage);
-                                Toast.makeText(AiImageGenActivity.this, getString(R.string.AiImageGenActivity_image_generation_failed_please),
+                                Toast.makeText(AiImageGenActivity.this, getString(R.string.app_ai_photo_generation_failed_please_text),
                                         Toast.LENGTH_SHORT).show();
                             }
                         });
@@ -263,7 +261,7 @@ public class AiImageGenActivity extends BaseAppActivity {
                 Log.e(TAG, "File preparation failed", e);
                 runOnUiThread(() -> {
                     if (!USE_LOTTIE_LOADER) showLoader(false);
-                    Toast.makeText(this, getString(R.string.AiImageGenActivity_an_error_occurred_please), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.app_ai_an_error_occurred_please_text), Toast.LENGTH_SHORT).show();
                 });
             }
         });
@@ -317,7 +315,7 @@ public class AiImageGenActivity extends BaseAppActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PermissionHelper.RC_CAMERA_GALLERY) {
             if (PermissionHelper.hasCameraAndGalleryPermission(this)) {
-                Toast.makeText(this, getString(R.string.AiImageGenActivity_permission_granted), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.app_ai_permission_granted_text), Toast.LENGTH_SHORT).show();
             } else {
                 showPermissionDeniedDialog();
             }

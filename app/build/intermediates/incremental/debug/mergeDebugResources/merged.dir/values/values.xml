@@ -821,22 +821,69 @@
     <color name="ads_text_color">#FFFFFF</color>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
-    <color name="app_style_primary">#FF4E8C</color>
-    <color name="background_dark">#0A0A14</color>
+    <color name="app_active_navbar">#7C5CFF</color>
+    <color name="app_alt_card_background">#1C1C2E</color>
+    <color name="app_base_card_background">#14141F</color>
+    <color name="app_base_raised_surface">#13131F</color>
+    <color name="app_bg_paywall">#0e141a</color>
+    <color name="app_dark_purple">#15102E</color>
+    <color name="app_disabled_text">#404060</color>
+    <color name="app_elevated_surface">#1C1C2E</color>
+    <color name="app_end_badge_best_value">#7C5CFF</color>
+    <color name="app_end_badge_popular">#FF4E8C</color>
+    <color name="app_end_dashed_border_gradient">#FF4E8C</color>
+    <color name="app_end_gradient">#FF4E8C</color>
+    <color name="app_error_color">#FF5C7A</color>
+    <color name="app_footer_bg_paywall">#E60e141a</color>
+    <color name="app_footer_border_paywall">#1AFFFFFF</color>
+    <color name="app_glass_fill_paywall">#1AA855F7</color>
+    <color name="app_glass_stroke_paywall">#26FFFFFF</color>
+    <color name="app_highlight_store_card">#1A1A30</color>
+    <color name="app_info_color">#4AA7FF</color>
+    <color name="app_item_border_color">#2A2A42</color>
+    <color name="app_light_overlay">#33FFFFFF</color>
+    <color name="app_main_purple">#7C5CFF</color>
+    <color name="app_medium_overlay">#66000000</color>
+    <color name="app_middle_gradient">#B45CFF</color>
+    <color name="app_on_primary_fixed_paywall">#2c0051</color>
+    <color name="app_on_primary_paywall">#490080</color>
+    <color name="app_on_surface_paywall">#dde3eb</color>
+    <color name="app_on_surface_variant_paywall">#cfc2d6</color>
+    <color name="app_outline_paywall">#988d9f</color>
+    <color name="app_outline_variant_paywall">#D7D7D7</color>
+    <color name="app_primary_brand">#7C5CFF</color>
+    <color name="app_primary_container_paywall">#b76dff</color>
+    <color name="app_primary_light_paywall">#D8B4FE</color>
+    <color name="app_primary_orange">#FF8A3D</color>
+    <color name="app_primary_paywall">#ddb7ff</color>
+    <color name="app_primary_style">#FF4E8C</color>
+    <color name="app_primary_text">#FFFFFF</color>
+    <color name="app_pro_column_bg_paywall">#33ddb7ff</color>
+    <color name="app_pro_column_border_paywall">#66ddb7ff</color>
+    <color name="app_row_divider_paywall">#0DFFFFFF</color>
+    <color name="app_screen_base_surface">#0A0A14</color>
+    <color name="app_scrim_overlay">#B3000000</color>
+    <color name="app_secondary_brand">#FF4E8C</color>
+    <color name="app_secondary_orange">#FF6B35</color>
+    <color name="app_secondary_text">#A0A0C0</color>
+    <color name="app_soft_border">#1E1E36</color>
+    <color name="app_start_badge_best_value">#4C55FF</color>
+    <color name="app_start_badge_popular">#FFB84A</color>
+    <color name="app_start_dashed_border_gradient">#7C5CFF</color>
+    <color name="app_start_gradient">#7C5CFF</color>
+    <color name="app_subtle_divider">#1E1E36</color>
+    <color name="app_success_color">#4AE3B5</color>
+    <color name="app_surface_container_paywall">#1a2026</color>
+    <color name="app_tertiary_brand">#4C55FF</color>
+    <color name="app_tertiary_text">#606080</color>
+    <color name="app_theme_dark_background">#0A0A14</color>
+    <color name="app_warning_color">#FFB84A</color>
+    <color name="app_yellow_coin">#FFD700</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <color name="badge_best_value_end">#7C5CFF</color>
-    <color name="badge_best_value_start">#4C55FF</color>
-    <color name="badge_popular_end">#FF4E8C</color>
-    <color name="badge_popular_start">#FFB84A</color>
     <color name="black">#FF000000</color>
-    <color name="border_color">#2A2A42</color>
-    <color name="border_soft">#1E1E36</color>
-    <color name="brand_primary">#7C5CFF</color>
-    <color name="brand_secondary">#FF4E8C</color>
-    <color name="brand_tertiary">#4C55FF</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -851,13 +898,10 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="call_notification_answer_color">#1d873b</color>
     <color name="call_notification_decline_color">#d93025</color>
-    <color name="card_background">#14141F</color>
-    <color name="card_background_alt">#1C1C2E</color>
     <color name="cardview_dark_background">#FF424242</color>
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="coin_yellow">#FFD700</color>
     <color name="com_facebook_blue">#1877F2</color>
     <color name="com_facebook_button_background_color">@color/com_facebook_blue</color>
     <color name="com_facebook_button_background_color_disabled">#EBEDF0</color>
@@ -881,8 +925,6 @@
     <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
-    <color name="dashed_border_gradient_end">#FF4E8C</color>
-    <color name="dashed_border_gradient_start">#7C5CFF</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -922,8 +964,6 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <color name="divider_subtle">#1E1E36</color>
-    <color name="error">#FF5C7A</color>
     <color name="error_color_material_dark">#ff7043</color>
     <color name="error_color_material_light">#ff5722</color>
     <color name="exo_black_opacity_60">#98000000</color>
@@ -935,12 +975,8 @@
     <color name="exo_white_opacity_70">#B3ffffff</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <color name="gradient_end">#FF4E8C</color>
-    <color name="gradient_middle">#B45CFF</color>
-    <color name="gradient_start">#7C5CFF</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="info">#4AA7FF</color>
     <color name="m3_ref_palette_black">#ff000000</color>
     <color name="m3_ref_palette_blue0">#ff000000</color>
     <color name="m3_ref_palette_blue10">#ff001944</color>
@@ -1326,33 +1362,9 @@
     <color name="mtrl_textinput_filled_box_default_background_color">#0A000000</color>
     <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
     <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
-    <color name="nav_active">#7C5CFF</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
-    <color name="orange_primary">#FF8A3D</color>
-    <color name="orange_secondary">#FF6B35</color>
-    <color name="overlay_light">#33FFFFFF</color>
-    <color name="overlay_medium">#66000000</color>
-    <color name="overlay_scrim">#B3000000</color>
-    <color name="paywall_bg">#0e141a</color>
-    <color name="paywall_footer_bg">#E60e141a</color>
-    <color name="paywall_footer_border">#1AFFFFFF</color>
-    <color name="paywall_glass_fill">#1AA855F7</color>
-    <color name="paywall_glass_stroke">#26FFFFFF</color>
-    <color name="paywall_on_primary">#490080</color>
-    <color name="paywall_on_primary_fixed">#2c0051</color>
-    <color name="paywall_on_surface">#dde3eb</color>
-    <color name="paywall_on_surface_variant">#cfc2d6</color>
-    <color name="paywall_outline">#988d9f</color>
-    <color name="paywall_outline_variant">#D7D7D7</color>
-    <color name="paywall_primary">#ddb7ff</color>
-    <color name="paywall_primary_container">#b76dff</color>
-    <color name="paywall_primary_light">#D8B4FE</color>
-    <color name="paywall_pro_column_bg">#33ddb7ff</color>
-    <color name="paywall_pro_column_border">#66ddb7ff</color>
-    <color name="paywall_row_divider">#0DFFFFFF</color>
-    <color name="paywall_surface_container">#1a2026</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -1361,30 +1373,18 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="purple_dark">#15102E</color>
-    <color name="purple_main">#7C5CFF</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="store_card_highlight">#1A1A30</color>
-    <color name="success">#4AE3B5</color>
-    <color name="surface_base">#0A0A14</color>
-    <color name="surface_elevated">#1C1C2E</color>
-    <color name="surface_raised">#13131F</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="text_disabled">#404060</color>
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#A0A0C0</color>
-    <color name="text_tertiary">#606080</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
-    <color name="warning">#FFB84A</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="_100sdp">100.00dp</dimen>
     <dimen name="_101sdp">101.00dp</dimen>
@@ -2130,6 +2130,10 @@
     <dimen name="ads_body_size">11dp</dimen>
     <dimen name="ads_cta_size">16dp</dimen>
     <dimen name="ads_headline_size">15dp</dimen>
+    <dimen name="app_clip_header_text_size_common">@dimen/_17sdp</dimen>
+    <dimen name="app_clip_home_bottom_bar_margin_bottom_point">12dp</dimen>
+    <dimen name="app_clip_home_main_scroll_content_bottom_padding_points">@dimen/_150sdp</dimen>
+    <dimen name="app_clip_home_main_scroll_content_bottom_padding_points_no_ads">@dimen/_130sdp</dimen>
     <dimen name="appcompat_dialog_background_inset">16dp</dimen>
     <dimen name="browser_actions_context_menu_max_width">500dp</dimen>
     <dimen name="browser_actions_context_menu_min_padding">20dp</dimen>
@@ -2251,8 +2255,6 @@
     <dimen name="fastscroll_default_thickness">8dp</dimen>
     <dimen name="fastscroll_margin">0dp</dimen>
     <dimen name="fastscroll_minimum_range">50dp</dimen>
-    <dimen name="floating_bottom_bar_margin_bottom">12dp</dimen>
-    <dimen name="header_text_size">@dimen/_17sdp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
@@ -2877,8 +2879,6 @@
     <dimen name="m3_timepicker_display_stroke_width">2dp</dimen>
     <dimen name="m3_timepicker_window_elevation">@dimen/m3_comp_time_picker_container_elevation</dimen>
     <dimen name="m3_toolbar_text_size_title">20dp</dimen>
-    <dimen name="main_scroll_content_bottom_padding">@dimen/_150sdp</dimen>
-    <dimen name="main_scroll_content_bottom_padding_no_ads">@dimen/_130sdp</dimen>
     <dimen name="material_bottom_sheet_max_width">640dp</dimen>
     <dimen name="material_clock_display_height">80dp</dimen>
     <dimen name="material_clock_display_padding">24dp</dimen>
@@ -3452,45 +3452,6 @@
     <item quantity="one"><ns2:g id="count">%d</ns2:g> new notification</item>
     <item quantity="other"><ns2:g id="count">%d</ns2:g> new notifications</item>
   </plurals>
-    <string name="AiImageGenActivity_an_error_occurred_please">An error occurred. Please try again.</string>
-    <string name="AiImageGenActivity_failed_to_read_image">Failed to read image.</string>
-    <string name="AiImageGenActivity_image_generation_failed_please">Image generation failed. Please try again.</string>
-    <string name="AiImageGenActivity_permission_granted">✓ Permission granted!</string>
-    <string name="AiImageGenActivity_please_enter_a_prompt">Please enter a prompt.</string>
-    <string name="AiImageGenActivity_please_upload_your_image">Please upload your image.</string>
-    <string name="BackgroundReplaceActivity_failed_to_read_image">Failed to read image</string>
-    <string name="BackgroundReplaceActivity_please_describe_the_new">Please describe the new background</string>
-    <string name="BackgroundReplaceActivity_please_upload_a_photo">Please upload a photo first</string>
-    <string name="CoupleFaceSwapActivity_failed_to_prepare_target">Failed to prepare target photo</string>
-    <string name="CoupleFaceSwapActivity_failed_to_read_face">Failed to read face photo</string>
-    <string name="CoupleFaceSwapActivity_please_select_the_coupletar">Please select the couple/target photo first</string>
-    <string name="CoupleFaceSwapActivity_please_upload_your_face">Please upload your face photo</string>
-    <string name="DownloadShareActivity_failed_to_prepare_image">Failed to prepare image for sharing</string>
-    <string name="DownloadShareActivity_no_image_to_download">No image to download</string>
-    <string name="DownloadShareActivity_no_image_to_share">No image to share</string>
-    <string name="DownloadShareActivity_storage_permission_is_needed">Storage permission is needed to save images</string>
-    <string name="EditImageActivity_background_selected">Background selected</string>
-    <string name="EditImageActivity_permission_granted">✓ Permission granted!</string>
-    <string name="FaceEnhanceActivity_failed_to_read_image">Failed to read image</string>
-    <string name="FaceEnhanceActivity_please_upload_a_photo">Please upload a photo first</string>
-    <string name="FaceSelectionActivity_face_selected">Face Selected</string>
-    <string name="FaceSwapActivity_an_error_occurred_please">An error occurred. Please try again.</string>
-    <string name="FaceSwapActivity_failed_to_prepare_template">Failed to prepare template image</string>
-    <string name="FaceSwapActivity_failed_to_read_face">Failed to read face photo</string>
-    <string name="FaceSwapActivity_operation_failed_please_try">Operation failed. Please try again.</string>
-    <string name="FaceSwapActivity_please_add_your_face">Please add your face photo</string>
-    <string name="FaceSwapActivity_please_select_a_target">Please select a target template image first</string>
-    <string name="LottieLoadingActivity_please_wait_generation_in">Please wait, generation in progress...</string>
-    <string name="MainActivity_could_not_load_templates">Could not load templates. Pull to retry.</string>
-    <string name="MultiSwapActivity_failed_to_prepare_target">Failed to prepare target template</string>
-    <string name="MultiSwapActivity_failed_to_read_face">Failed to read face photo</string>
-    <string name="MultiSwapActivity_please_add_your_face">Please add your face photo</string>
-    <string name="MultiSwapActivity_please_select_a_target">Please select a target template image first</string>
-    <string name="MyWorkActivity_this_image_link_has">This image link has expired</string>
-    <string name="SettingsActivity_coming_soon">Coming soon</string>
-    <string name="SettingsActivity_no_browser_found">No browser found</string>
-    <string name="SettingsActivity_no_email_app_found">No email app found</string>
-    <string name="TextToImageActivity_please_enter_a_prompt">Please enter a prompt to generate</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -3519,67 +3480,287 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns2:g example="Mail" id="application_name">%s</ns2:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="ads_ad_loading">Ad</string>
-    <string name="ai_image_gen_10_coins">10 Coins</string>
-    <string name="ai_image_gen_ai_image_gen">AI Image Gen</string>
-    <string name="ai_image_gen_describe_what_you_want">Describe what you want and watch it come to life.</string>
-    <string name="ai_image_gen_describe_your_image">Describe your image</string>
-    <string name="ai_image_gen_generate_image">✦  Generate Image</string>
-    <string name="ai_image_gen_guides_the_style_and">Guides the style and composition</string>
-    <string name="ai_image_gen_into_art"> Into Art</string>
-    <string name="ai_image_gen_optional">OPTIONAL</string>
-    <string name="ai_image_gen_png_jpg_supported">PNG, JPG supported</string>
-    <string name="ai_image_gen_reference_image">Reference Image</string>
-    <string name="ai_image_gen_required">REQUIRED</string>
-    <string name="ai_image_gen_tap_to_upload_image">Tap to upload image</string>
-    <string name="ai_image_gen_text_prompt">Text Prompt</string>
-    <string name="ai_image_gen_turn_your_ideas">Turn your ideas</string>
+    <string name="ai_all_faces_detected_automatically_text">All faces detected automatically</string>
+    <string name="ai_every_face_in_the_text">Every face in the group photo gets swapped at once.</string>
+    <string name="ai_face_image_10_coins_text">10 Coins</string>
+    <string name="ai_face_image_describe_anything_and_watch_text">Describe anything and watch it come to life.</string>
+    <string name="ai_face_image_generate_image_text">✦  Generate Image</string>
+    <string name="ai_face_image_text">Image</string>
+    <string name="ai_face_image_text_to_text">Text to </string>
+    <string name="ai_multi_face_swap_step_1_text">STEP 1</string>
+    <string name="ai_multi_face_swap_step_2_text">STEP 2</string>
+    <string name="ai_swap_face_your_text">Swap Your </string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
+    <string name="ap_couple_swap_text">Couple Face Swap</string>
+    <string name="app_ai_an_error_occurred_please_text">An error occurred. Please try again.</string>
+    <string name="app_ai_face_error_occurred_please_text">An error occurred. Please try again.</string>
+    <string name="app_ai_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="app_ai_face_operation_failed_please_try_again_text">Operation failed. Please try again.</string>
+    <string name="app_ai_face_please_add_your_face_text">Please add your face photo</string>
+    <string name="app_ai_face_this_image_link_has_text">This image link has expired</string>
+    <string name="app_ai_failed_to_prepare_template_text">Failed to prepare template image</string>
+    <string name="app_ai_failed_to_read_image_text">Failed to read image.</string>
+    <string name="app_ai_generate_image_text">✦  Generate Image</string>
+    <string name="app_ai_image_text">AI Image</string>
+    <string name="app_ai_permission_granted_text">✓ Permission granted!</string>
+    <string name="app_ai_photo_generation_failed_please_text">Image generation failed. Please try again.</string>
+    <string name="app_ai_please_add_your_face_text">Please add your face photo</string>
+    <string name="app_ai_please_enter_a_prompt_text">Please enter a prompt.</string>
+    <string name="app_ai_please_select_a_target_text">Please select a target template image first</string>
+    <string name="app_ai_please_upload_your_image_text">Please upload your image.</string>
+    <string name="app_any_photo_with_faces_text">Any photo with 1-2 faces</string>
+    <string name="app_api_error_text">Something went wrong while connecting to our servers. Please try again.</string>
+    <string name="app_api_error_title_text">Connection Error</string>
+    <string name="app_api_retry_button_text">Retry</string>
+    <string name="app_are_you_sure_you_sure_text">Are you sure you want to exit the app? We would love for you to stay and create more amazing faces!</string>
+    <string name="app_available_notice_text">Images are available for 7 days only. Please download your creations before they are automatically removed.</string>
+    <string name="app_background_failed_to_read_image_text">Failed to read image</string>
+    <string name="app_background_please_describe_the_new_text">Please describe the new background</string>
+    <string name="app_background_please_upload_a_photo_text">Please upload a photo first</string>
+    <string name="app_be_descriptive_for_best_text">Be descriptive for best results</string>
+    <string name="app_become_anyone_in_just_text">Become anyone in just one tap</string>
     <string name="app_builder_name">FaceSwap</string>
+    <string name="app_clear_frontal_face_works_text">Clear frontal face works best</string>
+    <string name="app_coin_btn_restore_purchase_text">Restore Purchases</string>
+    <string name="app_coin_current_balance_text">Current Balance</string>
+    <string name="app_coin_history_text">Coin History</string>
+    <string name="app_coin_no_history_text">No transactions yet</string>
+    <string name="app_coin_store_second_title_text">Buy coins to use premium features</string>
+    <string name="app_coin_store_text">Coin Store</string>
+    <string name="app_coin_transaction_time_text">Today, 12:30 PM</string>
+    <string name="app_coin_your_history_text">Your transaction history</string>
+    <string name="app_coins_10_coins_text">10 Coins</string>
     <string name="app_coins_dialog_desc_text">Continuing will use 10 coins from your balance. Please confirm to proceed.</string>
+    <string name="app_coins_purchase_failed_text">Purchase failed: %s</string>
+    <string name="app_coins_required_10_coins_text">Required: 10 coins</string>
+    <string name="app_couple_face_failed_to_prepare_target_text">Failed to prepare target photo</string>
+    <string name="app_couple_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="app_couple_face_please_select_the_couple_text">Please select the couple/target photo first</string>
+    <string name="app_couple_face_please_upload_your_face_text">Please upload your face photo</string>
+    <string name="app_couple_target_photo_text">Couple / Target Photo</string>
+    <string name="app_dialog_action_button_text">Ok, Continue</string>
+    <string name="app_dialog_icon_text">Dialog icon</string>
     <string name="app_download_share_text">Download &amp; Share</string>
+    <string name="app_edit_background_selected_text">Background selected</string>
+    <string name="app_edit_change_bg_text">Change BG</string>
     <string name="app_edit_image_text">Edit Image</string>
+    <string name="app_edit_permission_granted_text">✓ Permission granted!</string>
     <string name="app_edit_text">Edit</string>
+    <string name="app_enhance_ai_face_enhance_text">AI Face Enhance</string>
+    <string name="app_enhance_ai_face_text">AI Face </string>
+    <string name="app_enhance_face_restoration_text">✨ GFPGAN Face Restoration</string>
+    <string name="app_enhance_face_text">✦  Enhance Face</string>
+    <string name="app_enhance_portrait_or_selfie_works_text">Portrait or selfie works best</string>
+    <string name="app_enhance_restore_and_sharpen_text">Restore and sharpen facial details using AI.</string>
+    <string name="app_enhance_tap_to_upload_text">Tap to upload your photo</string>
+    <string name="app_enhance_upload_photo_text">Upload Photo</string>
+    <string name="app_enhance_uses_stateoftheart_ai_to_restore_text">Uses state-of-the-art AI to restore blurry or low-quality faces. Perfect for old photos, scanned images, or low-resolution selfies.</string>
+    <string name="app_enhance_works_best_with_portraits_and_text">Works best with portraits and selfies</string>
+    <string name="app_enhancer_text">Enhancer</string>
+    <string name="app_exit_app_text">Exit App</string>
+    <string name="app_face_ai_10_coins_text">10 Coins</string>
+    <string name="app_face_ai_coins_choose_a_package_text">Choose a Package</string>
+    <string name="app_face_ai_coins_instant_delivery_payment_text">Instant delivery • Secure payment via Google Play</string>
+    <string name="app_face_ai_coins_retry_text">Retry</string>
+    <string name="app_face_ai_creating_your_ai_image_text">Creating your AI Image…</string>
+    <string name="app_face_ai_credits_text">Credits</string>
+    <string name="app_face_ai_describe_your_image_text">Describe your image</string>
+    <string name="app_face_ai_face_selected_text">Face Selected</string>
+    <string name="app_face_ai_generate_image_text">✦  Generate Image</string>
+    <string name="app_face_ai_guides_the_style_text">Guides the style and composition</string>
+    <string name="app_face_ai_image_gen_text">AI Image Gen</string>
+    <string name="app_face_ai_into_art_text"> Into Art</string>
+    <string name="app_face_ai_optional_text">OPTIONAL</string>
+    <string name="app_face_ai_please_select_a_target_text">Please select a target template image first</string>
+    <string name="app_face_ai_png_jpg_supported_text">PNG, JPG supported</string>
+    <string name="app_face_ai_reference_image_text">Reference Image</string>
+    <string name="app_face_ai_required_text">REQUIRED</string>
+    <string name="app_face_ai_store_your_balance_text">Your Balance</string>
+    <string name="app_face_ai_tap_to_upload_image_text">Tap to upload image</string>
+    <string name="app_face_ai_text_to_prompt_text">Text Prompt</string>
+    <string name="app_face_ai_this_may_take_seconds_text">This may take a few seconds</string>
+    <string name="app_face_ai_turn_your_ideas_text">Turn your ideas</string>
     <string name="app_face_back_text">Back</string>
+    <string name="app_face_background_replace_text">Background Replace</string>
+    <string name="app_face_better_performance_text">Better Performance</string>
+    <string name="app_face_bug_fixes_text">Bug Fixes &amp; Security</string>
+    <string name="app_face_buy_coins_text">Buy Coins</string>
+    <string name="app_face_coin_buy_now_text">Buy Now</string>
+    <string name="app_face_coin_current_balance_text">Current Balance</string>
+    <string name="app_face_coin_history_face_swap_text">Face Swap</string>
+    <string name="app_face_coin_history_text">Coin History</string>
     <string name="app_face_coins_dialog_title_text">Coins Required!</string>
+    <string name="app_face_coins_fetching_offerings_error_text">Failed to fetch store offerings. Please try again.</string>
+    <string name="app_face_coins_purchase_success_text">Purchase successful! Coins added to your balance.</string>
+    <string name="app_face_coins_unit_text">%d Coins</string>
+    <string name="app_face_couple_text">Couple </string>
+    <string name="app_face_data_busy_back_button_text">Go Back</string>
+    <string name="app_face_describe_what_you_want_text">Describe what you want and watch it come to life.</string>
+    <string name="app_face_dialog_insufficient_coins_text">Insufficient Coins</string>
+    <string name="app_face_dialog_required_coins_cost_text">Required: %s coins</string>
+    <string name="app_face_face_swap_text">Face Swap</string>
+    <string name="app_face_failed_to_prepare_image_text">Failed to prepare image for sharing</string>
+    <string name="app_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="app_face_failed_to_read_image_text">Failed to read image</string>
+    <string name="app_face_feedback_text">Feedback</string>
+    <string name="app_face_gallery_save_text">✓ Saved to Gallery!</string>
+    <string name="app_face_header_section_title_text">Section Title</string>
+    <string name="app_face_image_save_error_text">Failed to save image</string>
+    <string name="app_face_image_share_preparing_text">Preparing to share…</string>
+    <string name="app_face_insufficient_coins_balance_text">Your balance: %s coins</string>
+    <string name="app_face_language_english_text">English</string>
+    <string name="app_face_language_text">Languages</string>
+    <string name="app_face_legal_text">LEGAL</string>
+    <string name="app_face_multi_popular_text">⭐ Most Popular</string>
     <string name="app_face_multiple_swap_hint_text">Swap multiple faces in one project.</string>
     <string name="app_face_my_work_hint_text">Your saved work will appear here.</string>
     <string name="app_face_nav_multi_swap_text">Video Swap</string>
     <string name="app_face_nav_my_work_text">My work</string>
+    <string name="app_face_new_update_available_text">New Version Available!</string>
+    <string name="app_face_new_update_sub_title_text">We\'ve been working hard to make your experience even better. Update now to enjoy the latest features and improvements.</string>
+    <string name="app_face_no_email_app_found_text">No email app found</string>
+    <string name="app_face_no_image_to_download_text">No image to download</string>
+    <string name="app_face_no_image_to_share_text">No image to share</string>
+    <string name="app_face_no_internet_title_text">No Internet</string>
+    <string name="app_face_only_background_text">Background</string>
+    <string name="app_face_permission_camera_and_gallery_access_text">Camera and gallery access are needed to upload images. Please enable them in Settings.</string>
+    <string name="app_face_please_enter_a_prompt_text">Please enter a prompt to generate</string>
+    <string name="app_face_please_upload_a_photo_text">Please upload a photo first</string>
+    <string name="app_face_purchase_restore_success_text">Purchases restored successfully.</string>
+    <string name="app_face_rate_app_text">Rate App</string>
+    <string name="app_face_replace_10_coins_text">10 Coins</string>
+    <string name="app_face_replace_any_photo_with_text">Any photo with a clear subject</string>
+    <string name="app_face_replace_background_text">✦  Replace Background</string>
+    <string name="app_face_replace_be_descriptive_for_best_text">Be descriptive for best results</string>
+    <string name="app_face_replace_describe_new_background_text">Describe New Background</string>
+    <string name="app_face_replace_step_2_text">STEP 2</string>
+    <string name="app_face_replace_subject_should_be_clearly_text">Subject should be clearly visible</string>
+    <string name="app_face_replace_tap_to_upload_your_text">Tap to upload your photo</string>
+    <string name="app_face_replace_text">Replace </string>
+    <string name="app_face_replace_upload_a_photo_text">Upload a photo and describe your desired background.</string>
+    <string name="app_face_replace_your_photo_text">Your Photo</string>
+    <string name="app_face_required_text">REQUIRED</string>
+    <string name="app_face_save_to_gallery_text">Save to Gallery</string>
+    <string name="app_face_server_busy_retry_button_text">Try Again</string>
+    <string name="app_face_server_high_demand_desc_text">Our servers are handling a lot of requests right now. Please wait a moment and try again.</string>
+    <string name="app_face_server_share_text">Share</string>
+    <string name="app_face_settings_buy_coins_text">Buy Coins</string>
     <string name="app_face_settings_text">Settings</string>
+    <string name="app_face_share_app_text">Share App</string>
+    <string name="app_face_skip_text">Skip</string>
+    <string name="app_face_slider_after_text">After</string>
+    <string name="app_face_slider_before_text">Before</string>
+    <string name="app_face_source_take_photo_text">Take Photo</string>
+    <string name="app_face_splash_logo_text">App logo</string>
+    <string name="app_face_step_1_text">STEP 1</string>
+    <string name="app_face_step_2_text">STEP 2</string>
+    <string name="app_face_storage_permission_is_needed_text">Storage permission is needed to save images</string>
+    <string name="app_face_swap_face_text">Face</string>
+    <string name="app_face_swap_new_features_text">New Features</string>
+    <string name="app_face_tap_to_select_couple_text">Tap to select couple photo</string>
+    <string name="app_face_text">Face</string>
     <string name="app_face_title_my_work_text">My work</string>
+    <string name="app_face_total_coin_balance_text">Coin balance</string>
+    <string name="app_face_total_coin_spent_text">Total Spent</string>
+    <string name="app_face_update_feature_first_desc_text">Faster image processing and smoother experience</string>
+    <string name="app_face_update_feature_second_desc_text">Exciting new tools and improved AI results</string>
+    <string name="app_face_update_feature_third_desc_text">Important fixes for a more stable and secure app</string>
+    <string name="app_face_update_logo_one_text">✨</string>
+    <string name="app_face_update_logo_text">🚀</string>
+    <string name="app_face_update_logo_two_text">🛡️</string>
+    <string name="app_face_update_now_button_text">Update Now</string>
+    <string name="app_face_upload_your_face_photo_text">Upload your face photo</string>
+    <string name="app_face_watch_ad_continue_text">Watch Ad to Continue</string>
+    <string name="app_face_your_result_is_ready_text">Your result is ready ✦</string>
+    <string name="app_failed_to_prepare_target_text">Failed to prepare target template</string>
+    <string name="app_group_photo_target_text">Group Photo (Target)</string>
+    <string name="app_header_face_swap_upper">FACE SWAP</string>
+    <string name="app_header_see_all_text">See All</string>
+    <string name="app_home_swap_your_face_text">Swap Your Face</string>
+    <string name="app_home_try_now_text">Try Now</string>
+    <string name="app_image_enhance_text">Enhance</string>
+    <string name="app_image_remove_bg_text">Remove BG</string>
+    <string name="app_info_dialog_button_text">Got It, Let\'s Go!</string>
+    <string name="app_info_dialog_message_text">For the best face swap results, use a clear, front-facing photo with good lighting. Avoid group photos, sunglasses, or anything that hides your face.</string>
+    <string name="app_info_dialog_title_text">Upload the Right Photo!</string>
+    <string name="app_insufficient_your_balance_coins_text">Your balance: 0 coins</string>
+    <string name="app_language_save_text">Save</string>
+    <string name="app_language_text">Languages</string>
+    <string name="app_leaving_so_soon_text">Leaving so soon?</string>
+    <string name="app_loader_please_wait_generation_text">Please wait, generation in progress...</string>
+    <string name="app_main_app_could_not_load_templates_text">Could not load templates. Pull to retry.</string>
+    <string name="app_main_face_swap_text">Face Swap</string>
+    <string name="app_main_work_text">My Work</string>
+    <string name="app_multi_face_swap_10_coins_text">10 Coins</string>
+    <string name="app_multi_face_swap_all_faces_will_text">All faces will be detected automatically</string>
+    <string name="app_multi_face_swap_clear_frontal_face_works_best_text">Clear frontal face works best</string>
+    <string name="app_multi_face_swap_generate_image_text">✦  Generate Image</string>
+    <string name="app_multi_face_swap_tap_to_select_group_text">Tap to select group photo</string>
+    <string name="app_multi_face_swap_text">Multi Face Swap</string>
+    <string name="app_multi_face_swap_upload_your_face_photo_text">Upload your face photo</string>
+    <string name="app_multi_face_swap_your_face_photo_text">Your Face Photo</string>
+    <string name="app_multi_swap_video_text">Video Swap</string>
     <string name="app_nav_face_ai_image">AI Image</string>
     <string name="app_nav_face_swap_text">Face Swap</string>
+    <string name="app_no_creations_yet_text">No creations yet</string>
+    <string name="app_no_internet_desc_text">Please check your internet connection and try again.</string>
+    <string name="app_onboard_continue_text">Continue</string>
+    <string name="app_onboard_first_subtitle_text">Turn your ideas into stunning AI-generated\nimages in seconds.</string>
+    <string name="app_onboard_first_text">AI Image Generator</string>
+    <string name="app_onboard_get_started_text">Get Started</string>
+    <string name="app_onboard_second_subtitle_text">View your AI creation and download the\nimage in full resolution.</string>
+    <string name="app_onboard_second_text">Preview &amp; Download</string>
+    <string name="app_open_coming_soon_text">Coming soon</string>
+    <string name="app_open_no_browser_found_text">No browser found</string>
+    <string name="app_open_settings_text">Open Settings</string>
+    <string name="app_permission_cancel_text">Cancel</string>
+    <string name="app_permission_required_text">Permission Required</string>
+    <string name="app_picker_choose_background_text">Choose Background</string>
+    <string name="app_picker_tap_any_background_to_apply_text">Tap any background to apply it</string>
+    <string name="app_privacy_policy_text">Privacy Policy</string>
+    <string name="app_quick_ideas_text">Quick Ideas</string>
+    <string name="app_replace_step_1_text">STEP 1</string>
     <string name="app_select_face_text">Select Face</string>
+    <string name="app_select_which_face_you_text">Select which face you want to use</string>
+    <string name="app_server_high_demand_text">We\'re Experiencing High Demand</string>
+    <string name="app_settings_text">Settings</string>
     <string name="app_single_face_swap_text">Single Face Swap</string>
-    <string name="app_update_text">🚀</string>
-    <string name="app_update_text_1">✨</string>
-    <string name="app_update_text_2">🛡️</string>
+    <string name="app_source_cancel_text">Cancel</string>
+    <string name="app_source_choose_from_gallery_text">Choose from Gallery</string>
+    <string name="app_source_choose_image_text">Choose Image Source</string>
+    <string name="app_source_select_from_your_photos_text">Select from your photos</string>
+    <string name="app_source_use_your_camera_text">Use your camera</string>
+    <string name="app_splash_bottom_ads_containe_text">This action may contains ads</string>
+    <string name="app_stay_in_app_text">Stay in App</string>
+    <string name="app_swap_choose_from_gallery_presets_text">Choose from gallery or presets</string>
+    <string name="app_swap_clear_frontal_photo_works_text">Clear frontal photo works best</string>
+    <string name="app_swap_enhance_ten_coins_text">10 Coins</string>
+    <string name="app_swap_every_text">Swap every </string>
+    <string name="app_swap_gallery_or_preset_text">Gallery or preset</string>
+    <string name="app_swap_pick_a_template_text">Pick a template, upload your photo — done.</string>
+    <string name="app_swap_start_swapping_text">✦  Start Swapping</string>
+    <string name="app_swap_step_1_first_text">STEP 1</string>
+    <string name="app_swap_step_2_second_text">STEP 2</string>
+    <string name="app_swap_tap_to_select_text">Tap to select template</string>
+    <string name="app_swap_target_template_text">Target Template</string>
+    <string name="app_swap_ten_coins_text">10 Coins</string>
+    <string name="app_swap_your_face_into_text">Swap your face into any couple or duo photo.</string>
+    <string name="app_swap_your_face_photo_text">Your Face Photo</string>
+    <string name="app_terms_and_conditions_text">Terms &amp; Conditions</string>
+    <string name="app_text_to_image_text">Text to Image</string>
+    <string name="app_the_photo_you_want_text">The photo you want to swap into</string>
+    <string name="app_total_coins_earned_text">Total Earned</string>
+    <string name="app_upper_coins_text">COINS</string>
     <string name="app_video_swap_text">Video Swap</string>
+    <string name="app_your_face_photo_text">Your Face Photo</string>
+    <string name="app_your_prompt_text">Your Prompt</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="background_picker_choose_background">Choose Background</string>
-    <string name="background_picker_tap_any_background_to">Tap any background to apply it</string>
     <string name="banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="bg_replace_10_coins">10 Coins</string>
-    <string name="bg_replace_any_photo_with_a">Any photo with a clear subject</string>
-    <string name="bg_replace_background">Background</string>
-    <string name="bg_replace_background_replace">Background Replace</string>
-    <string name="bg_replace_be_descriptive_for_best">Be descriptive for best results</string>
-    <string name="bg_replace_describe_new_background">Describe New Background</string>
-    <string name="bg_replace_replace">Replace </string>
-    <string name="bg_replace_replace_background">✦  Replace Background</string>
-    <string name="bg_replace_step_1">STEP 1</string>
-    <string name="bg_replace_step_2">STEP 2</string>
-    <string name="bg_replace_subject_should_be_clearly">Subject should be clearly visible</string>
-    <string name="bg_replace_tap_to_upload_your">Tap to upload your photo</string>
-    <string name="bg_replace_upload_a_photo_and">Upload a photo and describe your desired background.</string>
-    <string name="bg_replace_your_photo">Your Photo</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an accessibility action to collapse the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
     <string description="A description of an accessibility action to expand the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_expand">Expand the bottom sheet</string>
     <string description="A description of an action that a user of an accessibility service can perform to expand a bottomsheet halfway to its full height. [CHAR LIMIT=25]" name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string description="The content description of bottom sheet drag handles [CHAR LIMIT=NONE]" name="bottomsheet_drag_handle_content_description">Drag handle</string>
-    <string name="btn_buy_now">Buy Now</string>
-    <string name="btn_restore">Restore Purchases</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>
     <string name="call_notification_decline_action">Decline</string>
@@ -3587,25 +3768,10 @@
     <string name="call_notification_incoming_text">Incoming call</string>
     <string name="call_notification_ongoing_text">Ongoing call</string>
     <string name="call_notification_screening_text">Screening an incoming call</string>
-    <string name="cd_coin_balance">Coin balance</string>
-    <string name="cd_dialog_close">Close dialog</string>
-    <string name="cd_dialog_icon">Dialog icon</string>
-    <string name="cd_dialog_image">Dialog image</string>
-    <string name="cd_share">Share</string>
-    <string name="cd_splash_logo">App logo</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="coin_balance_label">Current Balance</string>
-    <string name="coin_history_empty">No transactions yet</string>
-    <string name="coin_history_subtitle">Your transaction history</string>
-    <string name="coin_history_title">Coin History</string>
-    <string name="coin_total_earned">Total Earned</string>
-    <string name="coin_total_spent">Total Spent</string>
-    <string name="coin_transaction_face_swap">Face Swap</string>
-    <string name="coin_transaction_today_1230_pm">Today, 12:30 PM</string>
-    <string name="coins_unit">%d Coins</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="com_facebook_device_auth_instructions">Visit &lt;b>facebook.com/device&lt;/b> and enter the code shown above.</string>
     <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
@@ -3649,52 +3815,10 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
-    <string name="couple_swap_10_coins">10 Coins</string>
-    <string name="couple_swap_any_photo_with_12">Any photo with 1-2 faces</string>
-    <string name="couple_swap_clear_frontal_face_works">Clear frontal face works best</string>
-    <string name="couple_swap_couple">Couple </string>
-    <string name="couple_swap_couple_face_swap">Couple Face Swap</string>
-    <string name="couple_swap_couple_target_photo">Couple / Target Photo</string>
-    <string name="couple_swap_face_swap">Face Swap</string>
-    <string name="couple_swap_generate_image">✦  Generate Image</string>
-    <string name="couple_swap_step_1">STEP 1</string>
-    <string name="couple_swap_step_2">STEP 2</string>
-    <string name="couple_swap_swap_your_face_into">Swap your face into any couple or duo photo.</string>
-    <string name="couple_swap_tap_to_select_couple">Tap to select couple photo</string>
-    <string name="couple_swap_the_photo_you_want">The photo you want to swap into</string>
-    <string name="couple_swap_upload_your_face_photo">Upload your face photo</string>
-    <string name="couple_swap_your_face_photo">Your Face Photo</string>
-    <string name="current_balance">Current Balance</string>
-    <string name="dialog_api_error_msg">Something went wrong while connecting to our servers. Please try again.</string>
-    <string name="dialog_api_error_title">Connection Error</string>
-    <string name="dialog_buy_coins">Buy Coins</string>
-    <string name="dialog_coins_button">Ok, Continue</string>
-    <string name="dialog_info_button">Got It, Let\'s Go!</string>
-    <string name="dialog_info_message">For the best face swap results, use a clear, front-facing photo with good lighting. Avoid group photos, sunglasses, or anything that hides your face.</string>
-    <string name="dialog_info_title">Upload the Right Photo!</string>
-    <string name="dialog_insufficient_balance">Your balance: %s coins</string>
-    <string name="dialog_insufficient_cost">Required: %s coins</string>
-    <string name="dialog_insufficient_title">Insufficient Coins</string>
-    <string name="dialog_no_internet_msg">Please check your internet connection and try again.</string>
-    <string name="dialog_no_internet_title">No Internet</string>
-    <string name="dialog_retry_button">Retry</string>
-    <string name="dialog_watch_ad">Watch Ad to Continue</string>
-    <string name="download_failed">Failed to save image</string>
-    <string name="download_saved">✓ Saved to Gallery!</string>
-    <string name="download_share_save_to_gallery">Save to Gallery</string>
-    <string name="download_share_your_result_is_ready">Your result is ready ✦</string>
-    <string name="edit_image_change_bg">Change BG</string>
-    <string name="edit_image_enhance">Enhance</string>
-    <string name="edit_image_remove_bg">Remove BG</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
   </string>
-    <string name="error_fetching_offerings">Failed to fetch store offerings. Please try again.</string>
     <string name="error_icon_content_description">Error</string>
-    <string name="exit_are_you_sure_you">Are you sure you want to exit the app? We would love for you to stay and create more amazing faces!</string>
-    <string name="exit_exit_app">Exit App</string>
-    <string name="exit_leaving_so_soon">Leaving so soon?</string>
-    <string name="exit_stay_in_app">Stay in App</string>
     <string name="exo_controls_cc_disabled_description">Enable subtitles</string>
     <string name="exo_controls_cc_enabled_description">Disable subtitles</string>
     <string name="exo_controls_custom_playback_speed" translatable="false"><ns2:g example="1.05" id="playback_speed">%1$.2f</ns2:g>x</string>
@@ -3750,71 +3874,24 @@
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="face_enhance_10_coins">10 Coins</string>
-    <string name="face_enhance_ai_face">AI Face </string>
-    <string name="face_enhance_ai_face_enhance">AI Face Enhance</string>
-    <string name="face_enhance_enhance_face">✦  Enhance Face</string>
-    <string name="face_enhance_enhancer">Enhancer</string>
-    <string name="face_enhance_gfpgan_face_restoration">✨ GFPGAN Face Restoration</string>
-    <string name="face_enhance_portrait_or_selfie_works">Portrait or selfie works best</string>
-    <string name="face_enhance_restore_and_sharpen_facial">Restore and sharpen facial details using AI.</string>
-    <string name="face_enhance_tap_to_upload_your">Tap to upload your photo</string>
-    <string name="face_enhance_upload_photo">Upload Photo</string>
-    <string name="face_enhance_uses_stateoftheart_ai_to">Uses state-of-the-art AI to restore blurry or low-quality faces. Perfect for old photos, scanned images, or low-resolution selfies.</string>
-    <string name="face_enhance_works_best_with_portraits">Works best with portraits and selfies</string>
-    <string name="face_selection_select_which_face_you">Select which face you want to use</string>
-    <string name="face_swap_10_coins">10 Coins</string>
-    <string name="face_swap_choose_from_gallery_or">Choose from gallery or presets</string>
-    <string name="face_swap_clear_frontal_photo_works">Clear frontal photo works best</string>
-    <string name="face_swap_face">Face</string>
-    <string name="face_swap_gallery_or_preset">Gallery or preset</string>
-    <string name="face_swap_pick_a_template_upload">Pick a template, upload your photo — done.</string>
-    <string name="face_swap_start_swapping">✦  Start Swapping</string>
-    <string name="face_swap_step_1">STEP 1</string>
-    <string name="face_swap_step_2">STEP 2</string>
-    <string name="face_swap_swap_your">Swap Your </string>
-    <string name="face_swap_tap_to_select_template">Tap to select template</string>
-    <string name="face_swap_target_template">Target Template</string>
-    <string name="face_swap_your_face_photo">Your Face Photo</string>
+    <string name="face_app_best_value_text">💎 Best Value</string>
+    <string name="face_dialog_close_text">Close dialog</string>
+    <string name="face_dialog_image_text">Dialog image</string>
     <string name="facebook_app_id">1004092062065383</string>
     <string name="facebook_client_token">eb179ee22f1102a5d19a12ba689e4567</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="gcm_defaultSenderId" translatable="false">24518999969</string>
-    <string name="google_api_key" translatable="false">AIzaSyAHDXU5mr01Yw0-sEdlisOqy4hX0MfTpAY</string>
-    <string name="google_app_id" translatable="false">1:24518999969:android:b5de1c2bbb0685640e15e0</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAHDXU5mr01Yw0-sEdlisOqy4hX0MfTpAY</string>
-    <string name="google_storage_bucket" translatable="false">ai-faceswap-2f9df.firebasestorage.app</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gcm_defaultSenderId" translatable="false">926854475640</string>
+    <string name="google_api_key" translatable="false">AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI</string>
+    <string name="google_app_id" translatable="false">1:926854475640:android:a2448d4330b71fc5efe28d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI</string>
+    <string name="google_storage_bucket" translatable="false">face-editor-ai-face-swap-2.firebasestorage.app</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
-    <string name="home_header_become_anyone_in_just">Become anyone in just one tap</string>
-    <string name="home_header_face_swap">FACE SWAP</string>
-    <string name="home_header_swap_your_face">Swap Your Face</string>
-    <string name="home_header_try_now">Try Now</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
-    <string name="image_source_cancel">Cancel</string>
-    <string name="image_source_choose_from_gallery">Choose from Gallery</string>
-    <string name="image_source_choose_image_source">Choose Image Source</string>
-    <string name="image_source_select_from_your_photos">Select from your photos</string>
-    <string name="image_source_take_photo">Take Photo</string>
-    <string name="image_source_use_your_camera">Use your camera</string>
-    <string name="insufficient_coins_required_10_coins">Required: 10 coins</string>
-    <string name="insufficient_coins_your_balance_0_coins">Your balance: 0 coins</string>
     <string name="interstitial_ad_unit">ca-app-pub-3940256099942544/1033173712</string>
     <string name="item_view_role_description">Tab</string>
-    <string name="label_best_value">💎 Best Value</string>
-    <string name="label_popular">⭐ Most Popular</string>
-    <string name="language_choose_subtitle">Select your preferred language. You can change this later from Settings.</string>
-    <string name="language_choose_title">Choose Your Language</string>
-    <string name="language_english">English</string>
-    <string name="language_language">Languages</string>
-    <string name="language_save">Save</string>
-    <string name="layout_section_header_section_title">Section Title</string>
-    <string name="layout_section_header_see_all">See All</string>
-    <string name="lottie_loading_creating_your_ai_image">Creating your AI Image…</string>
-    <string name="lottie_loading_this_may_take_a">This may take a few seconds</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string description="Content description for a loading indicator [CHAR LIMIT=NONE]" name="m3_loading_indicator_content_description">
     Loading
@@ -3834,10 +3911,6 @@
     <string name="m3_sys_motion_easing_standard" translatable="false">cubic-bezier(0.2, 0, 0, 1)</string>
     <string name="m3_sys_motion_easing_standard_accelerate" translatable="false">cubic-bezier(0.3, 0, 1, 1)</string>
     <string name="m3_sys_motion_easing_standard_decelerate" translatable="false">cubic-bezier(0, 0, 0, 1)</string>
-    <string name="main_ai_image">AI Image</string>
-    <string name="main_face_swap">Face Swap</string>
-    <string name="main_multi_swap">Video Swap</string>
-    <string name="main_my_work">My Work</string>
     <string name="material_clock_display_divider" translatable="false">:</string>
     <string description="Description for the toggle to choose between AM and PM [CHAR_LIMIT=NONE]" name="material_clock_toggle_content_description">Select AM or PM</string>
     <string description="Spoken suffix for an hour in the 24-hour clock [CHAR_LIMIT=10]" name="material_hour_24h_suffix"><ns2:g id="number">%1$s</ns2:g> hours</string>
@@ -3933,23 +4006,6 @@
     <string name="mtrl_switch_track_path" translatable="false">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string description="Button text to indicate that the widget will ignore the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_cancel">Cancel</string>
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
-    <string name="multi_swap_10_coins">10 Coins</string>
-    <string name="multi_swap_all_faces_detected_automatically">All faces detected automatically</string>
-    <string name="multi_swap_all_faces_will_be">All faces will be detected automatically</string>
-    <string name="multi_swap_clear_frontal_face_works">Clear frontal face works best</string>
-    <string name="multi_swap_every_face_in_the">Every face in the group photo gets swapped at once.</string>
-    <string name="multi_swap_face">Face</string>
-    <string name="multi_swap_generate_image">✦  Generate Image</string>
-    <string name="multi_swap_group_photo_target">Group Photo (Target)</string>
-    <string name="multi_swap_multi_face_swap">Multi Face Swap</string>
-    <string name="multi_swap_step_1">STEP 1</string>
-    <string name="multi_swap_step_2">STEP 2</string>
-    <string name="multi_swap_swap_every">Swap every </string>
-    <string name="multi_swap_tap_to_select_group">Tap to select group photo</string>
-    <string name="multi_swap_upload_your_face_photo">Upload your face photo</string>
-    <string name="multi_swap_your_face_photo">Your Face Photo</string>
-    <string name="my_work_no_creations_yet">No creations yet</string>
-    <string name="my_work_retention_notice">Images are available for 7 days only. Please download your creations before they are automatically removed.</string>
     <string name="native_ad_unit">ca-app-pub-3940256099942544/2247696110</string>
     <string description="This string appears within a window that describes an ad&apos;s contents. It indicates that the following text would be the body field (textual content) of the native ad. [CHAR_LIMIT=NONE]" name="native_body">
     Body
@@ -3989,13 +4045,6 @@
       We\'ll send you a notification with a link to the advertiser site.</string>
     <string description="Title of the dialog presented when an ad is clicked while offline. [CHAR_LIMIT=NONE]" name="offline_opt_in_title">
       Open ad when you\'re back online.</string>
-    <string name="onboarding_continue">Continue</string>
-    <string name="onboarding_get_started">Get Started</string>
-    <string name="onboarding_page_skip">Skip</string>
-    <string name="onboarding_subtitle_1">Turn your ideas into stunning AI-generated\nimages in seconds.</string>
-    <string name="onboarding_subtitle_2">View your AI creation and download the\nimage in full resolution.</string>
-    <string name="onboarding_title_1">AI Image Generator</string>
-    <string name="onboarding_title_2">Preview &amp; Download</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -4016,14 +4065,7 @@
     <string name="paywall_privacy">Privacy Policy</string>
     <string name="paywall_restore">Restore</string>
     <string name="paywall_terms">Terms &amp; Conditions</string>
-    <string name="permission_denied_camera_and_gallery_access">Camera and gallery access are needed to upload images. Please enable them in Settings.</string>
-    <string name="permission_denied_cancel">Cancel</string>
-    <string name="permission_denied_open_settings">Open Settings</string>
-    <string name="permission_denied_permission_required">Permission Required</string>
-    <string name="project_id" translatable="false">ai-faceswap-2f9df</string>
-    <string name="purchase_error">Purchase failed: %s</string>
-    <string name="purchase_restore_success">Purchases restored successfully.</string>
-    <string name="purchase_success">Purchase successful! Coins added to your balance.</string>
+    <string name="project_id" translatable="false">face-editor-ai-face-swap-2</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
     <string name="s3">Accept</string>
@@ -4037,60 +4079,11 @@
   </string>
     <string description="Content description for the X button to clear text [CHAR_LIMIT=NONE]" name="searchview_clear_text_content_description">Clear text</string>
     <string description="Content description for the navigation button to return to the previous screen [CHAR_LIMIT=NONE]" name="searchview_navigation_content_description">Back</string>
-    <string name="server_busy_go_back">Go Back</string>
-    <string name="server_busy_message">Our servers are handling a lot of requests right now. Please wait a moment and try again.</string>
-    <string name="server_busy_retry">Try Again</string>
-    <string name="server_busy_title">We\'re Experiencing High Demand</string>
-    <string name="settings_buy_coins">Buy Coins</string>
-    <string name="settings_coin_history">Coin History</string>
-    <string name="settings_coins">COINS</string>
-    <string name="settings_feedback">Feedback</string>
-    <string name="settings_language">Languages</string>
-    <string name="settings_legal">LEGAL</string>
-    <string name="settings_privacy_policy">Privacy Policy</string>
-    <string name="settings_rate_app">Rate App</string>
-    <string name="settings_settings">Settings</string>
-    <string name="settings_share_app">Share App</string>
-    <string name="settings_terms_amp_conditions">Terms &amp; Conditions</string>
-    <string name="share_preparing">Preparing to share…</string>
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
-    <string name="splash_tagline">This action may contains ads</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store_buy_now">Buy Now</string>
-    <string name="store_choose_a_package">Choose a Package</string>
-    <string name="store_credits">Credits</string>
-    <string name="store_instant_delivery_secure_payment">Instant delivery • Secure payment via Google Play</string>
-    <string name="store_no_offerings">Unable to load store. Please check your connection.</string>
-    <string name="store_restore">Restore Purchases</string>
-    <string name="store_restore_purchases">Restore Purchases</string>
-    <string name="store_retry">Retry</string>
-    <string name="store_secure_badge">🔒 Secured by Google Play</string>
-    <string name="store_subtitle">Buy coins to use premium features</string>
-    <string name="store_your_balance">Your Balance</string>
-    <string name="text_to_image_10_coins">10 Coins</string>
-    <string name="text_to_image_be_descriptive_for_best">Be descriptive for best results</string>
-    <string name="text_to_image_describe_anything_and_watch">Describe anything and watch it come to life.</string>
-    <string name="text_to_image_generate_image">✦  Generate Image</string>
-    <string name="text_to_image_image">Image</string>
-    <string name="text_to_image_quick_ideas">Quick Ideas</string>
-    <string name="text_to_image_required">REQUIRED</string>
-    <string name="text_to_image_text_to">Text to </string>
-    <string name="text_to_image_text_to_image">Text to Image</string>
-    <string name="text_to_image_your_prompt">Your Prompt</string>
-    <string name="title_store">Coin Store</string>
-    <string name="update_button">Update Now</string>
-    <string name="update_feature_1_desc">Faster image processing and smoother experience</string>
-    <string name="update_feature_1_title">Better Performance</string>
-    <string name="update_feature_2_desc">Exciting new tools and improved AI results</string>
-    <string name="update_feature_2_title">New Features</string>
-    <string name="update_feature_3_desc">Important fixes for a more stable and secure app</string>
-    <string name="update_feature_3_title">Bug Fixes &amp; Security</string>
-    <string name="update_subtitle">We\'ve been working hard to make your experience even better. Update now to enjoy the latest features and improvements.</string>
-    <string name="update_title">New Version Available!</string>
     <string name="video_swap_cost_label">%s Coins</string>
-    <string name="video_swap_duration_label">Duration: %ds</string>
-    <string name="video_swap_failed_to_read_video">Failed to read video file</string>
     <string name="video_swap_generate_video">✦  Generate Video</string>
     <string name="video_swap_hero_1">Swap your </string>
     <string name="video_swap_hero_2">Face in Video</string>
@@ -4100,12 +4093,6 @@
     <string name="video_swap_tap_to_select_video">Tap to select video</string>
     <string name="video_swap_title">Video Face Swap</string>
     <string name="video_swap_upload_video">Upload Video</string>
-    <string name="video_swap_video_detected_desc">Video selected successfully</string>
-    <string name="video_swap_video_too_large">Video must be under 500 MB</string>
-    <string name="video_swap_video_too_long">Video must be 60 seconds or less</string>
-    <string name="video_swap_video_too_short">Video must be at least 5 seconds long</string>
-    <string name="view_before_after_slider_after">After</string>
-    <string name="view_before_after_slider_before">Before</string>
     <string description="This string appears within a watermark on video ads for debugging. [CHAR_LIMIT=NONE]" name="watermark_label_prefix">
     "AdMob - "
   </string>
@@ -4447,9 +4434,7 @@
     </style>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Theme.AppCompat.Light"/>
     <style name="Base.Theme.FaceSwap" parent="Theme.Material3.DayNight.NoActionBar">
-        
-        
-        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:windowBackground">@color/app_theme_dark_background</item>
     </style>
     <style name="Base.Theme.GoogleAdsDemo" parent="Theme.Material3.DayNight.NoActionBar">
         
@@ -7975,7 +7960,7 @@
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:lines">1</item>
-        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textSize">@dimen/app_clip_header_text_size_common</item>
     </style>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="backgroundTint">@macro/m3_comp_dialog_container_color</item>
@@ -9183,29 +9168,22 @@
     <item name="windowNoTitle">true</item>
   </style>
     <style name="Theme.FaceSwap" parent="Theme.AppCompat.Light.NoActionBar">
-
-        <item name="android:windowBackground">@color/background_dark</item>
-
-        
+        <item name="android:windowBackground">@color/app_theme_dark_background</item>
         <item name="colorPrimary">#0090FF</item>
         <item name="colorPrimaryVariant">#FFFFFF</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="color">#FAF2F2F2</item>
-        
         <item name="colorSecondary">#0091EA</item>
         <item name="colorSecondaryVariant">#015386</item>
         <item name="colorOnSecondary">@color/black</item>
-        
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
-
     </style>
     <style name="Theme.FaceSwap.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/background_dark</item>
+        <item name="windowSplashScreenBackground">@color/app_theme_dark_background</item>
         <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
         <item name="postSplashScreenTheme">@style/Theme.FaceSwap</item>
-
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
@@ -12459,11 +12437,11 @@
     <declare-styleable name="ActionBar">
         
         <attr name="navigationMode">
-            <!-- Normal static title text -->
+            
             <enum name="normal" value="0"/>
-            <!-- The action bar will use a selection list for navigation. -->
+            
             <enum name="listMode" value="1"/>
-            <!-- The action bar will use a series of horizontal tabs for navigation. -->
+            
             <enum name="tabMode" value="2"/>
         </attr>
         
@@ -12638,45 +12616,32 @@
   </declare-styleable>
     <declare-styleable name="AppBarLayout_Layout">
     <attr name="layout_scrollFlags">
-      <!-- Disable scrolling on the view. This flag should not be combined with any of the other
-           scroll flags. -->
+      
       <flag name="noScroll" value="0x0"/>
 
-      <!-- The view will be scroll in direct relation to scroll events. This flag needs to be
-           set for any of the other flags to take effect. If any sibling views
-           before this one do not have this flag, then this value has no effect. -->
+      
       <flag name="scroll" value="0x1"/>
 
-      <!-- When exiting (scrolling off screen) the view will be scrolled until it is
-           'collapsed'. The collapsed height is defined by the view's minimum height. -->
+      
       <flag name="exitUntilCollapsed" value="0x2"/>
 
-      <!-- When entering (scrolling on screen) the view will scroll on any downwards
-           scroll event, regardless of whether the scrolling view is also scrolling. This
-           is commonly referred to as the 'quick return' pattern. -->
+      
       <flag name="enterAlways" value="0x4"/>
 
-      <!-- An additional flag for 'enterAlways' which modifies the returning view to
-           only initially scroll back to it's collapsed height. Once the scrolling view has
-           reached the end of it's scroll range, the remainder of this view will be scrolled
-           into view. -->
+      
       <flag name="enterAlwaysCollapsed" value="0x8"/>
 
-      <!-- Upon a scroll ending, if the view is only partially visible then it will be
-           snapped and scrolled to it's closest edge. -->
+      
       <flag name="snap" value="0x10"/>
 
-      <!-- An additional flag to be used with 'snap'. If set, the view will be snapped to its
-           top and bottom margins, as opposed to the edges of the view itself. -->
+      
       <flag name="snapMargins" value="0x20"/>
     </attr>
 
     <attr format="enum" name="layout_scrollEffect">
-      <!-- No effect will be applied to this child when its parent
-           AppBarLayout's offset changes.-->
+      
       <enum name="none" value="0"/>
-      <!-- This view will be compressed (masked and parallaxed) when it reaches
-           the top of the screen and continues to scroll out of view.-->
+      
       <enum name="compress" value="1"/>
     </attr>
 
@@ -12696,22 +12661,17 @@
 
         
         <attr name="tintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and icon color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -12723,22 +12683,17 @@
         <attr format="color" name="tickMarkTint"/>
         
         <attr name="tickMarkTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and drawable color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -12759,10 +12714,9 @@
         <attr name="android:textAppearance"/>
         
         <attr format="enum" name="autoSizeTextType">
-            <!-- No auto-sizing (default). -->
+            
             <enum name="none" value="0"/>
-            <!-- Uniform horizontal and vertical text size scaling to fit within the
-            container. -->
+            
             <enum name="uniform" value="1"/>
         </attr>
         
@@ -12794,22 +12748,17 @@
         <attr format="color" name="drawableTint"/>
         
         <attr name="drawableTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and drawable color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
         
@@ -13205,13 +13154,13 @@
     <attr format="string" name="badgeText"/>
     <attr format="integer" name="number"/>
     <attr name="badgeGravity">
-      <!-- Gravity.TOP | Gravity.END -->
+      
       <enum name="TOP_END" value="8388661"/>
-      <!-- Gravity.TOP | Gravity.START -->
+      
       <enum name="TOP_START" value="8388659"/>
-      <!-- Gravity.BOTTOM | Gravity.END -->
+      
       <enum name="BOTTOM_END" value="8388693"/>
-      <!-- Gravity.BOTTOM | Gravity.START -->
+      
       <enum name="BOTTOM_START" value="8388691"/>
     </attr>
     
@@ -13227,11 +13176,9 @@
 
     
     <attr name="offsetAlignmentMode">
-      <!-- The offsets begin at the edge of the anchor. -->
+      
       <enum name="edge" value="0"/>
-      <!-- Follows the legacy offset alignment behavior. The horizontal offset begins at a variable
-           permanent inset from the edge of the anchor, and the vertical offset begins at the center
-           of the badge aligned with the edge of the anchor. -->
+      
       <enum name="legacy" value="1"/>
     </attr>
 
@@ -13249,9 +13196,9 @@
     <attr format="boolean" name="autoAdjustToWithinGrandparentBounds"/>
     
     <attr name="badgeFixedEdge">
-      <!-- The start of the badge is fixed and it grows towards the end. -->
+      
       <enum name="start" value="0"/>
-      <!-- The end of the badge is fixed and it grows towards the start. -->
+      
       <enum name="end" value="1"/>
     </attr>
   </declare-styleable>
@@ -13268,37 +13215,22 @@
     <attr name="trackColor"/>
     
     <attr name="showAnimationBehavior">
-      <!-- No animation used; appears immediately. -->
+      
       <enum name="none" value="0"/>
-      <!--
-        Expands from the bottom edge to the top edge for the linear type;
-        expands from the inner edge to the outer edge for the circular type.
-      -->
+      
       <enum name="outward" value="1"/>
-      <!--
-        Expands from the top edge to the bottom edge for the linear type;
-        expands from the outer edge to the inner edge for the circular type.
-      -->
+      
       <enum name="inward" value="2"/>
     </attr>
     
     <attr name="hideAnimationBehavior">
-      <!-- No animation used; disappears immediately. -->
+      
       <enum name="none" value="0"/>
-      <!--
-        Collapses from the bottom edge to the top edge for the linear type;
-        collapses from the inner edge to the outer edge for the circular type.
-      -->
+      
       <enum name="outward" value="1"/>
-      <!--
-        Collapses from the top edge to the bottom edge for the linear type;
-        collapses from the outer edge to the inner edge for the circular type.
-      -->
+      
       <enum name="inward" value="2"/>
-      <!--
-        Escapes in the progression direction for the linear type;
-        no effect for the circular type.
-      -->
+      
       <enum name="escape" value="3"/>
     </attr>
     
@@ -13329,23 +13261,23 @@
     <attr name="elevation"/>
     
     <attr name="fabAlignmentMode">
-      <!-- Mode that aligns the fab to the center. -->
+      
       <enum name="center" value="0"/>
-      <!-- Mode that aligns the fab to the end. -->
+      
       <enum name="end" value="1"/>
     </attr>
     
     <attr name="fabAnchorMode">
-      <!-- Mode that anchors the fab embedded inside the BottomAppBar. -->
+      
       <enum name="embed" value="0"/>
-      <!-- Mode that anchors the fab to be cradled within the top edge of the BottomAppBar. -->
+      
       <enum name="cradle" value="1"/>
     </attr>
     
     <attr name="fabAnimationMode">
-      <!-- Mode that scales the fab down to a point, moves it, then scales the fab back to its normal size. -->
+      
       <enum name="scale" value="0"/>
-      <!-- Mode that slides the fab from one alignment mode to the next. -->
+      
       <enum name="slide" value="1"/>
     </attr>
     
@@ -13370,10 +13302,9 @@
     <attr name="paddingRightSystemWindowInsets"/>
     
     <attr name="menuAlignmentMode">
-      <!-- Mode that aligns the menu automatically to avoid the FAB. Menu will be aligned at the end
-           when the FAB is center aligned, and start when the FAB is end aligned. -->
+      
       <enum name="auto" value="0"/>
-      <!-- Mode that aligns the menu to the start. -->
+      
       <enum name="start" value="1"/>
     </attr>
   </declare-styleable>
@@ -13392,7 +13323,7 @@
     <declare-styleable name="BottomSheetBehavior_Layout">
     
     <attr format="dimension" name="behavior_peekHeight">
-      <!-- Peek at the 16:9 ratio keyline of its parent -->
+      
       <enum name="auto" value="-1"/>
     </attr>
     
@@ -13419,19 +13350,17 @@
     <attr name="backgroundTint"/>
     
     <attr name="behavior_saveFlags">
-      <!-- This flag will preserve the peekHeight on configuration change. -->
+      
       <flag name="peekHeight" value="0x1"/>
-      <!-- This flag will preserve the fitToContents boolean value on configuration change. -->
+      
       <flag name="fitToContents" value="0x2"/>
-      <!-- This flag will preserve the hideable boolean value on configuration change. -->
+      
       <flag name="hideable" value="0x4"/>
-      <!-- This flag will preserve the skipCollapsed boolean value on configuration change. -->
+      
       <flag name="skipCollapsed" value="0x8"/>
-      <!-- This flag will preserve the all the aforementioned values on configuration change. -->
+      
       <flag name="all" value="-1"/>
-      <!-- This flag will not preserve the aforementioned values on configuration change. The only
-           value preserved will be the positional state, e.g. collapsed, hidden, expanded, etc.
-           This is the default behavior. -->
+      
       <flag name="none" value="0"/>
     </attr>
     
@@ -13508,22 +13437,17 @@
 
         
         <attr name="checkMarkTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and icon color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -13661,9 +13585,9 @@
     <attr format="boolean" name="indeterminateTrackVisible"/>
     
     <attr name="indeterminateAnimationTypeCircular">
-      <!-- The indicator will grow on the end point and shrink on the start point. -->
+      
       <enum name="advance" value="0"/>
-      <!-- The indicator track will grow and shrink on the end point. -->
+      
       <enum name="retreat" value="1"/>
     </attr>
     
@@ -13672,17 +13596,9 @@
     <attr format="dimension" name="indicatorInset"/>
     
     <attr name="indicatorDirectionCircular">
-      <!--
-        In the indeterminate mode, the spinner will spin clockwise; in the
-        determinate mode, the indicator will progress from the top (12 o'clock)
-        clockwise.
-      -->
+      
       <enum name="clockwise" value="0"/>
-      <!--
-        In the indeterminate mode, the spinner will spin counter-clockwise; in
-        the determinate mode, the indicator will progress from the top (12
-        o'clock) counter-clockwise.
-      -->
+      
       <enum name="counterclockwise" value="1"/>
     </attr>
   </declare-styleable>
@@ -13749,49 +13665,49 @@
 
     
     <attr name="collapsedTitleGravity">
-      <!-- Push title to the top of its container, not changing its size. -->
+      
       <flag name="top" value="0x30"/>
-      <!-- Push title to the bottom of its container, not changing its size. -->
+      
       <flag name="bottom" value="0x50"/>
-      <!-- Push title to the left of its container, not changing its size. -->
+      
       <flag name="left" value="0x03"/>
-      <!-- Push title to the right of its container, not changing its size. -->
+      
       <flag name="right" value="0x05"/>
-      <!-- Place title in the vertical center of its container, not changing its size. -->
+      
       <flag name="center_vertical" value="0x10"/>
-      <!-- Grow the vertical size of the title if needed so it completely fills its container. -->
+      
       <flag name="fill_vertical" value="0x70"/>
-      <!-- Place title in the horizontal center of its container, not changing its size. -->
+      
       <flag name="center_horizontal" value="0x01"/>
-      <!-- Place the title in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+      
       <flag name="center" value="0x11"/>
-      <!-- Push title to the beginning of its container, not changing its size. -->
+      
       <flag name="start" value="0x00800003"/>
-      <!-- Push title to the end of its container, not changing its size. -->
+      
       <flag name="end" value="0x00800005"/>
     </attr>
 
     
     <attr name="expandedTitleGravity">
-      <!-- Push title to the top of its container, not changing its size. -->
+      
       <flag name="top" value="0x30"/>
-      <!-- Push title to the bottom of its container, not changing its size. -->
+      
       <flag name="bottom" value="0x50"/>
-      <!-- Push title to the left of its container, not changing its size. -->
+      
       <flag name="left" value="0x03"/>
-      <!-- Push title to the right of its container, not changing its size. -->
+      
       <flag name="right" value="0x05"/>
-      <!-- Place title in the vertical center of its container, not changing its size. -->
+      
       <flag name="center_vertical" value="0x10"/>
-      <!-- Grow the vertical size of the title if needed so it completely fills its container. -->
+      
       <flag name="fill_vertical" value="0x70"/>
-      <!-- Place title in the horizontal center of its container, not changing its size. -->
+      
       <flag name="center_horizontal" value="0x01"/>
-      <!-- Place the title in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+      
       <flag name="center" value="0x11"/>
-      <!-- Push title to the beginning of its container, not changing its size. -->
+      
       <flag name="start" value="0x00800003"/>
-      <!-- Push title to the end of its container, not changing its size. -->
+      
       <flag name="end" value="0x00800005"/>
     </attr>
 
@@ -13803,9 +13719,9 @@
     <attr name="subtitle"/>
     
     <attr name="titleCollapseMode">
-      <!-- The expanded title will continuously scale and translate to its final collapsed position. -->
+      
       <enum name="scale" value="0"/>
-      <!-- The expanded title will fade out and translate, and the collapsed title will fade in. -->
+      
       <enum name="fade" value="1"/>
     </attr>
     
@@ -13822,23 +13738,19 @@
     <attr format="reference" name="titlePositionInterpolator"/>
     
     <attr name="collapsedTitleGravityMode">
-      <!-- Calculate the gravity based on the entire size of the container, regardless of how
-           much space is taken by other views in the container. The title will be pushed to the side
-           if overlapping with another view. -->
+      
       <enum name="entireSpace" value="0"/>
-      <!-- Calculate gravity based on the available space in the container after laying out
-           other views in the container. -->
+      
       <enum name="availableSpace" value="1"/>
     </attr>
   </declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout_Layout">
     <attr name="layout_collapseMode">
-      <!-- The view will act as normal with no collapsing behavior. -->
+      
       <enum name="none" value="0"/>
-      <!-- The view will pin in place. -->
+      
       <enum name="pin" value="1"/>
-      <!-- The view will scroll in a parallax fashion. See the
-           layout_collapseParallaxMultiplier attribute to change the multiplier. -->
+      
       <enum name="parallax" value="2"/>
     </attr>
 
@@ -13864,22 +13776,17 @@
 
         
         <attr name="buttonTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and icon color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -14498,76 +14405,70 @@
 
         
         <attr name="layout_anchorGravity">
-            <!-- Push object to the top of its container, not changing its size. -->
+            
             <flag name="top" value="0x30"/>
-            <!-- Push object to the bottom of its container, not changing its size. -->
+            
             <flag name="bottom" value="0x50"/>
-            <!-- Push object to the left of its container, not changing its size. -->
+            
             <flag name="left" value="0x03"/>
-            <!-- Push object to the right of its container, not changing its size. -->
+            
             <flag name="right" value="0x05"/>
-            <!-- Place object in the vertical center of its container, not changing its size. -->
+            
             <flag name="center_vertical" value="0x10"/>
-            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            
             <flag name="fill_vertical" value="0x70"/>
-            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            
             <flag name="center_horizontal" value="0x01"/>
-            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            
             <flag name="fill_horizontal" value="0x07"/>
-            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            
             <flag name="center" value="0x11"/>
-            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            
             <flag name="fill" value="0x77"/>
-            <!-- Additional option that can be set to have the top and/or bottom edges of
-                 the child clipped to its container's bounds.
-                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
-                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            
             <flag name="clip_vertical" value="0x80"/>
-            <!-- Additional option that can be set to have the left and/or right edges of
-                 the child clipped to its container's bounds.
-                 The clip will be based on the horizontal gravity: a left gravity will clip the right
-                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            
             <flag name="clip_horizontal" value="0x08"/>
-            <!-- Push object to the beginning of its container, not changing its size. -->
+            
             <flag name="start" value="0x00800003"/>
-            <!-- Push object to the end of its container, not changing its size. -->
+            
             <flag name="end" value="0x00800005"/>
         </attr>
 
         
         <attr format="enum" name="layout_insetEdge">
-            <!-- Don't inset. -->
+            
             <enum name="none" value="0x0"/>
-            <!-- Inset the top edge. -->
+            
             <enum name="top" value="0x30"/>
-            <!-- Inset the bottom edge. -->
+            
             <enum name="bottom" value="0x50"/>
-            <!-- Inset the left edge. -->
+            
             <enum name="left" value="0x03"/>
-            <!-- Inset the right edge. -->
+            
             <enum name="right" value="0x05"/>
-            <!-- Inset the start edge. -->
+            
             <enum name="start" value="0x00800003"/>
-            <!-- Inset the end edge. -->
+            
             <enum name="end" value="0x00800005"/>
         </attr>
         
         <attr name="layout_dodgeInsetEdges">
-            <!-- Don't dodge any edges -->
+            
             <flag name="none" value="0x0"/>
-            <!-- Dodge the top inset edge. -->
+            
             <flag name="top" value="0x30"/>
-            <!-- Dodge the bottom inset edge. -->
+            
             <flag name="bottom" value="0x50"/>
-            <!-- Dodge the left inset edge. -->
+            
             <flag name="left" value="0x03"/>
-            <!-- Dodge the right inset edge. -->
+            
             <flag name="right" value="0x05"/>
-            <!-- Dodge the start inset edge. -->
+            
             <flag name="start" value="0x00800003"/>
-            <!-- Dodge the end inset edge. -->
+            
             <flag name="end" value="0x00800005"/>
-            <!-- Dodge all the inset edges. -->
+            
             <flag name="all" value="0x77"/>
         </attr>
     </declare-styleable>
@@ -14635,11 +14536,11 @@
     <attr name="elevation"/>
     
     <attr name="extendStrategy">
-      <!-- Strategy to extend FAB back to the width it shrunk from. -->
+      
       <enum name="auto" value="0"/>
-      <!-- Strategy to extend FAB to wrap content. -->
+      
       <enum name="wrap_content" value="1"/>
-      <!-- Strategy to extend FAB to match parent. -->
+      
       <enum name="match_parent" value="2"/>
     </attr>
     
@@ -14671,11 +14572,11 @@
 
     
     <attr name="fabSize">
-      <!-- A size which will change based on the window size. -->
+      
       <enum name="auto" value="-1"/>
-      <!-- The normal sized button. -->
+      
       <enum name="normal" value="0"/>
-      <!-- The mini sized button. -->
+      
       <enum name="mini" value="1"/>
     </attr>
     
@@ -14738,23 +14639,14 @@
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
-            <!-- The blocking font fetch works as follows.
-              First, check the local cache, then if the requested font is not cached, request the
-              font from the provider and wait until it is finished.  You can change the length of
-              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
-              default typeface will be used instead. -->
+            
             <enum name="blocking" value="0"/>
-            <!-- The async font fetch works as follows.
-              First, check the local cache, then if the requested font is not cached, trigger a
-              request the font and continue with layout inflation. Once the font fetch succeeds, the
-              target text view will be refreshed with the downloaded font data. The
-              fontProviderFetchTimeout will be ignored if async loading is specified. -->
+            
             <enum name="async" value="1"/>
         </attr>
         
         <attr format="integer" name="fontProviderFetchTimeout">
-            <!-- A special value for the timeout. In this case, the blocking font fetching will not
-              timeout and wait until a reply is received from the font provider. -->
+            
             <enum name="forever" value="-1"/>
         </attr>
         
@@ -15153,31 +15045,20 @@
     <declare-styleable name="LinearProgressIndicator">
     
     <attr name="indeterminateAnimationType">
-      <!--
-        The track will be filled with three adjacent segments in iterative different colors.
-        This type is only available when there are three or more indicator colors.
-      -->
+      
       <enum name="contiguous" value="0"/>
-      <!--
-        There will be two disjoint segments in the same color per cycle. The color iterates between cycles.
-      -->
+      
       <enum name="disjoint" value="1"/>
     </attr>
     
     <attr name="indicatorDirectionLinear">
-      <!-- Animated from the left end to the right end of the track. -->
+      
       <enum name="leftToRight" value="0"/>
-      <!-- Animated from the right end to the left end of the track. -->
+      
       <enum name="rightToLeft" value="1"/>
-      <!--
-        Animated from the start position to the end position of the track.
-        This will be same as the leftToRight for API before 17.
-      -->
+      
       <enum name="startToEnd" value="2"/>
-      <!--
-        Animated from the end position to the start position of the track.
-        This will be same as the rightToLeft for API before 17.
-      -->
+      
       <enum name="endToStart" value="3"/>
     </attr>
     
@@ -15303,20 +15184,17 @@
     <attr format="dimension" name="iconPadding"/>
     
     <attr name="iconGravity">
-      <!-- Push icon to the start of the button. -->
+      
       <flag name="start" value="0x1"/>
-      <!-- Push the icon to the start of the text keeping a distance equal to
-           {@code iconPadding} from the text. -->
+      
       <flag name="textStart" value="0x2"/>
-      <!-- Push icon to the end of the button. -->
+      
       <flag name="end" value="0x3"/>
-      <!-- Push the icon to the end of the text keeping a distance equal to
-           {@code iconPadding} from the text. -->
+      
       <flag name="textEnd" value="0x4"/>
-      <!-- Push the icon to the top of the button. -->
+      
       <flag name="top" value="0x10"/>
-      <!-- Push the icon to the top of the text keeping a distance equal to
-           {@code iconPadding} from the text. -->
+      
       <flag name="textTop" value="0x20"/>
     </attr>
     
@@ -15415,13 +15293,13 @@
     <attr format="dimension" name="checkedIconMargin"/>
     
     <attr name="checkedIconGravity">
-      <!-- Gravity.TOP | Gravity.END -->
+      
       <enum name="TOP_END" value="8388661"/>
-      <!-- Gravity.TOP | Gravity.START -->
+      
       <enum name="TOP_START" value="8388659"/>
-      <!-- Gravity.BOTTOM | Gravity.END -->
+      
       <enum name="BOTTOM_END" value="8388693"/>
-      <!-- Gravity.BOTTOM | Gravity.START -->
+      
       <enum name="BOTTOM_START" value="8388691"/>
     </attr>
     
@@ -15451,22 +15329,17 @@
     <attr format="reference|color" name="buttonIconTint"/>
     
     <attr name="buttonIconTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
-      <!-- Combines the tint and drawable color and alpha channels, clamping the
-           result to valid color values. Saturate(S + D) -->
+      
       <enum name="add" value="16"/>
     </attr>
     
@@ -15477,11 +15350,11 @@
     <attr format="string" name="errorAccessibilityLabel"/>
     
     <attr name="checkedState">
-      <!-- The unchecked state of the checkbox. -->
+      
       <enum name="unchecked" value="0"/>
-      <!-- The checked state of the checkbox. -->
+      
       <enum name="checked" value="1"/>
-      <!-- The indeterminate state of the checkbox. -->
+      
       <enum name="indeterminate" value="2"/>
     </attr>
   </declare-styleable>
@@ -15528,22 +15401,17 @@
     <attr format="color" name="thumbIconTint"/>
     
     <attr name="thumbIconTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
-      <!-- Combines the tint and drawable color and alpha channels, clamping the
-           result to valid color values. Saturate(S + D) -->
+      
       <enum name="add" value="16"/>
     </attr>
     
@@ -15554,22 +15422,17 @@
     <attr format="color" name="trackDecorationTint"/>
     
     <attr name="trackDecorationTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
-      <!-- Combines the tint and drawable color and alpha channels, clamping the
-           result to valid color values. Saturate(S + D) -->
+      
       <enum name="add" value="16"/>
     </attr>
   </declare-styleable>
@@ -15603,27 +15466,21 @@
     <attr format="boolean" name="logoAdjustViewBounds"/>
     
     <attr name="logoScaleType">
-      <!-- Scale using the image matrix when drawing. See
-           {@link android.widget.ImageView#setImageMatrix(Matrix)}. -->
+      
       <enum name="matrix" value="0"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
+      
       <enum name="fitXY" value="1"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
+      
       <enum name="fitStart" value="2"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
+      
       <enum name="fitCenter" value="3"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
+      
       <enum name="fitEnd" value="4"/>
-      <!-- Center the image in the view, but perform no scaling. -->
+      
       <enum name="center" value="5"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
-           (width and height) of the image will be equal to or larger than the corresponding
-           dimension of the view (minus padding). The image is then centered in the view. -->
+      
       <enum name="centerCrop" value="6"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
-           dimensions (width and height) of the image will be equal to or less than the
-           corresponding dimension of the view (minus padding). The image is then centered in
-           the view. -->
+      
       <enum name="centerInside" value="7"/>
     </attr>
   </declare-styleable>
@@ -15711,24 +15568,15 @@
 
         
         <attr name="showAsAction">
-            <!-- Never show this item in an action bar, show it in the overflow menu instead.
-                 Mutually exclusive with "ifRoom" and "always". -->
+            
             <flag name="never" value="0"/>
-            <!-- Show this item in an action bar if there is room for it as determined
-                 by the system. Favor this option over "always" where possible.
-                 Mutually exclusive with "never" and "always". -->
+            
             <flag name="ifRoom" value="1"/>
-            <!-- Always show this item in an actionbar, even if it would override
-                 the system's limits of how much stuff to put there. This may make
-                 your action bar look bad on some screens. In most cases you should
-                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". -->
+            
             <flag name="always" value="2"/>
-            <!-- When this item is shown as an action in the action bar, show a text
-                 label with it even if it has an icon representation. -->
+            
             <flag name="withText" value="4"/>
-            <!-- This item's action view collapses to a normal menu
-                 item. When expanded, the action view takes over a
-                 larger segment of its container. -->
+            
             <flag name="collapseActionView" value="8"/>
         </attr>
 
@@ -15752,22 +15600,17 @@
 
         
         <attr name="iconTintMode">
-            <!-- The tint is drawn on top of the icon.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the icon. The icon’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the icon, but with the icon’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the icon with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and icon color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
 
@@ -15903,9 +15746,9 @@
     <attr format="dimension" name="marginHorizontal"/>
     
     <attr format="dimension" name="expandedWidth">
-      <!-- The active indicator fills the width of the available space -->
+      
       <enum name="match_parent" value="-1"/>
-      <!-- The active indicator wraps the content -->
+      
       <enum name="wrap_content" value="-2"/>
     </attr>
     
@@ -15928,14 +15771,13 @@
     <attr name="menu"/>
     
     <attr name="labelVisibilityMode">
-      <!-- Label behaves as "labeled" when there are 3 items or less, or "selected" when there are
-           4 items or more. -->
+      
       <enum name="auto" value="-1"/>
-      <!-- Label is shown on the selected navigation item. -->
+      
       <enum name="selected" value="0"/>
-      <!-- Label is shown on all navigation items. -->
+      
       <enum name="labeled" value="1"/>
-      <!-- Label is not shown on any navigation items. -->
+      
       <enum name="unlabeled" value="2"/>
     </attr>
     
@@ -15981,11 +15823,11 @@
 
     
     <attr name="itemGravity">
-      <!-- Gravity.TOP | Gravity.CENTER_HORIZONTAL -->
+      
       <enum name="top_center" value="49"/>
-      <!-- Gravity.CENTER-->
+      
       <enum name="center" value="17"/>
-      <!-- Gravity.START | Gravity.CENTER_VERTICAL -->
+      
       <enum name="start_center" value="8388627"/>
     </attr>
 
@@ -16021,14 +15863,14 @@
 
     
     <attr name="menuGravity">
-      <!-- Navigation rail destinations will be aligned as a group at the top. This is the default behavior. -->
-      <!-- Gravity.TOP | Gravity.CENTER_HORIZONTAL-->
+      
+      
       <enum name="top" value="49"/>
-      <!-- Navigation rail destinations will be aligned as a group at the center. -->
-      <!-- Gravity.CENTER -->
+      
+      
       <enum name="center" value="17"/>
-      <!-- Navigation rail destinations will be aligned as a group at the bottom. -->
-      <!-- Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL -->
+      
+      
       <enum name="bottom" value="81"/>
     </attr>
     
@@ -16516,13 +16358,13 @@
     <attr format="dimension" name="haloRadius"/>
     
     <attr name="labelBehavior">
-      <!-- Mode that draws the label floating above the bounds of this view. -->
+      
       <enum name="floating" value="0"/>
-      <!-- Mode that draws the label within the bounds of the view. -->
+      
       <enum name="withinBounds" value="1"/>
-      <!-- Mode that prevents the label from being drawn. -->
+      
       <enum name="gone" value="2"/>
-      <!-- Mode that always draws the label. -->
+      
       <enum name="visible" value="3"/>
     </attr>
     
@@ -16559,14 +16401,11 @@
     <attr format="boolean" name="tickVisible"/>
     
     <attr format="enum" name="tickVisibilityMode">
-      <!-- All tick marks will be drawn if they are not spaced too densely. Otherwise,
-           the maximum allowed number of tick marks will be drawn.
-           Note that in this case the drawn ticks may not match the actual snap values. -->
+      
       <enum name="autoLimit" value="0"/>
-      <!-- All tick marks will be drawn if they are not spaced too densely. Otherwise,
-           the tick marks will not be drawn. -->
+      
       <enum name="autoHide" value="1"/>
-      <!-- Tick marks will not be drawn. -->
+      
       <enum name="hidden" value="2"/>
     </attr>
     
@@ -16612,9 +16451,9 @@
     <attr format="dimension" name="maxActionInlineWidth"/>
     
     <attr format="enum" name="animationMode">
-      <!-- Mode that corresponds to the slide in and out animations. -->
+      
       <enum name="slide" value="0"/>
-      <!-- Mode that corresponds to the fade in and out animations. -->
+      
       <enum name="fade" value="1"/>
     </attr>
     
@@ -16680,22 +16519,17 @@
         <attr format="color" name="thumbTint"/>
         
         <attr name="thumbTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and drawable color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
         
@@ -16704,22 +16538,17 @@
         <attr format="color" name="trackTint"/>
         
         <attr name="trackTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and drawable color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
         
@@ -16764,13 +16593,13 @@
     <attr format="reference" name="tabIndicator"/>
     
     <attr name="tabIndicatorGravity">
-      <!-- Align indicator to the bottom of this tab layout. -->
+      
       <enum name="bottom" value="0"/>
-      <!-- Align indicator along the center of this tab layout. -->
+      
       <enum name="center" value="1"/>
-      <!-- Align indicator to the top of this tab layout. -->
+      
       <enum name="top" value="2"/>
-      <!-- Stretch indicator to match the height and width of a tab item in this layout. -->
+      
       <enum name="stretch" value="3"/>
     </attr>
     
@@ -16779,17 +16608,11 @@
     <attr format="boolean" name="tabIndicatorFullWidth"/>
     
     <attr name="tabIndicatorAnimationMode">
-      <!-- Animate the selection indicator's left and right bounds in step with
-           each other. -->
+      
       <enum name="linear" value="0"/>
-      <!-- Animate the selection indicator's left and right bounds out of step
-           with each other, decelerating the front and accelerating the back.
-           This causes the indicator to look like it stretches between destinations
-           an then shrinks back down to fit the size of it's target tab. -->
+      
       <enum name="elastic" value="1"/>
-      <!-- Animate the selection indicator by sequentially fading it out from
-           its current destination and then fading it in at its new
-           destination. -->
+      
       <enum name="fade" value="2"/>
     </attr>
     
@@ -16936,19 +16759,15 @@
     <attr format="reference" name="errorIconTint"/>
     
     <attr name="errorIconTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
     </attr>
 
@@ -17000,56 +16819,47 @@
     <attr format="color" name="startIconTint"/>
     
     <attr name="startIconTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
     </attr>
     
     <attr format="dimension" name="startIconMinSize"/>
     
     <attr name="startIconScaleType">
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
+      
       <enum name="fitXY" value="0"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
+      
       <enum name="fitStart" value="1"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
+      
       <enum name="fitCenter" value="2"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
+      
       <enum name="fitEnd" value="3"/>
-      <!-- Center the image in the view, but perform no scaling. -->
+      
       <enum name="center" value="4"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
-           (width and height) of the image will be equal to or larger than the corresponding
-           dimension of the view (minus padding). The image is then centered in the view. -->
+      
       <enum name="centerCrop" value="5"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
-           dimensions (width and height) of the image will be equal to or less than the
-           corresponding dimension of the view (minus padding). The image is then centered in
-           the view. -->
+      
       <enum name="centerInside" value="6"/>
     </attr>
     
     <attr name="endIconMode">
-      <!-- The view will display a custom icon specified by the user. -->
+      
       <enum name="custom" value="-1"/>
-      <!-- No end icon. -->
+      
       <enum name="none" value="0"/>
-      <!-- The view will display a toggle when the EditText has a password. -->
+      
       <enum name="password_toggle" value="1"/>
-      <!-- The view will display a clear text button while the EditText contains input. -->
+      
       <enum name="clear_text" value="2"/>
-      <!-- The view will display a toggle that displays/hides a dropdown menu. -->
+      
       <enum name="dropdown_menu" value="3"/>
     </attr>
     
@@ -17062,53 +16872,44 @@
     <attr format="color" name="endIconTint"/>
     
     <attr name="endIconTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
     </attr>
     
     <attr format="dimension" name="endIconMinSize"/>
     
     <attr name="endIconScaleType">
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
+      
       <enum name="fitXY" value="0"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
+      
       <enum name="fitStart" value="1"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
+      
       <enum name="fitCenter" value="2"/>
-      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
+      
       <enum name="fitEnd" value="3"/>
-      <!-- Center the image in the view, but perform no scaling. -->
+      
       <enum name="center" value="4"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
-           (width and height) of the image will be equal to or larger than the corresponding
-           dimension of the view (minus padding). The image is then centered in the view. -->
+      
       <enum name="centerCrop" value="5"/>
-      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
-           dimensions (width and height) of the image will be equal to or less than the
-           corresponding dimension of the view (minus padding). The image is then centered in
-           the view. -->
+      
       <enum name="centerInside" value="6"/>
     </attr>
 
     
     <attr name="boxBackgroundMode">
-      <!-- Specifies that there should be no box set on the text input area. -->
+      
       <enum name="none" value="0"/>
-      <!-- Filled box mode for the text input box. -->
+      
       <enum name="filled" value="1"/>
-      <!-- Outline box mode for the text input box. -->
+      
       <enum name="outline" value="2"/>
     </attr>
     
@@ -17147,19 +16948,15 @@
     <attr format="color" name="passwordToggleTint"/>
     
     <attr name="passwordToggleTintMode">
-      <!-- The tint is drawn on top of the drawable.
-           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+      
       <enum name="src_over" value="3"/>
-      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-           color channels are thrown out. [Sa * Da, Sc * Da] -->
+      
       <enum name="src_in" value="5"/>
-      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+      
       <enum name="src_atop" value="9"/>
-      <!-- Multiplies the color and alpha channels of the drawable with those of
-           the tint. [Sa * Da, Sc * Dc] -->
+      
       <enum name="multiply" value="14"/>
-      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+      
       <enum name="screen" value="15"/>
     </attr>
     
@@ -17199,11 +16996,11 @@
         <attr name="contentInsetEndWithActions"/>
         <attr format="dimension" name="maxButtonHeight"/>
         <attr name="buttonGravity">
-            <!-- Place object in the vertical center of its container, not changing its size. -->
+            
             <flag name="center_vertical" value="0x10"/>
-            <!-- Push object to the top of its container, not changing its size. -->
+            
             <flag name="top" value="0x30"/>
-            <!-- Push object to the bottom of its container, not changing its size. -->
+            
             <flag name="bottom" value="0x50"/>
         </attr>
         
@@ -17337,22 +17134,17 @@
 
         
         <attr name="backgroundTintMode">
-            <!-- The tint is drawn on top of the drawable.
-                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
+            
             <enum name="src_over" value="3"/>
-            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
-                 color channels are thrown out. [Sa * Da, Sc * Da] -->
+            
             <enum name="src_in" value="5"/>
-            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
-                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
+            
             <enum name="src_atop" value="9"/>
-            <!-- Multiplies the color and alpha channels of the drawable with those of
-                 the tint. [Sa * Da, Sc * Dc] -->
+            
             <enum name="multiply" value="14"/>
-            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
+            
             <enum name="screen" value="15"/>
-            <!-- Combines the tint and icon color and alpha channels, clamping the
-                 result to valid color values. Saturate(S + D) -->
+            
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -17387,25 +17179,25 @@
         <attr format="color" name="com_facebook_foreground_color"/>
         <attr format="string" name="com_facebook_object_id"/>
         <attr name="com_facebook_object_type">
-            <!-- Keep in sync with Enums in Likeview -->
+            
             <enum name="unknown" value="0"/>
             <enum name="open_graph" value="1"/>
             <enum name="page" value="2"/>
         </attr>
         <attr name="com_facebook_style">
-            <!-- Keep in sync with Enums in LikeView -->
+            
             <enum name="standard" value="0"/>
             <enum name="button" value="1"/>
             <enum name="box_count" value="2"/>
         </attr>
         <attr name="com_facebook_auxiliary_view_position">
-            <!-- Keep in sync with Enums in LikeView -->
+            
             <enum name="bottom" value="0"/>
             <enum name="inline" value="1"/>
             <enum name="top" value="2"/>
         </attr>
         <attr name="com_facebook_horizontal_alignment">
-            <!-- Keep in sync with Enums in LikeView -->
+            
             <enum name="center" value="0"/>
             <enum name="left" value="1"/>
             <enum name="right" value="2"/>
@@ -17416,7 +17208,7 @@
         <attr format="string" name="com_facebook_login_text"/>
         <attr format="string" name="com_facebook_logout_text"/>
         <attr name="com_facebook_tooltip_mode">
-            <!-- Keep in sync with Enums in LoginButton -->
+            
             <enum name="automatic" value="0"/>
             <enum name="display_always" value="1"/>
             <enum name="never_display" value="2"/>
@@ -17426,7 +17218,7 @@
     </declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view">
         <attr name="com_facebook_preset_size">
-            <!-- Keep in sync with constants in ProfilePictureView -->
+            
             <enum name="small" value="-2"/>
             <enum name="normal" value="-3"/>
             <enum name="large" value="-4"/>

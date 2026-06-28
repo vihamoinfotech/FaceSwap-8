@@ -2,12 +2,10 @@ package com.facechanger.faceswap.enhance.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.faceenhance.facechanger.activity.BaseAdActivity;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.CoinManager;
@@ -28,7 +26,7 @@ public class TextToImageActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_to_image);
+        setContentView(R.layout.app_face_activity_text_to_image_screen);
         Tools.setStatusBarBleed(getWindow(), findViewById(R.id.textToImageContent), false);
 
         loadAds();
@@ -109,7 +107,7 @@ public class TextToImageActivity extends BaseAppActivity {
     private void handleGenerate() {
         String prompt = etPrompt.getText().toString().trim();
         if (prompt.isEmpty()) {
-            Toast.makeText(this, getString(R.string.TextToImageActivity_please_enter_a_prompt), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.app_face_please_enter_a_prompt_text), Toast.LENGTH_SHORT).show();
             return;
         }
 

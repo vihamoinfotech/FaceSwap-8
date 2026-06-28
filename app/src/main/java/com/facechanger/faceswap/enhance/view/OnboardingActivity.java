@@ -18,14 +18,12 @@ import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.PrismVaultVPgr;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.controller.AdManager;
-import com.faceenhance.facechanger.model.AdType;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import android.widget.FrameLayout;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -50,7 +48,7 @@ public class OnboardingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding);
+        setContentView(R.layout.app_face_activity_onboarding_screen);
         Tools.setEdgetoEdge(getWindow(), findViewById(R.id.viewPager), false, false);
 
         viewPager = findViewById(R.id.viewPager);

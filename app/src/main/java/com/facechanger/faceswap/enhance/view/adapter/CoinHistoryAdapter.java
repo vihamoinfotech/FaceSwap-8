@@ -3,8 +3,6 @@ package com.facechanger.faceswap.enhance.view.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -50,7 +48,7 @@ public class CoinHistoryAdapter extends RecyclerView.Adapter<CoinHistoryAdapter.
     @Override
     public TransactionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_coin_transaction, parent, false);
+                .inflate(R.layout.app_coin_transaction_item, parent, false);
         return new TransactionViewHolder(view);
     }
 
@@ -63,11 +61,11 @@ public class CoinHistoryAdapter extends RecyclerView.Adapter<CoinHistoryAdapter.
         if (tx.isCredit) {
             holder.tvAmount.setText("+" + formatAmount(tx.amount));
             holder.tvAmount.setTextColor(holder.itemView.getContext()
-                    .getResources().getColor(R.color.success, null));
+                    .getResources().getColor(R.color.app_success_color, null));
         } else {
             holder.tvAmount.setText("-" + formatAmount(tx.amount));
             holder.tvAmount.setTextColor(holder.itemView.getContext()
-                    .getResources().getColor(R.color.error, null));
+                    .getResources().getColor(R.color.app_error_color, null));
         }
     }
 

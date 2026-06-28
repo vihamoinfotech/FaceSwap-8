@@ -112,10 +112,10 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         if (viewType == VIEW_TYPE_LOADING) {
-            View view = inflater.inflate(R.layout.item_history_loading, parent, false);
+            View view = inflater.inflate(R.layout.app_history_loading_item, parent, false);
             return new LoadingViewHolder(view);
         }
-        View view = inflater.inflate(R.layout.item_history, parent, false);
+        View view = inflater.inflate(R.layout.app_history_item, parent, false);
         return new HistoryViewHolder(view);
     }
 
@@ -184,8 +184,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             if (item.hasValidUrl()) {
                 Glide.with(context)
                         .load(GlideHelper.authorizedUrl(item.getResultUrl()))
-                        .placeholder(R.color.card_background)
-                        .error(R.color.card_background)
+                        .placeholder(R.color.app_base_card_background)
+                        .error(R.color.app_base_card_background)
                         .transition(DrawableTransitionOptions.withCrossFade())
                         .centerCrop()
                         .into(ivThumbnail);
@@ -204,7 +204,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 }
             } else {
                 Glide.with(context).clear(ivThumbnail);
-                ivThumbnail.setImageResource(R.color.card_background);
+                ivThumbnail.setImageResource(R.color.app_base_card_background);
                 if (ivPlayIcon != null) ivPlayIcon.setVisibility(View.GONE);
             }
 
