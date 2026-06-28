@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appUpdateContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <!-- Decorative glow orb (top-right) -->
+    <View
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-40dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_update_glow" />
+
+    <!-- Decorative glow orb (bottom-left) -->
+    <View
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginBottom="-30dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_update_glow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutBottom"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_24sdp"
+            android:paddingTop="@dimen/_60sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <!-- App icon with glow ring -->
+            <FrameLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_logo_glow" />
+
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_face_splash_logo_text"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_logo_transparent" />
+            </FrameLayout>
+
+            <!-- Spacing -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_16sdp" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_extrabold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/app_face_new_update_available_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22sdp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/app_face_new_update_sub_title_text"
+                android:textColor="@color/app_secondary_text"
+                android:textSize="@dimen/_12sdp" />
+
+            <!-- Spacing -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_24sdp" />
+
+            <!-- Feature cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Feature 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_update_feature_card"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_12sdp">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_update_icon_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/app_face_update_logo_text"
+                            android:textSize="@dimen/_16sdp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_better_performance_text"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_update_feature_first_desc_text"
+                            android:textColor="@color/app_secondary_text"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Feature 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_update_feature_card"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_12sdp">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_update_icon_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/app_face_update_logo_one_text"
+                            android:textSize="@dimen/_16sdp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_swap_new_features_text"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_update_feature_second_desc_text"
+                            android:textColor="@color/app_secondary_text"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Feature 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_update_feature_card"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_12sdp">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_36sdp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_update_icon_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/app_face_update_logo_two_text"
+                            android:textSize="@dimen/_16sdp" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_bug_fixes_text"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/app_face_update_feature_third_desc_text"
+                            android:textColor="@color/app_secondary_text"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom section — fixed at bottom -->
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_24sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <!-- Update button -->
+        <Button
+            android:id="@+id/btnUpdateNow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:background="@drawable/bg_update_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02"
+            android:stateListAnimator="@null"
+            android:text="@string/app_face_update_now_button_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null" />
+
+        <!-- Version info -->
+        <TextView
+            android:id="@+id/tvVersionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/app_tertiary_text"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

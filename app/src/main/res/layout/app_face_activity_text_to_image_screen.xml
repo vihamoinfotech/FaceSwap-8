@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_dark_background">
+
+    <RelativeLayout
+        android:id="@+id/textToImageContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_alignParentTop="true"
+            android:paddingHorizontal="@dimen/_6sdp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/view_all_bg"
+                android:contentDescription="@string/app_face_back_text"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/white" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@id/btnBack"
+                android:text="@string/app_text_to_image_text" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/llHeader"
+            android:background="@color/app_subtle_divider" />
+
+        <!-- Generate button (fixed bottom) -->
+        <!-- Cost indicator -->
+        <LinearLayout
+            android:id="@+id/llCostContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnGenerate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:background="@drawable/bg_pill_solid"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_coin" />
+
+            <TextView
+                android:id="@+id/tvFeatureCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/ai_face_image_10_coins_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_above="@+id/second_ad_view_container"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:background="@drawable/bg_generate_button"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02"
+            android:text="@string/ai_face_image_generate_image_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:backgroundTint="@null"
+            app:cornerRadius="16dp" />
+
+        <!-- Scrollable content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnGenerate"
+            android:layout_below="@id/underline"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingTop="@dimen/_18sdp"
+                android:paddingBottom="@dimen/_12sdp">
+
+                <!-- Headline -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:includeFontPadding="false"
+                        android:text="@string/ai_face_image_text_to_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:includeFontPadding="false"
+                        android:text="@string/ai_face_image_text"
+                        android:textColor="@color/app_primary_brand"
+                        android:textSize="@dimen/_20sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/ai_face_image_describe_anything_and_watch_text"
+                    android:textColor="@color/app_tertiary_text"
+                    android:textSize="@dimen/_11sdp" />
+
+                <!-- Prompt section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:background="@drawable/common_border"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_16sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_32sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:background="@drawable/bg_badge_orange"
+                            android:contentDescription="@null"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@drawable/ic_text_promt" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:includeFontPadding="false"
+                                android:text="@string/app_your_prompt_text"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/app_be_descriptive_for_best_text"
+                                android:textColor="@color/app_tertiary_text"
+                                android:textSize="@dimen/_9sdp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_badge_orange"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:includeFontPadding="false"
+                            android:paddingHorizontal="@dimen/_9sdp"
+                            android:paddingVertical="@dimen/_3sdp"
+                            android:text="@string/app_face_required_text"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etPrompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/clear_bg_border"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="top|start"
+                        android:hint="e.g. A warrior princess in enchanted forest, cinematic lighting, 8K..."
+                        android:includeFontPadding="false"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:lineSpacingMultiplier="1.4"
+                        android:minHeight="@dimen/_140sdp"
+                        android:padding="@dimen/_12sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/app_disabled_text"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <!-- Suggestions section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_border"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_16sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_quick_ideas_text"
+                        android:textColor="@color/app_secondary_text"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <!-- Chip suggestions — populated programmatically -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:overScrollMode="never">
+
+                        <LinearLayout
+                            android:id="@+id/chipSuggestions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_2sdp" />
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/second_ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

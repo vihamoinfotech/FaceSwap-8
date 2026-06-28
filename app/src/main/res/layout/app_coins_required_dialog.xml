@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dialog: Coins Required
+     IDs: ivDialogIcon, tvDialogTitle, tvDialogMessage, btnDialogPositive, btnDialogClose -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_rounded"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:paddingStart="@dimen/_24sdp"
+        android:paddingTop="@dimen/_36sdp"
+        android:paddingEnd="@dimen/_24sdp"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <!-- Coin icon with gradient glow ring -->
+        <FrameLayout
+            android:layout_width="@dimen/_88sdp"
+            android:layout_height="@dimen/_88sdp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_logo_glow" />
+
+            <ImageView
+                android:id="@+id/ivDialogIcon"
+                android:layout_width="@dimen/_56sdp"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_dialog_icon_text"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_coin" />
+        </FrameLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/app_face_coins_dialog_title_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <!-- Gradient accent divider -->
+        <View
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/bg_badge_orange" />
+
+        <!-- Message -->
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="1.4"
+            android:text="@string/app_coins_dialog_desc_text"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/_12sdp" />
+
+        <!-- Action button -->
+        <TextView
+            android:id="@+id/btnDialogPositive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="@drawable/bg_dialog_button_gradient"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02"
+            android:text="@string/app_dialog_action_button_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <!-- Close button (top-right) -->
+    <ImageView
+        android:id="@+id/btnDialogClose"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/bg_close_button"
+        android:contentDescription="@string/face_dialog_close_text"
+        android:padding="@dimen/_1sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_trans_close" />
+
+</FrameLayout>

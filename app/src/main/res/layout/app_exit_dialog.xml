@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/_24sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_rounded"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!-- Main Icon -->
+        <ImageView
+            android:id="@+id/ivDialogIcon"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_app_logo"
+            app:tint="@color/app_primary_brand" />
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="@string/app_leaving_so_soon_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/app_are_you_sure_you_sure_text"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/_12sdp"
+            android:lineSpacingExtra="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnExitNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_primary"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="@string/app_stay_in_app_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/btnExitYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/bg_button_secondary"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="@string/app_exit_app_text"
+                android:textColor="@color/app_secondary_text"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Close button (top-right) identical to coins required dialog -->
+    <ImageView
+        android:id="@+id/btnExitClose"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/bg_close_button"
+        android:contentDescription="@string/face_dialog_close_text"
+        android:padding="@dimen/_7sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_trans_close" />
+
+</FrameLayout>
