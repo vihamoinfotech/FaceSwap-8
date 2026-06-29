@@ -3519,7 +3519,7 @@
     <string name="app_background_please_upload_a_photo_text">Please upload a photo first</string>
     <string name="app_be_descriptive_for_best_text">Be descriptive for best results</string>
     <string name="app_become_anyone_in_just_text">Become anyone in just one tap</string>
-    <string name="app_builder_name" translatable="false">AI Face Swap</string>
+    <string name="app_builder_name" translatable="false">Face Swap</string>
     <string name="app_clear_frontal_face_works_text">Clear frontal face works best</string>
     <string name="app_coin_btn_restore_purchase_text">Restore Purchases</string>
     <string name="app_coin_current_balance_text">Current Balance</string>
@@ -3877,8 +3877,8 @@
     <string name="face_app_best_value_text">💎 Best Value</string>
     <string name="face_dialog_close_text">Close dialog</string>
     <string name="face_dialog_image_text">Dialog image</string>
-    <string name="facebook_app_id">1507525427160676</string>
-    <string name="facebook_client_token">f46cb1d9c367727d6993b1fa760d26e8</string>
+    <string name="facebook_app_id" translatable="false">1507525427160676</string>
+    <string name="facebook_client_token" translatable="false">f46cb1d9c367727d6993b1fa760d26e8</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
@@ -4050,21 +4050,21 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
-    <string name="paywall_close">Close</string>
-    <string name="paywall_col_basic">Basic</string>
-    <string name="paywall_col_pro">Pro</string>
-    <string name="paywall_cta_trial">3 Day Free Trial</string>
-    <string name="paywall_feature_4k">4K Video Generation</string>
-    <string name="paywall_feature_hd">HD Quality Swaps</string>
-    <string name="paywall_feature_no_ads">No Ads</string>
-    <string name="paywall_feature_priority">Priority Processing</string>
-    <string name="paywall_hero_line1">No ads.</string>
-    <string name="paywall_hero_line2">Our best features.</string>
-    <string name="paywall_hero_line3">Try free for 3 days.</string>
-    <string name="paywall_premium_label">PREMIUM</string>
-    <string name="paywall_privacy">Privacy Policy</string>
-    <string name="paywall_restore">Restore</string>
-    <string name="paywall_terms">Terms &amp; Conditions</string>
+    <string name="paywall_close" translatable="false">Close</string>
+    <string name="paywall_col_basic" translatable="false">Basic</string>
+    <string name="paywall_col_pro" translatable="false">Pro</string>
+    <string name="paywall_cta_trial" translatable="false">3 Day Free Trial</string>
+    <string name="paywall_feature_4k" translatable="false">4K Video Generation</string>
+    <string name="paywall_feature_hd" translatable="false">HD Quality Swaps</string>
+    <string name="paywall_feature_no_ads" translatable="false">No Ads</string>
+    <string name="paywall_feature_priority" translatable="false">Priority Processing</string>
+    <string name="paywall_hero_line1" translatable="false">No ads.</string>
+    <string name="paywall_hero_line2" translatable="false">Our best features.</string>
+    <string name="paywall_hero_line3" translatable="false">Try free for 3 days.</string>
+    <string name="paywall_premium_label" translatable="false">PREMIUM</string>
+    <string name="paywall_privacy" translatable="false">Privacy Policy</string>
+    <string name="paywall_restore" translatable="false">Restore</string>
+    <string name="paywall_terms" translatable="false">Terms &amp; Conditions</string>
     <string name="project_id" translatable="false">face-editor-ai-face-swap-2</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
@@ -4082,17 +4082,17 @@
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="store_buy_now">Buy Now</string>
-    <string name="video_swap_cost_label">%s Coins</string>
-    <string name="video_swap_generate_video">✦  Generate Video</string>
-    <string name="video_swap_hero_1">Swap your </string>
-    <string name="video_swap_hero_2">Face in Video</string>
-    <string name="video_swap_please_select_video">Please select a video</string>
-    <string name="video_swap_select_from_gallery_or_record">Select from gallery or record a video</string>
-    <string name="video_swap_subtitle">Upload a video and your face photo to swap.</string>
-    <string name="video_swap_tap_to_select_video">Tap to select video</string>
-    <string name="video_swap_title">Video Face Swap</string>
-    <string name="video_swap_upload_video">Upload Video</string>
+    <string name="store_buy_now" translatable="false">Buy Now</string>
+    <string name="video_swap_cost_label" translatable="false">%s Coins</string>
+    <string name="video_swap_generate_video" translatable="false">✦  Generate Video</string>
+    <string name="video_swap_hero_1" translatable="false">Swap your </string>
+    <string name="video_swap_hero_2" translatable="false">Face in Video</string>
+    <string name="video_swap_please_select_video" translatable="false">Please select a video</string>
+    <string name="video_swap_select_from_gallery_or_record" translatable="false">Select from gallery or record a video</string>
+    <string name="video_swap_subtitle" translatable="false">Upload a video and your face photo to swap.</string>
+    <string name="video_swap_tap_to_select_video" translatable="false">Tap to select video</string>
+    <string name="video_swap_title" translatable="false">Video Face Swap</string>
+    <string name="video_swap_upload_video" translatable="false">Upload Video</string>
     <string description="This string appears within a watermark on video ads for debugging. [CHAR_LIMIT=NONE]" name="watermark_label_prefix">
     "AdMob - "
   </string>

@@ -37,7 +37,7 @@ public class AppFaceRevenueCatManager {
     }
 
     public void init(Application application) {
-        String apiKey = "goog_TccIqHsCGYuxYaKfBVMdTjJoMLw";
+        String apiKey = "goog_rCTNhqJUFtdbFmEyroPPRUdJmmj";
 
         Purchases.setDebugLogsEnabled(true);
 
@@ -60,13 +60,15 @@ public class AppFaceRevenueCatManager {
                     offering = offerings.get("default");
                 }
 
-                if (AppFaceAppSystem.isDebugMode()) {
-                    for (com.revenuecat.purchases.Package pkg : offering.getAvailablePackages()) {
-                        Log.d("RC", pkg.getProduct().getId());
-                    }
-                }
 
                 if (offering != null && !offering.getAvailablePackages().isEmpty()) {
+
+                    if (AppFaceAppSystem.isDebugMode()) {
+                        for (com.revenuecat.purchases.Package pkg : offering.getAvailablePackages()) {
+                            Log.d("RC", pkg.getProduct().getId());
+                        }
+                    }
+
                     Log.d(TAG, "Offerings loaded: " + offering.getAvailablePackages().size() + " packages");
                     listener.onProductsLoaded(offering.getAvailablePackages());
                 } else {
