@@ -31,7 +31,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".FaceSwap"
+        android:name=".AppFaceSwap"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/face_data_file_extraction_rules"
         android:fullBackupContent="@xml/face_backup_file_rules"
@@ -57,7 +57,7 @@
 
         <!-- Splash Screen (Launcher) -->
         <activity
-            android:name=".view.SplashActivity"
+            android:name=".view.AppFaceSplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FaceSwap.Splash"
             android:exported="true">
@@ -69,100 +69,100 @@
 
         <!-- Main -->
         <activity
-            android:name=".view.MainActivity"
+            android:name=".view.AppFaceMainActivity"
             android:screenOrientation="portrait"
             android:exported="false"/>
         <activity
-            android:name=".view.OnboardingActivity"
+            android:name=".view.AppFaceOnboardingActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.AppUpdateActivity"
+            android:name=".view.AppFaceAppUpdateActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.LottieLoadingActivity"
+            android:name=".view.AppFaceLoadingActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
 
         <!-- Features -->
         <activity
-            android:name=".view.SectionDetailActivity"
+            android:name=".view.AppFaceSectionDetailActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.FaceSwapActivity"
+            android:name=".view.AppFaceSwapActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.DownloadShareActivity"
+            android:name=".view.AppFaceDownloadShareActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.FaceSelectionActivity"
+            android:name=".view.AppFaceFaceSelectionActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.EditImageActivity"
+            android:name=".view.AppFaceEditImageActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.MultiSwapActivity"
+            android:name=".view.AppFaceMultiSwapActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.MyWorkActivity"
+            android:name=".view.AppFaceMyWorkActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.AiImageGenActivity"
+            android:name=".view.AppFaceAiImageGenActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.SettingsActivity"
+            android:name=".view.AppFaceSettingsActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.BackgroundPickerActivity"
+            android:name=".view.AppFaceBackgroundPickerActivity"
             android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.FaceSwap" />
         <activity
-            android:name=".view.StoreActivity"
+            android:name=".view.AppFaceStoreActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.CoinHistoryActivity"
+            android:name=".view.AppFaceCoinHistoryActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.LanguageActivity"
+            android:name=".view.AppFaceLanguageActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
 
         <!-- New AI Tool Activities -->
         <activity
-            android:name=".view.FaceEnhanceActivity"
+            android:name=".view.AppFaceFaceEnhanceActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.BackgroundReplaceActivity"
+            android:name=".view.AppFaceBackgroundReplaceActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.CoupleFaceSwapActivity"
+            android:name=".view.AppFaceCoupleFaceSwapActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.TextToImageActivity"
+            android:name=".view.AppFaceTextToImageActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.VideoFaceSwapActivity"
+            android:name=".view.AppFaceVideoFaceSwapActivity"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".view.PaywallActivity"
+            android:name=".view.AppFacePaywallActivity"
             android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.FaceSwap" />
@@ -178,12 +178,15 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
         <meta-data
             android:name="com.facebook.sdk.ClientToken"
             android:value="@string/facebook_client_token" />
+
         <meta-data
             android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
             android:value="true" />
+
         <meta-data
             android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
             android:value="true" />
@@ -192,7 +195,7 @@
         <!-- These are used when the app is in background/killed and FCM auto-displays -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/ic_notif_small" />
+            android:resource="@drawable/app_notification_little" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="faceswap_push_channel" />
@@ -210,7 +213,7 @@
 
         <!-- Firebase Messaging Service -->
         <service
-            android:name=".service.MyFirebaseMessagingService"
+            android:name=".service.AppFaceMyFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -218,7 +221,7 @@
         </service>
 
         <!-- Local Notification Receiver -->
-        <receiver android:name=".worker.LocalNotificationReceiver" android:exported="false" />
+        <receiver android:name=".worker.AppFaceLocalNotificationReceiver" android:exported="false" />
 
     </application>
 

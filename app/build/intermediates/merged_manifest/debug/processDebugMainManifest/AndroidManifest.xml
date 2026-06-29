@@ -94,7 +94,7 @@
     <uses-permission android:name="com.facechanger.faceswap.enhance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.facechanger.faceswap.enhance.FaceSwap"
+        android:name="com.facechanger.faceswap.enhance.AppFaceSwap"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/face_data_file_extraction_rules"
@@ -105,6 +105,7 @@
         android:label="@string/app_builder_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.FaceSwap" >
 
         <!-- Workaround for Google Play Billing Library crash (NullPointerException on PendingIntent) -->
@@ -122,7 +123,7 @@
 
         <!-- Splash Screen (Launcher) -->
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.SplashActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceSplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FaceSwap.Splash" >
@@ -135,100 +136,100 @@
 
         <!-- Main -->
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.MainActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceMainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.OnboardingActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceOnboardingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.AppUpdateActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceAppUpdateActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.LottieLoadingActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceLoadingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Features -->
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.SectionDetailActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceSectionDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.FaceSwapActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.DownloadShareActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceDownloadShareActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.FaceSelectionActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceFaceSelectionActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.EditImageActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceEditImageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.MultiSwapActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceMultiSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.MyWorkActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceMyWorkActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.AiImageGenActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceAiImageGenActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.SettingsActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceSettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.BackgroundPickerActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceBackgroundPickerActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FaceSwap" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.StoreActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceStoreActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.CoinHistoryActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceCoinHistoryActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.LanguageActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceLanguageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- New AI Tool Activities -->
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.FaceEnhanceActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceFaceEnhanceActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.BackgroundReplaceActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceBackgroundReplaceActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.CoupleFaceSwapActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceCoupleFaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.TextToImageActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceTextToImageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.VideoFaceSwapActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFaceVideoFaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.facechanger.faceswap.enhance.view.PaywallActivity"
+            android:name="com.facechanger.faceswap.enhance.view.AppFacePaywallActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FaceSwap" />
@@ -258,7 +259,7 @@
         <!-- These are used when the app is in background/killed and FCM auto-displays -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/ic_notif_small" />
+            android:resource="@drawable/app_notification_little" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="faceswap_push_channel" />
@@ -276,7 +277,7 @@
 
         <!-- Firebase Messaging Service -->
         <service
-            android:name="com.facechanger.faceswap.enhance.service.MyFirebaseMessagingService"
+            android:name="com.facechanger.faceswap.enhance.service.AppFaceMyFirebaseMessagingService"
             android:exported="true" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -285,7 +286,7 @@
 
         <!-- Local Notification Receiver -->
         <receiver
-            android:name="com.facechanger.faceswap.enhance.worker.LocalNotificationReceiver"
+            android:name="com.facechanger.faceswap.enhance.worker.AppFaceLocalNotificationReceiver"
             android:exported="false" />
 
         <activity

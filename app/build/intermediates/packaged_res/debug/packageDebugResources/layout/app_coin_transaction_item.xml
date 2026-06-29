@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/common_border"
+    android:background="@drawable/app_face_common_border_color"
     android:layout_marginBottom="@dimen/_8sdp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
@@ -15,7 +15,7 @@
         android:id="@+id/iconBadge"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:background="@drawable/bg_badge_orange"
+        android:background="@drawable/app_face_badge_orange_gradient_bg"
         android:gravity="center">
 
         <ImageView
@@ -23,7 +23,7 @@
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
             android:contentDescription="@null"
-            android:src="@drawable/ic_coin" />
+            android:src="@drawable/app_face_coin_new" />
     </LinearLayout>
 
     <!-- Transaction details -->
@@ -38,7 +38,7 @@
             android:id="@+id/tvTransactionTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/app_poppins_medium"
             android:includeFontPadding="false"
             android:text="@string/app_face_coin_history_face_swap_text"
             android:textColor="@color/white"
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_2sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:includeFontPadding="false"
             android:text="@string/app_coin_transaction_time_text"
             android:textColor="@color/app_tertiary_text"
@@ -61,7 +61,7 @@
         android:id="@+id/tvTransactionAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/app_poppins_bold"
         android:includeFontPadding="false"
         android:text="-10"
         android:textColor="@color/app_error_color"

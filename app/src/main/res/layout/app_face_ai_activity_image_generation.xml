@@ -24,11 +24,11 @@
                 android:layout_height="@dimen/_38sdp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:background="@drawable/view_all_bg"
+                android:background="@drawable/app_face_all_view_layer"
                 android:contentDescription="@string/app_face_back_text"
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_arrow_back"
+                android:src="@drawable/app_face_arrow_back"
                 app:tint="@color/white" />
 
             <TextView
@@ -79,7 +79,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/app_poppins_bold"
                         android:includeFontPadding="false"
                         android:text="@string/app_face_ai_turn_your_ideas_text"
                         android:textColor="@color/white"
@@ -88,7 +88,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extrabold"
+                        android:fontFamily="@font/app_poppins_extrabold"
                         android:includeFontPadding="false"
                         android:text="@string/app_face_ai_into_art_text"
                         android:textColor="@color/app_primary_brand"
@@ -99,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_20sdp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/app_poppins_regular"
                     android:includeFontPadding="false"
                     android:text="@string/app_face_describe_what_you_want_text"
                     android:textColor="@color/app_tertiary_text"
@@ -110,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_12sdp"
-                    android:background="@drawable/common_border"
+                    android:background="@drawable/app_face_common_border_color"
                     android:orientation="vertical"
                     >
 
@@ -126,10 +126,10 @@
                         <ImageView
                             android:layout_width="@dimen/_32sdp"
                             android:layout_height="@dimen/_32sdp"
-                            android:background="@drawable/bg_badge_orange"
+                            android:background="@drawable/app_face_badge_orange_gradient_bg"
                             android:contentDescription="@null"
                             android:padding="@dimen/_7sdp"
-                            android:src="@drawable/ic_text_promt" />
+                            android:src="@drawable/app_to_text_prompt_toggle" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -141,7 +141,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_semibold"
+                                android:fontFamily="@font/app_poppins_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_text_to_prompt_text"
                                 android:textColor="@color/white"
@@ -150,7 +150,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/app_poppins_regular"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_describe_your_image_text"
                                 android:textColor="@color/app_tertiary_text"
@@ -160,8 +160,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_badge_orange"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:background="@drawable/app_face_badge_orange_gradient_bg"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:paddingHorizontal="@dimen/_9sdp"
                             android:paddingVertical="@dimen/_3sdp"
@@ -175,8 +175,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@drawable/clear_bg_border"
-                        android:fontFamily="@font/poppins_regular"
+                        android:background="@drawable/app_clear_bg_only_light_border"
+                        android:fontFamily="@font/app_poppins_regular"
                         android:gravity="top|start"
                         android:hint="e.g. A cyberpunk samurai in neon rain, cinematic lighting, 8K..."
                         android:includeFontPadding="false"
@@ -201,7 +201,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/common_border"
+                    android:background="@drawable/app_face_common_border_color"
                     android:orientation="vertical"
                     android:padding="@dimen/_16sdp">
 
@@ -215,10 +215,10 @@
                         <ImageView
                             android:layout_width="@dimen/_32sdp"
                             android:layout_height="@dimen/_32sdp"
-                            android:background="@drawable/bg_badge_orange"
+                            android:background="@drawable/app_face_badge_orange_gradient_bg"
                             android:contentDescription="@null"
                             android:padding="@dimen/_7sdp"
-                            android:src="@drawable/ic_upload" />
+                            android:src="@drawable/app_middle_face_upload" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -230,7 +230,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_semibold"
+                                android:fontFamily="@font/app_poppins_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_reference_image_text"
                                 android:textColor="@color/white"
@@ -239,7 +239,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/app_poppins_regular"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_guides_the_style_text"
                                 android:textColor="@color/app_tertiary_text"
@@ -267,7 +267,7 @@
                             android:id="@+id/llUploadContainer"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_dashed_border"
+                            android:background="@drawable/app_face_dashed_border_purple"
                             android:gravity="center"
                             android:minHeight="@dimen/_160sdp"
                             android:orientation="vertical"
@@ -277,13 +277,13 @@
                                 android:layout_width="@dimen/_44sdp"
                                 android:layout_height="@dimen/_44sdp"
                                 android:contentDescription="@null"
-                                android:src="@drawable/ic_select_image" />
+                                android:src="@drawable/app_face_choose_image" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_10sdp"
-                                android:fontFamily="@font/poppins_semibold"
+                                android:fontFamily="@font/app_poppins_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_tap_to_upload_image_text"
                                 android:textColor="@color/white"
@@ -293,7 +293,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_4sdp"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/app_poppins_regular"
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_face_ai_png_jpg_supported_text"
@@ -321,10 +321,10 @@
                                 android:layout_alignParentTop="true"
                                 android:layout_alignParentEnd="true"
                                 android:layout_margin="@dimen/_10sdp"
-                                android:background="@drawable/bg_circle_dark"
+                                android:background="@drawable/app_circle_face_dark_bg"
                                 android:contentDescription="@null"
                                 android:padding="@dimen/_6sdp"
-                                android:src="@drawable/ic_trans_close"
+                                android:src="@drawable/app_transparent_close_choose"
                                 app:tint="@color/white" />
                         </RelativeLayout>
                     </RelativeLayout>
@@ -339,7 +339,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/_4sdp"
-                    android:background="@drawable/bg_pill_solid"
+                    android:background="@drawable/app_pill_face_solid_gradient"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="@dimen/_10sdp"
                     android:paddingVertical="@dimen/_4sdp"
@@ -348,14 +348,14 @@
                     <ImageView
                         android:layout_width="@dimen/_12sdp"
                         android:layout_height="@dimen/_12sdp"
-                        android:src="@drawable/ic_coin" />
+                        android:src="@drawable/app_face_coin_new" />
 
                     <TextView
                         android:id="@+id/tvFeatureCost"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_4sdp"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/app_poppins_semibold"
                         android:includeFontPadding="false"
                         android:text="@string/app_face_ai_10_coins_text"
                         android:textColor="@color/white"
@@ -368,8 +368,8 @@
                     android:layout_height="@dimen/_45sdp"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_14sdp"
-                    android:background="@drawable/bg_generate_button"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:background="@drawable/app_face_generate_button_square"
+                    android:fontFamily="@font/app_poppins_semibold"
                     android:includeFontPadding="false"
                     android:letterSpacing="0.02"
                     android:text="@string/app_face_ai_generate_image_text"

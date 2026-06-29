@@ -50,7 +50,7 @@
             android:contentDescription="Slider handle"
             android:elevation="6dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_slider_handle"
+            android:src="@drawable/app_face_slider_handle_horizontal"
             android:visibility="invisible" />
 
         <!-- Loading progress indicator -->
@@ -69,8 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start|top"
             android:layout_margin="@dimen/_10sdp"
-            android:background="@drawable/bg_slider_label"
-            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/app_full_slider_label_black"
+            android:fontFamily="@font/app_poppins_semibold"
             android:includeFontPadding="false"
             android:paddingHorizontal="@dimen/_8sdp"
             android:paddingVertical="@dimen/_3sdp"
@@ -86,8 +86,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end|top"
             android:layout_margin="@dimen/_10sdp"
-            android:background="@drawable/bg_slider_label"
-            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/app_full_slider_label_black"
+            android:fontFamily="@font/app_poppins_semibold"
             android:includeFontPadding="false"
             android:paddingHorizontal="@dimen/_8sdp"
             android:paddingVertical="@dimen/_3sdp"

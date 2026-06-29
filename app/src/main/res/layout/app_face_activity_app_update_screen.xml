@@ -4,7 +4,7 @@
     android:id="@+id/appUpdateContent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_splash_gradient">
+    android:background="@drawable/app_new_splash_gradient_face">
 
     <!-- Decorative glow orb (top-right) -->
     <View
@@ -14,7 +14,7 @@
         android:layout_marginTop="-60dp"
         android:layout_marginEnd="-40dp"
         android:visibility="gone"
-        android:background="@drawable/bg_update_glow" />
+        android:background="@drawable/app_new_update_glow_face_bg" />
 
     <!-- Decorative glow orb (bottom-left) -->
     <View
@@ -25,7 +25,7 @@
         android:layout_marginStart="-40dp"
         android:layout_marginBottom="-30dp"
         android:visibility="gone"
-        android:background="@drawable/bg_update_glow" />
+        android:background="@drawable/app_new_update_glow_face_bg" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/bg_logo_glow" />
+                    android:background="@drawable/app_logo_glow_update" />
 
                 <ImageView
                     android:layout_width="@dimen/_70sdp"
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_extrabold"
+                android:fontFamily="@font/app_poppins_extrabold"
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:text="@string/app_face_new_update_available_text"
@@ -85,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/app_poppins_regular"
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:lineSpacingExtra="3dp"
@@ -108,7 +108,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_update_feature_card"
+                    android:background="@drawable/app_update_new_face_feature_card"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="@dimen/_12sdp">
@@ -120,7 +120,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/bg_update_icon_circle" />
+                            android:background="@drawable/app_update_face_icon_circle_bg" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_better_performance_text"
                             android:textColor="@color/white"
@@ -150,7 +150,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/app_poppins_regular"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_update_feature_first_desc_text"
                             android:textColor="@color/app_secondary_text"
@@ -163,7 +163,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:background="@drawable/bg_update_feature_card"
+                    android:background="@drawable/app_update_new_face_feature_card"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="@dimen/_12sdp">
@@ -175,7 +175,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/bg_update_icon_circle" />
+                            android:background="@drawable/app_update_face_icon_circle_bg" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -195,7 +195,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_swap_new_features_text"
                             android:textColor="@color/white"
@@ -205,7 +205,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/app_poppins_regular"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_update_feature_second_desc_text"
                             android:textColor="@color/app_secondary_text"
@@ -218,7 +218,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:background="@drawable/bg_update_feature_card"
+                    android:background="@drawable/app_update_new_face_feature_card"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="@dimen/_12sdp">
@@ -230,7 +230,7 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/bg_update_icon_circle" />
+                            android:background="@drawable/app_update_face_icon_circle_bg" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_bug_fixes_text"
                             android:textColor="@color/white"
@@ -260,7 +260,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/app_poppins_regular"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_update_feature_third_desc_text"
                             android:textColor="@color/app_secondary_text"
@@ -290,8 +290,8 @@
             android:id="@+id/btnUpdateNow"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_48sdp"
-            android:background="@drawable/bg_update_button"
-            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/app_update_face_button_bg"
+            android:fontFamily="@font/app_poppins_semibold"
             android:includeFontPadding="false"
             android:letterSpacing="0.02"
             android:stateListAnimator="@null"
@@ -307,7 +307,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:textColor="@color/app_tertiary_text"

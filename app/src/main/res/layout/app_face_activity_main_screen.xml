@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_8sdp"
-                    android:fontFamily="@font/poppins_extrabold"
+                    android:fontFamily="@font/app_poppins_extrabold"
                     android:includeFontPadding="false"
                     android:text="@string/app_builder_name"
                     android:textColor="@color/white" />
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_marginEnd="@dimen/_8sdp"
-                    android:background="@drawable/bg_pill_solid"
+                    android:background="@drawable/app_pill_face_solid_gradient"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="@dimen/_6sdp"
                     android:paddingVertical="@dimen/_3sdp"
@@ -80,14 +80,14 @@
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
                         android:contentDescription="@string/app_face_total_coin_balance_text"
-                        android:src="@drawable/ic_coin" />
+                        android:src="@drawable/app_face_coin_new" />
 
                     <TextView
                         android:id="@+id/tvCoinBalance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_4sdp"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/app_poppins_semibold"
                         android:includeFontPadding="false"
                         android:text="0"
                         android:paddingEnd="@dimen/_2sdp"
@@ -99,7 +99,7 @@
                     android:id="@+id/btnSettings"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/view_all_bg"
+                    android:background="@drawable/app_face_all_view_layer"
                     android:clickable="true"
                     android:contentDescription="@string/app_face_settings_text"
                     android:focusable="true"
@@ -110,7 +110,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:contentDescription="@null"
-                        android:src="@drawable/ic_settings_header"
+                        android:src="@drawable/app_face_settings_header_wheel"
                         app:tint="@color/white" />
 
                 </FrameLayout>
@@ -157,7 +157,7 @@
                     android:layout_above="@+id/second_ad_view_container"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
-                    android:background="@drawable/bg_bottom_nav_bar"
+                    android:background="@drawable/app_face_bottom_nav_bar_bg"
                     android:elevation="8dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
@@ -182,25 +182,25 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
-                            android:src="@drawable/ic_generative_ai"
-                            android:tint="@color/nav_tab_tint" />
+                            android:src="@drawable/app_face_generative_chat_ai"
+                            android:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:duplicateParentState="true"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_ai_image_text"
-                            android:textColor="@color/nav_tab_tint"
+                            android:textColor="@color/app_face_nav_tab_tint"
                             android:textSize="@dimen/_9sdp" />
 
                         <TextView
                             android:id="@+id/tvCostAiImage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:includeFontPadding="false"
                             android:text="10"
                             android:textColor="@color/app_primary_brand"
@@ -225,25 +225,25 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
-                            android:src="@drawable/ic_video_reverse"
-                            android:tint="@color/nav_tab_tint" />
+                            android:src="@drawable/app_face_video_reverse_eng"
+                            android:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:duplicateParentState="true"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_multi_swap_video_text"
-                            android:textColor="@color/nav_tab_tint"
+                            android:textColor="@color/app_face_nav_tab_tint"
                             android:textSize="@dimen/_9sdp" />
 
                         <TextView
                             android:id="@+id/tvCostMultiSwap"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:includeFontPadding="false"
                             android:text="10"
                             android:textColor="@color/app_primary_brand"
@@ -268,25 +268,25 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
-                            android:src="@drawable/ic_face_swap"
-                            android:tint="@color/nav_tab_tint" />
+                            android:src="@drawable/app_face_rotation_face_swap_bg"
+                            android:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:duplicateParentState="true"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_main_face_swap_text"
-                            android:textColor="@color/nav_tab_tint"
+                            android:textColor="@color/app_face_nav_tab_tint"
                             android:textSize="@dimen/_9sdp" />
 
                         <TextView
                             android:id="@+id/tvCostFaceSwap"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:includeFontPadding="false"
                             android:text="10"
                             android:textColor="@color/app_primary_brand"
@@ -311,18 +311,18 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
-                            android:src="@drawable/ic_my_work"
-                            android:tint="@color/nav_tab_tint" />
+                            android:src="@drawable/app_face_my_work_four"
+                            android:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:duplicateParentState="true"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_main_work_text"
-                            android:textColor="@color/nav_tab_tint"
+                            android:textColor="@color/app_face_nav_tab_tint"
                             android:textSize="@dimen/_9sdp" />
                     </LinearLayout>
                 </LinearLayout>

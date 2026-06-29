@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_dialog_rounded"
+        android:background="@drawable/app_face_dialog_rounded_slight"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/_10sdp"
@@ -26,7 +26,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_logo_glow" />
+                android:background="@drawable/app_logo_glow_update" />
 
             <ImageView
                 android:id="@+id/ivDialogIcon"
@@ -35,7 +35,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/app_dialog_icon_text"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_coin" />
+                android:src="@drawable/app_face_coin_new" />
         </FrameLayout>
 
         <!-- Title -->
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_16sdp"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_face_coins_dialog_title_text"
@@ -56,7 +56,7 @@
             android:layout_width="@dimen/_32sdp"
             android:layout_height="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:background="@drawable/bg_badge_orange" />
+            android:background="@drawable/app_face_badge_orange_gradient_bg" />
 
         <!-- Message -->
         <TextView
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginHorizontal="@dimen/_4sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:lineSpacingMultiplier="1.4"
@@ -79,8 +79,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:layout_marginTop="@dimen/_22sdp"
-            android:background="@drawable/bg_dialog_button_gradient"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/app_face_dialog_button_gradient_horizontal"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:letterSpacing="0.02"
@@ -98,10 +98,10 @@
         android:layout_gravity="end"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
-        android:background="@drawable/bg_close_button"
+        android:background="@drawable/app_face_close_button_white"
         android:contentDescription="@string/face_dialog_close_text"
         android:padding="@dimen/_1sdp"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_trans_close" />
+        android:src="@drawable/app_transparent_close_choose" />
 
 </FrameLayout>

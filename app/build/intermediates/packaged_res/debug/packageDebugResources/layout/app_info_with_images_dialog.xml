@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_dialog_rounded"
+        android:background="@drawable/app_face_dialog_rounded_slight"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/_10sdp"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_18sdp"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_info_dialog_title_text"
@@ -47,7 +47,7 @@
             android:layout_width="@dimen/_32sdp"
             android:layout_height="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:background="@drawable/bg_badge_orange" />
+            android:background="@drawable/app_face_badge_orange_gradient_bg" />
 
         <!-- Message -->
         <TextView
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginHorizontal="@dimen/_4sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:lineSpacingMultiplier="1.4"
@@ -71,8 +71,8 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_marginTop="@dimen/_22sdp"
             android:layout_marginHorizontal="@dimen/_4sdp"
-            android:background="@drawable/bg_dialog_button_gradient"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/app_face_dialog_button_gradient_horizontal"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:letterSpacing="0.02"

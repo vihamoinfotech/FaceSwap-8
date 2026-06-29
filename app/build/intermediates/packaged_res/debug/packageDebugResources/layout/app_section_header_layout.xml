@@ -23,7 +23,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp"
             android:maxLines="1"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:includeFontPadding="false"
             android:text="@string/app_face_header_section_title_text" />
 
@@ -32,7 +32,7 @@
             android:layout_width="@dimen/_28sdp"
             android:layout_height="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_3sdp"
-            android:background="@drawable/bg_badge_orange" />
+            android:background="@drawable/app_face_badge_orange_gradient_bg" />
 
     </LinearLayout>
 
@@ -46,7 +46,7 @@
         android:orientation="horizontal"
         android:paddingHorizontal="@dimen/_10sdp"
         android:paddingVertical="@dimen/_4sdp"
-        android:background="@drawable/view_all_bg">
+        android:background="@drawable/app_face_all_view_layer">
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,13 +55,13 @@
             android:textColor="@color/white"
             android:includeFontPadding="false"
             android:textSize="@dimen/_10sdp"
-            android:fontFamily="@font/poppins_semibold"/>
+            android:fontFamily="@font/app_poppins_semibold"/>
 
         <ImageView
             android:layout_width="10dp"
             android:layout_height="10dp"
             android:layout_marginStart="3dp"
-            android:src="@drawable/ic_arrow"
+            android:src="@drawable/app_face_arrow_right"
             android:contentDescription="View All"
             android:rotation="0"
             app:tint="@color/white" />

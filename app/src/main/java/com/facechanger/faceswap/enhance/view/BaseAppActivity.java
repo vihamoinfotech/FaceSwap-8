@@ -6,8 +6,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.facechanger.faceswap.enhance.utils.AppSystem;
-import com.facechanger.faceswap.enhance.utils.LocaleHelper;
+import com.facechanger.faceswap.enhance.utils.AppFaceAppSystem;
+import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
 import com.faceenhance.facechanger.activity.BaseAdActivity;
 
 /**
@@ -19,7 +19,7 @@ public abstract class BaseAppActivity extends BaseAdActivity {
     @Override
     protected void attachBaseContext(Context newBase) {
         // Enforce the selected language context wrapping
-        super.attachBaseContext(LocaleHelper.onAttach(newBase));
+        super.attachBaseContext(AppFaceLocaleHelper.onAttach(newBase));
     }
 
     @Override
@@ -27,7 +27,7 @@ public abstract class BaseAppActivity extends BaseAdActivity {
         super.onCreate(savedInstanceState);
         
         // Explicitly set the layout direction on the window to bypass Android caching bugs
-        if (AppSystem.isRTLMode(this)) {
+        if (AppFaceAppSystem.isRTLMode(this)) {
             getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         } else {
             getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);

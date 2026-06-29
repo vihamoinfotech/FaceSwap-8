@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_6sdp"
-    android:background="@drawable/bg_language_item_unselected"
+    android:background="@drawable/app_language_item_unselected_blue_border"
     android:clickable="true"
     android:focusable="true"
     android:padding="@dimen/_14sdp">
@@ -17,9 +17,9 @@
         android:layout_height="@dimen/_20sdp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/bg_radio_unselected"
+        android:background="@drawable/app_radio_unselected_circle"
         android:padding="@dimen/_4sdp"
-        android:src="@drawable/ic_check"
+        android:src="@drawable/app_face_checkmark"
         app:tint="@android:color/transparent" />
 
     <!-- Content Container (Center) -->
@@ -36,7 +36,7 @@
             android:id="@+id/flIconContainer"
             android:layout_width="@dimen/_46sdp"
             android:layout_height="@dimen/_46sdp"
-            android:background="@drawable/bg_flag_circle">
+            android:background="@drawable/app_face_flag_circle_light">
 
             <TextView
                 android:id="@+id/tvLangFlag"
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/app_poppins_semibold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="English"
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_2sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="English"

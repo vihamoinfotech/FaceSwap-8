@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:201:9-209:20
+INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:204:9-212:20
 	android:grantUriPermissions
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:205:13-47
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:208:13-47
 	android:authorities
 		INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:203:13-64
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:206:13-64
 	android:exported
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:204:13-37
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:207:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:202:13-62
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:205:13-62
 manifest
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-225:12
-INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-225:12
-INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-225:12
-INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-225:12
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-228:12
+INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:2:1-228:12
 MERGED from [faceswap_2_v1.0.4.aar] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/808197cce70d3d174a7bf89af0a535ae/transformed/faceswap_2_v1.0.4/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-ads:25.3.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/00d7b9f51bca89af3420ab82ccf3f31e/transformed/play-services-ads-25.3.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.tencent:mmkv-static:1.3.16] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/1ea3060f0ac3752eab4acbba885d5ce4/transformed/mmkv-static-1.3.16/AndroidManifest.xml:2:1-7:12
@@ -274,8 +274,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:23.2.0] /U
 	android:name
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:31:22-65
 application
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:33:5-223:19
-INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:33:5-223:19
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:33:5-226:19
+INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:33:5-226:19
 MERGED from [com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:9:5-19:19
 MERGED from [com.revenuecat.purchases:purchases:9.23.1] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/d9d5e8ed9afa68fa107b11a9e2c0da78/transformed/purchases-9.23.1/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.android:facebook-android-sdk:17.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/ad57014dc052b19fd60bae991af3714f/transformed/facebook-android-sdk-17.0.0/AndroidManifest.xml:16:5-17:19
@@ -397,7 +397,7 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.3.0] /Users/va
 	android:dataExtractionRules
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:36:9-75
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:34:9-33
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:34:9-36
 activity#com.android.billingclient.api.ProxyBillingActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:46:9-50:53
 MERGED from [com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradle/caches/9.3.1/transforms/6b75b21d7edbfa3e6e476db7b87989f6/transformed/billing-8.0.0/AndroidManifest.xml:26:9-30:75
@@ -428,7 +428,7 @@ MERGED from [com.android.billingclient:billing:8.0.0] /Users/vasusavaliya/.gradl
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:56:13-50
 	android:name
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:53:13-80
-activity#com.facechanger.faceswap.enhance.view.SplashActivity
+activity#com.facechanger.faceswap.enhance.view.AppFaceSplashActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:59:9-68:20
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:61:13-49
@@ -437,7 +437,7 @@ ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifes
 	android:theme
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:62:13-57
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:60:13-48
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:60:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:64:13-67:29
 action#android.intent.action.MAIN
@@ -448,111 +448,111 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:66:17-77
 	android:name
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:66:27-74
-activity#com.facechanger.faceswap.enhance.view.MainActivity
+activity#com.facechanger.faceswap.enhance.view.AppFaceMainActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:71:9-74:39
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:73:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:74:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:72:13-46
-activity#com.facechanger.faceswap.enhance.view.OnboardingActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:72:13-53
+activity#com.facechanger.faceswap.enhance.view.AppFaceOnboardingActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:75:9-78:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:77:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:78:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:76:13-52
-activity#com.facechanger.faceswap.enhance.view.AppUpdateActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:76:13-59
+activity#com.facechanger.faceswap.enhance.view.AppFaceAppUpdateActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:79:9-82:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:81:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:80:13-51
-activity#com.facechanger.faceswap.enhance.view.LottieLoadingActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:80:13-58
+activity#com.facechanger.faceswap.enhance.view.AppFaceLoadingActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:83:9-86:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:85:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:86:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:84:13-55
-activity#com.facechanger.faceswap.enhance.view.SectionDetailActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:84:13-56
+activity#com.facechanger.faceswap.enhance.view.AppFaceSectionDetailActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:89:9-92:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:91:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:92:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:90:13-55
-activity#com.facechanger.faceswap.enhance.view.FaceSwapActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:90:13-62
+activity#com.facechanger.faceswap.enhance.view.AppFaceSwapActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:93:9-96:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:95:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:96:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:94:13-50
-activity#com.facechanger.faceswap.enhance.view.DownloadShareActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:94:13-53
+activity#com.facechanger.faceswap.enhance.view.AppFaceDownloadShareActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:97:9-100:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:99:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:100:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:98:13-55
-activity#com.facechanger.faceswap.enhance.view.FaceSelectionActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:98:13-62
+activity#com.facechanger.faceswap.enhance.view.AppFaceFaceSelectionActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:101:9-104:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:103:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:104:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:102:13-55
-activity#com.facechanger.faceswap.enhance.view.EditImageActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:102:13-62
+activity#com.facechanger.faceswap.enhance.view.AppFaceEditImageActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:105:9-108:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:107:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:108:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:106:13-51
-activity#com.facechanger.faceswap.enhance.view.MultiSwapActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:106:13-58
+activity#com.facechanger.faceswap.enhance.view.AppFaceMultiSwapActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:109:9-112:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:111:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:112:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:110:13-51
-activity#com.facechanger.faceswap.enhance.view.MyWorkActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:110:13-58
+activity#com.facechanger.faceswap.enhance.view.AppFaceMyWorkActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:113:9-116:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:115:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:116:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:114:13-48
-activity#com.facechanger.faceswap.enhance.view.AiImageGenActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:114:13-55
+activity#com.facechanger.faceswap.enhance.view.AppFaceAiImageGenActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:117:9-120:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:119:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:120:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:118:13-52
-activity#com.facechanger.faceswap.enhance.view.SettingsActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:118:13-59
+activity#com.facechanger.faceswap.enhance.view.AppFaceSettingsActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:121:9-124:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:123:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:124:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:122:13-50
-activity#com.facechanger.faceswap.enhance.view.BackgroundPickerActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:122:13-57
+activity#com.facechanger.faceswap.enhance.view.AppFaceBackgroundPickerActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:125:9-129:53
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:127:13-49
@@ -561,72 +561,72 @@ ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifes
 	android:theme
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:129:13-50
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:126:13-58
-activity#com.facechanger.faceswap.enhance.view.StoreActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:126:13-65
+activity#com.facechanger.faceswap.enhance.view.AppFaceStoreActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:130:9-133:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:132:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:133:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:131:13-47
-activity#com.facechanger.faceswap.enhance.view.CoinHistoryActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:131:13-54
+activity#com.facechanger.faceswap.enhance.view.AppFaceCoinHistoryActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:134:9-137:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:136:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:137:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:135:13-53
-activity#com.facechanger.faceswap.enhance.view.LanguageActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:135:13-60
+activity#com.facechanger.faceswap.enhance.view.AppFaceLanguageActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:138:9-141:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:140:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:141:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:139:13-50
-activity#com.facechanger.faceswap.enhance.view.FaceEnhanceActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:139:13-57
+activity#com.facechanger.faceswap.enhance.view.AppFaceFaceEnhanceActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:144:9-147:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:146:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:147:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:145:13-53
-activity#com.facechanger.faceswap.enhance.view.BackgroundReplaceActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:145:13-60
+activity#com.facechanger.faceswap.enhance.view.AppFaceBackgroundReplaceActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:148:9-151:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:150:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:151:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:149:13-59
-activity#com.facechanger.faceswap.enhance.view.CoupleFaceSwapActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:149:13-66
+activity#com.facechanger.faceswap.enhance.view.AppFaceCoupleFaceSwapActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:152:9-155:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:154:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:155:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:153:13-56
-activity#com.facechanger.faceswap.enhance.view.TextToImageActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:153:13-63
+activity#com.facechanger.faceswap.enhance.view.AppFaceTextToImageActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:156:9-159:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:158:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:159:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:157:13-53
-activity#com.facechanger.faceswap.enhance.view.VideoFaceSwapActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:157:13-60
+activity#com.facechanger.faceswap.enhance.view.AppFaceVideoFaceSwapActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:160:9-163:40
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:162:13-49
 	android:exported
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:163:13-37
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:161:13-55
-activity#com.facechanger.faceswap.enhance.view.PaywallActivity
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:161:13-62
+activity#com.facechanger.faceswap.enhance.view.AppFacePaywallActivity
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:164:9-168:53
 	android:screenOrientation
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:166:13-49
@@ -635,7 +635,7 @@ ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifes
 	android:theme
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:168:13-50
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:165:13-49
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:165:13-56
 meta-data#com.google.android.gms.ads.APPLICATION_ID
 ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:170:9-172:69
 	android:value
@@ -655,59 +655,59 @@ ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifes
 	android:name
 		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:179:13-58
 meta-data#com.facebook.sdk.ClientToken
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:181:9-183:61
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:182:9-184:61
 	android:value
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:183:13-58
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:184:13-58
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:182:13-56
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:183:13-56
 meta-data#com.facebook.sdk.AutoLogAppEventsEnabled
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:184:9-186:36
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:186:9-188:36
 	android:value
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:186:13-33
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:188:13-33
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:185:13-68
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:187:13-68
 meta-data#com.facebook.sdk.AdvertiserIDCollectionEnabled
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:187:9-189:36
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:190:9-192:36
 	android:value
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:189:13-33
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:192:13-33
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:188:13-74
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:191:13-74
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:193:9-195:59
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:196:9-198:68
 	android:resource
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:195:13-56
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:198:13-65
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:194:13-83
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:197:13-83
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:196:9-198:53
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:199:9-201:53
 	android:value
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:198:13-50
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:201:13-50
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:197:13-89
-service#com.facechanger.faceswap.enhance.service.MyFirebaseMessagingService
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:212:9-218:19
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:200:13-89
+service#com.facechanger.faceswap.enhance.service.AppFaceMyFirebaseMessagingService
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:215:9-221:19
 	android:exported
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:214:13-36
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:217:13-36
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:213:13-63
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:13-70
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:215:13-217:29
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:218:13-220:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:17-78
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:219:17-78
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:216:25-75
-receiver#com.facechanger.faceswap.enhance.worker.LocalNotificationReceiver
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:9-95
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:219:25-75
+receiver#com.facechanger.faceswap.enhance.worker.AppFaceLocalNotificationReceiver
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:224:9-102
 	android:exported
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:68-92
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:224:75-99
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:221:19-67
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:224:19-74
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:206:13-208:54
+ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:209:13-211:54
 	android:resource
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:208:17-51
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:211:17-51
 	android:name
-		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:207:17-67
+		ADDED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml:210:17-67
 uses-sdk
 INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/vasusavaliya/Documents/Face Swap 2/app/src/main/AndroidManifest.xml

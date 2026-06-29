@@ -349,8 +349,8 @@
     <string name="face_app_best_value_text">💎 Best Value</string>
     <string name="face_dialog_close_text">Close dialog</string>
     <string name="face_dialog_image_text">Dialog image</string>
-    <string name="facebook_app_id">1004092062065383</string>
-    <string name="facebook_client_token">eb179ee22f1102a5d19a12ba689e4567</string>
+    <string name="facebook_app_id">1507525427160676</string>
+    <string name="facebook_client_token">f46cb1d9c367727d6993b1fa760d26e8</string>
     <string name="gcm_defaultSenderId" translatable="false">926854475640</string>
     <string name="google_api_key" translatable="false">AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI</string>
     <string name="google_app_id" translatable="false">1:926854475640:android:a2448d4330b71fc5efe28d</string>
@@ -390,7 +390,7 @@
         <item name="cornerSize">50%</item>
     </style>
     <style name="HeaderTextStyle" parent="Widget.AppCompat.TextView">
-        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/app_poppins_semibold</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:lines">1</item>
         <item name="android:textSize">@dimen/app_clip_header_text_size_common</item>

@@ -340,8 +340,8 @@
     <string name="paywall_close">Close</string>
 
     <!-- Facebook SDK Configurations -->
-    <string name="facebook_app_id">1004092062065383</string>
-    <string name="facebook_client_token">eb179ee22f1102a5d19a12ba689e4567</string>
+    <string name="facebook_app_id">1507525427160676</string>
+    <string name="facebook_client_token">f46cb1d9c367727d6993b1fa760d26e8</string>
 
     <!-- Video Face Swap -->
     <string name="video_swap_title">Video Face Swap</string>

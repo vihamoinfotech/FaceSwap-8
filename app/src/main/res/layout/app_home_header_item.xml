@@ -7,7 +7,7 @@
     android:layout_marginHorizontal="@dimen/_14sdp"
     android:layout_marginTop="@dimen/_12sdp"
     android:layout_marginBottom="@dimen/_6sdp"
-    android:background="@drawable/bg_home_faceswap_card"
+    android:background="@drawable/app_home_faceswap_card_purple_border"
     android:minHeight="@dimen/_130sdp">
 
     <!-- Face Swap illustration (right side) -->
@@ -19,7 +19,7 @@
         android:layout_centerVertical="true"
         android:contentDescription="@null"
         android:scaleType="fitEnd"
-        android:src="@drawable/ic_home_ai" />
+        android:src="@drawable/app_face_cute_home_girl_ai" />
 
     <!-- Text content (left side) -->
     <LinearLayout
@@ -35,8 +35,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_badge_pink"
-            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/app_face_badge_pink_gradient_bg"
+            android:fontFamily="@font/app_poppins_semibold"
             android:includeFontPadding="false"
             android:letterSpacing="0.08"
             android:paddingHorizontal="@dimen/_8sdp"
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_3sdp"
-            android:fontFamily="@font/poppins_extrabold"
+            android:fontFamily="@font/app_poppins_extrabold"
             android:includeFontPadding="false"
             android:text="@string/app_home_swap_your_face_text"
             android:maxLines="1"
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_2sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:includeFontPadding="false"
             android:maxLines="1"
             android:text="@string/app_become_anyone_in_just_text"
@@ -79,8 +79,8 @@
                 android:id="@+id/btnGenerateNow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_dialog_button_gradient"
-                android:fontFamily="@font/poppins_semibold"
+                android:background="@drawable/app_face_dialog_button_gradient_horizontal"
+                android:fontFamily="@font/app_poppins_semibold"
                 android:includeFontPadding="false"
                 android:letterSpacing="0.01"
                 android:paddingHorizontal="@dimen/_14sdp"
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_6sdp"
-                android:background="@drawable/bg_pill_solid"
+                android:background="@drawable/app_pill_face_solid_gradient"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="@dimen/_6sdp"
                 android:paddingVertical="2dp"
@@ -104,14 +104,14 @@
                 <ImageView
                     android:layout_width="@dimen/_10sdp"
                     android:layout_height="@dimen/_10sdp"
-                    android:src="@drawable/ic_coin" />
+                    android:src="@drawable/app_face_coin_new" />
 
                 <TextView
                     android:id="@+id/tvFeatureCost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_3sdp"
-                    android:fontFamily="@font/poppins_bold"
+                    android:fontFamily="@font/app_poppins_bold"
                     android:includeFontPadding="false"
                     android:text="10"
                     android:textColor="@color/white"

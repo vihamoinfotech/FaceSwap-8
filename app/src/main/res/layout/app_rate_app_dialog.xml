@@ -8,7 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_dialog_rounded"
+        android:background="@drawable/app_face_dialog_rounded_slight"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingStart="@dimen/_16sdp"
@@ -25,7 +25,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_logo_spread_glow" />
+                android:background="@drawable/app_face_logo_spread_glow_vertical_circle" />
 
             <ImageView
                 android:id="@+id/ivDialogIcon"
@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/app_dialog_icon_text"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_filled" />
+                android:src="@drawable/app_face_star_center_yellow_filled" />
 
         </FrameLayout>
 <!--        android:text="Enjoying FaceSwap? 🌟"-->
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="Enjoying FaceSwap ?"
@@ -56,7 +56,7 @@
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_8sdp"
-            android:background="@drawable/bg_badge_orange" />
+            android:background="@drawable/app_face_badge_orange_gradient_bg" />
 
         <!-- Message -->
         <TextView
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:lineSpacingExtra="1dp"
@@ -77,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp"
-            android:background="@drawable/bg_plan_card_unselected"
+            android:background="@drawable/app_plan_face_card_unselected_color"
             android:gravity="center"
             android:orientation="horizontal"
             android:paddingHorizontal="@dimen/_10sdp"
@@ -90,7 +90,7 @@
                 android:contentDescription="1 Star"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_empty" />
+                android:src="@drawable/app_star_center_empty" />
 
             <ImageView
                 android:id="@+id/ivStar2"
@@ -99,7 +99,7 @@
                 android:contentDescription="2 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_empty" />
+                android:src="@drawable/app_star_center_empty" />
 
             <ImageView
                 android:id="@+id/ivStar3"
@@ -108,7 +108,7 @@
                 android:contentDescription="3 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_empty" />
+                android:src="@drawable/app_star_center_empty" />
 
             <ImageView
                 android:id="@+id/ivStar4"
@@ -117,7 +117,7 @@
                 android:contentDescription="4 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_empty" />
+                android:src="@drawable/app_star_center_empty" />
 
             <ImageView
                 android:id="@+id/ivStar5"
@@ -126,7 +126,7 @@
                 android:contentDescription="5 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_star_empty" />
+                android:src="@drawable/app_star_center_empty" />
 
         </LinearLayout>
 
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/app_poppins_medium"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="Tap a star to rate us"
@@ -153,10 +153,10 @@
         android:layout_gravity="end|top"
         android:layout_marginTop="@dimen/_11sdp"
         android:layout_marginRight="@dimen/_20sdp"
-        android:background="@drawable/bg_close_button"
+        android:background="@drawable/app_face_close_button_white"
         android:contentDescription="@string/face_dialog_close_text"
         android:padding="@dimen/_1sdp"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_trans_close" />
+        android:src="@drawable/app_transparent_close_choose" />
 
 </FrameLayout>

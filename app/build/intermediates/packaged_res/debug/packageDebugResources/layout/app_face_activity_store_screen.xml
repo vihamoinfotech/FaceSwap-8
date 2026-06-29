@@ -18,11 +18,11 @@
             android:layout_height="@dimen/_38sdp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/view_all_bg"
+            android:background="@drawable/app_face_all_view_layer"
             android:contentDescription="@string/app_face_back_text"
             android:padding="@dimen/_10sdp"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_arrow_back"
+            android:src="@drawable/app_face_arrow_back"
             app:tint="@color/white" />
 
         <TextView
@@ -65,7 +65,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_plan_card_unselected"
+                android:background="@drawable/app_plan_face_card_unselected_color"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="20dp">
@@ -78,13 +78,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:alpha="0.4"
-                        android:background="@drawable/bg_logo_glow" />
+                        android:background="@drawable/app_logo_glow_update" />
 
                     <ImageView
                         android:layout_width="@dimen/_28sdp"
                         android:layout_height="@dimen/_28sdp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_coin" />
+                        android:src="@drawable/app_face_coin_new" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -96,7 +96,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_regular"
+                        android:fontFamily="@font/app_poppins_regular"
                         android:letterSpacing="0.05"
                         android:text="YOUR BALANCE"
                         android:includeFontPadding="false"
@@ -113,7 +113,7 @@
                             android:id="@+id/tvTotalCoins"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="0"
                             android:includeFontPadding="false"
                             android:textColor="@color/app_yellow_coin"
@@ -123,7 +123,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_6sdp"
-                            android:fontFamily="@font/poppins_semibold"
+                            android:fontFamily="@font/app_poppins_semibold"
                             android:text="Credits"
                             android:textColor="@color/white"
                             android:includeFontPadding="false"
@@ -151,13 +151,13 @@
                     <View
                         android:layout_width="@dimen/_3sdp"
                         android:layout_height="@dimen/_18sdp"
-                        android:background="@drawable/bg_badge_best_value" />
+                        android:background="@drawable/app_face_badge_best_value_background" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/app_poppins_bold"
                         android:text="Choose a Package"
                         android:includeFontPadding="false"
                         android:textColor="@color/white"
@@ -168,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/app_poppins_regular"
                     android:text="Instant delivery • Secure payment via Google Play"
                     android:textColor="@color/app_secondary_text"
                     android:includeFontPadding="false"
@@ -196,11 +196,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/bg_buy_button"
+        android:background="@drawable/app_buy_button_bg"
         android:clickable="true"
         android:focusable="true"
         android:includeFontPadding="false"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/app_poppins_bold"
         android:gravity="center"
         android:paddingVertical="14dp"
         android:text="@string/store_buy_now"
@@ -221,14 +221,14 @@
         <ImageView
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:src="@drawable/ic_secure_lock"
+            android:src="@drawable/app_face_secure_locker"
             app:tint="@color/app_yellow_coin" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:text="Secured by Google Play"
             android:textColor="@color/app_tertiary_text"
             android:textSize="11sp" />
@@ -249,7 +249,7 @@
             android:id="@+id/tvErrorMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/app_poppins_medium"
             android:gravity="center"
             android:text="@string/app_face_coins_fetching_offerings_error_text"
             android:textColor="@color/app_secondary_text"
@@ -260,8 +260,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/bg_buy_button"
-            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/app_buy_button_bg"
+            android:fontFamily="@font/app_poppins_bold"
             android:paddingHorizontal="24dp"
             android:paddingVertical="10dp"
             android:text="@string/app_face_ai_coins_retry_text"

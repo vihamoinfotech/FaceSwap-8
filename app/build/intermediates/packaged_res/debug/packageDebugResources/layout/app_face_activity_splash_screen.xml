@@ -4,7 +4,7 @@
     android:id="@+id/splashContent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_splash_gradient">
+    android:background="@drawable/app_new_splash_gradient_face">
 
     <!-- Centered content -->
     <LinearLayout
@@ -23,7 +23,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/bg_logo_glow" />
+                android:background="@drawable/app_logo_glow_update" />
 
             <ImageView
                 android:id="@+id/ivSplashLogo"
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/poppins_extrabold"
+            android:fontFamily="@font/app_poppins_extrabold"
             android:includeFontPadding="false"
             android:letterSpacing="0.03"
             android:text="@string/app_builder_name"
@@ -72,7 +72,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:fontFamily="@font/poppins_regular"
+        android:fontFamily="@font/app_poppins_regular"
         android:gravity="center"
         android:includeFontPadding="false"
         android:letterSpacing="0.04"

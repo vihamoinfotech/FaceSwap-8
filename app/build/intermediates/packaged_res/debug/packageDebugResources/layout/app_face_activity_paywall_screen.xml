@@ -48,14 +48,14 @@
                 <FrameLayout
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/paywall_bg_cta_button">
+                    android:background="@drawable/app_face_premium_center_button">
 
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:contentDescription="@null"
-                        android:src="@drawable/ic_diamond_paywall"
+                        android:src="@drawable/app_face_diamond_premium"
                         android:scaleType="centerInside" />
                 </FrameLayout>
 
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:fontFamily="@font/poppins_bold"
+                    android:fontFamily="@font/app_poppins_bold"
                     android:includeFontPadding="false"
                     android:letterSpacing="0.08"
                     android:text="@string/paywall_premium_label"
@@ -83,7 +83,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
+                    android:fontFamily="@font/app_poppins_medium"
                     android:includeFontPadding="false"
                     android:letterSpacing="-0.02"
                     android:text="@string/paywall_hero_line1"
@@ -93,7 +93,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_medium"
+                    android:fontFamily="@font/app_poppins_medium"
                     android:includeFontPadding="false"
                     android:text="@string/paywall_hero_line2"
                     android:textColor="@color/app_on_surface_paywall"
@@ -104,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:fontFamily="@font/poppins_bold"
+                    android:fontFamily="@font/app_poppins_bold"
                     android:includeFontPadding="false"
                     android:text="@string/paywall_hero_line3"
                     android:textColor="@color/app_on_surface_paywall"
@@ -121,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_18sdp"
-                android:background="@drawable/paywall_bg_glass_panel"
+                android:background="@drawable/app_face_glass_panel_gray"
                 android:orientation="vertical"
                 android:padding="@dimen/_14sdp">
 
@@ -144,7 +144,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:layout_weight="1"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:gravity="center"
                         android:includeFontPadding="false"
                         android:paddingBottom="8dp"
@@ -157,8 +157,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_header"
-                        android:fontFamily="@font/poppins_medium"
+                        android:background="@drawable/app_face_pro_header_light"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:gravity="center"
                         android:includeFontPadding="false"
                         android:paddingVertical="8dp"
@@ -181,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="@dimen/_10sdp"
                         android:text="Exclusive Content"
@@ -201,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_medium"
+                            android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
                             android:alpha="0.5"
                             android:textColor="@color/app_outline_variant_paywall"
@@ -212,13 +212,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_column">
+                        android:background="@drawable/app_face_premium_pro_column_light">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
                             android:textColor="@color/app_primary_paywall"
                             android:textSize="16sp" />
@@ -235,7 +235,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="14dp"
                         android:text="HD Export Quality"
@@ -251,7 +251,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_medium"
+                            android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
                             android:alpha="0.5"
                             android:textColor="@color/app_outline_variant_paywall"
@@ -262,13 +262,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_column">
+                        android:background="@drawable/app_face_premium_pro_column_light">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
                             android:textColor="@color/app_primary_paywall"
                             android:textSize="16sp" />
@@ -285,7 +285,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="14dp"
                         android:text="Faster Processing"
@@ -301,7 +301,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_medium"
+                            android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
                             android:alpha="0.5"
                             android:textColor="@color/app_outline_variant_paywall"
@@ -313,13 +313,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_column">
+                        android:background="@drawable/app_face_premium_pro_column_light">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
                             android:textColor="@color/app_primary_paywall"
                             android:textSize="16sp" />
@@ -336,7 +336,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="14dp"
                         android:text="Unlimited Downloads"
@@ -352,7 +352,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_medium"
+                            android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
                             android:alpha="0.5"
                             android:textColor="@color/app_outline_variant_paywall"
@@ -363,13 +363,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_column">
+                        android:background="@drawable/app_face_premium_pro_column_light">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
                             android:textColor="@color/app_primary_paywall"
                             android:textSize="16sp" />
@@ -386,7 +386,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/app_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="14dp"
                         android:text="Ad-Free Experience"
@@ -402,7 +402,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_medium"
+                            android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
                             android:alpha="0.5"
                             android:textColor="@color/app_outline_variant_paywall"
@@ -413,13 +413,13 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/paywall_bg_pro_column_bottom">
+                        android:background="@drawable/app_face_pro_column_bottom_light">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/poppins_bold"
+                            android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
                             android:textColor="@color/app_primary_paywall"
                             android:textSize="16sp" />
@@ -441,7 +441,7 @@
             android:padding="12dp"
             android:scaleType="centerInside"
             android:alpha="0.4"
-            android:src="@drawable/ic_trans_close" />
+            android:src="@drawable/app_transparent_close_choose" />
 
 
         <!-- ═══════════════════════════════════════════════════
@@ -452,7 +452,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/paywall_bg_footer"
+        android:background="@drawable/app_face_premium_bg_footer"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
@@ -465,7 +465,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/app_poppins_medium"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="dnskfjsfjshf"
@@ -478,7 +478,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="dnskfjsfjshf"
@@ -492,7 +492,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="dnskfjsfjshf"
@@ -505,10 +505,10 @@
             android:id="@+id/btnPaywallCta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/paywall_bg_cta_button"
+            android:background="@drawable/app_face_premium_center_button"
             android:clickable="true"
             android:focusable="true"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:paddingVertical="16dp"
@@ -534,7 +534,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/paywall_terms"
                 android:textColor="@color/app_outline_variant_paywall"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/app_poppins_regular"
                 android:alpha="0.4"
                 android:textSize="@dimen/_9sdp" />
 
@@ -556,7 +556,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/paywall_restore"
                 android:textColor="@color/app_outline_variant_paywall"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/app_poppins_regular"
                 android:alpha="0.4"
                 android:textSize="@dimen/_9sdp"/>
 
@@ -578,7 +578,7 @@
                 android:includeFontPadding="false"
                 android:text="@string/paywall_privacy"
                 android:textColor="@color/app_outline_variant_paywall"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/app_poppins_regular"
                 android:alpha="0.4"
                 android:textSize="@dimen/_9sdp" />
         </LinearLayout>

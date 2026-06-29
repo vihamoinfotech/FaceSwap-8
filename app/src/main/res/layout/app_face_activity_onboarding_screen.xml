@@ -9,9 +9,9 @@
         android:layout_height="match_parent"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_background" />
+        android:src="@drawable/app_face_star_background" />
 
-    <com.facechanger.faceswap.enhance.utils.PrismVaultVPgr
+    <com.facechanger.faceswap.enhance.utils.AppFacePrismVaultVPgr
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

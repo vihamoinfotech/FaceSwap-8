@@ -17,7 +17,7 @@
         <View
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_18sdp"
-            android:background="@drawable/bg_shimmer_placeholder" />
+            android:background="@drawable/app_shimmer_face_placeholder_bg" />
 
         <Space
             android:layout_width="0dp"
@@ -28,7 +28,7 @@
         <View
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
-            android:background="@drawable/bg_shimmer_rect_placeholder" />
+            android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
     </LinearLayout>
 
     <!-- Horizontal scroll placeholder -->
@@ -44,20 +44,20 @@
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_120sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:background="@drawable/bg_shimmer_rect_placeholder" />
+            android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
 
         <!-- Card 2 -->
         <View
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_120sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:background="@drawable/bg_shimmer_rect_placeholder" />
+            android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
 
         <!-- Card 3 -->
         <View
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_120sdp"
-            android:background="@drawable/bg_shimmer_rect_placeholder" />
+            android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
     </LinearLayout>
 
 </LinearLayout>
