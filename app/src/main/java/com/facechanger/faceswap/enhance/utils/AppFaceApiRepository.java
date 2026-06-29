@@ -31,7 +31,7 @@ import java.util.Map;
 public final class AppFaceApiRepository {
 
     private static final String BASE_URL = AppFaceAppSystem.isDebugMode() ? "https://acc-faceswap.runasp.net" : "https://faceswap.runasp.net";
-    private static final int IMAGE_PROCESS_TIMEOUT_MS = 120_000; // 2 minutes
+    private static final int IMAGE_PROCESS_TIMEOUT_MS = 180_000; // 3 minutes
 
     private AppFaceApiRepository() { /* non-instantiable */ }
 

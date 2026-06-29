@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_builder_name">FaceSwap</string>
+    <string name="app_builder_name" translatable="false">Face Swap</string>
 
     <!-- Onboarding -->
     <string name="app_onboard_first_text">AI Image Generator</string>

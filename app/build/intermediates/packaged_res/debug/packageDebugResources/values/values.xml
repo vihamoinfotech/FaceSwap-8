@@ -110,7 +110,7 @@
     <string name="app_background_please_upload_a_photo_text">Please upload a photo first</string>
     <string name="app_be_descriptive_for_best_text">Be descriptive for best results</string>
     <string name="app_become_anyone_in_just_text">Become anyone in just one tap</string>
-    <string name="app_builder_name">FaceSwap</string>
+    <string name="app_builder_name" translatable="false">AI Face Swap</string>
     <string name="app_clear_frontal_face_works_text">Clear frontal face works best</string>
     <string name="app_coin_btn_restore_purchase_text">Restore Purchases</string>
     <string name="app_coin_current_balance_text">Current Balance</string>
