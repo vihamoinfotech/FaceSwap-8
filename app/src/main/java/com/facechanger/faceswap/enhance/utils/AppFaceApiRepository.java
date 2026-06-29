@@ -30,8 +30,7 @@ import java.util.Map;
  */
 public final class AppFaceApiRepository {
 
-//    private static final String BASE_URL = AppSystem.isDebugMode() ? "https://acc-faceswapstudioai.runasp.net" : "https://prod-faceswapstudioai.runasp.net";
-    private static final String BASE_URL = AppFaceAppSystem.isDebugMode() ? "https://acc-faceswap.runasp.net/" : "https://prod-faceswapstudioai.runasp.net";
+    private static final String BASE_URL = AppFaceAppSystem.isDebugMode() ? "https://acc-faceswap.runasp.net" : "https://faceswap.runasp.net";
     private static final int IMAGE_PROCESS_TIMEOUT_MS = 120_000; // 2 minutes
 
     private AppFaceApiRepository() { /* non-instantiable */ }

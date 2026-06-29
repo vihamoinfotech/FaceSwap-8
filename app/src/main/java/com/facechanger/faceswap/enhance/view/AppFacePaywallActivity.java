@@ -250,10 +250,10 @@ public class AppFacePaywallActivity extends AppCompatActivity {
         });
 
         // Privacy Policy
-        btnPrivacy.setOnClickListener(v -> openUrl("https://prod-faceswapstudioai.runasp.net/privacy-policy.html"));
+        btnPrivacy.setOnClickListener(v -> openUrl("https://resumebuilder-2.blogspot.com/2026/06/privacy-faceswap-2.html"));
 
         // Terms
-        btnTerms.setOnClickListener(v -> openUrl("https://prod-faceswapstudioai.runasp.net/terms.html"));
+        btnTerms.setOnClickListener(v -> openUrl("resumebuilder-2.blogspot.com/2026/06/terms-faceswap-2.html"));
     }
 
     // ───────────────────────────────── Animations ──
