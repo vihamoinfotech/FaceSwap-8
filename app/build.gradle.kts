@@ -12,8 +12,8 @@ android {
         applicationId = "com.facechanger.faceswap.enhance"
         minSdk = 26
         targetSdk = 36
-        versionCode = 17
-        versionName = "1.5"
+        versionCode = 1
+        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
