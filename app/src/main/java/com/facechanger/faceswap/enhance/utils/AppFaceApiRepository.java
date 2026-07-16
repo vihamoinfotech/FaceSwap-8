@@ -54,7 +54,11 @@ public final class AppFaceApiRepository {
     /** Callback for face swap API. */
     public interface FaceSwapCallback {
         void onSuccess(@NonNull AppFaceFaceSwapResponse response);
-        void onError(@NonNull String errorMessage);
+        void onError(int statusCode, @NonNull String errorMessage);
+
+        default void onError(@NonNull String errorMessage) {
+            onError(0, errorMessage);
+        }
     }
 
     // ══════════════════════════════════════════════════
@@ -210,8 +214,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("BASIC_FAILED");
-
-                        callback.onError("Face swap failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -261,8 +264,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("MULTI_FAILED");
-
-                        callback.onError("Multi face swap failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -296,8 +298,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("BACKGROUND_REMOVE_FAILED");
-
-                        callback.onError("Remove background failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -332,8 +333,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("UPSCALE_PRO_FAILED");
-
-                        callback.onError("Upscale failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -377,8 +377,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("EDIT_IMAGE_FAILED");
-
-                        callback.onError("Edit image failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -422,7 +421,7 @@ public final class AppFaceApiRepository {
 
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
-                        callback.onError("Couple swap failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -463,7 +462,7 @@ public final class AppFaceApiRepository {
 
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
-                        callback.onError("BG replace failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -496,7 +495,7 @@ public final class AppFaceApiRepository {
 
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
-                        callback.onError("GFPGAN enhance failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -530,47 +529,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("ENHANCE_FACE_FAILED");
-
-                        callback.onError("Face enhance failed (HTTP " + statusCode + "): " + errorMessage);
-                    }
-                });
-    }
-
-    // ══════════════════════════════════════════════════
-    //  POST /api/Image/virtual-try-on
-    // ══════════════════════════════════════════════════
-
-    /**
-     * Virtually tries on clothing/product on a person photo.
-     *
-     * @param personImage  The file containing the person photo
-     * @param productImage The file containing the clothing/product photo
-     * @param callback     Typed callback with parsed result
-     */
-    public static void virtualTryOn(@NonNull File personImage,
-                                    @NonNull File productImage,
-                                    @NonNull FaceSwapCallback callback) {
-        Map<String, File> files = new HashMap<>();
-        files.put("personImage", personImage);
-        files.put("productImage", productImage);
-
-        AppFaceApiClient.getInstance().multipartUpload(
-                "/api/Image/virtual-try-on",
-                files, new HashMap<>(), IMAGE_PROCESS_TIMEOUT_MS,
-                new AppFaceApiClient.ApiCallback() {
-                    @Override
-                    public void onSuccess(@NonNull String responseBody) {
-                        try {
-                            AppFaceFaceSwapResponse response = AppFaceFaceSwapResponse.fromJson(responseBody);
-                            callback.onSuccess(response);
-                        } catch (Exception e) {
-                            callback.onError("Failed to parse virtual try-on result: " + e.getMessage());
-                        }
-                    }
-
-                    @Override
-                    public void onError(int statusCode, @NonNull String errorMessage) {
-                        callback.onError("Virtual try-on failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }
@@ -606,8 +565,7 @@ public final class AppFaceApiRepository {
                         @Override
                         public void onError(int statusCode, @NonNull String errorMessage) {
                             FirebaseManager.getInstance().logEvent("TEXT_TO_IMAGE_FAILED");
-
-                            callback.onError("Text-to-image failed (HTTP " + statusCode + "): " + errorMessage);
+                            callback.onError(statusCode, errorMessage);
                         }
                     });
         } catch (Exception e) {
@@ -788,7 +746,12 @@ public final class AppFaceApiRepository {
     /** Callback for video face swap API. */
     public interface VideoFaceSwapCallback {
         void onSuccess(@NonNull AppFaceVideoFaceSwapResponse response);
-        void onError(@NonNull String errorMessage);
+
+        void onError(int statusCode, @NonNull String errorMessage);
+
+        default void onError(@NonNull String errorMessage) {
+            onError(0, errorMessage);
+        }
     }
 
     /**
@@ -826,7 +789,7 @@ public final class AppFaceApiRepository {
                     @Override
                     public void onError(int statusCode, @NonNull String errorMessage) {
                         FirebaseManager.getInstance().logEvent("VIDEO_FACESWAP_FAILED");
-                        callback.onError("Video face swap failed (HTTP " + statusCode + "): " + errorMessage);
+                        callback.onError(statusCode, errorMessage);
                     }
                 });
     }

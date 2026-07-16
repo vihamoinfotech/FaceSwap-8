@@ -322,11 +322,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
                 handleResponse(response, "Image generation failed. Please try again.");
             }
 
-            @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Image generation error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Image generation failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -340,10 +340,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Face swap error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Face swap failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -357,10 +358,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Face swap error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Multi swap failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -374,10 +376,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Remove BG error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Remove BG failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -391,10 +394,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Upscale error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Upscale failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -408,10 +412,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Couple swap error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Couple swap failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -425,10 +430,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "BG replace error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "BG replace failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -442,10 +448,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "GFPGAN error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "GFPGAN failed HTTP:" + statusCode);
+
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -459,27 +466,10 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Face enhance error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
-            }
-        });
-    }
-
-    private void startVirtualTryOn(File personFile, File productFile) {
-        AppFaceApiRepository.virtualTryOn(personFile, productFile, new AppFaceApiRepository.FaceSwapCallback() {
-            @Override
-            public void onSuccess(@NonNull AppFaceFaceSwapResponse response) {
-                cleanupTempFilesKeepOriginal();
-                handleResponse(response, "Virtual try-on failed. Please try again.");
-            }
-
-            @Override
-            public void onError(@NonNull String errorMessage) {
-                Log.e(TAG, "Virtual try-on error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Face enhance failed HTTP:" + statusCode);
+                handleErrorResponse(errorMessage);
             }
         });
     }
@@ -492,12 +482,24 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 Log.e(TAG, "Text-to-image error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                showErrorDialog();
+                AppFaceAppSystem.showDebugToast(getApplicationContext(), "Text-to-image failed HTTP:" + statusCode);
+                handleErrorResponse(errorMessage);
             }
         });
+    }
+
+
+    private void handleErrorResponse(String errorMessage) {
+
+        try {
+            org.json.JSONObject obj = new org.json.JSONObject(errorMessage);
+            String msg = obj.optString("message", "");
+            showErrorDialog(msg);
+        } catch (Exception e) {
+            showErrorDialog("");
+        }
     }
 
     // ──────────────────────────────────────────────
@@ -517,10 +519,10 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 runOnUiThread(() -> {
-                    AppFaceAppSystem.showDebugToast(getApplicationContext(), errorMessage);
-                    showErrorDialog();
+                    AppFaceAppSystem.showDebugToast(getApplicationContext(), "Video face swap failed (HTTP " + statusCode);
+                    handleErrorResponse(errorMessage);
                 });
             }
         }));
@@ -546,7 +548,7 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             AppFaceAppSystem.showDebugToast(getApplicationContext(),
                     response.getMessage() == null || response.getMessage().isEmpty()
                             ? "Video processing failed" : response.getMessage());
-            showErrorDialog();
+            showErrorDialog("");
         }
     }
 
@@ -584,7 +586,7 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             AppFaceAppSystem.showDebugToast(getApplicationContext(),
                     response.getMessage() == null || response.getMessage().isEmpty()
                             ? defaultErrorMsg : response.getMessage());
-            showErrorDialog();
+            showErrorDialog("");
         }
     }
 
@@ -619,7 +621,7 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             AppFaceAppSystem.showDebugToast(getApplicationContext(),
                     response.getMessage() == null || response.getMessage().isEmpty()
                             ? defaultErrorMsg : response.getMessage());
-            showErrorDialog();
+            showErrorDialog("");
         }
     }
 
@@ -630,11 +632,11 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
     /**
      * Shows the appropriate error dialog based on {@link AppFaceAppSystem#USE_SERVER_BUSY_DIALOG}.
      */
-    private void showErrorDialog() {
+    private void showErrorDialog(String msg) {
         if (isFinishing() || isDestroyed()) return;
 
         if (AppFaceAppSystem.USE_SERVER_BUSY_DIALOG) {
-            AppFaceAppDialogController.showServerBusyDialog(this, new AppFaceOnServerBusyListener() {
+            AppFaceAppDialogController.showServerBusyDialog(this, msg, new AppFaceOnServerBusyListener() {
                 @Override
                 public void onRetry() {
                     if (!AppFaceNetworkUtils.isConnected()) {
@@ -705,7 +707,7 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
     private void handleError(String message) {
         if (isFinishing() || isDestroyed()) return;
         AppFaceAppSystem.showDebugToast(getApplicationContext(), message);
-        showErrorDialog();
+        showErrorDialog("");
     }
 
     // ──────────────────────────────────────────────

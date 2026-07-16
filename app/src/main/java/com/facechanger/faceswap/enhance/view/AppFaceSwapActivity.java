@@ -337,7 +337,7 @@ public class AppFaceSwapActivity extends BaseAppActivity {
                                 }
 
                                 @Override
-                                public void onError(@NonNull String errorMessage) {
+                                public void onError(int statusCode, @NonNull String errorMessage) {
                                     handleErrorAndCleanup(progressDialog, errorMessage, finalTemplateFile, finalFaceFile);
                                 }
                             });
@@ -350,7 +350,7 @@ public class AppFaceSwapActivity extends BaseAppActivity {
                                         }
 
                                         @Override
-                                        public void onError(@NonNull String errorMessage) {
+                                        public void onError(int statusCode, @NonNull String errorMessage) {
                                             handleErrorAndCleanup(progressDialog, errorMessage, finalTemplateFile, finalFaceFile);
                                         }
                                     });

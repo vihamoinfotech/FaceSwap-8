@@ -325,7 +325,7 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 handleApiError(errorMessage);
             }
         });
@@ -339,7 +339,7 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
             }
 
             @Override
-            public void onError(@NonNull String errorMessage) {
+            public void onError(int statusCode, @NonNull String errorMessage) {
                 handleApiError(errorMessage);
             }
         });
@@ -381,7 +381,7 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
         if (isFinishing() || isDestroyed()) return;
 
         if (AppFaceAppSystem.USE_SERVER_BUSY_DIALOG) {
-            AppFaceAppDialogController.showServerBusyDialog(this, new AppFaceOnServerBusyListener() {
+            AppFaceAppDialogController.showServerBusyDialog(this, "", new AppFaceOnServerBusyListener() {
                 @Override
                 public void onRetry() {
                     processImage(lastIsRemoveBg);

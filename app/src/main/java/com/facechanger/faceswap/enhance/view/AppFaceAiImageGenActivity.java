@@ -246,7 +246,7 @@ public class AppFaceAiImageGenActivity extends BaseAppActivity {
                             }
 
                             @Override
-                            public void onError(@NonNull String errorMessage) {
+                            public void onError(int statusCode, @NonNull String errorMessage) {
                                 showLoader(false);
                                 cleanupTempFiles(imageFile);
                                 Log.e(TAG, "Image generation error: " + errorMessage);

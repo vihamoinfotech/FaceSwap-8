@@ -380,7 +380,7 @@ public final class AppFaceAppDialogController {
      * @return The created Dialog instance
      */
     public static Dialog showServerBusyDialog(
-            @NonNull Context context,
+            @NonNull Context context, String message,
             @Nullable AppFaceOnServerBusyListener listener) {
 
         Dialog dialog = createBaseDialog(context);
@@ -392,6 +392,14 @@ public final class AppFaceAppDialogController {
 
         TextView btnRetry = view.findViewById(R.id.btnRetry);
         TextView btnGoBack = view.findViewById(R.id.btnGoBack);
+
+        TextView title = view.findViewById(R.id.tvBusyTitle);
+        TextView desc = view.findViewById(R.id.tvBusyMessage);
+
+        if (!message.isEmpty()) {
+            title.setText("Unable to Process Image");
+            desc.setText(message);
+        }
 
         btnRetry.setOnClickListener(v -> {
             dialog.dismiss();
