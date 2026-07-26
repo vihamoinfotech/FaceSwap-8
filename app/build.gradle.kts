@@ -12,7 +12,7 @@ android {
         applicationId = "com.facechanger.faceswap.enhance"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        versionCode = 7
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -21,6 +21,9 @@ android {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
+            configure<com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension> {
+                mappingFileUploadEnabled = false
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
