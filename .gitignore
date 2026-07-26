@@ -1,0 +1,91 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# ART/Dalvik VM files
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+app/build/
+*/build/
+
+# Local configuration
+local.properties
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+captures/
+.navigation/
+
+# IntelliJ
+out/
+
+# Keystore files
+*.jks
+*.keystore
+*.pem
+*.p12
+
+# Signing configs
+signing.properties
+keystore.properties
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# NDK
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+.kotlin/
+
+# Crashlytics
+com_crashlytics_export_strings.xml
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/reports/
+lint/tmp/
+lint-results*.xml
+
+# Profiling
+captures/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Generated assets
+generated/
+
+# Secrets
+.env
+.env.*
