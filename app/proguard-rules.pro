@@ -78,3 +78,27 @@
     public static int e(...);
     public static int wtf(...);
 }
+
+##################################################
+# Keep Android Components (Do NOT rename)
+##################################################
+
+# Activities
+-keep class * extends android.app.Activity { *; }
+-keep class * extends androidx.activity.ComponentActivity { *; }
+-keep class * extends androidx.appcompat.app.AppCompatActivity { *; }
+
+# Fragments
+-keep class * extends androidx.fragment.app.Fragment { *; }
+
+# Services
+-keep class * extends android.app.Service { *; }
+
+# Broadcast Receivers
+-keep class * extends android.content.BroadcastReceiver { *; }
+
+# Content Providers
+-keep class * extends android.content.ContentProvider { *; }
+
+# Applications
+-keep class * extends android.app.Application { *; }

@@ -229,21 +229,18 @@ public class AppFaceSplashActivity extends AppCompatActivity {
      */
     private void navigateAfterMinDisplayTime() {
 
-        if (AppFaceAppSystem.isDebugMode()) {
-            moveToNextScreen();
-        } else {
-            SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
-                @Override
-                public void onAdFailed(String s) {
-                    moveToNextScreen();
-                }
+        SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
+            @Override
+            public void onAdFailed(String s) {
+                moveToNextScreen();
+            }
 
-                @Override
-                public void onAdDismiss() {
-                    moveToNextScreen();
-                }
-            });
-        }
+            @Override
+            public void onAdDismiss() {
+                moveToNextScreen();
+            }
+        });
+
     }
 
     private void moveToNextScreen() {
