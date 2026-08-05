@@ -19,10 +19,12 @@ import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.AppFacePrismVaultVPgr;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.controller.AdManager;
+import com.izooto.iZooto;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
@@ -79,8 +81,26 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
         });
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        Log.e("Permission", "RequestCode = " + requestCode);
+
+        if (requestCode == 101) {
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
+                Log.e("iZooto", "Permission Granted");
+                iZooto.setSubscription(true);
+            } else {
+                Log.e("iZooto", "Permission Denied");
             }
         }
     }

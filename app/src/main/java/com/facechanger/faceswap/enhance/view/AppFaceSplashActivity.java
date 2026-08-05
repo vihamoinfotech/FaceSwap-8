@@ -3,6 +3,8 @@ package com.facechanger.faceswap.enhance.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewTreeObserver;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,7 @@ import com.facechanger.faceswap.enhance.utils.AppFaceApiRepository;
 import com.facechanger.faceswap.enhance.utils.AppFaceNetworkUtils;
 import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
+import com.revenuecat.purchases.UiConfig;
 
 /**
  * Splash screen shown on app launch.
@@ -67,13 +70,18 @@ public class AppFaceSplashActivity extends AppCompatActivity {
         AppFaceApiRepository.initialise();
 
         // Step 1: Fetch splash data directly
-        fetchSplashData();
+
+
+        View root = findViewById(android.R.id.content);
+        root.getViewTreeObserver().addOnGlobalLayoutListener(
+                new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override
+                    public void onGlobalLayout() {
+                        root.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        fetchSplashData();
+                    }
+                });
     }
-    //
-    // @Override
-    // public void onBackPressed() {
-    //
-    // }
 
     /**
      * Navigates to the forced update screen and finishes this activity.
@@ -165,7 +173,7 @@ public class AppFaceSplashActivity extends AppCompatActivity {
 
                             Log.w(TAG, "Splash data returned isSuccess=false: " + response.getMessage());
                             showRetryDialog(R.drawable.app_transparent_close_choose, getString(R.string.app_api_error_title_text),
-                                    response.getMessage() != null && !response.getMessage().isEmpty()
+                                    !response.getMessage().isEmpty()
                                             ? response.getMessage()
                                             : getString(R.string.app_api_error_text));
                         }
@@ -217,17 +225,24 @@ public class AppFaceSplashActivity extends AppCompatActivity {
      */
     private void navigateAfterMinDisplayTime() {
 
-        SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
-            @Override
-            public void onAdFailed(String s) {
-                moveToNextScreen();
-            }
+        if (AppFaceAppSystem.isDebugMode()) {
+            moveToNextScreen();
+        } else {
+            SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
+                @Override
+                public void onAdFailed(String s) {
+                    moveToNextScreen();
+                }
 
-            @Override
-            public void onAdDismiss() {
-                moveToNextScreen();
-            }
-        });
+                @Override
+                public void onAdDismiss() {
+                    moveToNextScreen();
+                }
+            });
+        }
+
+
+
     }
 
     private void moveToNextScreen() {
@@ -252,6 +267,5 @@ public class AppFaceSplashActivity extends AppCompatActivity {
         intent.putExtra("isFromSplash", true);
         startActivity(intent);
         finish();
-        overridePendingTransition(R.anim.app_nav_fade_in, R.anim.app_nav_fade_out);
     }
 }

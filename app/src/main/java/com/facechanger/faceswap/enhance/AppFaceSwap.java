@@ -35,6 +35,8 @@ import android.os.Build;
 import android.util.Log;
 import com.facechanger.faceswap.enhance.worker.AppFaceLocalNotificationReceiver;
 import com.facechanger.faceswap.enhance.controller.AppFaceFacebookEventsManager;
+import com.izooto.TokenReceivedListener;
+import com.izooto.iZooto;
 
 public class AppFaceSwap extends Application {
 
@@ -71,10 +73,24 @@ public class AppFaceSwap extends Application {
                         return;
                     }
                     String token = task.getResult();
+
                     Log.d(TAG, "════════════════════════════════════════");
                     Log.d(TAG, "FCM Device Token: " + token);
                     Log.d(TAG, "════════════════════════════════════════");
                 });
+
+        iZooto.initialize(this)
+                .setTokenReceivedListener(new TokenReceivedListener() {
+                    @Override
+                    public void onTokenReceived(String s) {
+                        Log.d(TAG, "════════════════════════════════════════");
+                        Log.d(TAG, "iZooto Device Token: " + s);
+                        Log.d(TAG, "════════════════════════════════════════");
+                    }
+                })
+                .build();
+
+        iZooto.setFirebaseAnalytics(true);
 
         // Pre-create notification channels (must exist before background FCM messages
         // arrive)

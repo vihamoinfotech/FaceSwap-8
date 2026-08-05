@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">926854475640</string>
-    <string name="google_api_key" translatable="false">AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI</string>
-    <string name="google_app_id" translatable="false">1:926854475640:android:a2448d4330b71fc5efe28d</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI</string>
-    <string name="google_storage_bucket" translatable="false">face-editor-ai-face-swap-2.firebasestorage.app</string>
-    <string name="project_id" translatable="false">face-editor-ai-face-swap-2</string>
-</resources>

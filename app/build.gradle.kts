@@ -15,6 +15,7 @@ android {
         versionCode = 7
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders["izooto_app_id"] = "66dd8d127ebc7730cf309b301599948cac248049"
     }
 
     buildTypes {
@@ -86,4 +87,15 @@ dependencies {
     // Media3 ExoPlayer (in-app video playback)
     implementation("androidx.media3:media3-exoplayer:1.6.1")
     implementation("androidx.media3:media3-ui:1.6.1")
+
+
+// iXooto
+implementation("com.izooto:android-sdk:3.5.3")
+implementation("androidx.work:work-runtime:2.9.0")
+implementation("androidx.browser:browser:1.9.0")
+
+    implementation("androidx.credentials:credentials:1.2.1")
+    implementation("androidx.credentials:credentials-play-services-auth:1.2.1")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.0")
+
 }
