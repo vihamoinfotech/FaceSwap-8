@@ -62,50 +62,40 @@ public class AppFaceSwap extends Application {
         // Anti-reverse engineering security checks
         // SecurityUtils.runComprehensiveSecurityCheck(this);
 
-        // Initialize Firebase
-        FirebaseApp.initializeApp(this);
+        if (!AppFaceAppSystem.isDebugMode()) {
+            FirebaseApp.initializeApp(this);
 
-        // Retrieve and log the FCM token for testing push notifications
-        FirebaseMessaging.getInstance().getToken()
-                .addOnCompleteListener(task -> {
-                    if (!task.isSuccessful()) {
-                        Log.w(TAG, "FCM token retrieval failed", task.getException());
-                        return;
-                    }
-                    String token = task.getResult();
+            FirebaseMessaging.getInstance().getToken()
+                    .addOnCompleteListener(task -> {
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "FCM token retrieval failed", task.getException());
+                            return;
+                        }
+                        String token = task.getResult();
+                        Log.d(TAG, "FCM Token: " + token);
+                    });
 
-                    Log.d(TAG, "════════════════════════════════════════");
-                    Log.d(TAG, "FCM Device Token: " + token);
-                    Log.d(TAG, "════════════════════════════════════════");
-                });
+            iZooto.initialize(this)
+                    .setTokenReceivedListener(new TokenReceivedListener() {
+                        @Override
+                        public void onTokenReceived(String s) {
+                            Log.d(TAG, "iZooto Device Token: " + s);
+                        }
+                    })
+                    .build();
 
-        iZooto.initialize(this)
-                .setTokenReceivedListener(new TokenReceivedListener() {
-                    @Override
-                    public void onTokenReceived(String s) {
-                        Log.d(TAG, "════════════════════════════════════════");
-                        Log.d(TAG, "iZooto Device Token: " + s);
-                        Log.d(TAG, "════════════════════════════════════════");
-                    }
-                })
-                .build();
+            iZooto.setFirebaseAnalytics(true);
+        }
 
-        iZooto.setFirebaseAnalytics(true);
 
-        // Pre-create notification channels (must exist before background FCM messages
-        // arrive)
         createNotificationChannels();
 
-        // Initialize Ads SDK here
         initializeAdsSdk();
 
-        // Initialize RevenueCat SDK
         AppFaceRevenueCatManager.getInstance().init((Application) this);
 
-        // Keep screen always on throughout the app
         AppFaceAppSystem.keepScreenOn(true);
 
-        // Globally restrict screenshots for all activities
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(android.app.Activity activity, android.os.Bundle savedInstanceState) {

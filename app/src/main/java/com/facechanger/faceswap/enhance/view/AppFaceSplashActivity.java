@@ -70,8 +70,6 @@ public class AppFaceSplashActivity extends AppCompatActivity {
         AppFaceApiRepository.initialise();
 
         // Step 1: Fetch splash data directly
-
-
         View root = findViewById(android.R.id.content);
         root.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -159,12 +157,18 @@ public class AppFaceSplashActivity extends AppCompatActivity {
 
                             Log.w(TAG, "APP_UPDATE: IS_LATEST" + response.getData().isLatest());
 
-                            if (!response.getData().isLatest()) {
-                                String currentVersion = com.facechanger.faceswap.enhance.BuildConfig.VERSION_NAME;
-                                navigateToUpdateScreen(currentVersion, null);
+                            if (!AppFaceAppSystem.isDebugMode()) {
+                                if (!response.getData().isLatest()) {
+                                    String currentVersion = com.facechanger.faceswap.enhance.BuildConfig.VERSION_NAME;
+                                    navigateToUpdateScreen(currentVersion, null);
+                                } else {
+                                    navigateAfterMinDisplayTime();
+                                }
                             } else {
                                 navigateAfterMinDisplayTime();
                             }
+
+
                         } else {
 
                             Log.e("dsfsd", "2");
@@ -240,9 +244,6 @@ public class AppFaceSplashActivity extends AppCompatActivity {
                 }
             });
         }
-
-
-
     }
 
     private void moveToNextScreen() {
