@@ -76,7 +76,14 @@ public class AppFaceMainActivity extends BaseAppActivity {
                     if (backToast != null) {
                         backToast.cancel();
                     }
-                    finishAffinity();
+
+                    showDirectInterstitial(new InterstitialAdCallback() {
+                        @Override
+                        public void onAdDismissed() {
+                            finishAffinity();
+                        }
+                    });
+
                 } else {
                     backPressedTime = currentTime;
                     backToast = Toast.makeText(AppFaceMainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT);

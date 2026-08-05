@@ -26,7 +26,9 @@ import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
+import com.faceenhance.facechanger.callback.SplashAdCallback;
 import com.faceenhance.facechanger.controller.AdManager;
+import com.faceenhance.facechanger.controller.SplashInterstitialAdManager;
 import com.google.android.material.snackbar.Snackbar;
 import com.revenuecat.purchases.Offerings;
 import com.revenuecat.purchases.Package;
@@ -152,12 +154,27 @@ public class AppFacePaywallActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (isFromSplash) {
-            Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceMainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
-        }
-        finish();
+        SplashInterstitialAdManager.getInstance().showSplashAd(this, false, new SplashAdCallback() {
+            @Override
+            public void onAdFailed(String s) {
+                if (isFromSplash) {
+                    Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceMainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                }
+                finish();
+            }
+
+            @Override
+            public void onAdDismiss() {
+                if (isFromSplash) {
+                    Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceMainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                }
+                finish();
+            }
+        });
     }
 
     private void setupListeners() {
