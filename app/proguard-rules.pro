@@ -102,3 +102,10 @@
 
 # Applications
 -keep class * extends android.app.Application { *; }
+
+-dontwarn com.google.android.libraries.identity.googleid.GetGoogleIdOption$Builder
+-dontwarn com.google.android.libraries.identity.googleid.GetGoogleIdOption
+-dontwarn com.huawei.agconnect.config.AGConnectServicesConfig
+-dontwarn com.huawei.hms.aaid.HmsInstanceId
+-dontwarn com.huawei.hms.common.ApiException
+-dontwarn com.huawei.hms.push.HmsMessageService
