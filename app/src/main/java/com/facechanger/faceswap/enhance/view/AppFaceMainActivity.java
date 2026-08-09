@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 
 import com.facechanger.faceswap.enhance.utils.AppFaceApiCall;
 import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
+import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
 import com.facechanger.faceswap.enhance.view.adapter.AppFaceMainCategoryAdapter;
+import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.model.api.AppFaceTemplateCategory;
@@ -77,13 +79,17 @@ public class AppFaceMainActivity extends BaseAppActivity {
                         backToast.cancel();
                     }
 
-                    showDirectInterstitial(new InterstitialAdCallback() {
-                        @Override
-                        public void onAdDismissed() {
-                            finishAffinity();
-                        }
-                    });
-
+                    int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+                    if (APP_EXP == 0) {
+                        showDirectInterstitial(new InterstitialAdCallback() {
+                            @Override
+                            public void onAdDismissed() {
+                                finishAffinity();
+                            }
+                        });
+                    } else {
+                        finishAffinity();
+                    }
                 } else {
                     backPressedTime = currentTime;
                     backToast = Toast.makeText(AppFaceMainActivity.this, "Press back again to exit", Toast.LENGTH_SHORT);
