@@ -15,6 +15,7 @@ import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -108,7 +109,14 @@ public class AppFaceDownloadShareActivity extends BaseAppActivity {
         setupToolbar();
         setupPreview();
         setupClickListeners();
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
     }
 
     private void setupToolbar() {

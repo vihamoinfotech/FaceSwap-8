@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -68,8 +69,15 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_background_replace);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.bgReplaceContent), false);
 
-        loadAds();
-        loadSecondAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
         AdManager.getInstance().preloadBigMediaNative();
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,7 +46,14 @@ public class AppFaceSectionDetailActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_section_detail_screen);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.sectionDetailContent), false);
 
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
 
         sectionData = (AppFaceSectionData) getIntent().getSerializableExtra("section_data");
 

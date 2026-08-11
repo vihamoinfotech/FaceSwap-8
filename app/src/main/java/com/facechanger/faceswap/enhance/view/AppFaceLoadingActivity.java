@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -78,7 +79,14 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_common_activity_lottie_loading_screen);
         AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
 
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
 
         setupSystemInsets();
         disableBackButton();

@@ -86,7 +86,6 @@ dependencies {
     implementation("com.facebook.android:facebook-android-sdk:18.3.0")
     implementation(libs.androidx.core.splashscreen)
     implementation("com.google.firebase:firebase-messaging")
-    implementation("androidx.work:work-runtime:2.11.2")
 
     // Retrofit + OkHttp (network layer)
     implementation(libs.retrofit)
@@ -101,8 +100,8 @@ dependencies {
 
 // iXooto
     implementation("com.izooto:android-sdk:3.5.3")
-    implementation("androidx.work:work-runtime:2.11.2")
-    implementation("androidx.browser:browser:1.10.0")
+    implementation("androidx.work:work-runtime:2.9.0")
+    implementation("androidx.browser:browser:1.8.0")
 
     implementation("androidx.credentials:credentials:1.6.0")
     implementation("androidx.credentials:credentials-play-services-auth:1.6.0")

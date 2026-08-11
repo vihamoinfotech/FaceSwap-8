@@ -85,6 +85,7 @@ public class AppFaceSwap extends Application {
                     .build();
 
             iZooto.setFirebaseAnalytics(true);
+
         }
 
 

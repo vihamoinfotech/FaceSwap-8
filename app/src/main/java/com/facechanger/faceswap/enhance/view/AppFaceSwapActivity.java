@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -105,8 +106,15 @@ public class AppFaceSwapActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_face_swap_screen);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
 
-        loadAds();
-        loadSecondAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
         AdManager.getInstance().preloadBigMediaNative();
 

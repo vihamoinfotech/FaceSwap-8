@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,8 +66,15 @@ public class AppFaceMyWorkActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_my_work_screen);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.myWorkContent), false);
 
-        loadAds();
-        loadSecondAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
         setupToolbar();
         setupRetentionNotice();

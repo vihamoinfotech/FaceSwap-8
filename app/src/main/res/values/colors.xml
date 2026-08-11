@@ -67,12 +67,12 @@
     <color name="app_subtle_divider">#1E1E36</color>
 
 
-                <!--    ads Color-->
+    <!--    ads Color-->
 
     <color name="ads_text_color">#FFFFFF</color>
     <color name="ads_cta_text_color">#FFFFFF</color>
-    <color name="ads_ad_tag_color">#2A2A42</color>
-    <color name="ads_ad_tag_text_color">#606080</color>
-    <color name="ads_background_color">#14141F</color>
+    <color name="ads_ad_tag_color">#404049</color>
+    <color name="ads_ad_tag_text_color">#FFFFFF</color>
+    <color name="ads_background_color">#26262f</color>
 
 </resources>

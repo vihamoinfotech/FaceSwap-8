@@ -106,7 +106,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/app_poppins_bold"
                     android:includeFontPadding="false"
-                    android:text="@string/paywall_hero_line3"
+                    android:text=""
                     android:textColor="@color/app_on_surface_paywall"
                     android:lines="1"
                     android:ellipsize="end"
@@ -468,7 +468,7 @@
             android:fontFamily="@font/app_poppins_medium"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:text="dnskfjsfjshf"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="@dimen/_18sdp"
             android:visibility="visible" />
@@ -481,7 +481,7 @@
             android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:text="dnskfjsfjshf"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="@dimen/_22sdp"
             android:visibility="visible" />
@@ -495,7 +495,7 @@
             android:fontFamily="@font/app_poppins_regular"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:text="dnskfjsfjshf"
+            android:text=""
             android:textColor="@color/app_on_surface_variant_paywall"
             android:textSize="@dimen/_11sdp"
             android:visibility="visible" />
@@ -512,7 +512,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:paddingVertical="16dp"
-            android:text="@string/paywall_cta_trial"
+            android:text="Subscribe Now"
             android:textColor="@color/white"
             android:textSize="@dimen/_16sdp" />
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -41,8 +42,14 @@ public class AppFaceLanguageActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_language);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
 
-        // Load premium layout ads automatically via base class
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
 
         isFromSettings = getIntent().getBooleanExtra(EXTRA_FROM_SETTINGS, false);
 

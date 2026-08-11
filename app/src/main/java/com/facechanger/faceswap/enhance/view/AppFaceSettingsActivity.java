@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -27,7 +28,14 @@ public class AppFaceSettingsActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_settings_screen);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
 
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
 
         ImageView btnBack = findViewById(R.id.btnBack);
         if (btnBack != null) {

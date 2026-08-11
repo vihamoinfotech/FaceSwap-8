@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ import com.facechanger.faceswap.enhance.utils.AppFaceCoinManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.controller.AdManager;
+import com.izooto.iZooto;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -61,9 +63,9 @@ public class AppFaceMainActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.app_face_activity_main_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), false, true);
+
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), false, false);
 
         shimmerViewContainer = findViewById(R.id.shimmer_view_container);
 
@@ -121,8 +123,15 @@ public class AppFaceMainActivity extends BaseAppActivity {
         setupCoinHeader();
         fetchTemplatesFromApi();
 
-        loadAds();
-        loadSecondAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -132,6 +141,29 @@ public class AppFaceMainActivity extends BaseAppActivity {
         }
 
         adjustLayoutForAds();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
+                iZooto.setSubscription(true);
+            } else {
+                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 101) {
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
+                Log.e("iZooto", "Permission Granted");
+                iZooto.setSubscription(true);
+            } else {
+                Log.e("iZooto", "Permission Denied");
+            }
+        }
     }
 
     @Override

@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -67,8 +68,16 @@ public class AppFaceAiImageGenActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_ai_activity_image_generation);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
 
-        loadAds();
-        loadSecondAds();
+
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
         AdManager.getInstance().preloadBigMediaNative();
 

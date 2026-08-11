@@ -34,7 +34,7 @@ import androidx.core.content.ContextCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AppFaceOnboardingActivity extends AppCompatActivity {
+public class AppFaceOnboardingActivity extends BaseAppActivity {
 
     private AppFacePrismVaultVPgr viewPager;
 
@@ -52,7 +52,7 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_onboarding_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.viewPager), false, false);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, false);
 
         viewPager = findViewById(R.id.viewPager);
 
@@ -61,6 +61,10 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
             @Override
             public void onGlobalLayout() {
                 rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+                if (APP_EXP == 0) {
+                    loadAds();
+                }
                 viewPagerSetUp();
             }
         });
@@ -80,11 +84,13 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
             }
         });
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
-            }
-        }
+        iZooto.promptForPushNotifications();
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+//            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+//                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+//            }
+//        }
     }
 
     @Override
@@ -149,9 +155,6 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
         viewPager.setOffscreenPageLimit(2);
         viewPagerAdapter.notifyDataSetChanged();
 
-        if (fragHelper1 != null) {
-            fragHelper1.loadFragAds();
-        }
     }
 
     private void changPostion(){
@@ -159,9 +162,7 @@ public class AppFaceOnboardingActivity extends AppCompatActivity {
 
         if (current < viewPagerAdapter.getCount() - 1) {
             viewPager.setCurrentItem(current + 1, true);
-            if (fragHelper2 != null) {
-                fragHelper2.loadFragAds();
-            }
+
         } else {
             AppFaceLanguagePrefs.markOnboardingCompleted(AppFaceOnboardingActivity.this);
             Class<?> nextActivity;

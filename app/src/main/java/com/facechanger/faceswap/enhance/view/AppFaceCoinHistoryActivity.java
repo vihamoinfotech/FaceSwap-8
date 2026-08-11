@@ -2,6 +2,7 @@ package com.facechanger.faceswap.enhance.view;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -42,7 +43,14 @@ public class AppFaceCoinHistoryActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_coin_history_activity);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.coinHistoryRoot), false);
 
-        loadAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+            }
+        });
 
         findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 

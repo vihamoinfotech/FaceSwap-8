@@ -52,33 +52,6 @@ public class AppFaceOnboardFrgOne extends BaseAdFragment {
         getViews(view);
     }
 
-    public void loadFragAds() {
-        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
-
-        if (APP_EXP == 0) {
-
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    if (isAdded()) {
-                        if (currentIndex != null && currentIndex == 1) {
-                            Log.e("Log___", "Load Ads 1");
-                            loadAds();
-                            hideSecondAds();
-                        } else {
-                            Log.e("Log___", "Load Ads 2");
-                            hideAds();
-                            loadSecondAds();
-                        }
-                    }
-                }
-            }, 100);
-        } else {
-            hideAds();
-            hideSecondAds();
-        }
-    }
-
     private void getViews(View view) {
         ImageView ivOnboardImage = view.findViewById(R.id.ivOnboardImage);
         TextView tvOnboardTitle = view.findViewById(R.id.tvOnboardTitle);
@@ -102,15 +75,6 @@ public class AppFaceOnboardFrgOne extends BaseAdFragment {
             btnNext.setVisibility(View.GONE);
             btnContinue.setVisibility(View.VISIBLE);
 
-            int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
-
-            if (APP_EXP == 1) {
-                btnNext.setVisibility(View.GONE);
-                btnContinue.setVisibility(View.VISIBLE);
-            } else {
-                btnNext.setVisibility(View.VISIBLE);
-                btnContinue.setVisibility(View.GONE);
-            }
         }
 
         btnContinue.setText(R.string.app_onboard_continue_text);

@@ -2,6 +2,8 @@ package com.facechanger.faceswap.enhance.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -29,8 +31,15 @@ public class AppFaceTextToImageActivity extends BaseAppActivity {
         setContentView(R.layout.app_face_activity_text_to_image_screen);
         AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.textToImageContent), false);
 
-        loadAds();
-        loadSecondAds();
+        View rootView = findViewById(android.R.id.content);
+        rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                rootView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                loadAds();
+                loadSecondAds();
+            }
+        });
 
         AdManager.getInstance().preloadBigMediaNative();
 
