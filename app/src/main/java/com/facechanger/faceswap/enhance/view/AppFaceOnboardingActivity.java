@@ -65,6 +65,7 @@ public class AppFaceOnboardingActivity extends BaseAppActivity {
                 if (APP_EXP == 0) {
                     loadAds();
                 }
+                iZooto.promptForPushNotifications();
                 viewPagerSetUp();
             }
         });
@@ -83,14 +84,6 @@ public class AppFaceOnboardingActivity extends BaseAppActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
-
-        iZooto.promptForPushNotifications();
-
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-//            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-//                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
-//            }
-//        }
     }
 
     @Override

@@ -146,22 +146,7 @@ public class AppFaceMainActivity extends BaseAppActivity {
             if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
                 iZooto.setSubscription(true);
             } else {
-                this.requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
-            }
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 101) {
-            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
-                Log.e("iZooto", "Permission Granted");
-                iZooto.setSubscription(true);
-            } else {
-                Log.e("iZooto", "Permission Denied");
+                iZooto.promptForPushNotifications();
             }
         }
     }
