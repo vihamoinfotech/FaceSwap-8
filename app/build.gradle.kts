@@ -17,8 +17,8 @@ android {
         targetSdk = 36
 
 
-//        versionCode = 8 // todo live
-//        versionName = "1.1" // todo live
+//        versionCode = 9 // todo live
+//        versionName = "1.2" // todo live
 
         versionCode = 1 // todo remove
         versionName = "0.1" // todo remove
