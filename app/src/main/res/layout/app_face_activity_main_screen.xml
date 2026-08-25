@@ -171,6 +171,83 @@
 
             </com.facebook.shimmer.ShimmerFrameLayout>
 
+            <LinearLayout
+                android:id="@+id/llErrorRetryContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_above="@+id/second_ad_view_container"
+                android:paddingHorizontal="@dimen/_24sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:visibility="gone">
+
+                <!-- Icon with glowing avatar circle -->
+                <FrameLayout
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_avatar_circle" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_undo_rotate"
+                        app:tint="@color/app_primary_brand" />
+                </FrameLayout>
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/tvErrorTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/app_poppins_bold"
+                    android:gravity="center"
+                    android:text="@string/app_api_error_title_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <!-- Subtitle -->
+                <TextView
+                    android:id="@+id/tvErrorMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/app_poppins_regular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/app_api_error_text"
+                    android:textColor="@color/app_secondary_text"
+                    android:textSize="@dimen/_11sdp" />
+
+                <!-- Retry Button -->
+                <TextView
+                    android:id="@+id/btnRetryMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:background="@drawable/app_button_face_primary_bg"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:fontFamily="@font/app_poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/_32sdp"
+                    android:text="Retry"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+
             <!-- Bottom nav bar + ad overlay -->
             <RelativeLayout
                 android:layout_width="wrap_content"

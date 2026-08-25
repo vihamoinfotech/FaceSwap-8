@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 
 import com.facechanger.faceswap.enhance.utils.AppFaceApiCall;
 import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
+import com.facechanger.faceswap.enhance.utils.AppFaceNetworkUtils;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
 import com.facechanger.faceswap.enhance.view.adapter.AppFaceMainCategoryAdapter;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
@@ -55,6 +56,10 @@ public class AppFaceMainActivity extends BaseAppActivity {
     private android.widget.TextView tvCoinBalance;
 
     private AppFaceApiCall fetchTemplatesCall;
+    private View llErrorRetryContainer;
+
+    private android.widget.TextView tvErrorTitle, tvErrorMessage, btnRetryMain;
+
 
     @Override
     protected void attachBaseContext(android.content.Context newBase) {
@@ -70,6 +75,15 @@ public class AppFaceMainActivity extends BaseAppActivity {
         AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), false, false);
 
         shimmerViewContainer = findViewById(R.id.shimmer_view_container);
+        llErrorRetryContainer = findViewById(R.id.llErrorRetryContainer);
+
+        tvErrorTitle = findViewById(R.id.tvErrorTitle);
+        tvErrorMessage = findViewById(R.id.tvErrorMessage);
+        btnRetryMain = findViewById(R.id.btnRetryMain);
+
+        if (btnRetryMain != null) {
+            btnRetryMain.setOnClickListener(v -> fetchTemplatesFromApi());
+        }
 
         getOnBackPressedDispatcher().addCallback(this, new androidx.activity.OnBackPressedCallback(true) {
             private long backPressedTime = 0;
@@ -172,6 +186,9 @@ public class AppFaceMainActivity extends BaseAppActivity {
     // ──────────────────────────────────────────────
 
     private void fetchTemplatesFromApi() {
+        if (llErrorRetryContainer != null) {
+            llErrorRetryContainer.setVisibility(View.GONE);
+        }
         if (shimmerViewContainer != null) {
             shimmerViewContainer.setVisibility(View.VISIBLE);
             shimmerViewContainer.startShimmer();
@@ -186,10 +203,21 @@ public class AppFaceMainActivity extends BaseAppActivity {
                     shimmerViewContainer.stopShimmer();
                     shimmerViewContainer.setVisibility(View.GONE);
                 }
-                if (rvMainCategories != null) rvMainCategories.setVisibility(View.VISIBLE);
 
-                Log.d(TAG, "Loaded " + categories.size() + " categories from API");
-                renderTemplates(categories);
+                if (categories.isEmpty()) {
+                    // No data found -> show retry container
+                    if (rvMainCategories != null) rvMainCategories.setVisibility(View.GONE);
+                    if (llErrorRetryContainer != null) {
+                        if (tvErrorTitle != null) tvErrorTitle.setText(getString(R.string.MainActivity_could_not_load_templates));
+                        if (tvErrorMessage != null) tvErrorMessage.setText(getString(R.string.dialog_api_error_msg));
+                        llErrorRetryContainer.setVisibility(View.VISIBLE);
+                    }
+                } else {
+                    if (llErrorRetryContainer != null) llErrorRetryContainer.setVisibility(View.GONE);
+                    if (rvMainCategories != null) rvMainCategories.setVisibility(View.VISIBLE);
+                    Log.d(TAG, "Loaded " + categories.size() + " categories from API");
+                    renderTemplates(categories);
+                }
             }
 
             @Override
@@ -199,11 +227,20 @@ public class AppFaceMainActivity extends BaseAppActivity {
                     shimmerViewContainer.stopShimmer();
                     shimmerViewContainer.setVisibility(View.GONE);
                 }
-                if (rvMainCategories != null) rvMainCategories.setVisibility(View.VISIBLE);
+                if (rvMainCategories != null) rvMainCategories.setVisibility(View.GONE);
+
+                if (llErrorRetryContainer != null) {
+                    if (tvErrorTitle != null) tvErrorTitle.setText(getString(R.string.dialog_api_error_title));
+                    if (tvErrorMessage != null) {
+                        tvErrorMessage.setText(AppFaceNetworkUtils.isConnected(AppFaceMainActivity.this)
+                                ? getString(R.string.dialog_api_error_msg)
+                                : getString(R.string.dialog_no_internet_msg));
+                    }
+                    llErrorRetryContainer.setVisibility(View.VISIBLE);
+                }
+
 
                 Log.e(TAG, "Failed to load templates: " + errorMessage);
-                Toast.makeText(AppFaceMainActivity.this, getString(R.string.app_main_app_could_not_load_templates_text),
-                        Toast.LENGTH_SHORT).show();
             }
         });
     }

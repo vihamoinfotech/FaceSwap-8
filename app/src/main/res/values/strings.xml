@@ -357,4 +357,10 @@
 
     <string name="video_swap_cost_label" translatable="false">%s Coins</string>
 
+    <string name="MainActivity_could_not_load_templates" translatable="false">Could not load templates. Pull to retry.</string>
+    <string name="dialog_api_error_msg" translatable="false">Something went wrong while connecting to our servers. Please try again.</string>
+    <string name="dialog_api_error_title" translatable="false">Connection Error</string>
+    <string name="dialog_no_internet_msg" translatable="false">Please check your internet connection and try again.</string>
+
+
 </resources>
