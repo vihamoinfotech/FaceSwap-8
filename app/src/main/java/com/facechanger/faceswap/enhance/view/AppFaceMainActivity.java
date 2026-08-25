@@ -23,6 +23,8 @@ import com.facechanger.faceswap.enhance.utils.AppFaceCoinManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.controller.AdManager;
+import com.faceenhance.facechanger.controller.FirebaseManager;
+import com.google.firebase.Firebase;
 import com.izooto.iZooto;
 
 import android.Manifest;
@@ -293,7 +295,13 @@ public class AppFaceMainActivity extends BaseAppActivity {
                     Intent intent = new Intent(AppFaceMainActivity.this, AppFaceVideoFaceSwapActivity.class);
                     startActivity(intent);
                 } else {
-                    startActivity(new Intent(this, AppFacePaywallActivity.class));
+                    FirebaseManager.getInstance().logEvent("VIDEO_PREMIUM_OPEN");
+                    int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+                    if (APP_EXP == 1) {
+                        startActivity(new Intent(this, AppFacePaywallActivity.class));
+                    } else {
+                        startActivity(new Intent(this, VideoPaywallActivity.class));
+                    }
                 }
             });
 

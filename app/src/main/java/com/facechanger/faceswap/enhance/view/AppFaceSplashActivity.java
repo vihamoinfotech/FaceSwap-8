@@ -141,7 +141,7 @@ public class AppFaceSplashActivity extends AppCompatActivity {
                             Log.d(TAG, "Session initialized — token acquired" + responseBody);
 
                             if (AppFaceAppSystem.isDebugMode()) {
-                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 1);
+                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 0);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_IN_APP_AFT_SPL, 1);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_PRM_PRC_SHOW, 1);
                             } else {
@@ -240,6 +240,11 @@ public class AppFaceSplashActivity extends AppCompatActivity {
                 moveToNextScreen();
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 

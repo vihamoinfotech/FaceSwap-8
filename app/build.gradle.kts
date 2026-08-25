@@ -17,8 +17,8 @@ android {
         targetSdk = 36
 
 
-//        versionCode = 9 // todo live
-//        versionName = "1.2" // todo live
+//        versionCode = 10 // todo live
+//        versionName = "1.3" // todo live
 
         versionCode = 1 // todo remove
         versionName = "0.1" // todo remove
@@ -67,6 +67,7 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:34.17.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.firebase.crashlytics)
 
     implementation(libs.appcompat)

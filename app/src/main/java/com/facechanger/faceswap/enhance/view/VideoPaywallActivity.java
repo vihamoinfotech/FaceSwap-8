@@ -1,33 +1,37 @@
 package com.facechanger.faceswap.enhance.view;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import androidx.media3.common.MediaItem;
+import androidx.media3.common.Player;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.ui.PlayerView;
 
 import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.controller.AppFaceFacebookEventsManager;
 import com.facechanger.faceswap.enhance.controller.AppFacePurchaseListener;
 import com.facechanger.faceswap.enhance.controller.AppFaceRevenueCatManager;
-import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
 import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.callback.SplashAdCallback;
 import com.faceenhance.facechanger.controller.AdManager;
+import com.faceenhance.facechanger.controller.FirebaseManager;
 import com.faceenhance.facechanger.controller.SplashInterstitialAdManager;
 import com.google.android.material.snackbar.Snackbar;
 import com.revenuecat.purchases.Offerings;
@@ -41,146 +45,117 @@ import com.revenuecat.purchases.models.SubscriptionOption;
 
 import java.util.List;
 
-/**
- * Premium paywall screen — displays feature comparison and trial CTA.
- */
-public class AppFacePaywallActivity extends AppCompatActivity {
+public class VideoPaywallActivity extends AppCompatActivity {
 
+    private Boolean isFromSplash = false;
     private ImageView btnClose;
-    private TextView btnCta;
-    private TextView btnRestore;
-    private TextView btnPrivacy;
-    private TextView btnTerms;
-
-    private TextView tvHeroTrial;
-    private TextView tvPriceDetail;
+    private TextView btnCta, tv_offer_desc;
     private ProgressBar progressBar;
+
+    private TextView btnRestore, btnPrivacy, btnTerms;
 
     private com.revenuecat.purchases.Package subscriptionPackage;
 
-    // ── Animatable sections ──
-    private View heroBadge;
-    private View heroText;
-    private View featurePanel;
-    private View footer;
-    private TextView tv_gol_offer_title, tv_gol_offer_desc;
+    private PlayerView playerView;
+    private ExoPlayer exoPlayer;
 
-    private Boolean isFromSplash = false;
-
-    // ───────────────────────────────── Lifecycle ──
-
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(AppFaceLocaleHelper.onAttach(newBase));
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Force LTR to prevent Google Play strings from getting corrupted in RTL
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
 
-        setContentView(R.layout.app_face_activity_paywall_screen);
+        setContentView(R.layout.activity_video_paywall);
 
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.paywallRoot), false, true);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.main), false, true);
+        if (getIntent() != null) {
+            isFromSplash = getIntent().getBooleanExtra("isFromSplash", false);
+        }
 
-            if (getIntent() != null) {
-                isFromSplash = getIntent().getBooleanExtra("isFromSplash", false);
-            }
-
-        initViews();
-        setupListeners();
-        playEntranceAnimations();
+        setupVideoBackground();
+        setupIDsAndListeners();
         loadOfferings();
     }
 
-    // ───────────────────────────────── Init ──
+    private void setupVideoBackground() {
+        playerView = findViewById(R.id.playerViewBackground);
+        if (playerView == null) return;
 
-    private void initViews() {
-        btnClose = findViewById(R.id.btnPaywallClose);
-        btnCta = findViewById(R.id.btnPaywallCta);
-        btnRestore = findViewById(R.id.btnPaywallRestore);
-        btnPrivacy = findViewById(R.id.btnPaywallPrivacy);
-        btnTerms = findViewById(R.id.btnPaywallTerms);
+        exoPlayer = new ExoPlayer.Builder(this).build();
+        playerView.setPlayer(exoPlayer);
 
-        tvHeroTrial = findViewById(R.id.tvPaywallHeroTrial);
-        tvPriceDetail = findViewById(R.id.tvPaywallPriceDetail);
-        progressBar = findViewById(R.id.paywallProgressBar);
+        // Mute video
+        exoPlayer.setVolume(0f);
 
-        heroBadge = findViewById(R.id.paywallHeroBadge);
-        heroText = findViewById(R.id.paywallHeroText);
-        featurePanel = findViewById(R.id.paywallFeaturePanel);
-        footer = findViewById(R.id.paywallFooter);
+        // Loop indefinitely
+        exoPlayer.setRepeatMode(Player.REPEAT_MODE_ALL);
 
-        tv_gol_offer_title = findViewById(R.id.tv_gol_offer_title);
-        tv_gol_offer_desc = findViewById(R.id.tv_gol_offer_desc);
+        // Determine video source for paywall_video.mp4
+        Uri videoUri = null;
 
-        LinearLayout ll_exclusive_content = findViewById(R.id.ll_exclusive_content);
-
-        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
-
-        if (APP_EXP == 1) {
-
-            ll_exclusive_content.setVisibility(View.GONE);
-
-            tv_gol_offer_title.setVisibility(View.VISIBLE);
-            tv_gol_offer_desc.setVisibility(View.VISIBLE);
-
-            tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-
-        } else {
-
-            tv_gol_offer_title.setVisibility(View.GONE);
-            tv_gol_offer_desc.setVisibility(View.GONE);
-
-            int IS_PRM_PRC_SHOW = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.IS_PRM_PRC_SHOW, 1);
-
-            if (IS_PRM_PRC_SHOW == 1) {
-                ll_exclusive_content.setVisibility(View.GONE);
-            } else {
-                ll_exclusive_content.setVisibility(View.VISIBLE);
-            }
+        // 1. Check raw resource (res/raw/paywall_video.mp4)
+        int rawResId = getResources().getIdentifier("paywall_video", "raw", getPackageName());
+        if (rawResId != 0) {
+            videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + rawResId);
         }
 
-
+        if (videoUri != null) {
+            MediaItem mediaItem = MediaItem.fromUri(videoUri);
+            exoPlayer.setMediaItem(mediaItem);
+            exoPlayer.prepare();
+            exoPlayer.play();
+        }
     }
 
-    // ───────────────────────────────── Listeners ──
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (exoPlayer != null) {
+            exoPlayer.play();
+        }
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (exoPlayer != null) {
+            exoPlayer.pause();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (exoPlayer != null) {
+            exoPlayer.release();
+            exoPlayer = null;
+        }
+    }
 
     @Override
     public void onBackPressed() {
-        SplashInterstitialAdManager.getInstance().showSplashAd(this, false, new SplashAdCallback() {
-            @Override
-            public void onAdFailed(String s) {
-                if (isFromSplash) {
-                    Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceMainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                }
-                finish();
-            }
-
-            @Override
-            public void onAdDismiss() {
-                if (isFromSplash) {
-                    Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceMainActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                }
-                finish();
-            }
-        });
+        if (isFromSplash) {
+            Intent intent = new Intent(VideoPaywallActivity.this, AppFaceMainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+        }
+        finish();
     }
 
-    private void setupListeners() {
-        // Close button
-        btnClose.setOnClickListener(v -> onBackPressed());
+    private void setupIDsAndListeners() {
 
-        // CTA — purchase package
+        btnClose = findViewById(R.id.btnPaywallClose);
+        btnCta = findViewById(R.id.btnPaywallCta);
+        tv_offer_desc = findViewById(R.id.tv_gol_offer_desc);
+
+        btnRestore = findViewById(R.id.btnPaywallRestore);
+        btnPrivacy = findViewById(R.id.btnPaywallPrivacy);
+        btnTerms = findViewById(R.id.btnPaywallTerms);
+        progressBar = findViewById(R.id.paywallProgressBar);
+
+
+
         btnCta.setOnClickListener(v -> {
-            animatePress(v);
 
             if (AdManager.getInstance().isPremiumUser()) {
                 onBackPressed();
@@ -211,7 +186,6 @@ public class AppFacePaywallActivity extends AppCompatActivity {
 
                     @Override
                     public void onPurchaseCancelled() {
-
                         runOnUiThread(() -> showLoading(false));
                     }
 
@@ -224,7 +198,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                             AppFaceSessionManager.getInstance().setPremium(true);
                             logFacebookSubscriptionEvent();
                             btnCta.postDelayed(() -> {
-                                Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceSplashActivity.class);
+                                Intent intent = new Intent(VideoPaywallActivity.this, AppFaceSplashActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
                                 finish();
@@ -243,7 +217,10 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                             AppFaceSessionManager.getInstance().setPremium(true);
                             logFacebookSubscriptionEvent();
                             btnCta.postDelayed(() -> {
-                                Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceSplashActivity.class);
+
+                                FirebaseManager.getInstance().logEvent("PURCHASED_VIDEO_PREMIUM");
+
+                                Intent intent = new Intent(VideoPaywallActivity.this, AppFaceSplashActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
                                 finish();
@@ -257,9 +234,10 @@ public class AppFacePaywallActivity extends AppCompatActivity {
             }
         });
 
+
+
         // Restore purchases
         btnRestore.setOnClickListener(v -> {
-            animatePress(v);
             restorePurchases();
         });
 
@@ -268,57 +246,10 @@ public class AppFacePaywallActivity extends AppCompatActivity {
 
         // Terms
         btnTerms.setOnClickListener(v -> openUrl("resumebuilder-2.blogspot.com/2026/06/terms-faceswap-2.html"));
-    }
 
-    // ───────────────────────────────── Animations ──
+        // Close button
+        btnClose.setOnClickListener(v -> onBackPressed());
 
-    /**
-     * Staggered entrance animation: each section fades in + slides up
-     * with a 120ms stagger for a polished, premium feel.
-     */
-    private void playEntranceAnimations() {
-        View[] sections = {heroBadge, heroText, featurePanel, footer};
-
-        for (int i = 0; i < sections.length; i++) {
-            View section = sections[i];
-            if (section == null) continue;
-
-            section.setAlpha(0f);
-            section.setTranslationY(40f);
-
-            ObjectAnimator alpha = ObjectAnimator.ofFloat(section, "alpha", 0f, 1f);
-            ObjectAnimator translateY = ObjectAnimator.ofFloat(section, "translationY", 40f, 0f);
-
-            AnimatorSet set = new AnimatorSet();
-            set.playTogether(alpha, translateY);
-            set.setDuration(450);
-            set.setStartDelay(i * 120L);
-            set.setInterpolator(new DecelerateInterpolator(1.8f));
-            set.start();
-        }
-    }
-
-    /**
-     * Micro press animation on the CTA button for tactile feedback.
-     */
-    private void animatePress(View view) {
-        ObjectAnimator scaleX = ObjectAnimator.ofFloat(view, "scaleX", 1f, 0.95f, 1f);
-        ObjectAnimator scaleY = ObjectAnimator.ofFloat(view, "scaleY", 1f, 0.95f, 1f);
-        AnimatorSet set = new AnimatorSet();
-        set.playTogether(scaleX, scaleY);
-        set.setDuration(200);
-        set.start();
-    }
-
-    // ───────────────────────────────── Helpers ──
-
-    private void openUrl(String url) {
-        try {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            startActivity(intent);
-        } catch (Exception e) {
-            // No browser available — silently ignore
-        }
     }
 
     private void logFacebookSubscriptionEvent() {
@@ -334,7 +265,14 @@ public class AppFacePaywallActivity extends AppCompatActivity {
         }
     }
 
-    // ── RevenueCat Helpers ──────────────────
+    private void openUrl(String url) {
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        } catch (Exception e) {
+            // No browser available — silently ignore
+        }
+    }
 
     private void loadOfferings() {
         showLoading(true);
@@ -343,7 +281,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
             public void onReceived(@NonNull Offerings offerings) {
                 runOnUiThread(() -> {
                     showLoading(false);
-                    com.revenuecat.purchases.Offering offering = offerings.get(AppFaceRevenueCatManager.SUB_OFFERING);
+                    com.revenuecat.purchases.Offering offering = offerings.get(AppFaceRevenueCatManager.VIDEO_OFFERING);
                     if (offering != null && !offering.getAvailablePackages().isEmpty()) {
                         subscriptionPackage = offering.getAvailablePackages().get(0);
                         updatePaywallUI(subscriptionPackage);
@@ -376,7 +314,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                         AdManager.getInstance().setPremiumUser(true);
                         showSnackbar("Purchases restored successfully!");
                         btnRestore.postDelayed(() -> {
-                            Intent intent = new Intent(AppFacePaywallActivity.this, AppFaceSplashActivity.class);
+                            Intent intent = new Intent(VideoPaywallActivity.this, AppFaceSplashActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                             finish();
@@ -439,106 +377,32 @@ public class AppFacePaywallActivity extends AppCompatActivity {
 
             // Update trial text with dynamic days
             if (trialDays > 0) {
-                if (APP_EXP == 1) {
-                    tvHeroTrial.setText("All Premium Features.");
-                    btnCta.setText("START FREE TRIAL");
-
-                    tv_gol_offer_title.setVisibility(View.VISIBLE);
-                    tv_gol_offer_desc.setVisibility(View.VISIBLE);
-                    tv_gol_offer_title.setText(String.format(java.util.Locale.US, "%d Days Free trial", trialDays));
-                    tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "Then %s/%s", basePriceFormatted, unit));
-                    tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
-                    tvPriceDetail.setVisibility(View.VISIBLE);
-
-                } else {
-                    tv_gol_offer_title.setVisibility(View.GONE);
-                    tv_gol_offer_desc.setVisibility(View.GONE);
-
-                    int IS_PRM_PRC_SHOW = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.IS_PRM_PRC_SHOW, 1);
-
-                    if (IS_PRM_PRC_SHOW == 1) {
-                        tvHeroTrial.setText("All Premium Features.");
-                        btnCta.setText("START FREE TRIAL");
-                    } else {
-                        tvHeroTrial.setText(String.format(java.util.Locale.US, "Try free for %d days.", trialDays));
-                        btnCta.setText(String.format(java.util.Locale.US, "%d Days Free trial", trialDays));
-                    }
-
-                    if (!basePriceFormatted.isEmpty()) {
-                        tvPriceDetail.setVisibility(View.VISIBLE);
-                        tvPriceDetail.setTextColor(getColor(R.color.text_disabled));
-                        tvPriceDetail.setText(String.format(java.util.Locale.US, "%d Days Free trial, then %s/%s.", trialDays, basePriceFormatted, unit));
-                    } else {
-                        tvPriceDetail.setVisibility(View.GONE);
-                    }
-                }
+                btnCta.setText("Start Free Trial");
+                tv_offer_desc.setText(String.format(java.util.Locale.US, "Try free for %d days, then renews at %s/%s automatically.", trialDays, basePriceFormatted, unit));
             } else if (!introPriceFormatted.isEmpty()) {
                 String introPeriodText = formatIntroPeriod(introPeriodIso, introCycles);
-
+                tv_offer_desc.setText(String.format(java.util.Locale.US, "Get full access for %s for %s. It then renews at %s/%s automatically.", introPriceFormatted, introPeriodText, basePriceFormatted, unit));
                 if (APP_EXP == 1) {
-                    tvHeroTrial.setText("All Premium Features.");
                     btnCta.setText("Subscribe Now");
-
-                    tv_gol_offer_title.setVisibility(View.VISIBLE);
-                    tv_gol_offer_desc.setVisibility(View.VISIBLE);
-                    tv_gol_offer_title.setText(String.format(java.util.Locale.US, "%s for %s", introPriceFormatted, introPeriodText));
-                    tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "Then %s/%s", basePriceFormatted, unit));
-                    tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
-                    tvPriceDetail.setVisibility(View.VISIBLE);
-
                 } else {
-                    tv_gol_offer_title.setVisibility(View.GONE);
-                    tv_gol_offer_desc.setVisibility(View.GONE);
-                    tvHeroTrial.setText("All Premium Features.");
-                    btnCta.setText("Subscribe Now");
-
-                    tvPriceDetail.setVisibility(View.VISIBLE);
-                    tvPriceDetail.setTextColor(getColor(R.color.text_disabled));
-                    tvPriceDetail.setText(String.format(java.util.Locale.US, "%s for %s, then %s/%s", introPriceFormatted, introPeriodText, basePriceFormatted, unit));
+                    btnCta.setText("Continue");
                 }
             } else {
-                tvHeroTrial.setText("All Premium Features.");
-                btnCta.setText("Subscribe Now");
-
+                tv_offer_desc.setText(String.format(java.util.Locale.US, "Enjoy premium features. Your subscription renews automatically at %s/%s.", basePriceFormatted, unit));
                 if (APP_EXP == 1) {
-                    tv_gol_offer_title.setVisibility(View.GONE);
-                    tv_gol_offer_desc.setVisibility(View.VISIBLE);
-                    tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "%s/%s", basePriceFormatted, unit));
-                    tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
-                    tvPriceDetail.setVisibility(View.VISIBLE);
+                    btnCta.setText("Subscribe Now");
                 } else {
-                    tv_gol_offer_title.setVisibility(View.GONE);
-                    tv_gol_offer_desc.setVisibility(View.GONE);
-                    tvPriceDetail.setVisibility(View.VISIBLE);
-                    tvPriceDetail.setTextColor(getColor(R.color.text_disabled));
-                    if (!basePriceFormatted.isEmpty()) {
-                        tvPriceDetail.setText(String.format(java.util.Locale.US, "%s/%s", basePriceFormatted, unit));
-                    } else {
-                        tvPriceDetail.setText("");
-                    }
+                    btnCta.setText("Continue");
                 }
             }
         } else {
-            // Fallback for non-sub or no default option: retain the default "3 days" messaging
-            String price = product.getPrice().getFormatted();
             int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
             if (APP_EXP == 1) {
-                tvHeroTrial.setText("All Premium Features.");
                 btnCta.setText("Subscribe Now");
-                tv_gol_offer_title.setVisibility(View.GONE);
-                tv_gol_offer_desc.setVisibility(View.VISIBLE);
-                tv_gol_offer_desc.setText(price + "/month");
-                tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                tvPriceDetail.setTextColor(getColor(R.color.white));
-                tvPriceDetail.setVisibility(View.VISIBLE);
+                tv_offer_desc.setText("");
             } else {
-                tvHeroTrial.setText("Try free for 3 days.");
-                btnCta.setText("3 Days Free trial");
-                tvPriceDetail.setText(price + "/month after trial");
-                tvPriceDetail.setVisibility(View.VISIBLE);
+                btnCta.setText("Start Free trial");
+                tv_offer_desc.setText("");
             }
         }
     }
@@ -646,7 +510,6 @@ public class AppFacePaywallActivity extends AppCompatActivity {
         }
         return "month";
     }
-
     private void showLoading(boolean loading) {
         if (progressBar != null) {
             progressBar.setVisibility(loading ? View.VISIBLE : View.GONE);
@@ -656,7 +519,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
     }
 
     private void showSnackbar(String message) {
-        View root = findViewById(R.id.paywallRoot);
+        View root = findViewById(R.id.main);
         if (root != null) {
             Snackbar.make(root, message, Snackbar.LENGTH_LONG).show();
         }

@@ -89,8 +89,8 @@
                         android:layout_marginStart="@dimen/_4sdp"
                         android:fontFamily="@font/app_poppins_semibold"
                         android:includeFontPadding="false"
-                        android:text="0"
                         android:paddingEnd="@dimen/_2sdp"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp" />
                 </LinearLayout>
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content" />
 
         <!-- Scrollable content area -->
-        <FrameLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -140,30 +140,58 @@
                 android:id="@+id/rvMainCategories"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_above="@+id/second_ad_view_container"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
                 android:paddingBottom="@dimen/app_clip_home_main_scroll_content_bottom_padding_points" />
 
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_above="@+id/second_ad_view_container"
+                android:visibility="gone"
+                app:shimmer_auto_start="false"
+                app:shimmer_duration="1200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/app_shimmer_main_category_item" />
+
+                    <include layout="@layout/app_shimmer_main_category_item" />
+
+                    <include layout="@layout/app_shimmer_main_category_item" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
             <!-- Bottom nav bar + ad overlay -->
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_above="@+id/second_ad_view_container">
 
                 <LinearLayout
                     android:id="@+id/bottomNavBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignWithParentIfMissing="true"
-                    android:layout_above="@+id/second_ad_view_container"
                     android:layout_marginStart="12dp"
                     android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="@dimen/app_clip_home_bottom_bar_margin_bottom_point"
                     android:background="@drawable/app_face_bottom_nav_bar_bg"
                     android:elevation="8dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:paddingHorizontal="@dimen/_4sdp"
-                    android:paddingVertical="@dimen/_4sdp"
-                    android:layout_marginBottom="@dimen/app_clip_home_bottom_bar_margin_bottom_point">
+                    android:paddingVertical="@dimen/_4sdp">
 
                     <!-- AI Image tab -->
                     <LinearLayout
@@ -183,7 +211,7 @@
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
                             android:src="@drawable/app_face_generative_chat_ai"
-                            android:tint="@color/app_face_nav_tab_tint" />
+                            app:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -226,7 +254,7 @@
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
                             android:src="@drawable/app_face_video_reverse_eng"
-                            android:tint="@color/app_face_nav_tab_tint" />
+                            app:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -269,7 +297,7 @@
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
                             android:src="@drawable/app_face_rotation_face_swap_bg"
-                            android:tint="@color/app_face_nav_tab_tint" />
+                            app:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -312,7 +340,7 @@
                             android:layout_height="24dp"
                             android:duplicateParentState="true"
                             android:src="@drawable/app_face_my_work_four"
-                            android:tint="@color/app_face_nav_tab_tint" />
+                            app:tint="@color/app_face_nav_tab_tint" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -327,38 +355,16 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <FrameLayout
-                    android:id="@+id/second_ad_view_container"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="@dimen/_2sdp" />
-
             </RelativeLayout>
 
-            <!-- Global loading indicator (Shimmer) -->
-            <com.facebook.shimmer.ShimmerFrameLayout
-                android:id="@+id/shimmer_view_container"
+            <FrameLayout
+                android:id="@+id/second_ad_view_container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="gone"
-                app:shimmer_duration="1200"
-                app:shimmer_auto_start="false">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_2sdp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <include layout="@layout/app_shimmer_main_category_item" />
-                    <include layout="@layout/app_shimmer_main_category_item" />
-                    <include layout="@layout/app_shimmer_main_category_item" />
-
-                </LinearLayout>
-
-            </com.facebook.shimmer.ShimmerFrameLayout>
-
-        </FrameLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 

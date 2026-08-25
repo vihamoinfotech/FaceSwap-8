@@ -487,18 +487,7 @@
             android:visibility="visible" />
 
 
-        <TextView
-            android:id="@+id/tvPaywallPriceDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/app_poppins_regular"
-            android:gravity="center"
-            android:includeFontPadding="false"
-            android:text=""
-            android:textColor="@color/app_on_surface_variant_paywall"
-            android:textSize="@dimen/_11sdp"
-            android:visibility="visible" />
+
 
         <!-- CTA Button (uses app's own brand gradient for consistency) -->
         <TextView
@@ -515,6 +504,19 @@
             android:text="Subscribe Now"
             android:textColor="@color/white"
             android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tvPaywallPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/app_poppins_regular"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/app_on_surface_variant_paywall"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="visible" />
 
         <!-- Footer Links: Restore | Privacy | Terms -->
         <LinearLayout

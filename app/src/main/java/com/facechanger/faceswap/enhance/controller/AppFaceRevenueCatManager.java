@@ -23,6 +23,9 @@ import java.util.Collections;
 
 public class AppFaceRevenueCatManager {
     private static final String TAG = "RevenueCatManager";
+    public static final String ENTITLEMENT_ID = "faceswap_subscription";
+    public static final String SUB_OFFERING = "sub_offer";
+    public static final String VIDEO_OFFERING = "video_offering";
     private static AppFaceRevenueCatManager instance;
     public String appUserID;
 
@@ -161,7 +164,7 @@ public class AppFaceRevenueCatManager {
                     Purchases.getSharedInstance().getCustomerInfo(new ReceiveCustomerInfoCallback() {
                         @Override
                         public void onReceived(@NonNull com.revenuecat.purchases.CustomerInfo customerInfo) {
-                            com.revenuecat.purchases.EntitlementInfo entitlement = customerInfo.getEntitlements().get("faceswap_subscription");
+                            com.revenuecat.purchases.EntitlementInfo entitlement = customerInfo.getEntitlements().get(AppFaceRevenueCatManager.ENTITLEMENT_ID);
                             if (entitlement != null && entitlement.isActive()) {
                                 Log.d(TAG, "Active premium entitlement found. Granting premium access.");
                                 listener.onPurchaseVerified();
@@ -213,7 +216,7 @@ public class AppFaceRevenueCatManager {
         Purchases.getSharedInstance().getCustomerInfo(new ReceiveCustomerInfoCallback() {
             @Override
             public void onReceived(@NonNull com.revenuecat.purchases.CustomerInfo customerInfo) {
-                com.revenuecat.purchases.EntitlementInfo entitlement = customerInfo.getEntitlements().get("faceswap_subscription");
+                com.revenuecat.purchases.EntitlementInfo entitlement = customerInfo.getEntitlements().get(AppFaceRevenueCatManager.ENTITLEMENT_ID);
                 boolean isActive = entitlement != null && entitlement.isActive();
                 callback.onResult(isActive);
             }

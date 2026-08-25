@@ -51,6 +51,7 @@
     <color name="app_primary_paywall">#ddb7ff</color>
     <color name="app_footer_bg_paywall">#E60e141a</color>
     <color name="app_bg_paywall">#0e141a</color>
+    <color name="text_disabled">#404060</color>
 
 
     <color name="app_start_badge_popular">#FFB84A</color>
