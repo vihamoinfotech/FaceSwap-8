@@ -9,6 +9,7 @@ import com.facechanger.faceswap.enhance.model.api.AppFaceHistoryResponse;
 import com.facechanger.faceswap.enhance.model.api.AppFaceSplashDataResponse;
 import com.facechanger.faceswap.enhance.model.api.AppFaceTemplateCategory;
 import com.facechanger.faceswap.enhance.model.api.AppFaceVideoFaceSwapResponse;
+import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.faceenhance.facechanger.controller.FirebaseManager;
 
@@ -100,9 +101,14 @@ public final class AppFaceApiRepository {
             try {
 
                 JSONObject body = new JSONObject();
-                body.put("deviceId", AppFaceAppSystem.isDebugMode() ? (deviceId + "_test") : deviceId);
-//                body.put("deviceId", AppSystem.isDebugMode() ? "4d015d16-1a11-5f9c-fac1-58a854e24c45_test" : deviceId);
-//                body.put("deviceId", AppSystem.isDebugMode() ? "DA5EAEB6DB860CE8EDC4C7BFE3344069" : deviceId);
+
+                if (FirebaseAuthManager.getInstance().isLoggedIn()) {
+                    String FIREBASE_DEVICE_ID = GlobleMMKVManager.getInstance().getString(AppFaceStaticValue.FIREBASE_DEVICE_ID, deviceId);
+                    body.put("deviceId", FIREBASE_DEVICE_ID);
+                } else {
+                    body.put("deviceId", AppFaceAppSystem.isDebugMode() ? (deviceId + "_test") : deviceId);
+                }
+
                 body.put("deviceType", AppFaceDeviceUtils.getDeviceType());
                 body.put("is_prm", AdManager.getInstance().isPremiumUser());
                 body.put("appVersion", AppFaceDeviceUtils.getAppVersion(context));

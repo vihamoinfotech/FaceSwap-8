@@ -76,4 +76,7 @@
     <color name="ads_ad_tag_text_color">#FFFFFF</color>
     <color name="ads_background_color">#26262f</color>
 
+
+    <color name="text_tertiary">#606080</color>
+
 </resources>

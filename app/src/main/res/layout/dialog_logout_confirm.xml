@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/_24sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_face_dialog_rounded_slight"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!-- Logout Icon -->
+        <FrameLayout
+            android:layout_width="@dimen/_54sdp"
+            android:layout_height="@dimen/_54sdp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_avatar_circle" />
+
+            <ImageView
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/logout"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/app_poppins_bold"
+            android:gravity="center"
+            android:text="@string/settings_logout_confirm_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/app_poppins_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/settings_logout_confirm_msg"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/_12sdp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnLogoutConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+                android:background="@drawable/app_button_face_primary_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/app_poppins_semibold"
+                android:gravity="center"
+                android:text="@string/settings_logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/btnLogoutCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/app_button_secondary_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/app_poppins_medium"
+                android:gravity="center"
+                android:text="@android:string/cancel"
+                android:textColor="@color/app_secondary_text"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -363,4 +363,65 @@
     <string name="dialog_no_internet_msg" translatable="false">Please check your internet connection and try again.</string>
 
 
+    <string name="login_welcome_back" translatable="false">Welcome Back</string>
+    <string name="login_subtitle" translatable="false">Sign in to continue your creative journey</string>
+    <string name="login_email_hint" translatable="false">Email Address</string>
+    <string name="login_password_hint" translatable="false">Password</string>
+    <string name="login_button" translatable="false">Log In</string>
+    <string name="login_no_account" translatable="false">Don\'t have an account? </string>
+    <string name="login_sign_up_link" translatable="false">Sign Up</string>
+    <string name="login_error_empty_email" translatable="false">Please enter your email</string>
+    <string name="login_error_invalid_email" translatable="false">Please enter a valid email</string>
+    <string name="login_error_empty_password" translatable="false">Please enter your password</string>
+    <string name="login_error_short_password" translatable="false">Password must be at least 6 characters</string>
+    <string name="login_error_failed" translatable="false">Login failed. Please try again.</string>
+    <string name="login_error_wrong_password" translatable="false">Incorrect password. Please try again.</string>
+    <string name="login_error_user_not_found" translatable="false">No account found with this email.</string>
+    <string name="login_error_too_many_requests" translatable="false">Too many attempts. Please try later.</string>
+    <string name="login_logging_in" translatable="false">Logging in…</string>
+
+    <string name="signup_create_account" translatable="false">Create Account</string>
+    <string name="signup_subtitle" translatable="false">Join us and start swapping faces today</string>
+    <string name="signup_user_id_label" translatable="false">Your User ID</string>
+    <string name="signup_full_name_hint" translatable="false">Full Name</string>
+    <string name="signup_email_hint" translatable="false">Email Address</string>
+    <string name="signup_password_hint" translatable="false">Password</string>
+    <string name="signup_confirm_password_hint" translatable="false">Confirm Password</string>
+    <string name="signup_button" translatable="false">Create Account</string>
+    <string name="signup_have_account" translatable="false">Already have an account? </string>
+    <string name="signup_login_link" translatable="false">Log In</string>
+    <string name="signup_error_empty_name" translatable="false">Please enter your name</string>
+    <string name="signup_error_short_name" translatable="false">Name must be at least 2 characters</string>
+    <string name="signup_error_empty_email" translatable="false">Please enter your email</string>
+    <string name="signup_error_invalid_email" translatable="false">Please enter a valid email</string>
+    <string name="signup_error_empty_password" translatable="false">Please enter a password</string>
+    <string name="signup_error_short_password" translatable="false">Password must be at least 6 characters</string>
+    <string name="signup_error_empty_confirm" translatable="false">Please confirm your password</string>
+    <string name="signup_error_password_mismatch" translatable="false">Passwords do not match</string>
+    <string name="signup_error_failed" translatable="false">Sign up failed. Please try again.</string>
+    <string name="signup_error_email_exists" translatable="false">An account with this email already exists.</string>
+    <string name="signup_error_weak_password" translatable="false">Password is too weak. Use at least 6 characters.</string>
+    <string name="signup_signing_up" translatable="false">Creating account…</string>
+
+
+    <!-- Settings: Account Section (APP_EXP == 1) -->
+    <string name="settings_account" translatable="false">Account</string>
+    <string name="settings_edit_name" translatable="false">Edit Name</string>
+    <string name="settings_logout" translatable="false">Log Out</string>
+    <string name="settings_delete_account" translatable="false">Delete Account</string>
+    <string name="settings_logout_confirm_title" translatable="false">Log Out</string>
+    <string name="settings_logout_confirm_msg" translatable="false">Are you sure you want to log out?</string>
+    <string name="settings_delete_confirm_title" translatable="false">Delete Account</string>
+    <string name="settings_delete_confirm_msg" translatable="false">This will permanently delete your account and all associated data. This action cannot be undone.</string>
+    <string name="settings_delete_reauth_title" translatable="false">Verify Identity</string>
+    <string name="settings_delete_reauth_msg" translatable="false">Please enter your password to continue</string>
+    <string name="settings_edit_name_title" translatable="false">Edit Name</string>
+    <string name="settings_edit_name_hint" translatable="false">Enter your name</string>
+    <string name="settings_account_deleted" translatable="false">Account deleted successfully</string>
+    <string name="settings_name_updated" translatable="false">Name updated successfully</string>
+    <string name="settings_error_delete" translatable="false">Failed to delete account. Please try again.</string>
+    <string name="settings_error_update_name" translatable="false">Failed to update name. Please try again.</string>
+    <string name="settings_error_reauth" translatable="false">Incorrect password. Please try again.</string>
+
+
 </resources>

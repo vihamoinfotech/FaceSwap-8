@@ -72,6 +72,22 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".view.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".view.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".view.EditNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+
         <!-- Main -->
         <activity
             android:name=".view.AppFaceMainActivity"

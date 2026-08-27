@@ -79,6 +79,7 @@
     public static int wtf(...);
 }
 
+
 ##################################################
 # Keep Android Components (Do NOT rename)
 ##################################################
@@ -109,3 +110,13 @@
 -dontwarn com.huawei.hms.aaid.HmsInstanceId
 -dontwarn com.huawei.hms.common.ApiException
 -dontwarn com.huawei.hms.push.HmsMessageService
+
+# R8 Optimizations
+-allowaccessmodification
+-repackageclasses ""
+
+# Firebase Auth & Realtime Database
+-keep class com.google.firebase.auth.** { *; }
+-keep class com.google.firebase.database.** { *; }
+-keep class com.facechanger.faceswap.enhance.utils.FirebaseAuthManager { *; }
+-keep class com.facechanger.faceswap.enhance.utils.FirebaseAuthManager$* { *; }

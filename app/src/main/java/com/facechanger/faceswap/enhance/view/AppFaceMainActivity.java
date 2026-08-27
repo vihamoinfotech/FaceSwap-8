@@ -10,9 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.facechanger.faceswap.enhance.utils.AppFaceApiCall;
+import com.facechanger.faceswap.enhance.utils.AppFaceApiClient;
 import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
 import com.facechanger.faceswap.enhance.utils.AppFaceNetworkUtils;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
+import com.facechanger.faceswap.enhance.utils.FirebaseAuthManager;
 import com.facechanger.faceswap.enhance.view.adapter.AppFaceMainCategoryAdapter;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
@@ -165,7 +167,64 @@ public class AppFaceMainActivity extends BaseAppActivity {
                 iZooto.promptForPushNotifications();
             }
         }
+
+        syncFirebaseProfileIfNeeded();
     }
+
+    private void syncFirebaseProfileIfNeeded() {
+        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+
+        if (APP_EXP != 1) return;
+
+        FirebaseAuthManager authManager = FirebaseAuthManager.getInstance();
+
+        if (!authManager.isLoggedIn()) return;
+
+        // Update Firebase with latest splash data
+        String currentToken = AppFaceSessionManager.getInstance().getToken();
+        String currentUserId = AppFaceSessionManager.getInstance().getUserId();
+        String currentDeviceId = AppFaceSessionManager.getInstance().getDeviceId();
+        double currentCredits = AppFaceSessionManager.getInstance().getCurrentCredits();
+
+        if (!currentToken.isEmpty()) {
+            authManager.updateSplashData(currentToken, currentUserId, currentDeviceId, currentCredits);
+        }
+
+        // Fetch and sync profile from Firebase
+        authManager.fetchUserProfile(new FirebaseAuthManager.ProfileCallback() {
+            @Override
+            public void onSuccess(@NonNull java.util.Map<String, Object> userData) {
+                runOnUiThread(() -> {
+                    try {
+                        Object tokenObj = userData.get("getToken");
+                        String token = tokenObj != null ? String.valueOf(tokenObj) : "";
+
+                        Object remainObj = userData.get("remainingLimit");
+                        double remainingLimit = 0.0;
+                        if (remainObj instanceof Number) {
+                            remainingLimit = ((Number) remainObj).doubleValue();
+                        }
+
+                        if (!token.isEmpty()) {
+                            AppFaceApiClient.getInstance().setAuthToken(token);
+                        }
+                        AppFaceSessionManager.getInstance().setCachedCredits(remainingLimit);
+                        refreshCoinBalance();
+
+                        Log.d(TAG, "Firebase profile synced in Dashboard");
+                    } catch (Exception e) {
+                        Log.e(TAG, "Error syncing Firebase profile in Dashboard", e);
+                    }
+                });
+            }
+
+            @Override
+            public void onError(@NonNull String errorMessage) {
+                Log.w(TAG, "Failed to sync Firebase profile: " + errorMessage);
+            }
+        });
+    }
+
 
     @Override
     public void onResume() {
@@ -328,20 +387,25 @@ public class AppFaceMainActivity extends BaseAppActivity {
         View navMultiSwap = findViewById(R.id.navMultiSwap);
         if (navMultiSwap != null) {
             navMultiSwap.setOnClickListener(v -> {
-                if (AdManager.getInstance().isPremiumUser()) {
+                if (FirebaseAuthManager.getInstance().isLoggedIn()) {
                     Intent intent = new Intent(AppFaceMainActivity.this, AppFaceVideoFaceSwapActivity.class);
                     startActivity(intent);
                 } else {
-                    FirebaseManager.getInstance().logEvent("VIDEO_PREMIUM_OPEN");
-                    int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
-                    if (APP_EXP == 1) {
-                        startActivity(new Intent(this, AppFacePaywallActivity.class));
+                    if (AdManager.getInstance().isPremiumUser()) {
+                        FirebaseManager.getInstance().logEvent("VIDEO_OPEN");
+                        Intent intent = new Intent(AppFaceMainActivity.this, AppFaceVideoFaceSwapActivity.class);
+                        startActivity(intent);
                     } else {
-                        startActivity(new Intent(this, VideoPaywallActivity.class));
+                        FirebaseManager.getInstance().logEvent("VIDEO_PREMIUM_OPEN");
+                        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+                        if (APP_EXP == 1) {
+                            startActivity(new Intent(this, AppFacePaywallActivity.class));
+                        } else {
+                            startActivity(new Intent(this, VideoPaywallActivity.class));
+                        }
                     }
                 }
             });
-
         }
 
         View navMyWork = findViewById(R.id.navMyWork);

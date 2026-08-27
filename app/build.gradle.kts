@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.facechanger.faceswap.enhance"
+        namespace = "com.facechanger.faceswap.enhance"
     compileSdk = 36
 
     defaultConfig {
@@ -17,8 +17,8 @@ android {
         targetSdk = 36
 
 
-//        versionCode = 10 // todo live
-//        versionName = "1.3" // todo live
+//        versionCode = 11 // todo live
+//        versionName = "1.4" // todo live
 
         versionCode = 1 // todo remove
         versionName = "0.1" // todo remove
@@ -69,6 +69,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.firebase.crashlytics)
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
 
     implementation(libs.appcompat)
     implementation(libs.material)

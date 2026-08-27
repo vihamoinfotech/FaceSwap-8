@@ -11,11 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 
 import com.facechanger.faceswap.enhance.controller.AppFaceRevenueCatManager;
+import com.facechanger.faceswap.enhance.utils.AppFaceApiClient;
 import com.facechanger.faceswap.enhance.utils.AppFaceAppSystem;
 import com.facechanger.faceswap.enhance.utils.AppFaceInstallReferrerInfo;
 import com.facechanger.faceswap.enhance.utils.AppFaceLanguagePrefs;
 import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
+import com.facechanger.faceswap.enhance.utils.FirebaseAuthManager;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.callback.SplashAdCallback;
 import com.faceenhance.facechanger.controller.AdManager;
@@ -53,7 +55,6 @@ public class AppFaceSplashActivity extends AppCompatActivity {
 
     private static final String TAG = "SplashActivity";
     private static final long MIN_DISPLAY_MS = 1500;
-
     private long startTime;
     private boolean hasNavigated = false;
 
@@ -141,7 +142,7 @@ public class AppFaceSplashActivity extends AppCompatActivity {
                             Log.d(TAG, "Session initialized — token acquired" + responseBody);
 
                             if (AppFaceAppSystem.isDebugMode()) {
-                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 0);
+                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 1);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_IN_APP_AFT_SPL, 1);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_PRM_PRC_SHOW, 1);
                             } else {
@@ -228,19 +229,22 @@ public class AppFaceSplashActivity extends AppCompatActivity {
      * has been displayed for at least {@link #MIN_DISPLAY_MS}.
      */
     private void navigateAfterMinDisplayTime() {
+        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+        if (APP_EXP == 1) {
+            moveToNextScreen();
+        } else {
+            SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
+                @Override
+                public void onAdFailed(String s) {
+                    moveToNextScreen();
+                }
 
-        SplashInterstitialAdManager.getInstance().showSplashAd(this, true, new SplashAdCallback() {
-            @Override
-            public void onAdFailed(String s) {
-                moveToNextScreen();
-            }
-
-            @Override
-            public void onAdDismiss() {
-                moveToNextScreen();
-            }
-        });
-
+                @Override
+                public void onAdDismiss() {
+                    moveToNextScreen();
+                }
+            });
+        }
     }
 
     @Override
@@ -249,24 +253,88 @@ public class AppFaceSplashActivity extends AppCompatActivity {
     }
 
     private void moveToNextScreen() {
-        Class<?> nextActivity;
 
-        if (AdManager.getInstance().isPremiumUser()) {
-            nextActivity = AppFaceMainActivity.class;
-        } else {
-            if (!AppFaceLanguagePrefs.isOnboardingCompleted(this)) {
-                nextActivity = AppFaceOnboardingActivity.class;
+        int APP_EXP = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.APP_EXP, 1);
+        if (APP_EXP == 1) {
+            if (FirebaseAuthManager.getInstance().isLoggedIn()) {
+                FirebaseAuthManager.getInstance().updateUserCoin(AppFaceSessionManager.getInstance().getCurrentCredits());
+
+                FirebaseAuthManager.getInstance().fetchUserProfile(
+                        new FirebaseAuthManager.ProfileCallback() {
+                            @Override
+                            public void onSuccess(@androidx.annotation.NonNull java.util.Map<String, Object> userData) {
+                                runOnUiThread(() -> {
+                                    syncFirebaseProfileToSession(userData);
+                                    navigateToActivity(AppFaceMainActivity.class);
+                                });
+                            }
+
+                            @Override
+                            public void onError(@androidx.annotation.NonNull String errorMessage) {
+                                // Even if profile fetch fails, user is logged in, proceed
+                                runOnUiThread(() -> navigateToActivity(AppFaceMainActivity.class));
+                            }
+                        });
             } else {
-                int IS_IN_APP_AFT_SPL = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.IS_IN_APP_AFT_SPL, 0);
-                if (IS_IN_APP_AFT_SPL == 1) {
-                    nextActivity = AppFacePaywallActivity.class;
+                navigateToActivity(LoginActivity.class);
+            }
+        } else {
+
+            Class<?> nextActivity;
+
+            if (AdManager.getInstance().isPremiumUser()) {
+                nextActivity = AppFaceMainActivity.class;
+            } else {
+                if (!AppFaceLanguagePrefs.isOnboardingCompleted(this)) {
+                    nextActivity = AppFaceOnboardingActivity.class;
                 } else {
-                    nextActivity = AppFaceMainActivity.class;
+                    int IS_IN_APP_AFT_SPL = GlobleMMKVManager.getInstance().getInt(AppFaceStaticValue.IS_IN_APP_AFT_SPL, 0);
+                    if (IS_IN_APP_AFT_SPL == 1) {
+                        nextActivity = AppFacePaywallActivity.class;
+                    } else {
+                        nextActivity = AppFaceMainActivity.class;
+                    }
                 }
             }
+
+            Intent intent = new Intent(AppFaceSplashActivity.this, nextActivity);
+            intent.putExtra("isFromSplash", true);
+            startActivity(intent);
+            finish();
         }
 
-        Intent intent = new Intent(AppFaceSplashActivity.this, nextActivity);
+    }
+
+    private void syncFirebaseProfileToSession(java.util.Map<String, Object> userData) {
+        try {
+            Object tokenObj = userData.get("getToken");
+            String token = tokenObj != null ? String.valueOf(tokenObj) : "";
+
+            Object userIdObj = userData.get("userId");
+            String userId = userIdObj != null ? String.valueOf(userIdObj) : "";
+
+            Object remainObj = userData.get("remainingLimit");
+            double remainingLimit = 0.0;
+            if (remainObj instanceof Number) {
+                remainingLimit = ((Number) remainObj).doubleValue();
+            }
+
+            if (!token.isEmpty()) {
+                AppFaceApiClient.getInstance().setAuthToken(token);
+            }
+            AppFaceSessionManager.getInstance().setCachedCredits(remainingLimit);
+
+            Log.d(TAG, "Firebase profile synced to session");
+        } catch (Exception e) {
+            Log.e(TAG, "Error syncing Firebase profile", e);
+        }
+    }
+
+    private void navigateToActivity(Class<?> activityClass) {
+        if (hasNavigated) return;
+        hasNavigated = true;
+
+        Intent intent = new Intent(AppFaceSplashActivity.this, activityClass);
         intent.putExtra("isFromSplash", true);
         startActivity(intent);
         finish();

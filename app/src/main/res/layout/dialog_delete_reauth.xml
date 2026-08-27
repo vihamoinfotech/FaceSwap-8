@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/_24sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_face_dialog_rounded_slight"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <!-- Security Lock Icon -->
+        <FrameLayout
+            android:layout_width="@dimen/_54sdp"
+            android:layout_height="@dimen/_54sdp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_avatar_circle" />
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/app_face_secure_locker"
+                app:tint="@color/app_primary_brand" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:fontFamily="@font/app_poppins_bold"
+            android:gravity="center"
+            android:text="@string/settings_delete_reauth_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp" />
+
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/app_poppins_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/settings_delete_reauth_msg"
+            android:textColor="@color/app_secondary_text"
+            android:textSize="@dimen/_11sdp" />
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:id="@+id/passwordContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/bg_input_field"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_2sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:alpha="0.5"
+                android:contentDescription="@null"
+                android:src="@drawable/app_face_secure_locker"
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/app_poppins_regular"
+                android:hint="@string/login_password_hint"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="yes"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_tertiary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/btnTogglePassword"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:alpha="0.4"
+                android:contentDescription="@null"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/app_face_information_bg"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <!-- Error Text -->
+        <TextView
+            android:id="@+id/tvPasswordError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/app_poppins_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/app_error_color"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btnConfirmDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_44sdp"
+                    android:background="@drawable/bg_button_danger"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/app_poppins_semibold"
+                    android:gravity="center"
+                    android:text="@string/settings_delete_account"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/deleteProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/white"
+                    app:indicatorSize="@dimen/_20sdp"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="2dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/app_button_secondary_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/app_poppins_medium"
+                android:gravity="center"
+                android:text="@android:string/cancel"
+                android:textColor="@color/app_secondary_text"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

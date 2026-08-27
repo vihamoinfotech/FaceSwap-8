@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_bg_image">
+
+    <!-- Header (Same styling as Settings Header) -->
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="@dimen/_6sdp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/app_face_all_view_layer"
+
+            android:padding="@dimen/_10sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/app_face_arrow_back"
+            app:tint="@color/white" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/btnBack"
+            android:includeFontPadding="false"
+            android:text="@string/settings_edit_name_title" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/headerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/llHeader"
+        android:background="@color/app_subtle_divider" />
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerDivider"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingTop="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_24sdp">
+
+            <!-- Hero User Profile Initial Circle (Non-editable) -->
+            <FrameLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center_horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_avatar_circle" />
+
+                <TextView
+                    android:id="@+id/tvHeroAvatarInitial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/app_poppins_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/app_primary_brand"
+                    android:textSize="@dimen/_32sdp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvCurrentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/app_poppins_regular"
+                android:textColor="@color/app_secondary_text"
+                android:textSize="@dimen/_11sdp" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_28sdp" />
+
+            <!-- Field Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:fontFamily="@font/app_poppins_medium"
+                android:includeFontPadding="false"
+                android:text="@string/signup_full_name_hint"
+                android:textColor="@color/text_tertiary"
+                android:textSize="@dimen/_11sdp" />
+
+            <!-- Edit Name Input -->
+            <LinearLayout
+                android:id="@+id/nameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_input_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/app_face_rotation_face_swap_bg"
+                    android:alpha="0.5" />
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_44sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/app_poppins_regular"
+                    android:hint="@string/settings_edit_name_hint"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="yes"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_tertiary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/btnClearName"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/app_transparent_close_choose"
+                    android:alpha="0.5"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <!-- Name Error -->
+            <TextView
+                android:id="@+id/tvNameError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/app_poppins_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/app_error_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <!-- Spacer (expandable) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Save Changes Button -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp">
+
+                <TextView
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:background="@drawable/app_button_face_primary_bg"
+                    android:elevation="6dp"
+                    android:fontFamily="@font/app_poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/app_language_save_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/saveProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/white"
+                    app:indicatorSize="@dimen/_22sdp"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="2.5dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
