@@ -36,8 +36,8 @@
         android:fontFamily="@font/app_poppins_bold"
         android:gravity="center"
         android:text="@string/app_permission_required_text"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_16sdp"
+        android:textColor="#1A1A2E"
+        android:textSize="@dimen/_18sdp"
         android:includeFontPadding="false" />
 
     <!-- Accent bar -->
@@ -72,7 +72,7 @@
         android:gravity="center"
         android:paddingVertical="14dp"
         android:text="@string/app_open_settings_text"
-        android:textColor="@color/white"
+        android:textColor="#1A1A2E"
         android:textSize="@dimen/_13sdp" />
 
     <!-- Cancel -->

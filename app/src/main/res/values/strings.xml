@@ -423,5 +423,18 @@
     <string name="settings_error_update_name" translatable="false">Failed to update name. Please try again.</string>
     <string name="settings_error_reauth" translatable="false">Incorrect password. Please try again.</string>
 
+    <string name="app_home_hero_badge">AI STUDIO</string>
+    <string name="app_home_hero_title">Transform Your\nPhotos with AI</string>
+    <string name="app_home_hero_subtitle">Swap faces, enhance \u0026 create</string>
+    <string name="app_home_face_swap_cta">Face Swap</string>
+    <string name="app_home_ai_create_cta">AI Create</string>
+    <string name="app_home_explore_templates">Explore Templates</string>
+    <string name="app_home_explore_subtitle">Browse 100+ AI face swap templates</string>
+    <string name="app_home_quick_actions">Quick Actions</string>
+    <string name="app_home_video_swap">Video Swap</string>
+    <string name="app_home_remove_bg">Remove BG</string>
+    <string name="app_home_enhance_face">Enhance</string>
+    <string name="app_home_my_work">My Work</string>
+    <string name="app_template_gallery_title">Templates</string>
 
 </resources>

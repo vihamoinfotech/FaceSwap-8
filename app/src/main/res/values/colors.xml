@@ -3,80 +3,94 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="app_theme_dark_background">#0A0A14</color>
-    <color name="app_screen_base_surface">#0A0A14</color>
-    <color name="app_base_raised_surface">#13131F</color>
-    <color name="app_elevated_surface">#1C1C2E</color>
-    <color name="app_primary_brand">#7C5CFF</color>
-    <color name="app_secondary_brand">#FF4E8C</color>
-    <color name="app_tertiary_brand">#4C55FF</color>
-    <color name="app_item_border_color">#2A2A42</color>
-    <color name="app_soft_border">#1E1E36</color>
-    <color name="app_start_badge_best_value">#4C55FF</color>
-    <color name="app_end_badge_best_value">#7C5CFF</color>
+
+    <!-- ═══ LIGHT THEME SURFACES ═══ -->
+    <color name="app_theme_dark_background">#F2F3F7</color>
+    <color name="app_screen_base_surface">#F2F3F7</color>
+    <color name="app_base_raised_surface">#FFFFFF</color>
+    <color name="app_elevated_surface">#FFFFFF</color>
+
+    <!-- ═══ BRAND COLORS ═══ -->
+    <color name="app_primary_brand">#6366F1</color>
+    <color name="app_secondary_brand">#06B6D4</color>
+    <color name="app_tertiary_brand">#4F46E5</color>
+
+    <!-- ═══ BORDERS & DIVIDERS ═══ -->
+    <color name="app_item_border_color">#E8E8F0</color>
+    <color name="app_soft_border">#E0E0EA</color>
+    <color name="app_subtle_divider">#EAEAF0</color>
+
+    <!-- ═══ TEXT COLORS ═══ -->
+    <color name="app_primary_text">#1A1A2E</color>
+    <color name="app_secondary_text">#6B7280</color>
+    <color name="app_tertiary_text">#9CA3AF</color>
+    <color name="app_disabled_text">#D1D5DB</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_disabled">#D1D5DB</color>
+
+    <!-- ═══ BADGES ═══ -->
+    <color name="app_start_badge_best_value">#4F46E5</color>
+    <color name="app_end_badge_best_value">#6366F1</color>
+    <color name="app_start_badge_popular">#F59E0B</color>
+    <color name="app_end_badge_popular">#EF4444</color>
+
+    <!-- ═══ FUNCTIONAL COLORS ═══ -->
     <color name="app_primary_orange">#FF8A3D</color>
     <color name="app_secondary_orange">#FF6B35</color>
-    <color name="app_success_color">#4AE3B5</color>
-    <color name="app_warning_color">#FFB84A</color>
-    <color name="app_error_color">#FF5C7A</color>
-    <color name="app_info_color">#4AA7FF</color>
-    <color name="app_yellow_coin">#FFD700</color>
-    <color name="app_active_navbar">#7C5CFF</color>
-    <color name="app_primary_style">#FF4E8C</color>
-    <color name="app_start_dashed_border_gradient">#7C5CFF</color>
-    <color name="app_end_dashed_border_gradient">#FF4E8C</color>
-    <color name="app_main_purple">#7C5CFF</color>
-    <color name="app_dark_purple">#15102E</color>
-    <color name="app_tertiary_text">#606080</color>
-    <color name="app_secondary_text">#A0A0C0</color>
-    <color name="app_primary_text">#FFFFFF</color>
-    <color name="app_disabled_text">#404060</color>
+    <color name="app_success_color">#10B981</color>
+    <color name="app_warning_color">#F59E0B</color>
+    <color name="app_error_color">#EF4444</color>
+    <color name="app_info_color">#3B82F6</color>
+    <color name="app_yellow_coin">#F59E0B</color>
 
+    <!-- ═══ NAV & UI ═══ -->
+    <color name="app_active_navbar">#6366F1</color>
+    <color name="app_primary_style">#06B6D4</color>
+    <color name="app_start_dashed_border_gradient">#6366F1</color>
+    <color name="app_end_dashed_border_gradient">#06B6D4</color>
+    <color name="app_main_purple">#6366F1</color>
+    <color name="app_dark_purple">#EEF2FF</color>
 
-    <color name="app_glass_fill_paywall">#1AA855F7</color>
-    <color name="app_glass_stroke_paywall">#26FFFFFF</color>
-    <color name="app_footer_border_paywall">#1AFFFFFF</color>
-    <color name="app_primary_light_paywall">#D8B4FE</color>
-    <color name="app_surface_container_paywall">#1a2026</color>
-    <color name="app_pro_column_bg_paywall">#33ddb7ff</color>
+    <!-- ═══ GRADIENTS ═══ -->
+    <color name="app_start_gradient">#6366F1</color>
+    <color name="app_middle_gradient">#3B82F6</color>
+    <color name="app_end_gradient">#06B6D4</color>
+
+    <!-- ═══ CARDS ═══ -->
+    <color name="app_base_card_background">#FFFFFF</color>
+    <color name="app_alt_card_background">#F8F8FC</color>
+    <color name="app_highlight_store_card">#EEF2FF</color>
+
+    <!-- ═══ OVERLAYS ═══ -->
+    <color name="app_scrim_overlay">#66000000</color>
+    <color name="app_light_overlay">#0D000000</color>
+    <color name="app_medium_overlay">#33000000</color>
+
+    <!-- ═══ PAYWALL (keep original dark for paywall) ═══ -->
+    <color name="app_glass_fill_paywall">#1A6366F1</color>
+    <color name="app_glass_stroke_paywall">#26000000</color>
+    <color name="app_footer_border_paywall">#1A000000</color>
+    <color name="app_primary_light_paywall">#C7D2FE</color>
+    <color name="app_surface_container_paywall">#FFFFFF</color>
+    <color name="app_pro_column_bg_paywall">#33818CF8</color>
     <color name="app_on_primary_paywall">#490080</color>
     <color name="app_outline_paywall">#988d9f</color>
-    <color name="app_on_surface_variant_paywall">#cfc2d6</color>
+    <color name="app_on_surface_variant_paywall">#6B7280</color>
     <color name="app_on_primary_fixed_paywall">#2c0051</color>
     <color name="app_outline_variant_paywall">#D7D7D7</color>
-    <color name="app_on_surface_paywall">#dde3eb</color>
-    <color name="app_pro_column_border_paywall">#66ddb7ff</color>
-    <color name="app_primary_container_paywall">#b76dff</color>
-    <color name="app_row_divider_paywall">#0DFFFFFF</color>
-    <color name="app_primary_paywall">#ddb7ff</color>
-    <color name="app_footer_bg_paywall">#E60e141a</color>
-    <color name="app_bg_paywall">#0e141a</color>
-    <color name="text_disabled">#404060</color>
-
-
-    <color name="app_start_badge_popular">#FFB84A</color>
-    <color name="app_end_badge_popular">#FF4E8C</color>
-    <color name="app_highlight_store_card">#1A1A30</color>
-    <color name="app_start_gradient">#7C5CFF</color>
-    <color name="app_middle_gradient">#B45CFF</color>
-    <color name="app_end_gradient">#FF4E8C</color>
-    <color name="app_base_card_background">#14141F</color>
-    <color name="app_alt_card_background">#1C1C2E</color>
-    <color name="app_scrim_overlay">#B3000000</color>
-    <color name="app_light_overlay">#33FFFFFF</color>
-    <color name="app_medium_overlay">#66000000</color>
-    <color name="app_subtle_divider">#1E1E36</color>
-
+    <color name="app_on_surface_paywall">#1A1A2E</color>
+    <color name="app_pro_column_border_paywall">#66A5B4FC</color>
+    <color name="app_primary_container_paywall">#818CF8</color>
+    <color name="app_row_divider_paywall">#10000000</color>
+    <color name="app_primary_paywall">#A5B4FC</color>
+    <color name="app_footer_bg_paywall">#F8F8FC</color>
+    <color name="app_bg_paywall">#F2F3F7</color>
 
     <!--    ads Color-->
-
-    <color name="ads_text_color">#FFFFFF</color>
+    <color name="ads_text_color">#1A1A2E</color>
     <color name="ads_cta_text_color">#FFFFFF</color>
-    <color name="ads_ad_tag_color">#404049</color>
-    <color name="ads_ad_tag_text_color">#FFFFFF</color>
-    <color name="ads_background_color">#26262f</color>
-
-
-    <color name="text_tertiary">#606080</color>
+    <color name="ads_ad_tag_color">#E8E8F0</color>
+    <color name="ads_ad_tag_text_color">#6B7280</color>
+    <color name="ads_background_color">#FFFFFF</color>
 
 </resources>

@@ -27,22 +27,13 @@ import com.facechanger.faceswap.enhance.view.AppFaceSectionDetailActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AppFaceMainCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
-    private static final int TYPE_HEADER = 0;
-    private static final int TYPE_CATEGORY = 1;
+public class AppFaceGalleryCategoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final Context context;
     private List<AppFaceTemplateCategory> categories = new ArrayList<>();
     private final String baseUrl = AppFaceApiRepository.getBaseUrl();
 
-    public interface OnHeaderClickListener {
-        void onGenerateNowClicked();
-    }
-
-    private OnHeaderClickListener headerClickListener;
-
-    public AppFaceMainCategoryAdapter(Context context) {
+    public AppFaceGalleryCategoryAdapter(Context context) {
         this.context = context;
     }
 
@@ -51,57 +42,24 @@ public class AppFaceMainCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
         notifyDataSetChanged();
     }
 
-    public void setHeaderClickListener(OnHeaderClickListener listener) {
-        this.headerClickListener = listener;
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        return position == 0 ? TYPE_HEADER : TYPE_CATEGORY;
-    }
-
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        if (viewType == TYPE_HEADER) {
-            View view = inflater.inflate(R.layout.app_home_header_item, parent, false);
-            return new HeaderViewHolder(view);
-        }
-
         View view = inflater.inflate(R.layout.app_category_row_item, parent, false);
         return new CategoryViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        if (getItemViewType(position) == TYPE_HEADER) {
-            HeaderViewHolder headerHolder = (HeaderViewHolder) holder;
-            headerHolder.btnGenerateNow.setOnClickListener(v -> {
-                if (headerClickListener != null) {
-                    headerClickListener.onGenerateNowClicked();
-                }
-            });
-            return;
-        }
-
         CategoryViewHolder catHolder = (CategoryViewHolder) holder;
-        AppFaceTemplateCategory category = categories.get(position - 1);
+        AppFaceTemplateCategory category = categories.get(position);
         catHolder.bind(category);
     }
 
     @Override
     public int getItemCount() {
-        return 1 + categories.size();
-    }
-
-    class HeaderViewHolder extends RecyclerView.ViewHolder {
-        final View btnGenerateNow;
-
-        HeaderViewHolder(@NonNull View itemView) {
-            super(itemView);
-            btnGenerateNow = itemView.findViewById(R.id.btnGenerateNow);
-        }
+        return categories.size();
     }
 
     class CategoryViewHolder extends RecyclerView.ViewHolder {
@@ -157,9 +115,6 @@ public class AppFaceMainCategoryAdapter extends RecyclerView.Adapter<RecyclerVie
 
                 final int templateId = template.getId();
                 imageView.setOnClickListener(v -> {
-
-                    Log.e("#######", "11");
-
                     Intent intent = new Intent(context, AppFaceSwapActivity.class);
                     intent.putExtra("image_url", imageUrl);
                     intent.putExtra("template_id", templateId);

@@ -44,7 +44,7 @@ public class AppFaceSectionDetailActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_section_detail_screen);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.sectionDetailContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.sectionDetailContent), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {

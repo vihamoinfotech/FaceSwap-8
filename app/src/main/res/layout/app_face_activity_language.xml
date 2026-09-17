@@ -4,7 +4,7 @@
     android:id="@+id/languageRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_language_screen_vertical">
+    android:background="@color/app_theme_dark_background">
 
     <RelativeLayout
         android:id="@+id/root"
@@ -15,9 +15,9 @@
         <RelativeLayout
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
+            android:layout_height="@dimen/_56sdp"
             android:layout_alignParentTop="true"
-            android:paddingHorizontal="@dimen/_6sdp">
+            android:paddingHorizontal="@dimen/_16sdp">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -30,7 +30,7 @@
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/app_face_arrow_back"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
 
             <TextView
                 style="@style/HeaderTextStyle"
@@ -49,7 +49,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/_10sdp"
                 android:background="@drawable/app_face_color_save_button_gradient"
                 android:clickable="true"
                 android:focusable="true"
@@ -65,7 +64,7 @@
         <View
             android:id="@+id/underLine"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:layout_below="@+id/llHeader"
             android:background="@color/app_subtle_divider" />
 
@@ -86,7 +85,7 @@
             android:layout_below="@id/underLine"
             android:clipToPadding="false"
             android:overScrollMode="never"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_12sdp"
             android:scrollbars="none" />

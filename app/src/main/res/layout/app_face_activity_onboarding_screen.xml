@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/app_theme_dark_background">
 
     <com.facechanger.faceswap.enhance.utils.AppFacePrismVaultVPgr
         android:id="@+id/viewPager"

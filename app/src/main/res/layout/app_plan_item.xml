@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/app_poppins_bold"
                 android:includeFontPadding="false"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_13sdp"
                 android:maxLines="1"
                 android:ellipsize="end" />
@@ -84,7 +84,7 @@
             android:includeFontPadding="false"
             android:paddingHorizontal="16dp"
             android:paddingVertical="8dp"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_12sdp" />
 
     </LinearLayout>
@@ -101,7 +101,7 @@
         android:includeFontPadding="false"
         android:paddingHorizontal="10dp"
         android:paddingVertical="2dp"
-        android:textColor="@color/white"
+        android:textColor="#1A1A2E"
         android:textSize="9sp"
         android:visibility="gone" />
 

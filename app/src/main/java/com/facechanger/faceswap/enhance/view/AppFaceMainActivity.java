@@ -9,25 +9,19 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.facechanger.faceswap.enhance.utils.AppFaceApiCall;
 import com.facechanger.faceswap.enhance.utils.AppFaceApiClient;
 import com.facechanger.faceswap.enhance.utils.AppFaceLocaleHelper;
-import com.facechanger.faceswap.enhance.utils.AppFaceNetworkUtils;
 import com.facechanger.faceswap.enhance.utils.AppFaceStaticValue;
 import com.facechanger.faceswap.enhance.utils.FirebaseAuthManager;
-import com.facechanger.faceswap.enhance.view.adapter.AppFaceMainCategoryAdapter;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.callback.InterstitialAdCallback;
 import com.facechanger.faceswap.enhance.R;
-import com.facechanger.faceswap.enhance.model.api.AppFaceTemplateCategory;
-import com.facechanger.faceswap.enhance.utils.AppFaceApiRepository;
 import com.facechanger.faceswap.enhance.utils.AppFaceAppSystem;
 import com.facechanger.faceswap.enhance.utils.AppFaceCoinManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.faceenhance.facechanger.controller.FirebaseManager;
-import com.google.firebase.Firebase;
 import com.izooto.iZooto;
 
 import android.Manifest;
@@ -36,32 +30,21 @@ import android.os.Build;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import java.util.List;
-
 /**
- * Home screen displaying categorized face-swap templates.
+ * Home screen — "Feature Hub" layout.
  * <p>
- * Templates are fetched from {@code POST /api/templates/list} on launch,
- * grouped by category, and rendered as horizontal image sections.
- * Template images are loaded via {@code GET /api/templates/{id}/image}
- * with Bearer auth headers.
+ * Displays a hero banner with Face Swap + AI Create CTAs,
+ * an Explore Templates entry card, and a 2×2 Quick Actions grid
+ * (Video Swap, Remove BG, Enhance, My Work).
+ * Templates are now in {@link AppFaceTemplateGalleryActivity}.
  */
 public class AppFaceMainActivity extends BaseAppActivity {
 
     private static final String TAG = "MainActivity";
 
-    private androidx.recyclerview.widget.RecyclerView rvMainCategories;
-    private AppFaceMainCategoryAdapter adapter;
-    private com.facebook.shimmer.ShimmerFrameLayout shimmerViewContainer;
 
     private View coinBalancePill;
     private android.widget.TextView tvCoinBalance;
-
-    private AppFaceApiCall fetchTemplatesCall;
-    private View llErrorRetryContainer;
-
-    private android.widget.TextView tvErrorTitle, tvErrorMessage, btnRetryMain;
-
 
     @Override
     protected void attachBaseContext(android.content.Context newBase) {
@@ -71,21 +54,9 @@ public class AppFaceMainActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.app_face_activity_main_screen);
 
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), false, false);
-
-        shimmerViewContainer = findViewById(R.id.shimmer_view_container);
-        llErrorRetryContainer = findViewById(R.id.llErrorRetryContainer);
-
-        tvErrorTitle = findViewById(R.id.tvErrorTitle);
-        tvErrorMessage = findViewById(R.id.tvErrorMessage);
-        btnRetryMain = findViewById(R.id.btnRetryMain);
-
-        if (btnRetryMain != null) {
-            btnRetryMain.setOnClickListener(v -> fetchTemplatesFromApi());
-        }
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.mainContent), true, false);
 
         getOnBackPressedDispatcher().addCallback(this, new androidx.activity.OnBackPressedCallback(true) {
             private long backPressedTime = 0;
@@ -118,28 +89,9 @@ public class AppFaceMainActivity extends BaseAppActivity {
             }
         });
 
-
-        rvMainCategories = findViewById(R.id.rvMainCategories);
-        rvMainCategories.setLayoutManager(new androidx.recyclerview.widget.LinearLayoutManager(this));
-
-        adapter = new AppFaceMainCategoryAdapter(this);
-        adapter.setHeaderClickListener(() -> {
-            onClickInterstitial(true, new InterstitialAdCallback() {
-                @Override
-                public void onAdDismissed() {
-                    Intent intent = new Intent(AppFaceMainActivity.this, AppFaceSwapActivity.class);
-                    intent.putExtra("is_edit_image", false);
-                    startActivity(intent);
-                }
-            });
-        });
-
-        rvMainCategories.setAdapter(adapter);
-
-        setupBottomNav();
+        setupFeatureHub();
         setupClickListeners();
         setupCoinHeader();
-        fetchTemplatesFromApi();
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -150,7 +102,6 @@ public class AppFaceMainActivity extends BaseAppActivity {
                 loadSecondAds();
             }
         });
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
@@ -225,7 +176,6 @@ public class AppFaceMainActivity extends BaseAppActivity {
         });
     }
 
-
     @Override
     public void onResume() {
         super.onResume();
@@ -234,159 +184,45 @@ public class AppFaceMainActivity extends BaseAppActivity {
 
     @Override
     public void onDestroy() {
-        if (fetchTemplatesCall != null) {
-            fetchTemplatesCall.cancel();
-        }
         super.onDestroy();
-    }
-
-    // ──────────────────────────────────────────────
-    //  API — fetch templates
-    // ──────────────────────────────────────────────
-
-    private void fetchTemplatesFromApi() {
-        if (llErrorRetryContainer != null) {
-            llErrorRetryContainer.setVisibility(View.GONE);
-        }
-        if (shimmerViewContainer != null) {
-            shimmerViewContainer.setVisibility(View.VISIBLE);
-            shimmerViewContainer.startShimmer();
-        }
-        if (rvMainCategories != null) rvMainCategories.setVisibility(View.GONE);
-
-        fetchTemplatesCall = AppFaceApiRepository.fetchTemplates(new AppFaceApiRepository.TemplatesCallback() {
-            @Override
-            public void onSuccess(@NonNull List<AppFaceTemplateCategory> categories) {
-                fetchTemplatesCall = null;
-                if (shimmerViewContainer != null) {
-                    shimmerViewContainer.stopShimmer();
-                    shimmerViewContainer.setVisibility(View.GONE);
-                }
-
-                if (categories.isEmpty()) {
-                    // No data found -> show retry container
-                    if (rvMainCategories != null) rvMainCategories.setVisibility(View.GONE);
-                    if (llErrorRetryContainer != null) {
-                        if (tvErrorTitle != null) tvErrorTitle.setText(getString(R.string.MainActivity_could_not_load_templates));
-                        if (tvErrorMessage != null) tvErrorMessage.setText(getString(R.string.dialog_api_error_msg));
-                        llErrorRetryContainer.setVisibility(View.VISIBLE);
-                    }
-                } else {
-                    if (llErrorRetryContainer != null) llErrorRetryContainer.setVisibility(View.GONE);
-                    if (rvMainCategories != null) rvMainCategories.setVisibility(View.VISIBLE);
-                    Log.d(TAG, "Loaded " + categories.size() + " categories from API");
-                    renderTemplates(categories);
-                }
-            }
-
-            @Override
-            public void onError(@NonNull String errorMessage) {
-                fetchTemplatesCall = null;
-                if (shimmerViewContainer != null) {
-                    shimmerViewContainer.stopShimmer();
-                    shimmerViewContainer.setVisibility(View.GONE);
-                }
-                if (rvMainCategories != null) rvMainCategories.setVisibility(View.GONE);
-
-                if (llErrorRetryContainer != null) {
-                    if (tvErrorTitle != null) tvErrorTitle.setText(getString(R.string.dialog_api_error_title));
-                    if (tvErrorMessage != null) {
-                        tvErrorMessage.setText(AppFaceNetworkUtils.isConnected(AppFaceMainActivity.this)
-                                ? getString(R.string.dialog_api_error_msg)
-                                : getString(R.string.dialog_no_internet_msg));
-                    }
-                    llErrorRetryContainer.setVisibility(View.VISIBLE);
-                }
-
-
-                Log.e(TAG, "Failed to load templates: " + errorMessage);
-            }
-        });
-    }
-
-    // ──────────────────────────────────────────────
-    //  Render template sections
-    // ──────────────────────────────────────────────
-
-    private void renderTemplates(@NonNull List<AppFaceTemplateCategory> categories) {
-        if (categories.isEmpty()) {
-            Log.w(TAG, "No template categories to display");
-            return;
-        }
-
-        // Pass the categories to the adapter
-        adapter.setCategories(categories);
     }
 
     // ──────────────────────────────────────────────
     //  UI Setup
     // ──────────────────────────────────────────────
 
-    private void setupClickListeners() {
-        View btnSettings = findViewById(R.id.btnSettings);
-        if (btnSettings != null) {
-            btnSettings.setOnClickListener(v -> {
-                Intent intent = new Intent(this, AppFaceSettingsActivity.class);
+    private void setupFeatureHub() {
+        // Hero Banner CTAs
+        View btnFaceSwap = findViewById(R.id.btnFaceSwap);
+        if (btnFaceSwap != null) {
+            btnFaceSwap.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceSwapActivity.class);
+                intent.putExtra("is_edit_image", false);
                 startActivity(intent);
-            });
+            }));
         }
 
-        View btnGenerateNow = findViewById(R.id.btnGenerateNow);
-        if (btnGenerateNow != null) {
-            btnGenerateNow.setOnClickListener(v -> {
-                onClickInterstitial(true, new InterstitialAdCallback() {
-                    @Override
-                    public void onAdDismissed() {
-
-                        // FaceSwap Action Below
-
-                        Intent intent = new Intent(AppFaceMainActivity.this, AppFaceSwapActivity.class);
-                        intent.putExtra("is_edit_image", false);
-                        startActivity(intent);
-
-                        // AIImage action Below
-
-//                        Intent intent = new Intent(MainActivity.this, AiImageGenActivity.class);
-//                        startActivity(intent);
-                    }
-                });
-            });
-        }
-    }
-
-    private void setupBottomNav() {
-
-        View aiImage = findViewById(R.id.navAiImage);
-        if (aiImage != null) {
-            aiImage.setOnClickListener(v -> {
-                onClickInterstitial(true, new InterstitialAdCallback() {
-                    @Override
-                    public void onAdDismissed() {
-                        Intent intent = new Intent(AppFaceMainActivity.this, AppFaceAiImageGenActivity.class);
-                        startActivity(intent);
-                    }
-                });
-            });
+        View btnAiCreate = findViewById(R.id.btnAiCreate);
+        if (btnAiCreate != null) {
+            btnAiCreate.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceAiImageGenActivity.class);
+                startActivity(intent);
+            }));
         }
 
-        View navFaceSwap = findViewById(R.id.navFaceSwap);
-        if (navFaceSwap != null) {
-            navFaceSwap.setOnClickListener(v -> {
-                onClickInterstitial(true, new InterstitialAdCallback() {
-                    @Override
-                    public void onAdDismissed() {
-                        Intent intent = new Intent(AppFaceMainActivity.this, AppFaceSwapActivity.class);
-                        intent.putExtra("is_edit_image", false);
-                        startActivity(intent);
-                    }
-                });
-            });
-
+        // Explore Templates Card
+        View cardExploreTemplates = findViewById(R.id.cardExploreTemplates);
+        if (cardExploreTemplates != null) {
+            cardExploreTemplates.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceTemplateGalleryActivity.class);
+                startActivity(intent);
+            }));
         }
 
-        View navMultiSwap = findViewById(R.id.navMultiSwap);
-        if (navMultiSwap != null) {
-            navMultiSwap.setOnClickListener(v -> {
+        // Quick Actions
+        View cardVideoSwap = findViewById(R.id.cardVideoSwap);
+        if (cardVideoSwap != null) {
+            cardVideoSwap.setOnClickListener(v -> {
                 if (FirebaseAuthManager.getInstance().isLoggedIn()) {
                     Intent intent = new Intent(AppFaceMainActivity.this, AppFaceVideoFaceSwapActivity.class);
                     startActivity(intent);
@@ -408,20 +244,64 @@ public class AppFaceMainActivity extends BaseAppActivity {
             });
         }
 
-        View navMyWork = findViewById(R.id.navMyWork);
-        if (navMyWork != null) {
-            navMyWork.setOnClickListener(v -> {
-                onClickInterstitial(true, new InterstitialAdCallback() {
-                    @Override
-                    public void onAdDismissed() {
-                        Intent intent = new Intent(AppFaceMainActivity.this, AppFaceMyWorkActivity.class);
-                        startActivity(intent);
-                    }
-                });
-            });
+        View cardRemoveBg = findViewById(R.id.cardRemoveBg);
+        if (cardRemoveBg != null) {
+            cardRemoveBg.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceRemoveBgActivity.class);
+                startActivity(intent);
+            }));
+        }
+
+        View cardEnhanceFace = findViewById(R.id.cardEnhanceFace);
+        if (cardEnhanceFace != null) {
+            cardEnhanceFace.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceFaceEnhanceActivity.class);
+                startActivity(intent);
+            }));
+        }
+
+        View cardMyWork = findViewById(R.id.cardMyWork);
+        if (cardMyWork != null) {
+            cardMyWork.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceMyWorkActivity.class);
+                startActivity(intent);
+            }));
+        }
+
+        // Sparkle animation for Hero Banner
+
+        View ivSparkle = findViewById(R.id.ivSparkle);
+        if (ivSparkle != null) {
+            android.animation.ObjectAnimator alphaAnim = android.animation.ObjectAnimator.ofFloat(ivSparkle, "alpha", 1f, 0.4f);
+            alphaAnim.setDuration(1200);
+            alphaAnim.setRepeatCount(android.animation.ValueAnimator.INFINITE);
+            alphaAnim.setRepeatMode(android.animation.ValueAnimator.REVERSE);
+
+            android.animation.ObjectAnimator scaleXAnim = android.animation.ObjectAnimator.ofFloat(ivSparkle, "scaleX", 1f, 1.2f);
+            scaleXAnim.setDuration(1200);
+            scaleXAnim.setRepeatCount(android.animation.ValueAnimator.INFINITE);
+            scaleXAnim.setRepeatMode(android.animation.ValueAnimator.REVERSE);
+
+            android.animation.ObjectAnimator scaleYAnim = android.animation.ObjectAnimator.ofFloat(ivSparkle, "scaleY", 1f, 1.2f);
+            scaleYAnim.setDuration(1200);
+            scaleYAnim.setRepeatCount(android.animation.ValueAnimator.INFINITE);
+            scaleYAnim.setRepeatMode(android.animation.ValueAnimator.REVERSE);
+
+            android.animation.AnimatorSet sparkleSet = new android.animation.AnimatorSet();
+            sparkleSet.playTogether(alphaAnim, scaleXAnim, scaleYAnim);
+            sparkleSet.start();
         }
     }
 
+    private void setupClickListeners() {
+        View btnSettings = findViewById(R.id.btnSettings);
+        if (btnSettings != null) {
+            btnSettings.setOnClickListener(v -> {
+                Intent intent = new Intent(this, AppFaceSettingsActivity.class);
+                startActivity(intent);
+            });
+        }
+    }
 
 
     // ──────────────────────────────────────────────
@@ -460,25 +340,16 @@ public class AppFaceMainActivity extends BaseAppActivity {
     }
 
     private void adjustLayoutForAds() {
-        boolean isPremium = AppFaceSessionManager.getInstance().isPremium();
         boolean adsFeatureEnabled = false;
         if (AppFaceSessionManager.getInstance().getConfig() != null) {
             adsFeatureEnabled = AppFaceSessionManager.getInstance().getConfig().isAdsEnable();
         }
 
-        boolean showAds = adsFeatureEnabled;
-
-        if (!showAds) {
-            // Reduce bottom padding when no ads are shown
-            int paddingBottom = getResources().getDimensionPixelSize(R.dimen.app_clip_home_main_scroll_content_bottom_padding_points_no_ads);
-            if (rvMainCategories != null) {
-                rvMainCategories.setPadding(
-                    rvMainCategories.getPaddingLeft(),
-                    rvMainCategories.getPaddingTop(),
-                    rvMainCategories.getPaddingRight(),
-                    paddingBottom
-                );
-            }
+        if (!adsFeatureEnabled) {
+            View adContainer = findViewById(R.id.ad_view_container);
+            if (adContainer != null) adContainer.setVisibility(View.GONE);
+            View secondAdContainer = findViewById(R.id.second_ad_view_container);
+            if (secondAdContainer != null) secondAdContainer.setVisibility(View.GONE);
         }
     }
 }

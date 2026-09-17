@@ -77,7 +77,7 @@
                 android:gravity="center"
                 android:includeFontPadding="false"
                 android:text="@string/app_face_new_update_available_text"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_22sdp" />
 
             <!-- Subtitle -->
@@ -143,7 +143,7 @@
                             android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_better_performance_text"
-                            android:textColor="@color/white"
+                            android:textColor="#1A1A2E"
                             android:textSize="@dimen/_12sdp" />
 
                         <TextView
@@ -198,7 +198,7 @@
                             android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_swap_new_features_text"
-                            android:textColor="@color/white"
+                            android:textColor="#1A1A2E"
                             android:textSize="@dimen/_12sdp" />
 
                         <TextView
@@ -253,7 +253,7 @@
                             android:fontFamily="@font/app_poppins_semibold"
                             android:includeFontPadding="false"
                             android:text="@string/app_face_bug_fixes_text"
-                            android:textColor="@color/white"
+                            android:textColor="#1A1A2E"
                             android:textSize="@dimen/_12sdp" />
 
                         <TextView
@@ -297,7 +297,7 @@
             android:stateListAnimator="@null"
             android:text="@string/app_face_update_now_button_text"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_15sdp"
             app:backgroundTint="@null" />
 

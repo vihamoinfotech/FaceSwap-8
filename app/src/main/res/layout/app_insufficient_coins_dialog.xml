@@ -50,7 +50,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_face_dialog_insufficient_coins_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_20sdp" />
 
         <!-- Gradient accent divider -->
@@ -104,7 +104,7 @@
                 android:includeFontPadding="false"
                 android:letterSpacing="0.02"
                 android:text="@string/app_face_buy_coins_text"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_14sdp" />
 
         </LinearLayout>
@@ -119,7 +119,8 @@
         android:layout_marginTop="@dimen/_11sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:background="@drawable/app_face_common_border_color"
-        android:contentDescription="@string/face_dialog_close_text"
+        android:elevation="8dp"
+                    android:contentDescription="@string/face_dialog_close_text"
         android:padding="@dimen/_1sdp"
         android:scaleType="centerInside"
         android:src="@drawable/app_transparent_close_choose" />

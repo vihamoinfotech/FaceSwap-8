@@ -203,9 +203,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
-                            android:alpha="0.5"
-                            android:textColor="@color/app_outline_variant_paywall"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textColor="#9CA3AF"
+                            android:textSize="@dimen/_14sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -220,8 +219,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_paywall"
-                            android:textSize="16sp" />
+                            android:textColor="@color/app_primary_brand"
+                            android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -253,9 +252,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
-                            android:alpha="0.5"
-                            android:textColor="@color/app_outline_variant_paywall"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textColor="#9CA3AF"
+                            android:textSize="@dimen/_14sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -270,8 +268,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_paywall"
-                            android:textSize="16sp" />
+                            android:textColor="@color/app_primary_brand"
+                            android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -303,9 +301,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
-                            android:alpha="0.5"
-                            android:textColor="@color/app_outline_variant_paywall"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textColor="#9CA3AF"
+                            android:textSize="@dimen/_14sdp" />
                     </FrameLayout>
 
                     <!-- Last Pro cell: rounded bottom corners -->
@@ -321,8 +318,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_paywall"
-                            android:textSize="16sp" />
+                            android:textColor="@color/app_primary_brand"
+                            android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -354,9 +351,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
-                            android:alpha="0.5"
-                            android:textColor="@color/app_outline_variant_paywall"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textColor="#9CA3AF"
+                            android:textSize="@dimen/_14sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -371,8 +367,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_paywall"
-                            android:textSize="16sp" />
+                            android:textColor="@color/app_primary_brand"
+                            android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -404,9 +400,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_medium"
                             android:text="✕"
-                            android:alpha="0.5"
-                            android:textColor="@color/app_outline_variant_paywall"
-                            android:textSize="@dimen/_10sdp" />
+                            android:textColor="#9CA3AF"
+                            android:textSize="@dimen/_14sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -421,8 +416,8 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_paywall"
-                            android:textSize="16sp" />
+                            android:textColor="@color/app_primary_brand"
+                            android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -469,7 +464,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_18sdp"
             android:visibility="visible" />
 
@@ -482,7 +477,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text=""
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_22sdp"
             android:visibility="visible" />
 
@@ -503,7 +498,7 @@
             android:paddingVertical="16dp"
             android:text="Subscribe Now"
             android:textColor="@color/white"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_15sdp" />
 
         <TextView
             android:id="@+id/tvPaywallPriceDetail"

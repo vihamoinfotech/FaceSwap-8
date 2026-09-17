@@ -67,7 +67,7 @@ public class VideoPaywallActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_video_paywall);
 
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.main), false, true);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.main), true, true);
         if (getIntent() != null) {
             isFromSplash = getIntent().getBooleanExtra("isFromSplash", false);
         }

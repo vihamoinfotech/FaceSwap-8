@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="@dimen/_14sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
@@ -37,26 +37,26 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_8sdp"
-        android:paddingHorizontal="@dimen/_14sdp">
+        android:paddingHorizontal="@dimen/_16sdp">
 
         <!-- Card 1 -->
         <View
             android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_120sdp"
-            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
 
         <!-- Card 2 -->
         <View
             android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_120sdp"
-            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
 
         <!-- Card 3 -->
         <View
             android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_120sdp"
+            android:layout_height="@dimen/_130sdp"
             android:background="@drawable/app_shimmer_face_rect_placeholder_bg" />
     </LinearLayout>
 

@@ -39,7 +39,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_info_dialog_title_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_20sdp" />
 
         <!-- Gradient accent divider -->
@@ -77,7 +77,7 @@
             android:includeFontPadding="false"
             android:letterSpacing="0.02"
             android:text="@string/app_info_dialog_button_text"
-            android:textColor="@color/white"
+            android:textColor="#FFFFFF"
             android:textSize="@dimen/_14sdp" />
 
     </LinearLayout>

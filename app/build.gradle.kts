@@ -9,7 +9,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-//        applicationId = "com.facechanger.faceswap.enhance" // todo live
+//        applicationId = "com.ewfewgf.sdgesdfg" // todo live
         applicationId = "com.dsfsdf.werwer.dfgdfg" // todo remove
 
 
@@ -17,14 +17,14 @@ android {
         targetSdk = 36
 
 
-//        versionCode = 11 // todo live
-//        versionName = "1.4" // todo live
+//        versionCode = 1 // todo live
+//        versionName = "1.0" // todo live
 
         versionCode = 1 // todo remove
         versionName = "0.1" // todo remove
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//        manifestPlaceholders["izooto_app_id"] = "66dd8d127ebc7730cf309b301599948cac248049" // todo live
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        manifestPlaceholders["izooto_app_id"] = "" // todo live
         manifestPlaceholders["izooto_app_id"] = "" // todo remove
     }
 

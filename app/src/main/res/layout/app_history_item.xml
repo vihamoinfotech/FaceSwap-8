@@ -8,7 +8,7 @@
     android:padding="@dimen/_12sdp"
     android:layout_marginStart="@dimen/_12sdp"
     android:layout_marginEnd="@dimen/_12sdp"
-    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_16sdp"
     android:gravity="center_vertical"
     android:elevation="2dp">
 
@@ -31,7 +31,7 @@
             android:src="@drawable/app_play_face_button"
             android:background="@drawable/app_face_circle_translucent_pie"
             android:padding="@dimen/_6sdp"
-            app:tint="@color/white"
+            app:tint="#1A1A2E"
             android:visibility="gone" />
     </FrameLayout>
 
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/app_poppins_semibold"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_13sdp"
             android:maxLines="1"
             android:ellipsize="end"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_3sdp"
             android:fontFamily="@font/app_poppins_semibold"
-            android:textColor="@color/white"
+            android:textColor="#FFFFFF"
             android:textSize="@dimen/_10sdp"
             android:includeFontPadding="false" />
 

@@ -48,7 +48,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_server_high_demand_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_18sdp" />
 
         <!-- Gradient accent bar -->
@@ -77,14 +77,14 @@
         <TextView
             android:id="@+id/btnRetry"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_46sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/app_face_dialog_button_gradient_horizontal"
             android:fontFamily="@font/app_poppins_semibold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/app_face_server_busy_retry_button_text"
-            android:textColor="@color/white"
+            android:textColor="#FFFFFF"
             android:textSize="@dimen/_14sdp" />
 
         <!-- Go Back (secondary) -->

@@ -10,13 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Header -->
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- Header bar -->
         <RelativeLayout
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
+            android:layout_height="@dimen/_56sdp"
             android:layout_alignParentTop="true"
-            android:paddingHorizontal="@dimen/_6sdp">
+            android:paddingHorizontal="@dimen/_16sdp">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -29,7 +30,7 @@
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/app_face_arrow_back"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
 
             <TextView
                 style="@style/HeaderTextStyle"
@@ -42,12 +43,12 @@
                 android:text="@string/app_settings_text" />
         </RelativeLayout>
 
+        <!-- Hidden underline — kept for ID reference -->
         <View
             android:id="@+id/underLine"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/llHeader"
-            android:background="@color/app_subtle_divider" />
+            android:layout_height="0dp"
+            android:layout_below="@+id/llHeader" />
 
         <FrameLayout
             android:id="@+id/ad_view_container"
@@ -65,53 +66,54 @@
             android:overScrollMode="never"
             android:scrollbars="none">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingHorizontal="@dimen/_16sdp"
-                android:paddingTop="@dimen/_20sdp"
-                android:paddingBottom="@dimen/_24sdp">
+                android:paddingBottom="@dimen/_30sdp">
 
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- ACCOUNT SECTION -->
+                <!-- ═══════════════════════════════════════════ -->
                 <TextView
                     android:id="@+id/sectionAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:fontFamily="@font/app_poppins_semibold"
-                    android:includeFontPadding="false"
-                    android:letterSpacing="0.06"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    style="@style/SectionLabelStyle"
                     android:text="@string/settings_account"
-                    android:textAllCaps="true"
-                    android:textColor="@color/text_tertiary"
-                    android:textSize="@dimen/_10sdp"
                     android:visibility="gone" />
 
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- PROFILE BANNER — Full-width gradient card -->
+                <!-- ═══════════════════════════════════════════ -->
                 <LinearLayout
                     android:id="@+id/accountGroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
                     android:layout_marginBottom="@dimen/_20sdp"
-                    android:background="@drawable/app_face_common_border_color"
-                    android:elevation="4dp"
                     android:orientation="vertical"
                     android:visibility="gone">
 
-                    <!-- User Profile Card -->
+                    <!-- Profile Card with gradient background -->
                     <LinearLayout
                         android:id="@+id/llUserProfile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/app_home_faceswap_card_purple_border"
+                        android:elevation="12dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:paddingHorizontal="@dimen/_24sdp"
+                        android:paddingVertical="@dimen/_28sdp"
+                        android:layout_marginBottom="@dimen/_16sdp">
 
-                        <!-- Avatar Circle with Initial -->
+                        <!-- Large Avatar -->
                         <FrameLayout
-                            android:layout_width="@dimen/_40sdp"
-                            android:layout_height="@dimen/_40sdp">
+                            android:layout_width="@dimen/_68sdp"
+                            android:layout_height="@dimen/_68sdp">
 
                             <View
                                 android:layout_width="match_parent"
@@ -126,13 +128,13 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:textColor="@color/app_primary_brand"
-                                android:textSize="@dimen/_17sdp" />
+                                android:textSize="@dimen/_26sdp" />
                         </FrameLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_18sdp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -140,643 +142,535 @@
                                 android:id="@+id/tvProfileName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/app_poppins_semibold"
+                                android:fontFamily="@font/app_poppins_bold"
                                 android:includeFontPadding="false"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/_14sdp" />
+                                android:textColor="#1A1A2E"
+                                android:textSize="@dimen/_20sdp" />
 
                             <TextView
                                 android:id="@+id/tvProfileEmail"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
                                 android:fontFamily="@font/app_poppins_regular"
                                 android:includeFontPadding="false"
-                                android:textColor="@color/app_secondary_text"
-                                android:textSize="@dimen/_10sdp" />
+                                android:textColor="#99FFFFFF"
+                                android:textSize="@dimen/_11sdp" />
                         </LinearLayout>
                     </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
 
                     <!-- Edit Name -->
                     <LinearLayout
                         android:id="@+id/llEditName"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
+                        android:layout_height="@dimen/_58sdp"
+                        android:background="@drawable/app_face_common_border_color"
+                        android:elevation="8dp"
+                    android:clickable="true"
                         android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:paddingHorizontal="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_16sdp">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/bg_avatar_circle"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_edit_go"
-                                app:tint="@color/white" />
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/app_face_edit_go"
+                            app:tint="@color/app_primary_brand" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_16sdp"
                             android:layout_weight="1"
                             android:fontFamily="@font/app_poppins_medium"
                             android:includeFontPadding="false"
                             android:text="@string/settings_edit_name"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
+                            android:textColor="#1A1A2E"
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:alpha="0.3"
                             android:contentDescription="@null"
-                            android:rotation="0"
                             android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
+                            app:tint="#1A1A2E" />
                     </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
 
                     <!-- Logout -->
                     <LinearLayout
                         android:id="@+id/llLogout"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
+                        android:layout_height="@dimen/_58sdp"
+                        android:background="@drawable/app_face_common_border_color"
+                        android:elevation="8dp"
+                    android:clickable="true"
                         android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:paddingHorizontal="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_16sdp">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/bg_avatar_circle"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/logout"
-                                app:tint="@color/white" />
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/logout"
+                            app:tint="@color/app_primary_brand" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_16sdp"
                             android:layout_weight="1"
                             android:fontFamily="@font/app_poppins_medium"
                             android:includeFontPadding="false"
                             android:text="@string/settings_logout"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
+                            android:textColor="#1A1A2E"
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:alpha="0.3"
                             android:contentDescription="@null"
-                            android:rotation="0"
                             android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
+                            app:tint="#1A1A2E" />
                     </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
 
                     <!-- Delete Account -->
                     <LinearLayout
                         android:id="@+id/llDeleteAccount"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
+                        android:layout_height="@dimen/_58sdp"
+                        android:background="@drawable/app_face_common_border_color"
+                        android:elevation="8dp"
+                    android:clickable="true"
                         android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:paddingHorizontal="@dimen/_18sdp">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/bg_avatar_circle"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/delete_account"
-                                app:tint="#FF5C7A" />
-
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/delete_account"
+                            app:tint="#FF5C7A" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_16sdp"
                             android:layout_weight="1"
                             android:fontFamily="@font/app_poppins_medium"
                             android:includeFontPadding="false"
                             android:text="@string/settings_delete_account"
                             android:textColor="#FF5C7A"
-                            android:textSize="@dimen/_13sdp" />
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:alpha="0.3"
                             android:contentDescription="@null"
-                            android:rotation="0"
                             android:src="@drawable/app_face_arrow_right"
                             app:tint="#FF5C7A" />
                     </LinearLayout>
                 </LinearLayout>
 
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- PREMIUM CARD — Hero gradient banner -->
+                <!-- ═══════════════════════════════════════════ -->
                 <LinearLayout
                     android:id="@+id/coinsGroup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_20sdp"
-                    android:background="@drawable/app_face_common_border_color"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_18sdp"
                     android:orientation="vertical">
 
+                    <!-- Coin History -->
                     <LinearLayout
                         android:id="@+id/llCoinHistory"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
+                        android:layout_height="@dimen/_58sdp"
+                        android:background="@drawable/app_face_common_border_color"
+                        android:elevation="8dp"
                         android:clickable="true"
                         android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:visibility="gone"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:paddingHorizontal="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        android:visibility="gone">
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_coin_new" />
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/app_face_coin_new" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_16sdp"
                             android:layout_weight="1"
                             android:fontFamily="@font/app_poppins_medium"
                             android:includeFontPadding="false"
                             android:text="@string/app_coin_history_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
+                            android:textColor="#1A1A2E"
+                            android:textSize="@dimen/_14sdp" />
 
                         <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:alpha="0.3"
                             android:contentDescription="@null"
-                            android:rotation="0"
                             android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
+                            app:tint="#1A1A2E" />
                     </LinearLayout>
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
-
+                    <!-- Unlock Premium — Big hero card -->
                     <LinearLayout
                         android:id="@+id/llBuyCoins"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
+                        android:layout_marginHorizontal="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:background="@drawable/app_home_faceswap_card_purple_border"
                         android:clickable="true"
                         android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:foreground="?attr/selectableItemBackground"
+                        android:elevation="4dp">
 
                         <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_24sdp"
+                            android:paddingVertical="@dimen/_28sdp">
 
                             <ImageView
-                                android:layout_width="@dimen/_22sdp"
-                                android:layout_height="@dimen/_22sdp"
+                                android:layout_width="@dimen/_44sdp"
+                                android:layout_height="@dimen/_44sdp"
                                 android:layout_gravity="center"
                                 android:contentDescription="@null"
                                 android:src="@drawable/app_face_diamond_premium"
+                                app:tint="#6366F1"
                                 android:scaleType="centerInside" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_14sdp"
+                                android:fontFamily="@font/app_poppins_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="Unlock Premium"
+                                android:textColor="#1A1A2E"
+                                android:textSize="@dimen/_18sdp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:fontFamily="@font/app_poppins_regular"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:text="Unlimited swaps, no ads, priority processing"
+                                android:textColor="#4F46E5"
+                                android:textSize="@dimen/_11sdp" />
                         </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="Unlock Premium"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
                     </LinearLayout>
                 </LinearLayout>
 
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- APP SECTION -->
+                <!-- ═══════════════════════════════════════════ -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:fontFamily="@font/app_poppins_semibold"
-                    android:includeFontPadding="false"
-                    android:letterSpacing="0.06"
-                    android:text="APP"
-                    android:textAllCaps="true"
-                    android:textColor="@color/app_tertiary_text"
-                    android:textSize="@dimen/_10sdp" />
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    style="@style/SectionLabelStyle"
+                    android:text="APP" />
 
+                <!-- Language -->
                 <LinearLayout
+                    android:id="@+id/llLanguage"
                     android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_language_iconic"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_face_language_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
+                </LinearLayout>
+
+                <!-- Feedback -->
+                <LinearLayout
+                    android:id="@+id/llFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_feedback_chat"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_face_feedback_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
+                </LinearLayout>
+
+                <!-- Share App -->
+                <LinearLayout
+                    android:id="@+id/llShareApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_share_ref"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_face_share_app_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
+                </LinearLayout>
+
+                <!-- Rate App -->
+                <LinearLayout
+                    android:id="@+id/llRateApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_28sdp"
+                    android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_rating_chat"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_face_rate_app_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
+                </LinearLayout>
+
+                <!-- ═══════════════════════════════════════════ -->
+                <!-- LEGAL SECTION -->
+                <!-- ═══════════════════════════════════════════ -->
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    style="@style/SectionLabelStyle"
+                    android:text="@string/app_face_legal_text" />
+
+                <!-- Terms -->
+                <LinearLayout
+                    android:id="@+id/llTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_terms_conditions"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_terms_and_conditions_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
+                </LinearLayout>
+
+                <!-- Privacy Policy -->
+                <LinearLayout
+                    android:id="@+id/llPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_58sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
                     android:layout_marginBottom="@dimen/_20sdp"
                     android:background="@drawable/app_face_common_border_color"
-                    android:orientation="vertical">
+                    android:elevation="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_18sdp">
 
-                    <!-- Language Row -->
-                    <LinearLayout
-                        android:id="@+id/llLanguage"
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_privacy"
+                        app:tint="@color/app_primary_brand" />
+
+                    <TextView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/app_poppins_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_privacy_policy_text"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_language_iconic"
-                                app:tint="@color/white" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_face_language_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
-
-                    <LinearLayout
-                        android:id="@+id/llFeedback"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_feedback_chat" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_face_feedback_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
-
-                    <LinearLayout
-                        android:id="@+id/llShareApp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_share_ref" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_face_share_app_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
-
-                    <!-- Rate App -->
-                    <LinearLayout
-                        android:id="@+id/llRateApp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_badge_orange_gradient_bg"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_rating_chat" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_face_rate_app_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- Section label: Legal -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:fontFamily="@font/app_poppins_semibold"
-                    android:includeFontPadding="false"
-                    android:letterSpacing="0.06"
-                    android:text="@string/app_face_legal_text"
-                    android:textAllCaps="true"
-                    android:textColor="@color/app_tertiary_text"
-                    android:textSize="@dimen/_10sdp" />
-
-                <!-- Legal group card -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_12sdp"
-                    android:background="@drawable/app_face_common_border_color"
-                    android:orientation="vertical">
-
-                    <!-- Terms -->
-                    <LinearLayout
-                        android:id="@+id/llTerms"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_common_border_color"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_terms_conditions" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_terms_and_conditions_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:background="@color/app_subtle_divider" />
-
-                    <!-- Privacy Policy -->
-                    <LinearLayout
-                        android:id="@+id/llPrivacy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="?attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingHorizontal="@dimen/_16sdp"
-                        android:paddingVertical="@dimen/_14sdp">
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_36sdp"
-                            android:layout_height="@dimen/_36sdp"
-                            android:background="@drawable/app_face_common_border_color"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="@dimen/_18sdp"
-                                android:layout_height="@dimen/_18sdp"
-                                android:contentDescription="@null"
-                                android:src="@drawable/app_face_privacy" />
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="@dimen/_14sdp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/app_poppins_medium"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_privacy_policy_text"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_14sdp"
-                            android:alpha="0.4"
-                            android:contentDescription="@null"
-                            android:rotation="0"
-                            android:src="@drawable/app_face_arrow_right"
-                            app:tint="@color/white" />
-                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:alpha="0.3"
+                        android:contentDescription="@null"
+                        android:src="@drawable/app_face_arrow_right"
+                        app:tint="#1A1A2E" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -35,7 +35,7 @@ public class AppFaceFaceSelectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_selection_face);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSelectionContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSelectionContent), true);
 
         setupToolbar();
         setupRecyclerView();

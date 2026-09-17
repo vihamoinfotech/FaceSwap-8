@@ -17,8 +17,8 @@
         <RelativeLayout
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
-            android:paddingHorizontal="@dimen/_6sdp">
+            android:layout_height="@dimen/_56sdp"
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -31,7 +31,7 @@
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/app_face_arrow_back"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
 
             <TextView
                 style="@style/HeaderTextStyle"
@@ -46,7 +46,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:background="@color/app_subtle_divider" />
 
         <!-- Hint below header -->

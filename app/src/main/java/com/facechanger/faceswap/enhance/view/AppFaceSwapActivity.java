@@ -104,7 +104,7 @@ public class AppFaceSwapActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_face_swap_screen);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {

@@ -97,15 +97,9 @@ public final class AppFacePermissionHelper {
      * replaced by READ_MEDIA_IMAGES.
      */
     public static boolean hasGalleryPermission(@NonNull Context context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            return ContextCompat.checkSelfPermission(context,
-                    Manifest.permission.READ_MEDIA_IMAGES)
-                    == PackageManager.PERMISSION_GRANTED;
-        } else {
-            return ContextCompat.checkSelfPermission(context,
-                    Manifest.permission.READ_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_GRANTED;
-        }
+        // ACTION_GET_CONTENT (System Photo Picker) does not require storage permissions
+        // on any Android version. Returning true prevents unnecessary permission requests.
+        return true;
     }
 
     /**
@@ -155,25 +149,13 @@ public final class AppFacePermissionHelper {
      * Requests both camera and gallery permissions at once.
      */
     public static void requestCameraAndGalleryPermission(@NonNull Activity activity) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            ActivityCompat.requestPermissions(
-                    activity,
-                    new String[]{
-                            Manifest.permission.CAMERA,
-                            Manifest.permission.READ_MEDIA_IMAGES
-                    },
-                    RC_CAMERA_GALLERY
-            );
-        } else {
-            ActivityCompat.requestPermissions(
-                    activity,
-                    new String[]{
-                            Manifest.permission.CAMERA,
-                            Manifest.permission.READ_EXTERNAL_STORAGE
-                    },
-                    RC_CAMERA_GALLERY
-            );
-        }
+        // We only need to request CAMERA permission. 
+        // Gallery (ACTION_GET_CONTENT) does not need storage permissions.
+        ActivityCompat.requestPermissions(
+                activity,
+                new String[]{Manifest.permission.CAMERA},
+                RC_CAMERA_GALLERY
+        );
     }
 
     /**

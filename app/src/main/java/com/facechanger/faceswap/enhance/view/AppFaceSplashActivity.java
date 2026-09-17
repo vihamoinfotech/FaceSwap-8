@@ -63,7 +63,7 @@ public class AppFaceSplashActivity extends AppCompatActivity {
         SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_splash_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), true, true);
 
         startTime = System.currentTimeMillis();
 
@@ -142,7 +142,7 @@ public class AppFaceSplashActivity extends AppCompatActivity {
                             Log.d(TAG, "Session initialized — token acquired" + responseBody);
 
                             if (AppFaceAppSystem.isDebugMode()) {
-                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 1);
+                                GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.APP_EXP, 0);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_IN_APP_AFT_SPL, 1);
                                 GlobleMMKVManager.getInstance().putInt(AppFaceStaticValue.IS_PRM_PRC_SHOW, 1);
                             } else {

@@ -15,8 +15,8 @@
         <RelativeLayout
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
-            android:paddingHorizontal="@dimen/_6sdp">
+            android:layout_height="@dimen/_56sdp"
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -29,7 +29,7 @@
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/app_face_arrow_back"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
 
             <TextView
                 style="@style/HeaderTextStyle"
@@ -44,7 +44,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:background="@color/app_subtle_divider" />
 
         <!-- 7-day image retention notice -->
@@ -55,8 +55,8 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:background="@color/app_elevated_surface"
-            android:paddingHorizontal="@dimen/_14sdp"
-            android:paddingVertical="@dimen/_10sdp">
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal"
+            android:paddingVertical="@dimen/_12sdp">
 
             <ImageView
                 android:layout_width="@dimen/_18sdp"
@@ -92,7 +92,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:background="@color/app_subtle_divider" />
 
         <!-- Content area -->
@@ -107,8 +107,8 @@
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
-                android:paddingBottom="@dimen/_10sdp"
-                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_14sdp"
+                android:paddingTop="@dimen/_14sdp"
                 android:scrollbars="none"
                 android:visibility="gone" />
 
@@ -133,7 +133,7 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="@dimen/_32sdp"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <!-- Glow icon container -->
                 <FrameLayout
@@ -162,8 +162,8 @@
                     android:gravity="center"
                     android:includeFontPadding="false"
                     android:text="@string/app_no_creations_yet_text"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_16sdp" />
+                    android:textColor="#1A1A2E"
+                    android:textSize="@dimen/_18sdp" />
 
                 <TextView
                     android:id="@+id/tvEmptyMsg"

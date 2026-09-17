@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="10dp">
+    android:paddingTop="20dp"
+    android:paddingBottom="12dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,8 +20,8 @@
             android:id="@+id/tvSectionTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_14sdp"
+            android:textColor="#1A1A2E"
+            android:textSize="@dimen/_15sdp"
             android:maxLines="1"
             android:fontFamily="@font/app_poppins_bold"
             android:includeFontPadding="false"
@@ -29,7 +29,7 @@
 
         <!-- Gradient accent underline bar -->
         <View
-            android:layout_width="@dimen/_28sdp"
+            android:layout_width="@dimen/_32sdp"
             android:layout_height="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_3sdp"
             android:background="@drawable/app_face_badge_orange_gradient_bg" />
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_header_see_all_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:includeFontPadding="false"
             android:textSize="@dimen/_10sdp"
             android:fontFamily="@font/app_poppins_semibold"/>
@@ -64,7 +64,7 @@
             android:src="@drawable/app_face_arrow_right"
             android:contentDescription="View All"
             android:rotation="0"
-            app:tint="@color/white" />
+            app:tint="#1A1A2E" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -46,7 +46,7 @@
             android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_20sdp" />
 
         <!-- Gradient accent divider -->
@@ -73,14 +73,14 @@
         <TextView
             android:id="@+id/btnDialogPositive"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_46sdp"
             android:layout_marginTop="@dimen/_22sdp"
             android:background="@drawable/app_face_dialog_button_gradient_horizontal"
             android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:includeFontPadding="false"
             android:letterSpacing="0.02"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_14sdp" />
 
     </LinearLayout>

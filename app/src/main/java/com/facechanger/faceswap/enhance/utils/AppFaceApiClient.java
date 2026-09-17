@@ -225,7 +225,7 @@ public final class AppFaceApiClient {
      * @return ApiCall object to cancel the request
      */
     public AppFaceApiCall multipartImageUpload(@NonNull String endpoint, @NonNull File imageFile, @NonNull String fileParameterName,
-                                               @Nullable ApiCallback callback) {
+                                               int timeoutMs, @Nullable ApiCallback callback) {
         AppFaceDefaultApiCall apiCall = new AppFaceDefaultApiCall();
 
         String fullUrl = resolveUrl(endpoint);
@@ -234,7 +234,20 @@ public final class AppFaceApiClient {
         MultipartBody.Part filePart = MultipartBody.Part.createFormData(
                 fileParameterName, imageFile.getName(), fileBody);
 
-        Call<ResponseBody> call = apiService.multipartSingleFile(fullUrl, filePart);
+        Call<ResponseBody> call;
+        if (timeoutMs > 0 && timeoutMs != READ_TIMEOUT_MS) {
+            OkHttpClient customClient = okHttpClient.newBuilder()
+                    .readTimeout(timeoutMs, TimeUnit.MILLISECONDS)
+                    .build();
+            Retrofit customRetrofit = retrofit.newBuilder()
+                    .client(customClient)
+                    .build();
+            AppFaceApiService customService = customRetrofit.create(AppFaceApiService.class);
+            call = customService.multipartSingleFile(fullUrl, filePart);
+        } else {
+            call = apiService.multipartSingleFile(fullUrl, filePart);
+        }
+
         apiCall.setCall(call);
 
         enqueueCall(call, apiCall, callback);

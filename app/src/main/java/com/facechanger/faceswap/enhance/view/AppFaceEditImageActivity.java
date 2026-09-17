@@ -1,5 +1,26 @@
 package com.facechanger.faceswap.enhance.view;
 
+import android.Manifest;
+import android.content.ContentValues;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.util.Base64;
+import android.util.Log;
+import android.app.ProgressDialog;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
+import com.facechanger.faceswap.enhance.utils.AppFaceRatingPrefs;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,11 +83,17 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_image_edit);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.editImageContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.editImageContent), true);
 
         String imageUrl = getIntent().getStringExtra("image_url");
+        String originalImageUrl = getIntent().getStringExtra("original_image_url");
         editImageData = new AppFaceEditImageData(imageUrl);
-        if (imageUrl != null) {
+        
+        if (originalImageUrl != null && !originalImageUrl.isEmpty()) {
+            imageHistory.push(originalImageUrl);
+        }
+        
+        if (imageUrl != null && !imageUrl.isEmpty()) {
             imageHistory.push(imageUrl);
         }
 
@@ -86,6 +113,17 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
 
         AdManager.getInstance().preloadBigMediaNative();
 
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        String imageUrl = intent.getStringExtra("image_url");
+        if (imageUrl != null) {
+            imageHistory.push(imageUrl);
+            updateImagePreview(imageUrl);
+        }
     }
 
     private void setupToolbar() {
@@ -130,6 +168,9 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
     }
 
     private void setupClickListeners() {
+        // Download button
+        findViewById(R.id.btnDownload).setOnClickListener(v -> handleDownloadClick());
+
         // Remove BG
         findViewById(R.id.btnChangeBG1).setOnClickListener(v -> {
             if (AdManager.getInstance().isPremiumUser()) {
@@ -461,5 +502,168 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
     public void onDestroy() {
         super.onDestroy();
         executor.shutdown();
+    }
+
+    private static final int RC_WRITE_STORAGE = 101;
+    private static final String TAG = "AppFaceEditImageActivity";
+
+    private void handleDownloadClick() {
+        if (imageHistory.isEmpty()) {
+            Toast.makeText(this, getString(R.string.app_face_no_image_to_download_text), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
+            if (ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE },
+                        RC_WRITE_STORAGE);
+                return;
+            }
+        }
+
+        downloadImageToGallery();
+    }
+
+    private void downloadImageToGallery() {
+        if (imageHistory.isEmpty()) return;
+        String currentUrl = imageHistory.peek();
+        
+        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Saving to Gallery…");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+
+        executor.execute(() -> {
+            try {
+                Bitmap bitmap;
+                if (currentUrl.startsWith("data:image") || isBase64(currentUrl)) {
+                    String base64Data = currentUrl;
+                    if (base64Data.contains(",")) {
+                        base64Data = base64Data.substring(base64Data.indexOf(",") + 1);
+                    }
+                    byte[] decodedBytes = Base64.decode(base64Data, Base64.DEFAULT);
+                    bitmap = BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
+                } else {
+                    bitmap = downloadBitmapFromUrl(currentUrl);
+                }
+
+                if (bitmap == null) {
+                    runOnUiThread(() -> {
+                        progressDialog.dismiss();
+                        Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
+                    });
+                    return;
+                }
+
+                boolean saved = saveBitmapToGallery(bitmap,
+                        "FaceSwap_" + System.currentTimeMillis() + ".png");
+                bitmap.recycle();
+
+                runOnUiThread(() -> {
+                    progressDialog.dismiss();
+                    if (saved) {
+                        Toast.makeText(this, getString(R.string.app_face_gallery_save_text), Toast.LENGTH_SHORT).show();
+                        if (!AppFaceRatingPrefs.hasShownRatingDialog(this)) {
+                            AppFaceRatingPrefs.markRatingDialogShown(this);
+                            getWindow().getDecorView().postDelayed(() -> {
+                                if (!isFinishing() && !isDestroyed()) {
+                                    AppFaceAppDialogController.showRatingDialog(this);
+                                }
+                            }, 600);
+                        }
+                    } else {
+                        Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+            } catch (Exception e) {
+                Log.e(TAG, "Download failed", e);
+                runOnUiThread(() -> {
+                    progressDialog.dismiss();
+                    AppFaceAppSystem.showDebugToast(this, "Download error: " + e.getMessage());
+                    Toast.makeText(this, getString(R.string.app_face_image_save_error_text), Toast.LENGTH_SHORT).show();
+                });
+            }
+        });
+    }
+
+    private Bitmap downloadBitmapFromUrl(String urlStr) {
+        HttpURLConnection connection = null;
+        try {
+            URL url = new URL(urlStr);
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setConnectTimeout(15_000);
+            connection.setReadTimeout(30_000);
+
+            String token = AppFaceSessionManager.getInstance().getToken();
+            if (!token.isEmpty()) {
+                connection.setRequestProperty("Authorization", "Bearer " + token);
+            }
+
+            if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                return null;
+            }
+
+            InputStream in = connection.getInputStream();
+            Bitmap bitmap = BitmapFactory.decodeStream(in);
+            in.close();
+            return bitmap;
+        } catch (Exception e) {
+            return null;
+        } finally {
+            if (connection != null)
+                connection.disconnect();
+        }
+    }
+
+    private boolean saveBitmapToGallery(Bitmap bitmap, String fileName) {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                ContentValues values = new ContentValues();
+                values.put(MediaStore.Images.Media.DISPLAY_NAME, fileName);
+                values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
+                values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/FaceSwap");
+                values.put(MediaStore.Images.Media.IS_PENDING, 1);
+
+                Uri uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                if (uri == null) return false;
+
+                try (OutputStream out = getContentResolver().openOutputStream(uri)) {
+                    if (out == null) return false;
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+                }
+
+                values.clear();
+                values.put(MediaStore.Images.Media.IS_PENDING, 0);
+                getContentResolver().update(uri, values, null, null);
+                return true;
+            } else {
+                File picturesDir = new File(
+                        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
+                        "FaceSwap");
+                if (!picturesDir.exists()) {
+                    picturesDir.mkdirs();
+                }
+
+                File file = new File(picturesDir, fileName);
+                try (OutputStream out = new FileOutputStream(file)) {
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+                }
+
+                Intent scanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+                scanIntent.setData(Uri.fromFile(file));
+                sendBroadcast(scanIntent);
+                return true;
+            }
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private boolean isBase64(String str) {
+        if (str == null || str.isEmpty() || str.length() < 100) return false;
+        return !str.startsWith("http://") && !str.startsWith("https://") && !str.startsWith("/");
     }
 }

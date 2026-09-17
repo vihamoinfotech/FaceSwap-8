@@ -9,4 +9,12 @@
     <dimen name="ads_body_size">11dp</dimen>
     <dimen name="ads_cta_size">16dp</dimen>
 
+    <!-- Standardized design system tokens -->
+    <dimen name="app_screen_padding_horizontal">@dimen/_16sdp</dimen>
+    <dimen name="app_card_inner_padding">@dimen/_16sdp</dimen>
+    <dimen name="app_card_corner_radius">18dp</dimen>
+    <dimen name="app_section_gap">@dimen/_20sdp</dimen>
+    <dimen name="app_item_vertical_padding">@dimen/_14sdp</dimen>
+    <dimen name="app_icon_container_size">@dimen/_38sdp</dimen>
+
 </resources>

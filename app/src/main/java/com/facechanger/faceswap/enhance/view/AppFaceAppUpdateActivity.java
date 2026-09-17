@@ -33,7 +33,7 @@ public class AppFaceAppUpdateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_app_update_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.appUpdateContent), false, true);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.appUpdateContent), true, true);
 
         String currentVersion = getIntent().getStringExtra(EXTRA_CURRENT_VERSION);
         String latestVersion  = getIntent().getStringExtra(EXTRA_LATEST_VERSION);

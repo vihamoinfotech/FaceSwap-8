@@ -65,7 +65,7 @@ public class AppFaceFaceEnhanceActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_enhance_face);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceEnhanceContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceEnhanceContent), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -186,9 +186,9 @@ public class AppFaceFaceEnhanceActivity extends BaseAppActivity {
             runOnUiThread(() -> {
                 btnGenerate.setEnabled(true);
                 AppFaceCoinManager.checkAndProceed(AppFaceFaceEnhanceActivity.this,
-                        AppFaceLoadingActivity.ACTION_ENHANCE_GFPGAN, () -> {
+                        AppFaceLoadingActivity.ACTION_UPSCALE, () -> {
                     Intent intent = new Intent(AppFaceFaceEnhanceActivity.this, AppFaceLoadingActivity.class);
-                    intent.putExtra("action", AppFaceLoadingActivity.ACTION_ENHANCE_GFPGAN);
+                    intent.putExtra("action", AppFaceLoadingActivity.ACTION_UPSCALE);
                     intent.putExtra("file_path", imageFile.getAbsolutePath());
                     startActivity(intent);
                 });

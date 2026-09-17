@@ -89,7 +89,7 @@ public class AppFaceDownloadShareActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_share_and_download);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.downloadShareContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.downloadShareContent), true);
 
         imageUrl = getIntent().getStringExtra(EXTRA_IMAGE_URL);
         originalImageUrl = getIntent().getStringExtra(EXTRA_ORIGINAL_IMAGE_URL);

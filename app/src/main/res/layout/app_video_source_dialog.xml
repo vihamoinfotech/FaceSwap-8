@@ -25,7 +25,7 @@
         android:fontFamily="@font/app_poppins_semibold"
         android:includeFontPadding="false"
         android:text="Choose Video Source"
-        android:textColor="@color/white"
+        android:textColor="#1A1A2E"
         android:textSize="@dimen/_16sdp" />
 
     <!-- ── Camera option ── -->
@@ -67,7 +67,7 @@
                 android:fontFamily="@font/app_poppins_semibold"
                 android:includeFontPadding="false"
                 android:text="Record Video"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -86,12 +86,12 @@
             android:alpha="0.4"
             android:contentDescription="@null"
             android:src="@drawable/app_face_arrow_right"
-            app:tint="@color/white" />
+            app:tint="#1A1A2E" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:background="@color/app_subtle_divider" />
 
@@ -134,7 +134,7 @@
                 android:fontFamily="@font/app_poppins_semibold"
                 android:includeFontPadding="false"
                 android:text="Choose from Gallery"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_13sdp" />
 
             <TextView
@@ -153,7 +153,7 @@
             android:alpha="0.4"
             android:contentDescription="@null"
             android:src="@drawable/app_face_arrow_right"
-            app:tint="@color/white" />
+            app:tint="#1A1A2E" />
     </LinearLayout>
 
     <!-- Cancel -->
@@ -164,7 +164,8 @@
         android:layout_marginTop="@dimen/_12sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:background="@drawable/app_face_common_border_color"
-        android:fontFamily="@font/app_poppins_medium"
+        android:elevation="8dp"
+                    android:fontFamily="@font/app_poppins_medium"
         android:gravity="center"
         android:includeFontPadding="false"
         android:text="@string/app_source_cancel_text"

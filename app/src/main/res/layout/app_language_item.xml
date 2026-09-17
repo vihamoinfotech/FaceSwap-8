@@ -57,7 +57,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="English"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_14sdp" />
 
         <TextView

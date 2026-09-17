@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/app_face_dialog_rounded_slight"
         android:orientation="vertical"
-        android:padding="@dimen/_20sdp">
+        android:padding="@dimen/_24sdp">
 
         <!-- Main Icon -->
         <ImageView
@@ -30,7 +30,7 @@
             android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:text="@string/app_leaving_so_soon_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_18sdp" />
 
         <TextView

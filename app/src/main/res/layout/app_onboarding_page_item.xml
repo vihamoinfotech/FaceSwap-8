@@ -8,18 +8,19 @@
     <TextView
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_36sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:background="@drawable/app_face_common_border_color"
-        android:layout_alignParentEnd="true"
+        android:elevation="8dp"
+                    android:layout_alignParentEnd="true"
         android:fontFamily="@font/app_poppins_semibold"
         android:gravity="center"
-        android:paddingHorizontal="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
         android:includeFontPadding="false"
         android:text="@string/app_face_skip_text"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="#1A1A2E"
         android:textSize="@dimen/_12sdp" />
 
     <!-- Hero onboard image fills vertical space between skip and bottom block -->
@@ -40,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -52,15 +53,15 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:paddingHorizontal="@dimen/_24sdp"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_18sdp"
-            android:lineSpacingMultiplier="1.15" />
+            android:textColor="#1A1A2E"
+            android:textSize="@dimen/_20sdp"
+            android:lineSpacingMultiplier="1.2" />
 
         <!-- Accent underline -->
         <View
-            android:layout_width="36dp"
+            android:layout_width="42dp"
             android:layout_height="3dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:background="@color/app_primary_style" />
 
         <TextView
@@ -80,11 +81,11 @@
         <TextView
             android:id="@+id/btnContinue"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_36sdp"
+            android:layout_height="@dimen/_46sdp"
             android:background="@drawable/app_dialog_gradient_intro_button_full"
             android:fontFamily="@font/app_poppins_medium"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_14sdp"
             android:layout_marginHorizontal="@dimen/_16sdp"
             android:includeFontPadding="false"
             android:text="@string/app_onboard_continue_text"

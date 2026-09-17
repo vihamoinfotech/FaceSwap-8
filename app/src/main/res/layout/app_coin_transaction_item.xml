@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/app_face_common_border_color"
-    android:layout_marginBottom="@dimen/_8sdp"
+    android:elevation="8dp"
+                    android:layout_marginBottom="@dimen/_8sdp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingHorizontal="@dimen/_16sdp"
@@ -41,7 +42,7 @@
             android:fontFamily="@font/app_poppins_medium"
             android:includeFontPadding="false"
             android:text="@string/app_face_coin_history_face_swap_text"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_13sdp" />
 
         <TextView

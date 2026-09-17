@@ -52,7 +52,7 @@ public class AppFaceOnboardingActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_onboarding_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, false);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), true, false);
 
         viewPager = findViewById(R.id.viewPager);
 

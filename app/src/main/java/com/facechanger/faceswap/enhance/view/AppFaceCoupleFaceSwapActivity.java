@@ -74,7 +74,7 @@ public class AppFaceCoupleFaceSwapActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_activity_swap_couple);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.coupleSwapContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.coupleSwapContent), true);
 
 
 

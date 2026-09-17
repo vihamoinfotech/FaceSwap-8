@@ -14,9 +14,9 @@
         <RelativeLayout
             android:id="@+id/llHeader"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
+            android:layout_height="@dimen/_56sdp"
             android:layout_alignParentTop="true"
-            android:paddingHorizontal="@dimen/_6sdp">
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -29,7 +29,7 @@
                 android:padding="@dimen/_10sdp"
                 android:scaleType="centerInside"
                 android:src="@drawable/app_face_arrow_back"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
 
             <TextView
                 style="@style/HeaderTextStyle"
@@ -44,7 +44,7 @@
         <View
             android:id="@+id/underline"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:layout_below="@id/llHeader"
             android:background="@color/app_subtle_divider" />
 
@@ -59,7 +59,7 @@
             android:layout_marginBottom="@dimen/_6sdp"
             android:background="@drawable/app_pill_face_solid_gradient"
             android:gravity="center_vertical"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/app_screen_padding_horizontal"
             android:paddingVertical="@dimen/_4sdp"
             android:visibility="gone">
 
@@ -76,14 +76,14 @@
                 android:fontFamily="@font/app_poppins_semibold"
                 android:includeFontPadding="false"
                 android:text="@string/ai_face_image_10_coins_text"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_10sdp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnGenerate"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
+            android:layout_height="@dimen/_56sdp"
             android:layout_above="@+id/second_ad_view_container"
             android:layout_marginHorizontal="@dimen/_16sdp"
             android:layout_marginBottom="@dimen/_14sdp"
@@ -96,7 +96,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_15sdp"
             app:backgroundTint="@null"
-            app:cornerRadius="16dp" />
+            app:cornerRadius="18dp" />
 
         <!-- Scrollable content -->
         <ScrollView
@@ -129,8 +129,8 @@
                         android:fontFamily="@font/app_poppins_bold"
                         android:includeFontPadding="false"
                         android:text="@string/ai_face_image_text_to_text"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_22sdp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
                         android:includeFontPadding="false"
                         android:text="@string/ai_face_image_text"
                         android:textColor="@color/app_primary_brand"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/_22sdp" />
                 </LinearLayout>
 
                 <TextView
@@ -157,24 +157,25 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
                     android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
                     android:orientation="vertical"
-                    android:padding="@dimen/_16sdp">
+                    android:padding="@dimen/_20sdp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="@dimen/_32sdp"
-                            android:layout_height="@dimen/_32sdp"
+                            android:layout_width="@dimen/app_icon_container_size"
+                            android:layout_height="@dimen/app_icon_container_size"
                             android:background="@drawable/app_face_badge_orange_gradient_bg"
                             android:contentDescription="@null"
-                            android:padding="@dimen/_7sdp"
+                            android:padding="@dimen/_8sdp"
                             android:src="@drawable/app_to_text_prompt_toggle" />
 
                         <LinearLayout
@@ -190,8 +191,8 @@
                                 android:fontFamily="@font/app_poppins_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/app_your_prompt_text"
-                                android:textColor="@color/white"
-                                android:textSize="@dimen/_13sdp" />
+                                android:textColor="#1A1A2E"
+                                android:textSize="@dimen/_14sdp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -212,7 +213,7 @@
                             android:paddingHorizontal="@dimen/_9sdp"
                             android:paddingVertical="@dimen/_3sdp"
                             android:text="@string/app_face_required_text"
-                            android:textColor="@color/white"
+                            android:textColor="#1A1A2E"
                             android:textSize="@dimen/_8sdp" />
                     </LinearLayout>
 
@@ -229,7 +230,7 @@
                         android:lineSpacingMultiplier="1.4"
                         android:minHeight="@dimen/_140sdp"
                         android:padding="@dimen/_12sdp"
-                        android:textColor="@color/white"
+                        android:textColor="#1A1A2E"
                         android:textColorHint="@color/app_disabled_text"
                         android:textSize="@dimen/_13sdp" />
                 </LinearLayout>
@@ -239,13 +240,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/app_face_common_border_color"
+                    android:elevation="8dp"
                     android:orientation="vertical"
-                    android:padding="@dimen/_16sdp">
+                    android:padding="@dimen/_20sdp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_16sdp"
                         android:fontFamily="@font/app_poppins_semibold"
                         android:includeFontPadding="false"
                         android:text="@string/app_quick_ideas_text"

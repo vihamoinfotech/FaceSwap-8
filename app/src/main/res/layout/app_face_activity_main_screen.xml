@@ -25,8 +25,8 @@
         <RelativeLayout
             android:id="@+id/mainActContent"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_52sdp"
-            android:paddingHorizontal="@dimen/_14sdp">
+            android:layout_height="@dimen/_56sdp"
+            android:paddingHorizontal="@dimen/_16sdp">
 
             <!-- Left: Logo + App name -->
             <LinearLayout
@@ -38,8 +38,8 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_app_logo" />
 
@@ -47,11 +47,11 @@
                     style="@style/HeaderTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:fontFamily="@font/app_poppins_extrabold"
                     android:includeFontPadding="false"
                     android:text="@string/app_builder_name"
-                    android:textColor="@color/white" />
+                    android:textColor="#1A1A2E" />
 
             </LinearLayout>
 
@@ -68,12 +68,12 @@
                 <LinearLayout
                     android:id="@+id/coinBalancePill"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_height="@dimen/_32sdp"
                     android:layout_marginEnd="@dimen/_8sdp"
                     android:background="@drawable/app_pill_face_solid_gradient"
                     android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/_6sdp"
-                    android:paddingVertical="@dimen/_3sdp"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_4sdp"
                     android:visibility="visible">
 
                     <ImageView
@@ -91,14 +91,14 @@
                         android:includeFontPadding="false"
                         android:paddingEnd="@dimen/_2sdp"
                         android:text="0"
-                        android:textColor="@color/white"
+                        android:textColor="#FFFFFF"
                         android:textSize="@dimen/_14sdp" />
                 </LinearLayout>
 
                 <FrameLayout
                     android:id="@+id/btnSettings"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="@drawable/app_face_all_view_layer"
                     android:clickable="true"
                     android:contentDescription="@string/app_face_settings_text"
@@ -106,12 +106,12 @@
                     android:foreground="?attr/selectableItemBackgroundBorderless">
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
                         android:layout_gravity="center"
                         android:contentDescription="@null"
                         android:src="@drawable/app_face_settings_header_wheel"
-                        app:tint="@color/white" />
+                        app:tint="#1A1A2E" />
 
                 </FrameLayout>
 
@@ -121,7 +121,7 @@
         <!-- Divider -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0dp"
             android:background="@color/app_subtle_divider" />
 
         <!-- Ad banner slot -->
@@ -136,309 +136,263 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvMainCategories"
+            <!-- New Feature Hub Content -->
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignWithParentIfMissing="true"
                 android:layout_above="@+id/second_ad_view_container"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
-                android:paddingBottom="@dimen/app_clip_home_main_scroll_content_bottom_padding_points" />
-
-            <com.facebook.shimmer.ShimmerFrameLayout
-                android:id="@+id/shimmer_view_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignWithParentIfMissing="true"
-                android:layout_above="@+id/second_ad_view_container"
-                android:visibility="gone"
-                app:shimmer_auto_start="false"
-                app:shimmer_duration="1200">
+                android:paddingBottom="@dimen/_16sdp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_24sdp">
 
-                    <include layout="@layout/app_shimmer_main_category_item" />
+                    <!-- Hero Banner -->
+                    <include layout="@layout/app_home_header_item" />
 
-                    <include layout="@layout/app_shimmer_main_category_item" />
-
-                    <include layout="@layout/app_shimmer_main_category_item" />
-
-                </LinearLayout>
-
-            </com.facebook.shimmer.ShimmerFrameLayout>
-
-            <LinearLayout
-                android:id="@+id/llErrorRetryContainer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:layout_alignWithParentIfMissing="true"
-                android:layout_above="@+id/second_ad_view_container"
-                android:paddingHorizontal="@dimen/_24sdp"
-                android:paddingBottom="@dimen/_20sdp"
-                android:visibility="gone">
-
-                <!-- Icon with glowing avatar circle -->
-                <FrameLayout
-                    android:layout_width="@dimen/_60sdp"
-                    android:layout_height="@dimen/_60sdp">
-
-                    <View
+                    <!-- Explore Templates Card -->
+                    <RelativeLayout
+                        android:id="@+id/cardExploreTemplates"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/bg_avatar_circle" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_28sdp"
-                        android:layout_height="@dimen/_28sdp"
-                        android:layout_gravity="center"
-                        android:contentDescription="@null"
-                        android:src="@drawable/app_face_undo_rotate"
-                        app:tint="@color/app_primary_brand" />
-                </FrameLayout>
-
-                <!-- Title -->
-                <TextView
-                    android:id="@+id/tvErrorTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_14sdp"
-                    android:fontFamily="@font/app_poppins_bold"
-                    android:gravity="center"
-                    android:text="@string/app_api_error_title_text"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_16sdp" />
-
-                <!-- Subtitle -->
-                <TextView
-                    android:id="@+id/tvErrorMessage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:fontFamily="@font/app_poppins_regular"
-                    android:gravity="center"
-                    android:lineSpacingExtra="3dp"
-                    android:text="@string/app_api_error_text"
-                    android:textColor="@color/app_secondary_text"
-                    android:textSize="@dimen/_11sdp" />
-
-                <!-- Retry Button -->
-                <TextView
-                    android:id="@+id/btnRetryMain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_marginTop="@dimen/_18sdp"
-                    android:background="@drawable/app_button_face_primary_bg"
-                    android:clickable="true"
-                    android:elevation="4dp"
-                    android:focusable="true"
-                    android:fontFamily="@font/app_poppins_semibold"
-                    android:gravity="center"
-                    android:includeFontPadding="false"
-                    android:paddingHorizontal="@dimen/_32sdp"
-                    android:text="Retry"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_13sdp" />
-
-            </LinearLayout>
-
-
-            <!-- Bottom nav bar + ad overlay -->
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignWithParentIfMissing="true"
-                android:layout_above="@+id/second_ad_view_container">
-
-                <LinearLayout
-                    android:id="@+id/bottomNavBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignWithParentIfMissing="true"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="@dimen/app_clip_home_bottom_bar_margin_bottom_point"
-                    android:background="@drawable/app_face_bottom_nav_bar_bg"
-                    android:elevation="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="@dimen/_4sdp"
-                    android:paddingVertical="@dimen/_4sdp">
-
-                    <!-- AI Image tab -->
-                    <LinearLayout
-                        android:id="@+id/navAiImage"
-                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        android:background="@drawable/app_home_explore_templates_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:paddingVertical="8dp">
+                        android:paddingHorizontal="@dimen/_14sdp"
+                        android:paddingVertical="@dimen/_16sdp">
 
                         <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:duplicateParentState="true"
-                            android:src="@drawable/app_face_generative_chat_ai"
-                            app:tint="@color/app_face_nav_tab_tint" />
+                            android:id="@+id/ivTemplateIcon"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_explore_templates" />
 
-                        <TextView
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:duplicateParentState="true"
-                            android:fontFamily="@font/app_poppins_semibold"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_ai_image_text"
-                            android:textColor="@color/app_face_nav_tab_tint"
-                            android:textSize="@dimen/_9sdp" />
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_toEndOf="@id/ivTemplateIcon"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/tvCostAiImage"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/app_poppins_bold"
-                            android:includeFontPadding="false"
-                            android:text="10"
-                            android:textColor="@color/app_primary_brand"
-                            android:textSize="@dimen/_8sdp"
-                            android:visibility="gone" />
-                    </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/app_poppins_bold"
+                                android:includeFontPadding="false"
+                                android:text="@string/app_home_explore_templates"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/_14sdp" />
 
-                    <!-- Multi Swap tab -->
-                    <LinearLayout
-                        android:id="@+id/navMultiSwap"
-                        android:layout_width="0dp"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/app_poppins_regular"
+                                android:includeFontPadding="false"
+                                android:text="@string/app_home_explore_subtitle"
+                                android:textColor="#F3E8FF"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/app_face_arrow_right"
+                            app:tint="#FFFFFF" />
+                    </RelativeLayout>
+
+                    <!-- Quick Actions Label -->
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:paddingVertical="8dp">
+                        android:layout_marginHorizontal="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:fontFamily="@font/app_poppins_bold"
+                        android:includeFontPadding="false"
+                        android:text="@string/app_home_quick_actions"
+                        android:textColor="#1A1A2E"
+                        android:textSize="@dimen/_14sdp" />
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:duplicateParentState="true"
-                            android:src="@drawable/app_face_video_reverse_eng"
-                            app:tint="@color/app_face_nav_tab_tint" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:duplicateParentState="true"
-                            android:fontFamily="@font/app_poppins_semibold"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_multi_swap_video_text"
-                            android:textColor="@color/app_face_nav_tab_tint"
-                            android:textSize="@dimen/_9sdp" />
-
-                        <TextView
-                            android:id="@+id/tvCostMultiSwap"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/app_poppins_bold"
-                            android:includeFontPadding="false"
-                            android:text="10"
-                            android:textColor="@color/app_primary_brand"
-                            android:textSize="@dimen/_8sdp"
-                            android:visibility="gone" />
-                    </LinearLayout>
-
-                    <!-- Face Swap tab -->
-                    <LinearLayout
-                        android:id="@+id/navFaceSwap"
-                        android:layout_width="0dp"
+                    <!-- Quick Actions Grid -->
+                    <GridLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:paddingVertical="8dp">
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:columnCount="2"
+                        android:rowCount="2">
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:duplicateParentState="true"
-                            android:src="@drawable/app_face_rotation_face_swap_bg"
-                            app:tint="@color/app_face_nav_tab_tint" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <!-- Video Swap Card -->
+                        <FrameLayout
+                            android:id="@+id/cardVideoSwap"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:duplicateParentState="true"
-                            android:fontFamily="@font/app_poppins_semibold"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_main_face_swap_text"
-                            android:textColor="@color/app_face_nav_tab_tint"
-                            android:textSize="@dimen/_9sdp" />
+                            android:layout_columnWeight="1"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/app_home_grid_bg_video_swap"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/app_home_feature_card_ripple">
 
-                        <TextView
-                            android:id="@+id/tvCostFaceSwap"
-                            android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingVertical="@dimen/_16sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:src="@drawable/app_face_video_reverse_eng"
+                                    app:tint="#6366F1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:fontFamily="@font/app_poppins_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/app_home_video_swap"
+                                    android:textColor="#6366F1"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <!-- Remove BG Card -->
+                        <FrameLayout
+                            android:id="@+id/cardRemoveBg"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/app_poppins_bold"
-                            android:includeFontPadding="false"
-                            android:text="10"
-                            android:textColor="@color/app_primary_brand"
-                            android:textSize="@dimen/_8sdp"
-                            android:visibility="gone" />
-                    </LinearLayout>
+                            android:layout_columnWeight="1"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/app_home_grid_bg_remove_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/app_home_feature_card_ripple">
 
-                    <!-- My Work tab -->
-                    <LinearLayout
-                        android:id="@+id/navMyWork"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="?attr/selectableItemBackgroundBorderless"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:paddingVertical="8dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingVertical="@dimen/_16sdp">
 
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:duplicateParentState="true"
-                            android:src="@drawable/app_face_my_work_four"
-                            app:tint="@color/app_face_nav_tab_tint" />
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:src="@drawable/ic_remove_bg"
+                                    app:tint="#06B6D4" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:fontFamily="@font/app_poppins_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/app_home_remove_bg"
+                                    android:textColor="#06B6D4"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <!-- Enhance Card -->
+                        <FrameLayout
+                            android:id="@+id/cardEnhanceFace"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:duplicateParentState="true"
-                            android:fontFamily="@font/app_poppins_semibold"
-                            android:includeFontPadding="false"
-                            android:text="@string/app_main_work_text"
-                            android:textColor="@color/app_face_nav_tab_tint"
-                            android:textSize="@dimen/_9sdp" />
-                    </LinearLayout>
+                            android:layout_columnWeight="1"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/app_home_grid_bg_enhance"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/app_home_feature_card_ripple">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingVertical="@dimen/_16sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:src="@drawable/ic_enhance_face"
+                                    app:tint="#FF8A3D" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:fontFamily="@font/app_poppins_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/app_home_enhance_face"
+                                    android:textColor="#FF8A3D"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <!-- My Work Card -->
+                        <FrameLayout
+                            android:id="@+id/cardMyWork"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="@dimen/_4sdp"
+                            android:background="@drawable/app_home_grid_bg_my_work"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/app_home_feature_card_ripple">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingVertical="@dimen/_16sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:src="@drawable/app_face_my_work_four"
+                                    app:tint="#8B5CF6" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:fontFamily="@font/app_poppins_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/app_home_my_work"
+                                    android:textColor="#8B5CF6"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </GridLayout>
+
                 </LinearLayout>
+            </ScrollView>
 
-            </RelativeLayout>
+
 
             <FrameLayout
                 android:id="@+id/second_ad_view_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_2sdp"
                 android:layout_marginBottom="@dimen/_2sdp" />
 
         </RelativeLayout>

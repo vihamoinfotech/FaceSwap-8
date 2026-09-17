@@ -16,8 +16,8 @@
 
         <!-- Logo with radial glow ring -->
         <FrameLayout
-            android:layout_width="@dimen/_160sdp"
-            android:layout_height="@dimen/_160sdp"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
             android:layout_gravity="center">
 
             <View
@@ -27,8 +27,8 @@
 
             <ImageView
                 android:id="@+id/ivSplashLogo"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_100sdp"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/app_face_splash_logo_text"
                 android:scaleType="fitCenter"
@@ -45,8 +45,8 @@
             android:includeFontPadding="false"
             android:letterSpacing="0.03"
             android:text="@string/app_builder_name"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_26sdp" />
+            android:textColor="#1A1A2E"
+            android:textSize="@dimen/_28sdp" />
 
     </LinearLayout>
 
@@ -60,9 +60,9 @@
         android:layout_marginBottom="@dimen/_8sdp"
         android:indeterminate="true"
         app:indicatorColor="@color/app_primary_brand"
-        app:indicatorSize="@dimen/_30sdp"
+        app:indicatorSize="@dimen/_34sdp"
         app:trackColor="@color/app_soft_border"
-        app:trackThickness="2.5dp" />
+        app:trackThickness="3dp" />
 
     <TextView
         android:id="@+id/tvSplashTagline"
@@ -71,13 +71,13 @@
         android:layout_gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
         android:fontFamily="@font/app_poppins_regular"
         android:gravity="center"
         android:includeFontPadding="false"
         android:letterSpacing="0.04"
         android:text="@string/app_splash_bottom_ads_containe_text"
-        android:textColor="#77AAAACC"
+        android:textColor="#991A1A2E"
         android:textSize="@dimen/_9sdp" />
 
 </RelativeLayout>

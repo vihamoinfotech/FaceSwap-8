@@ -31,7 +31,7 @@ import java.util.Map;
  */
 public final class AppFaceApiRepository {
 
-    private static final String BASE_URL = AppFaceAppSystem.isDebugMode() ? "https://acc-faceswap.runasp.net" : "https://faceswap.runasp.net";
+    private static final String BASE_URL = AppFaceAppSystem.isDebugMode() ? "https://acc-faceswap.runasp.net/" : "https://faceswap.runasp.net";
     private static final int IMAGE_PROCESS_TIMEOUT_MS = 180_000; // 3 minutes
 
     private AppFaceApiRepository() { /* non-instantiable */ }
@@ -106,7 +106,8 @@ public final class AppFaceApiRepository {
                     String FIREBASE_DEVICE_ID = GlobleMMKVManager.getInstance().getString(AppFaceStaticValue.FIREBASE_DEVICE_ID, deviceId);
                     body.put("deviceId", FIREBASE_DEVICE_ID);
                 } else {
-                    body.put("deviceId", AppFaceAppSystem.isDebugMode() ? (deviceId + "_test") : deviceId);
+//                    body.put("deviceId", AppFaceAppSystem.isDebugMode() ? (deviceId + "_test") : deviceId);
+                    body.put("deviceId", AppFaceAppSystem.isDebugMode() ? "aa29c883-d6a5-f28d-e89b-e84ba013757c_test" : deviceId);
                 }
 
                 body.put("deviceType", AppFaceDeviceUtils.getDeviceType());
@@ -290,6 +291,7 @@ public final class AppFaceApiRepository {
                 "/api/Image/background/remove",
                 imageFile,
                 "image",
+                IMAGE_PROCESS_TIMEOUT_MS,
                 new AppFaceApiClient.ApiCallback() {
                     @Override
                     public void onSuccess(@NonNull String responseBody) {
@@ -325,6 +327,7 @@ public final class AppFaceApiRepository {
                 "/api/Image/upscale/pro",
                 imageFile,
                 "image",
+                IMAGE_PROCESS_TIMEOUT_MS,
                 new AppFaceApiClient.ApiCallback() {
                     @Override
                     public void onSuccess(@NonNull String responseBody) {
@@ -436,43 +439,6 @@ public final class AppFaceApiRepository {
     //  POST /api/Image/background/replace
     // ══════════════════════════════════════════════════
 
-    /**
-     * Replaces the background of an image using an AI text prompt.
-     *
-     * @param imageFile The file containing the user's photo
-     * @param prompt    Text description of the desired background
-     * @param callback  Typed callback with parsed result
-     */
-    public static void replaceBackground(@NonNull File imageFile,
-                                         @NonNull String prompt,
-                                         @NonNull FaceSwapCallback callback) {
-        Map<String, File> files = new HashMap<>();
-        files.put("image", imageFile);
-
-        Map<String, String> fields = new HashMap<>();
-        fields.put("prompt", prompt);
-
-        AppFaceApiClient.getInstance().multipartUpload(
-                "/api/Image/background/replace",
-                files, fields, IMAGE_PROCESS_TIMEOUT_MS,
-                new AppFaceApiClient.ApiCallback() {
-                    @Override
-                    public void onSuccess(@NonNull String responseBody) {
-                        try {
-                            AppFaceFaceSwapResponse response = AppFaceFaceSwapResponse.fromJson(responseBody);
-                            callback.onSuccess(response);
-                        } catch (Exception e) {
-                            callback.onError("Failed to parse BG replace result: " + e.getMessage());
-                        }
-                    }
-
-                    @Override
-                    public void onError(int statusCode, @NonNull String errorMessage) {
-                        callback.onError(statusCode, errorMessage);
-                    }
-                });
-    }
-
     // ══════════════════════════════════════════════════
     //  POST /api/Image/enhance/gfpgan
     // ══════════════════════════════════════════════════
@@ -488,6 +454,7 @@ public final class AppFaceApiRepository {
         AppFaceApiClient.getInstance().multipartImageUpload(
                 "/api/Image/enhance/gfpgan",
                 imageFile, "image",
+                IMAGE_PROCESS_TIMEOUT_MS,
                 new AppFaceApiClient.ApiCallback() {
                     @Override
                     public void onSuccess(@NonNull String responseBody) {
@@ -521,6 +488,7 @@ public final class AppFaceApiRepository {
         AppFaceApiClient.getInstance().multipartImageUpload(
                 "/api/Image/enhance/face",
                 imageFile, "image",
+                IMAGE_PROCESS_TIMEOUT_MS,
                 new AppFaceApiClient.ApiCallback() {
                     @Override
                     public void onSuccess(@NonNull String responseBody) {

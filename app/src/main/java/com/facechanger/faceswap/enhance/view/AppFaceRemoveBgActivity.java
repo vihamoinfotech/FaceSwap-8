@@ -38,16 +38,16 @@ import java.io.OutputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
+public class AppFaceRemoveBgActivity extends BaseAppActivity {
 
-    private static final String TAG = "BackgroundReplaceActivity";
+    private static final String TAG = "AppFaceRemoveBgActivity";
 
     private Dialog permissionDialog;
 
     private LinearLayout llUploadContainer;
     private View framePreview;
     private ShapeableImageView ivPreview;
-    private EditText etPrompt;
+
     private Button btnGenerate;
 
     private ActivityResultLauncher<Intent> galleryLauncher;
@@ -66,8 +66,8 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.app_face_activity_background_replace);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.bgReplaceContent), false);
+        setContentView(R.layout.app_face_activity_remove_bg);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.bgReplaceContent), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -86,7 +86,7 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
         llUploadContainer = findViewById(R.id.llUploadContainer);
         framePreview       = findViewById(R.id.framePreview);
         ivPreview          = findViewById(R.id.ivPreview);
-        etPrompt           = findViewById(R.id.etPrompt);
+
         btnGenerate        = findViewById(R.id.btnGenerate);
 
         setupGalleryLauncher();
@@ -168,20 +168,15 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
     }
 
     private void handleGenerate() {
-        String prompt = etPrompt.getText().toString().trim();
         if (selectedImageUri == null) {
             Toast.makeText(this, getString(R.string.app_background_please_upload_a_photo_text), Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (prompt.isEmpty()) {
-            Toast.makeText(this, getString(R.string.app_background_please_describe_the_new_text), Toast.LENGTH_SHORT).show();
             return;
         }
 
         btnGenerate.setEnabled(false);
 
         executor.execute(() -> {
-            File imageFile = copyUriToTempFile(this, selectedImageUri, "bg_replace_input.jpg");
+            File imageFile = copyUriToTempFile(this, selectedImageUri, "remove_bg_input.jpg");
             if (imageFile == null) {
                 runOnUiThread(() -> {
                     btnGenerate.setEnabled(true);
@@ -192,13 +187,13 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
 
             runOnUiThread(() -> {
                 btnGenerate.setEnabled(true);
-                AppFaceCoinManager.checkAndProceed(AppFaceBackgroundReplaceActivity.this,
-                        AppFaceLoadingActivity.ACTION_BG_REPLACE, () -> {
-                    Intent intent = new Intent(AppFaceBackgroundReplaceActivity.this, AppFaceLoadingActivity.class);
-                    intent.putExtra("action", AppFaceLoadingActivity.ACTION_BG_REPLACE);
+                AppFaceCoinManager.checkAndProceed(AppFaceRemoveBgActivity.this,
+                        AppFaceLoadingActivity.ACTION_REMOVE_BG, () -> {
+                    Intent intent = new Intent(AppFaceRemoveBgActivity.this, AppFaceLoadingActivity.class);
+                    intent.putExtra("action", AppFaceLoadingActivity.ACTION_REMOVE_BG);
                     intent.putExtra("file_path", imageFile.getAbsolutePath());
-                    intent.putExtra("prompt", prompt);
                     startActivity(intent);
+                    finish();
                 });
             });
         });
@@ -237,7 +232,7 @@ public class AppFaceBackgroundReplaceActivity extends BaseAppActivity {
                 new AppFaceOnDialogActionListener() {
                     @Override
                     public void onPositiveClick() {
-                        AppFacePermissionHelper.openAppSettings(AppFaceBackgroundReplaceActivity.this);
+                        AppFacePermissionHelper.openAppSettings(AppFaceRemoveBgActivity.this);
                     }
 
                     @Override

@@ -66,7 +66,7 @@ public class AppFaceAiImageGenActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_ai_activity_image_generation);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapContent), true);
 
 
         View rootView = findViewById(android.R.id.content);

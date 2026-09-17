@@ -49,7 +49,7 @@ public class AppFaceStoreActivity extends AppCompatActivity implements AppFacePu
         getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
         
         setContentView(R.layout.app_face_activity_store_screen);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), true);
 
         initViews();
         setupListeners();

@@ -77,15 +77,13 @@ public class AppFaceLanguageAdapter extends RecyclerView.Adapter<AppFaceLanguage
             holder.viewRadio.setBackgroundResource(R.drawable.app_radio_face_selected_bg);
             holder.viewRadio.setImageTintList(android.content.res.ColorStateList.valueOf(holder.itemView.getContext().getResources().getColor(R.color.white)));
             holder.flIconContainer.setBackgroundResource(R.drawable.app_face_circle_selected_light);
-            // Subtle scale-up for selected item text
-            holder.tvNativeName.setTextColor(holder.itemView.getContext().getResources().getColor(R.color.white));
+            // We use XML text colors (#1A1A2E) for both states
         } else {
             holder.itemView.setBackgroundResource(R.drawable.app_language_item_unselected_blue_border);
             holder.itemView.setAlpha(1.0f);
             holder.viewRadio.setBackgroundResource(R.drawable.app_radio_unselected_circle);
             holder.viewRadio.setImageTintList(android.content.res.ColorStateList.valueOf(holder.itemView.getContext().getResources().getColor(android.R.color.transparent)));
             holder.flIconContainer.setBackgroundResource(R.drawable.app_face_flag_circle_light);
-            holder.tvNativeName.setTextColor(holder.itemView.getContext().getResources().getColor(R.color.white));
         }
 
         holder.itemView.setOnClickListener(v -> {

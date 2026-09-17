@@ -41,7 +41,7 @@ public class AppFaceCoinHistoryActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_coin_history_activity);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.coinHistoryRoot), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.coinHistoryRoot), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {

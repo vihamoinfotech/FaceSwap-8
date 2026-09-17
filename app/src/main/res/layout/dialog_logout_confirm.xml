@@ -12,7 +12,7 @@
         android:background="@drawable/app_face_dialog_rounded_slight"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="@dimen/_20sdp">
+        android:padding="@dimen/_24sdp">
 
         <!-- Logout Icon -->
         <FrameLayout
@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:contentDescription="@null"
                 android:src="@drawable/logout"
-                app:tint="@color/white" />
+                app:tint="#1A1A2E" />
         </FrameLayout>
 
         <TextView
@@ -41,7 +41,7 @@
             android:fontFamily="@font/app_poppins_bold"
             android:gravity="center"
             android:text="@string/settings_logout_confirm_title"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_17sdp" />
 
         <TextView

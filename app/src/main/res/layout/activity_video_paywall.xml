@@ -55,7 +55,7 @@
             android:includeFontPadding="false"
             android:text="Unlimited Creativity"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_18sdp"
             android:visibility="visible" />
 
@@ -101,7 +101,7 @@
         android:includeFontPadding="false"
         android:paddingVertical="@dimen/_12sdp"
         android:text=""
-        android:textColor="@color/white"
+        android:textColor="#1A1A2E"
         android:textSize="@dimen/_14sdp" />
 
     <LinearLayout

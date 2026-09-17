@@ -75,7 +75,7 @@
             android:paddingHorizontal="@dimen/_8sdp"
             android:paddingVertical="@dimen/_3sdp"
             android:text="@string/app_face_slider_before_text"
-            android:textColor="#FFFFFF"
+            android:textColor="#1A1A2E"
             android:textSize="11sp"
             android:visibility="gone" />
 
@@ -92,7 +92,7 @@
             android:paddingHorizontal="@dimen/_8sdp"
             android:paddingVertical="@dimen/_3sdp"
             android:text="@string/app_face_slider_after_text"
-            android:textColor="#FFFFFF"
+            android:textColor="#1A1A2E"
             android:textSize="11sp"
             android:visibility="gone" />
 

@@ -52,7 +52,7 @@ public class SignupActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), true);
 
         // Generate custom User ID
         generatedUserId = FirebaseAuthManager.generateCustomUserId();

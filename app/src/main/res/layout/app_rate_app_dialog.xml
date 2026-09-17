@@ -48,7 +48,7 @@
             android:gravity="center"
             android:includeFontPadding="false"
             android:text="Enjoying FaceSwap ?"
-            android:textColor="@color/white"
+            android:textColor="#1A1A2E"
             android:textSize="@dimen/_18sdp" />
 
         <!-- Divider -->
@@ -86,7 +86,7 @@
             <ImageView
                 android:id="@+id/ivStar1"
                 android:layout_width="@dimen/_36sdp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_height="@dimen/_42sdp"
                 android:contentDescription="1 Star"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
@@ -95,7 +95,7 @@
             <ImageView
                 android:id="@+id/ivStar2"
                 android:layout_width="@dimen/_36sdp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_height="@dimen/_42sdp"
                 android:contentDescription="2 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
@@ -104,7 +104,7 @@
             <ImageView
                 android:id="@+id/ivStar3"
                 android:layout_width="@dimen/_36sdp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_height="@dimen/_42sdp"
                 android:contentDescription="3 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
@@ -113,7 +113,7 @@
             <ImageView
                 android:id="@+id/ivStar4"
                 android:layout_width="@dimen/_36sdp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_height="@dimen/_42sdp"
                 android:contentDescription="4 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"
@@ -122,7 +122,7 @@
             <ImageView
                 android:id="@+id/ivStar5"
                 android:layout_width="@dimen/_36sdp"
-                android:layout_height="@dimen/_36sdp"
+                android:layout_height="@dimen/_42sdp"
                 android:contentDescription="5 Stars"
                 android:padding="@dimen/_4sdp"
                 android:scaleType="fitCenter"

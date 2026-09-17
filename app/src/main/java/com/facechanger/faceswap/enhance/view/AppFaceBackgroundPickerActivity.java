@@ -51,7 +51,7 @@ public class AppFaceBackgroundPickerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.anim.app_slide_up_enter, 0);
         setContentView(R.layout.app_face_background_picker);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(android.R.id.content), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(android.R.id.content), true);
 
         setupToolbar();
         setupRecyclerView();

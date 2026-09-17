@@ -43,7 +43,7 @@
                 android:fontFamily="@font/app_poppins_semibold"
                 android:includeFontPadding="false"
                 android:text="@string/app_face_ai_creating_your_ai_image_text"
-                android:textColor="@color/white"
+                android:textColor="#1A1A2E"
                 android:textSize="@dimen/_15sdp" />
 
             <TextView
@@ -55,6 +55,18 @@
                 android:text="@string/app_face_ai_this_may_take_seconds_text"
                 android:textColor="@color/app_tertiary_text"
                 android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/tvTimeoutMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/app_poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Your image is almost ready... getting it very soon!"
+                android:textColor="@color/app_primary_brand"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
 
         </LinearLayout>
 

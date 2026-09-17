@@ -55,7 +55,7 @@ public class LoginActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), false);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.root), true);
 
         initViews();
         setupListeners();

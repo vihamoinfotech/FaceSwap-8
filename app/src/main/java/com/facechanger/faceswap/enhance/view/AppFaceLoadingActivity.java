@@ -68,6 +68,9 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
     private File imageFile1; // used as source or main image
     private File imageFile2; // used as target
 
+    private android.os.Handler timeoutHandler;
+    private Runnable timeoutRunnable;
+
     @Override
     protected void attachBaseContext(android.content.Context newBase) {
         super.attachBaseContext(AppFaceLocaleHelper.onAttach(newBase));
@@ -111,6 +114,17 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
             showNoInternetDialog();
             return;
         }
+
+        timeoutHandler = new android.os.Handler(android.os.Looper.getMainLooper());
+        timeoutRunnable = () -> {
+            android.widget.TextView tvTimeoutMessage = findViewById(R.id.tvTimeoutMessage);
+            if (tvTimeoutMessage != null) {
+                tvTimeoutMessage.setVisibility(android.view.View.VISIBLE);
+                tvTimeoutMessage.setAlpha(0f);
+                tvTimeoutMessage.animate().alpha(1f).setDuration(500).start();
+            }
+        };
+        timeoutHandler.postDelayed(timeoutRunnable, 15000);
 
         dispatchAction();
     }
@@ -205,21 +219,6 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
                 break;
             }
 
-            case ACTION_BG_REPLACE: {
-                String filePath = getIntent().getStringExtra("file_path");
-                prompt = getIntent().getStringExtra("prompt");
-                if (filePath == null || prompt == null) {
-                    handleError("Missing background replace data.");
-                    return;
-                }
-                imageFile1 = new File(filePath);
-                if (!imageFile1.exists()) {
-                    handleError("Failed to read image.");
-                    return;
-                }
-                startBgReplace(imageFile1, prompt);
-                break;
-            }
 
             case ACTION_ENHANCE_GFPGAN: {
                 String filePath = getIntent().getStringExtra("file_path");
@@ -429,23 +428,6 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
         });
     }
 
-    private void startBgReplace(File file, String prompt) {
-        AppFaceApiRepository.replaceBackground(file, prompt, new AppFaceApiRepository.FaceSwapCallback() {
-            @Override
-            public void onSuccess(@NonNull AppFaceFaceSwapResponse response) {
-                cleanupTempFilesKeepOriginal();
-                handleResponse(response, "Background replace failed. Please try again.");
-            }
-
-            @Override
-            public void onError(int statusCode, @NonNull String errorMessage) {
-                Log.e(TAG, "BG replace error: " + errorMessage);
-                AppFaceAppSystem.showDebugToast(getApplicationContext(), "BG replace failed HTTP:" + statusCode);
-
-                handleErrorResponse(errorMessage);
-            }
-        });
-    }
 
     private void startEnhanceGfpgan(File file) {
         AppFaceApiRepository.enhanceGfpgan(file, new AppFaceApiRepository.FaceSwapCallback() {
@@ -617,12 +599,13 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
                 resultUrl = response.getImageBase64();
             }
 
-            // Navigate to download/share screen (same as face swap, AI image)
-            Intent intent = new Intent(AppFaceLoadingActivity.this, AppFaceDownloadShareActivity.class);
+            // Redirect to editor to allow further modifications
+            Intent intent = new Intent(AppFaceLoadingActivity.this, AppFaceEditImageActivity.class);
             intent.putExtra("image_url", resultUrl);
             if (originalImageUrl != null && !originalImageUrl.isEmpty()) {
                 intent.putExtra("original_image_url", originalImageUrl);
             }
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             AppFaceActivityNavHelper.start(AppFaceLoadingActivity.this, intent);
             finish();
         } else {
@@ -779,6 +762,9 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
 
     @Override
     public void onDestroy() {
+        if (timeoutHandler != null && timeoutRunnable != null) {
+            timeoutHandler.removeCallbacks(timeoutRunnable);
+        }
         super.onDestroy();
         executor.shutdown();
     }

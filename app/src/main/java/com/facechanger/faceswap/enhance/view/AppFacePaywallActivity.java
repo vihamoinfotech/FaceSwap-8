@@ -83,7 +83,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
 
         setContentView(R.layout.app_face_activity_paywall_screen);
 
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.paywallRoot), false, true);
+        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(R.id.paywallRoot), true, true);
 
             if (getIntent() != null) {
                 isFromSplash = getIntent().getBooleanExtra("isFromSplash", false);
@@ -448,7 +448,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                     tv_gol_offer_title.setText(String.format(java.util.Locale.US, "%d Days Free trial", trialDays));
                     tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "Then %s/%s", basePriceFormatted, unit));
                     tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
+                    tvPriceDetail.setTextColor(getColor(R.color.app_primary_text));
                     tvPriceDetail.setVisibility(View.VISIBLE);
 
                 } else {
@@ -485,7 +485,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                     tv_gol_offer_title.setText(String.format(java.util.Locale.US, "%s for %s", introPriceFormatted, introPeriodText));
                     tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "Then %s/%s", basePriceFormatted, unit));
                     tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
+                    tvPriceDetail.setTextColor(getColor(R.color.app_primary_text));
                     tvPriceDetail.setVisibility(View.VISIBLE);
 
                 } else {
@@ -507,7 +507,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                     tv_gol_offer_desc.setVisibility(View.VISIBLE);
                     tv_gol_offer_desc.setText(String.format(java.util.Locale.US, "%s/%s", basePriceFormatted, unit));
                     tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                    tvPriceDetail.setTextColor(getColor(R.color.white));
+                    tvPriceDetail.setTextColor(getColor(R.color.app_primary_text));
                     tvPriceDetail.setVisibility(View.VISIBLE);
                 } else {
                     tv_gol_offer_title.setVisibility(View.GONE);
@@ -532,7 +532,7 @@ public class AppFacePaywallActivity extends AppCompatActivity {
                 tv_gol_offer_desc.setVisibility(View.VISIBLE);
                 tv_gol_offer_desc.setText(price + "/month");
                 tvPriceDetail.setText("Start Premium Today • Cancel Anytime");
-                tvPriceDetail.setTextColor(getColor(R.color.white));
+                tvPriceDetail.setTextColor(getColor(R.color.app_primary_text));
                 tvPriceDetail.setVisibility(View.VISIBLE);
             } else {
                 tvHeroTrial.setText("Try free for 3 days.");
