@@ -219,7 +219,7 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_brand"
+                            android:textColor="#FFFFFF"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -268,7 +268,7 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_brand"
+                            android:textColor="#FFFFFF"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -318,7 +318,7 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_brand"
+                            android:textColor="#FFFFFF"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -367,7 +367,7 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_brand"
+                            android:textColor="#FFFFFF"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -416,7 +416,7 @@
                             android:layout_gravity="center"
                             android:fontFamily="@font/app_poppins_bold"
                             android:text="✓"
-                            android:textColor="@color/app_primary_brand"
+                            android:textColor="#FFFFFF"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>

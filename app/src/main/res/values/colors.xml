@@ -67,22 +67,22 @@
     <color name="app_medium_overlay">#33000000</color>
 
     <!-- ═══ PAYWALL (keep original dark for paywall) ═══ -->
-    <color name="app_glass_fill_paywall">#1A6366F1</color>
-    <color name="app_glass_stroke_paywall">#26000000</color>
+    <color name="app_glass_fill_paywall">#F0F0FF</color>
+    <color name="app_glass_stroke_paywall">#CC6366F1</color>
     <color name="app_footer_border_paywall">#1A000000</color>
     <color name="app_primary_light_paywall">#C7D2FE</color>
     <color name="app_surface_container_paywall">#FFFFFF</color>
-    <color name="app_pro_column_bg_paywall">#33818CF8</color>
-    <color name="app_on_primary_paywall">#490080</color>
+    <color name="app_pro_column_bg_paywall">#4338CA</color>
+    <color name="app_on_primary_paywall">#FFFFFF</color>
     <color name="app_outline_paywall">#988d9f</color>
     <color name="app_on_surface_variant_paywall">#6B7280</color>
     <color name="app_on_primary_fixed_paywall">#2c0051</color>
-    <color name="app_outline_variant_paywall">#D7D7D7</color>
+    <color name="app_outline_variant_paywall">#991A1A2E</color>
     <color name="app_on_surface_paywall">#1A1A2E</color>
-    <color name="app_pro_column_border_paywall">#66A5B4FC</color>
+    <color name="app_pro_column_border_paywall">#6366F1</color>
     <color name="app_primary_container_paywall">#818CF8</color>
     <color name="app_row_divider_paywall">#10000000</color>
-    <color name="app_primary_paywall">#A5B4FC</color>
+    <color name="app_primary_paywall">#4338CA</color>
     <color name="app_footer_bg_paywall">#F8F8FC</color>
     <color name="app_bg_paywall">#F2F3F7</color>
 

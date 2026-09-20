@@ -80,7 +80,8 @@ public class AppFaceLoadingActivity extends BaseAppActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_face_common_activity_lottie_loading_screen);
-        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
+//        AppFaceTools.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), false, true);
+        AppFaceTools.setStatusBarBleed(getWindow(), findViewById(R.id.faceSwapLoadingContent), true);
 
         View rootView = findViewById(android.R.id.content);
         rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {

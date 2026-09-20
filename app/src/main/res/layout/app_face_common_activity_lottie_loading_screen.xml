@@ -7,6 +7,7 @@
     android:background="@color/app_theme_dark_background">
 
     <RelativeLayout
+        android:id="@+id/faceSwapLoadingContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ad_view_container">

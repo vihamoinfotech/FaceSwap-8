@@ -102,7 +102,7 @@
                         android:id="@+id/llUserProfile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/app_home_faceswap_card_purple_border"
+                        android:background="@drawable/app_settings_profile_card_bg"
                         android:elevation="12dp"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
@@ -127,7 +127,7 @@
                                 android:fontFamily="@font/app_poppins_bold"
                                 android:gravity="center"
                                 android:includeFontPadding="false"
-                                android:textColor="@color/app_primary_brand"
+                                android:textColor="#FFFFFF"
                                 android:textSize="@dimen/_26sdp" />
                         </FrameLayout>
 
@@ -144,7 +144,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/app_poppins_bold"
                                 android:includeFontPadding="false"
-                                android:textColor="#1A1A2E"
+                                android:textColor="#FFFFFF"
                                 android:textSize="@dimen/_20sdp" />
 
                             <TextView
@@ -338,58 +338,82 @@
                             app:tint="#1A1A2E" />
                     </LinearLayout>
 
-                    <!-- Unlock Premium — Big hero card -->
+                    <!-- Unlock Premium — Big hero horizontal card -->
                     <LinearLayout
                         android:id="@+id/llBuyCoins"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/_6sdp"
                         android:layout_marginBottom="@dimen/_6sdp"
-                        android:background="@drawable/app_home_faceswap_card_purple_border"
+                        android:background="@drawable/app_settings_premium_banner_bg"
                         android:clickable="true"
                         android:focusable="true"
                         android:foreground="?attr/selectableItemBackground"
-                        android:elevation="4dp">
+                        android:elevation="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_22sdp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="@dimen/_24sdp"
-                            android:paddingVertical="@dimen/_28sdp">
+                        <!-- Diamond icon in a frosted white circle -->
+                        <FrameLayout
+                            android:layout_width="@dimen/_52sdp"
+                            android:layout_height="@dimen/_52sdp"
+                            android:background="@drawable/app_face_frosted_circle_bg">
 
                             <ImageView
-                                android:layout_width="@dimen/_44sdp"
-                                android:layout_height="@dimen/_44sdp"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
                                 android:layout_gravity="center"
                                 android:contentDescription="@null"
                                 android:src="@drawable/app_face_diamond_premium"
-                                app:tint="#6366F1"
-                                android:scaleType="centerInside" />
+                                android:scaleType="centerInside"
+                                app:tint="#FFFFFF" />
+                        </FrameLayout>
+
+                        <!-- Text block -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_14sdp"
                                 android:fontFamily="@font/app_poppins_bold"
-                                android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="Unlock Premium"
-                                android:textColor="#1A1A2E"
-                                android:textSize="@dimen/_18sdp" />
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/_16sdp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
                                 android:fontFamily="@font/app_poppins_regular"
-                                android:gravity="center"
                                 android:includeFontPadding="false"
-                                android:text="Unlimited swaps, no ads, priority processing"
-                                android:textColor="#4F46E5"
-                                android:textSize="@dimen/_11sdp" />
+                                android:text="Unlimited swaps, no ads &amp; more"
+                                android:textColor="#CCE0E7FF"
+                                android:textSize="@dimen/_10sdp" />
                         </LinearLayout>
+
+                        <!-- Gold Upgrade CTA pill -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@drawable/app_settings_upgrade_pill_bg"
+                            android:fontFamily="@font/app_poppins_bold"
+                            android:includeFontPadding="false"
+                            android:paddingHorizontal="@dimen/_14sdp"
+                            android:paddingVertical="@dimen/_8sdp"
+                            android:text="Get Pro"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone"
+                            android:textSize="@dimen/_11sdp" />
+
                     </LinearLayout>
                 </LinearLayout>
 
