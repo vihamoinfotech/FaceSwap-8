@@ -116,7 +116,6 @@ public class AppFaceSwapActivity extends BaseAppActivity {
             }
         });
 
-        AdManager.getInstance().preloadBigMediaNative();
 
         imageUrl = getIntent().getStringExtra("image_url");
         isEditImage = getIntent().getBooleanExtra("is_edit_image", false);

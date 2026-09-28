@@ -79,7 +79,6 @@ public class AppFaceAiImageGenActivity extends BaseAppActivity {
             }
         });
 
-        AdManager.getInstance().preloadBigMediaNative();
 
 
         ImageView btnBack = findViewById(R.id.btnBack);

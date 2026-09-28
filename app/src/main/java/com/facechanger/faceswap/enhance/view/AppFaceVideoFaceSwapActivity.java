@@ -100,7 +100,6 @@ public class AppFaceVideoFaceSwapActivity extends BaseAppActivity {
             }
         });
 
-        AdManager.getInstance().preloadBigMediaNative();
 
         findViewById(R.id.btnBack).setOnClickListener(v -> onBackPressed());
 

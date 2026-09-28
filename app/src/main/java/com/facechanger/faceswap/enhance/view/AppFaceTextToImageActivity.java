@@ -41,7 +41,6 @@ public class AppFaceTextToImageActivity extends BaseAppActivity {
             }
         });
 
-        AdManager.getInstance().preloadBigMediaNative();
 
         findViewById(R.id.btnBack).setOnClickListener(v -> onBackPressed());
 

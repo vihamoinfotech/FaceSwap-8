@@ -111,7 +111,6 @@ public class AppFaceEditImageActivity extends BaseAppActivity {
             }
         });
 
-        AdManager.getInstance().preloadBigMediaNative();
 
     }
 

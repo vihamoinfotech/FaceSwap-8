@@ -53,6 +53,7 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation|uiMode|fontScale|density|locale|layoutDirection"
             android:exported="false"
             tools:replace="android:configChanges" />
+
         <activity
             android:name="com.android.billingclient.api.ProxyBillingActivityV2"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation|uiMode|fontScale|density|locale|layoutDirection"

@@ -110,13 +110,6 @@ public class AppFaceMainActivity extends BaseAppActivity {
         }
 
         adjustLayoutForAds();
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
-            }
-        }
-
         syncFirebaseProfileIfNeeded();
     }
 
@@ -202,10 +195,16 @@ public class AppFaceMainActivity extends BaseAppActivity {
 
         View btnAiCreate = findViewById(R.id.btnAiCreate);
         if (btnAiCreate != null) {
-            btnAiCreate.setOnClickListener(v -> onClickInterstitial(true, () -> {
-                Intent intent = new Intent(AppFaceMainActivity.this, AppFaceAiImageGenActivity.class);
-                startActivity(intent);
-            }));
+            if (FirebaseAuthManager.getInstance().isLoggedIn()) {
+                btnAiCreate.setVisibility(View.GONE);
+            } else {
+                btnAiCreate.setVisibility(View.VISIBLE);
+                btnAiCreate.setOnClickListener(v -> onClickInterstitial(true, () -> {
+                    Intent intent = new Intent(AppFaceMainActivity.this, AppFaceAiImageGenActivity.class);
+                    startActivity(intent);
+                }));
+            }
+
         }
 
         // Explore Templates Card
