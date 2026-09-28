@@ -160,7 +160,7 @@
                         </LinearLayout>
 
                         <!-- Before / After comparison slider -->
-                        <com.facechanger.faceswap.enhance.view.widget.AppFaceBeforeAfterSliderView
+                        <com.perfect.faceeditor.facechanger.io.view.widget.AppFaceBeforeAfterSliderView
                             android:id="@+id/beforeAfterSlider"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_350sdp"

@@ -5,12 +5,14 @@ plugins {
 }
 
 android {
-        namespace = "com.facechanger.faceswap.enhance"
+        namespace = "com.perfect.faceeditor.facechanger.io"
     compileSdk = 36
 
     defaultConfig {
-//        applicationId = "com.ewfewgf.sdgesdfg" // todo live
-        applicationId = "com.dsfsdf.werwer.dfgdfg" // todo remove
+
+//        applicationId = "com.perfect.faceeditor.facechanger.io" // todo live
+
+        applicationId = "com.sdfdsfds.hgfghfhfg.tryytrt" // todo remove
 
 
         minSdk = 26

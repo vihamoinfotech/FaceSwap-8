@@ -125,7 +125,6 @@
                 android:gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:visibility=""
                 android:orientation="horizontal"
                 android:paddingVertical="@dimen/_8sdp">
 
