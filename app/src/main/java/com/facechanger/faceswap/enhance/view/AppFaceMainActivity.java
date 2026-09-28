@@ -22,7 +22,7 @@ import com.facechanger.faceswap.enhance.utils.AppFaceSessionManager;
 import com.facechanger.faceswap.enhance.utils.AppFaceTools;
 import com.faceenhance.facechanger.controller.AdManager;
 import com.faceenhance.facechanger.controller.FirebaseManager;
-import com.izooto.iZooto;
+
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -112,10 +112,8 @@ public class AppFaceMainActivity extends BaseAppActivity {
         adjustLayoutForAds();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
-                iZooto.setSubscription(true);
-            } else {
-                iZooto.promptForPushNotifications();
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
             }
         }
 

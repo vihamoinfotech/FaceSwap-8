@@ -35,8 +35,7 @@ import android.os.Build;
 import android.util.Log;
 import com.facechanger.faceswap.enhance.worker.AppFaceLocalNotificationReceiver;
 import com.facechanger.faceswap.enhance.controller.AppFaceFacebookEventsManager;
-import com.izooto.TokenReceivedListener;
-import com.izooto.iZooto;
+
 
 public class AppFaceSwap extends Application {
 
@@ -74,18 +73,6 @@ public class AppFaceSwap extends Application {
                         String token = task.getResult();
                         Log.d(TAG, "FCM Token: " + token);
                     });
-
-            iZooto.initialize(this)
-                    .setTokenReceivedListener(new TokenReceivedListener() {
-                        @Override
-                        public void onTokenReceived(String s) {
-                            Log.d(TAG, "iZooto Device Token: " + s);
-                        }
-                    })
-                    .build();
-
-            iZooto.setFirebaseAnalytics(true);
-
         }
 
 

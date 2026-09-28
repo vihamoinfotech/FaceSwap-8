@@ -24,8 +24,6 @@ android {
         versionName = "0.1" // todo remove
 
 //        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//        manifestPlaceholders["izooto_app_id"] = "" // todo live
-        manifestPlaceholders["izooto_app_id"] = "" // todo remove
     }
 
     buildTypes {
@@ -101,13 +99,5 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.6.1")
 
 
-// iXooto
-    implementation("com.izooto:android-sdk:3.5.3")
-    implementation("androidx.work:work-runtime:2.9.0")
-    implementation("androidx.browser:browser:1.8.0")
-
-    implementation("androidx.credentials:credentials:1.6.0")
-    implementation("androidx.credentials:credentials-play-services-auth:1.6.0")
-    implementation("com.google.android.libraries.identity.googleid:googleid:1.2.0")
 
 }

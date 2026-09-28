@@ -1,10 +1,13 @@
 package com.facechanger.faceswap.enhance.view;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -19,17 +22,12 @@ import com.facechanger.faceswap.enhance.R;
 import com.facechanger.faceswap.enhance.utils.AppFacePrismVaultVPgr;
 import com.faceenhance.facechanger.Utils.GlobleMMKVManager;
 import com.faceenhance.facechanger.controller.AdManager;
-import com.izooto.iZooto;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,10 +63,15 @@ public class AppFaceOnboardingActivity extends BaseAppActivity {
                 if (APP_EXP == 0) {
                     loadAds();
                 }
-                iZooto.promptForPushNotifications();
                 viewPagerSetUp();
             }
         });
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+            }
+        }
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -97,7 +100,7 @@ public class AppFaceOnboardingActivity extends BaseAppActivity {
         if (requestCode == 101) {
             if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
                 Log.e("iZooto", "Permission Granted");
-                iZooto.setSubscription(true);
+
             } else {
                 Log.e("iZooto", "Permission Denied");
             }
