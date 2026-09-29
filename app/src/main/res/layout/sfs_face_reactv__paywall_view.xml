@@ -32,10 +32,6 @@
             android:paddingTop="20dp"
             android:paddingBottom="24dp">
 
-            <!-- ─────────────────────────────────────────────
-                 HERO SECTION
-                 ───────────────────────────────────────────── -->
-
             <!-- Premium Badge Row -->
             <LinearLayout
                 android:id="@+id/paywallHeroBadge"
@@ -46,13 +42,13 @@
 
                 <!-- Purple diamond icon box -->
                 <FrameLayout
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="@drawable/sfs_face_re_premium_center_button">
 
                     <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center"
                         android:contentDescription="@null"
                         android:src="@drawable/sfs_face_re_diamond_premium"
@@ -83,7 +79,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/sfs_re_poppins_medium"
+                    android:fontFamily="@font/sfs_re_poppins_semibold"
                     android:includeFontPadding="false"
                     android:letterSpacing="-0.02"
                     android:text="@string/sfs_paywall_hero_line1"
@@ -93,7 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/sfs_re_poppins_medium"
+                    android:fontFamily="@font/sfs_re_poppins_semibold"
                     android:includeFontPadding="false"
                     android:text="@string/sfs_paywall_hero_line2"
                     android:textColor="@color/sfs_re_on_surface_paywall"
@@ -121,9 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_18sdp"
-                android:background="@drawable/sfs_face_re_glass_panel_gray"
-                android:orientation="vertical"
-                android:padding="@dimen/_14sdp">
+                android:orientation="vertical">
 
                 <!-- ── TABLE HEADER ROW ── -->
                 <LinearLayout
@@ -204,7 +198,7 @@
                             android:fontFamily="@font/sfs_re_poppins_medium"
                             android:text="✕"
                             android:textColor="#9CA3AF"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -213,13 +207,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/sfs_face_re_premium_pro_column_light">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="18dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/sfs_re_poppins_bold"
-                            android:text="✓"
-                            android:textColor="#FFFFFF"
+                            android:src="@drawable/prm_check"
+                            android:textColor="#4338CA"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -253,7 +247,7 @@
                             android:fontFamily="@font/sfs_re_poppins_medium"
                             android:text="✕"
                             android:textColor="#9CA3AF"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -262,13 +256,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/sfs_face_re_premium_pro_column_light">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="18dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/sfs_re_poppins_bold"
-                            android:text="✓"
-                            android:textColor="#FFFFFF"
+                            android:src="@drawable/prm_check"
+                            android:textColor="#4338CA"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -302,7 +296,7 @@
                             android:fontFamily="@font/sfs_re_poppins_medium"
                             android:text="✕"
                             android:textColor="#9CA3AF"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
                     </FrameLayout>
 
                     <!-- Last Pro cell: rounded bottom corners -->
@@ -312,13 +306,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/sfs_face_re_premium_pro_column_light">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="18dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/sfs_re_poppins_bold"
-                            android:text="✓"
-                            android:textColor="#FFFFFF"
+                            android:src="@drawable/prm_check"
+                            android:textColor="#4338CA"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -336,7 +330,7 @@
                         android:fontFamily="@font/sfs_re_poppins_medium"
                         android:includeFontPadding="false"
                         android:paddingVertical="14dp"
-                        android:text="Unlimited Downloads"
+                        android:text="Unlock Video Swap"
                         android:textColor="@color/sfs_re_on_surface_paywall"
                         android:textSize="@dimen/_13sdp"/>
 
@@ -352,7 +346,7 @@
                             android:fontFamily="@font/sfs_re_poppins_medium"
                             android:text="✕"
                             android:textColor="#9CA3AF"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -361,13 +355,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/sfs_face_re_premium_pro_column_light">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="18dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/sfs_re_poppins_bold"
-                            android:text="✓"
-                            android:textColor="#FFFFFF"
+                            android:src="@drawable/prm_check"
+                            android:textColor="#4338CA"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -401,7 +395,7 @@
                             android:fontFamily="@font/sfs_re_poppins_medium"
                             android:text="✕"
                             android:textColor="#9CA3AF"
-                            android:textSize="@dimen/_14sdp" />
+                            android:textSize="@dimen/_12sdp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -410,13 +404,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/sfs_face_re_pro_column_bottom_light">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <ImageView
+                            android:layout_width="18dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/sfs_re_poppins_bold"
-                            android:text="✓"
-                            android:textColor="#FFFFFF"
+                            android:src="@drawable/prm_check"
+                            android:textColor="#4338CA"
                             android:textSize="@dimen/_16sdp" />
                     </FrameLayout>
                 </LinearLayout>
@@ -447,7 +441,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/sfs_face_re_premium_bkg_footer"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingHorizontal="20dp"
@@ -485,6 +478,7 @@
 
 
         <!-- CTA Button (uses app's own brand gradient for consistency) -->
+
         <TextView
             android:id="@+id/btnPaywallCta"
             android:layout_width="match_parent"

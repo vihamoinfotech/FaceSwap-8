@@ -143,7 +143,7 @@ public class SFS_RefaceSplActivity extends AppCompatActivity {
                             if (SFS_RefaceAppSystem.isDebugMode()) {
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.APP_EXP, 0);
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.IS_IN_APP_AFT_SPL, 1);
-                                GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.IS_PRM_PRC_SHOW, 1);
+                                GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.IS_PRM_PRC_SHOW, 0);
                             } else {
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.APP_EXP,
                                         response.getData().getApp_exp());

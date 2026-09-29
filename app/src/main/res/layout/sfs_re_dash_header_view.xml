@@ -47,19 +47,19 @@
             android:text="@string/sfs_re_dash_hero_badge"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
-            android:textSize="@dimen/_8sdp" />
+            android:textSize="@dimen/_9sdp" />
 
         <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
-            android:fontFamily="@font/sfs_re_poppins_extrabold"
+            android:fontFamily="@font/sfs_re_poppins_bold"
             android:includeFontPadding="false"
             android:text="@string/sfs_re_dash_hero_title"
             android:lineSpacingExtra="-4dp"
             android:textColor="#FFFFFF"
-            android:textSize="@dimen/_22sdp" />
+            android:textSize="@dimen/_20sdp" />
 
         <!-- Subtitle -->
         <TextView
@@ -71,7 +71,7 @@
             android:maxLines="1"
             android:text="@string/sfs_re_dash_hero_subtitle"
             android:textColor="#D1D5DB"
-            android:textSize="@dimen/_10sdp" />
+            android:textSize="@dimen/_11sdp" />
 
         <!-- CTAs -->
         <LinearLayout
@@ -95,8 +95,8 @@
                 android:paddingVertical="@dimen/_8sdp">
 
                 <ImageView
-                    android:layout_width="@dimen/_14sdp"
-                    android:layout_height="@dimen/_14sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
                     android:src="@drawable/sfs_face_re_rotation_face_swap_bg"
                     app:tint="#FFFFFF" />
 
@@ -104,11 +104,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_4sdp"
-                    android:fontFamily="@font/sfs_re_poppins_semibold"
+                    android:fontFamily="@font/sfs_re_poppins_medium"
                     android:includeFontPadding="false"
                     android:text="@string/sfs_re_dash_face_swap_cta"
                     android:textColor="#FFFFFF"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_12sdp" />
             </LinearLayout>
 
             <Space
@@ -129,8 +129,8 @@
                 android:paddingVertical="@dimen/_8sdp">
 
                 <ImageView
-                    android:layout_width="@dimen/_14sdp"
-                    android:layout_height="@dimen/_14sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
                     android:src="@drawable/sfs_face_re_generative_chat_ai"
                     app:tint="#FFFFFF" />
 
@@ -138,11 +138,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_4sdp"
-                    android:fontFamily="@font/sfs_re_poppins_semibold"
+                    android:fontFamily="@font/sfs_re_poppins_medium"
                     android:includeFontPadding="false"
                     android:text="@string/sfs_re_dash_ai_create_cta"
                     android:textColor="#FFFFFF"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_12sdp" />
             </LinearLayout>
 
         </LinearLayout>
