@@ -1,440 +1,440 @@
 <resources>
-    <string name="app_builder_name" translatable="false">Face Swap</string>
+    <string name="sfs_re_builder_name" translatable="false">Face Swap</string>
 
     <!-- Onboarding -->
-    <string name="app_onboard_first_text">AI Image Generator</string>
-    <string name="app_onboard_first_subtitle_text">Turn your ideas into stunning AI-generated\nimages in seconds.</string>
-    <string name="app_onboard_second_text">Preview &amp; Download</string>
-    <string name="app_onboard_second_subtitle_text">View your AI creation and download the\nimage in full resolution.</string>
-    <string name="app_onboard_continue_text">Continue</string>
-    <string name="app_onboard_get_started_text">Get Started</string>
+    <string name="sfs_re_onboard_first_text">AI Image Generator</string>
+    <string name="sfs_re_onboard_first_subtitle_text">Turn your ideas into stunning AI-generated\nimages in seconds.</string>
+    <string name="sfs_re_onboard_second_text">Preview &amp; Download</string>
+    <string name="sfs_re_onboard_second_subtitle_text">View your AI creation and download the\nimage in full resolution.</string>
+    <string name="sfs_re_onboard_continue_text">Continue</string>
+    <string name="sfs_re_onboard_get_started_text">Get Started</string>
 
-    <string name="app_nav_face_ai_image">AI Image</string>
-    <string name="app_nav_face_swap_text">Face Swap</string>
-    <string name="app_face_nav_multi_swap_text">Video Swap</string>
-    <string name="app_face_nav_my_work_text">My work</string>
-    <string name="app_video_swap_text">Video Swap</string>
-    <string name="app_face_title_my_work_text">My work</string>
+    <string name="sfs_re_navi_face_ai_image">AI Image</string>
+    <string name="sfs_re_navi_face_swap_text">Face Swap</string>
+    <string name="sfs_face_re_navi_multi_swap_text">Video Swap</string>
+    <string name="sfs_face_re_navi_my_work_text">My work</string>
+    <string name="sfs_re_mov_swap_text">Video Swap</string>
+    <string name="sfs_face_re_title_my_work_text">My work</string>
 
     <!-- Dialog: Network/API Errors -->
-    <string name="app_face_no_internet_title_text">No Internet</string>
-    <string name="app_no_internet_desc_text">Please check your internet connection and try again.</string>
-    <string name="app_api_error_title_text">Connection Error</string>
-    <string name="app_api_error_text">Something went wrong while connecting to our servers. Please try again.</string>
-    <string name="app_api_retry_button_text">Retry</string>
+    <string name="sfs_face_re_no_internet_title_text">No Internet</string>
+    <string name="sfs_re_no_internet_desc_text">Please check your internet connection and try again.</string>
+    <string name="sfs_re_api_err_title_text">Connection Error</string>
+    <string name="sfs_re_api_err_text">Something went wrong while connecting to our servers. Please try again.</string>
+    <string name="sfs_re_api_retry_button_text">Retry</string>
 
-    <string name="app_face_multiple_swap_hint_text">Swap multiple faces in one project.</string>
-    <string name="app_face_my_work_hint_text">Your saved work will appear here.</string>
-    <string name="app_face_settings_text">Settings</string>
-    <string name="app_face_back_text">Back</string>
-    <string name="app_single_face_swap_text">Single Face Swap</string>
-    <string name="app_download_share_text">Download &amp; Share</string>
-    <string name="app_edit_text">Edit</string>
-    <string name="app_edit_image_text">Edit Image</string>
-    <string name="app_select_face_text">Select Face</string>
+    <string name="sfs_face_re_multiple_swap_hint_text">Swap multiple faces in one project.</string>
+    <string name="sfs_face_re_my_work_hint_text">Your saved work will appear here.</string>
+    <string name="sfs_face_re_stngs_text">Settings</string>
+    <string name="sfs_face_re_back_text">Back</string>
+    <string name="sfs_re_single_face_swap_text">Single Face Swap</string>
+    <string name="sfs_re_download_share_text">Download &amp; Share</string>
+    <string name="sfs_re_edt_text">Edit</string>
+    <string name="sfs_re_edt_image_text">Edit Image</string>
+    <string name="sfs_re_select_face_text">Select Face</string>
 
-    <string name="app_leaving_so_soon_text">Leaving so soon?</string>
-    <string name="app_are_you_sure_you_sure_text">Are you sure you want to exit the app? We would love for you to stay and create more amazing faces!</string>
-    <string name="app_stay_in_app_text">Stay in App</string>
-    <string name="app_exit_app_text">Exit App</string>
-    <string name="app_ai_image_text">AI Image</string>
-    <string name="app_main_face_swap_text">Face Swap</string>
-    <string name="app_multi_swap_video_text">Video Swap</string>
-    <string name="app_main_work_text">My Work</string>
-    <string name="app_coins_required_10_coins_text">Required: 10 coins</string>
-    <string name="app_insufficient_your_balance_coins_text">Your balance: 0 coins</string>
-    <string name="app_source_choose_image_text">Choose Image Source</string>
-    <string name="app_face_source_take_photo_text">Take Photo</string>
-    <string name="app_source_use_your_camera_text">Use your camera</string>
-    <string name="app_source_choose_from_gallery_text">Choose from Gallery</string>
-    <string name="app_source_select_from_your_photos_text">Select from your photos</string>
-    <string name="app_source_cancel_text">Cancel</string>
-    <string name="app_picker_choose_background_text">Choose Background</string>
-    <string name="app_picker_tap_any_background_to_apply_text">Tap any background to apply it</string>
-    <string name="ai_swap_face_your_text">Swap Your </string>
+    <string name="sfs_re_leaving_so_soon_text">Leaving so soon?</string>
+    <string name="sfs_re_are_you_sure_you_sure_text">Are you sure you want to exit the app? We would love for you to stay and create more amazing faces!</string>
+    <string name="sfs_re_stay_in_re_text">Stay in App</string>
+    <string name="sfs_re_exit_re_text">Exit App</string>
+    <string name="sfs_re_ai_image_text">AI Image</string>
+    <string name="sfs_re_main_face_swap_text">Face Swap</string>
+    <string name="sfs_re_multi_swap_mov_text">Video Swap</string>
+    <string name="sfs_re_main_work_text">My Work</string>
+    <string name="sfs_re_coins_required_10_coins_text">Required: 10 coins</string>
+    <string name="sfs_re_insufficient_your_balance_coins_text">Your balance: 0 coins</string>
+    <string name="sfs_re_source_choose_image_text">Choose Image Source</string>
+    <string name="sfs_face_re_source_take_photo_text">Take Photo</string>
+    <string name="sfs_re_source_use_your_camera_text">Use your camera</string>
+    <string name="sfs_re_source_choose_from_gallery_text">Choose from Gallery</string>
+    <string name="sfs_re_source_select_from_your_photos_text">Select from your photos</string>
+    <string name="sfs_re_source_cancel_text">Cancel</string>
+    <string name="sfs_re_picker_choose_bkg_text">Choose Background</string>
+    <string name="sfs_re_picker_tap_any_bkg_to_apply_text">Tap any background to apply it</string>
+    <string name="sfs_ai_swap_face_your_text">Swap Your </string>
 
     <!-- Dialog: Info With Images -->
-    <string name="app_info_dialog_title_text">Upload the Right Photo!</string>
-    <string name="app_info_dialog_message_text">For the best face swap results, use a clear, front-facing photo with good lighting. Avoid group photos, sunglasses, or anything that hides your face.</string>
-    <string name="app_info_dialog_button_text">Got It, Let\'s Go!</string>
+    <string name="sfs_re_info_dlog_title_text">Upload the Right Photo!</string>
+    <string name="sfs_re_info_dlog_message_text">For the best face swap results, use a clear, front-facing photo with good lighting. Avoid group photos, sunglasses, or anything that hides your face.</string>
+    <string name="sfs_re_info_dlog_button_text">Got It, Let\'s Go!</string>
 
-    <string name="app_coin_store_text">Coin Store</string>
-    <string name="app_coin_store_second_title_text">Buy coins to use premium features</string>
-    <string name="app_face_coin_current_balance_text">Current Balance</string>
-    <string name="app_face_coin_buy_now_text">Buy Now</string>
-    <string name="app_coin_btn_restore_purchase_text">Restore Purchases</string>
-    <string name="app_face_multi_popular_text">⭐ Most Popular</string>
-    <string name="face_app_best_value_text">💎 Best Value</string>
-    <string name="app_face_coins_purchase_success_text">Purchase successful! Coins added to your balance.</string>
-    <string name="app_face_purchase_restore_success_text">Purchases restored successfully.</string>
-    <string name="app_coins_purchase_failed_text">Purchase failed: %s</string>
-    <string name="app_face_coins_fetching_offerings_error_text">Failed to fetch store offerings. Please try again.</string>
-    <string name="app_face_coins_unit_text">%d Coins</string>
+    <string name="sfs_re_coin_store_text">Coin Store</string>
+    <string name="sfs_re_coin_store_second_title_text">Buy coins to use premium features</string>
+    <string name="sfs_face_re_coin_current_balance_text">Current Balance</string>
+    <string name="sfs_face_re_coin_buy_now_text">Buy Now</string>
+    <string name="sfs_re_coin_btn_restore_purchase_text">Restore Purchases</string>
+    <string name="sfs_face_re_multi_popular_text">⭐ Most Popular</string>
+    <string name="sfs_face_re_best_value_text">💎 Best Value</string>
+    <string name="sfs_face_re_coins_purchase_success_text">Purchase successful! Coins added to your balance.</string>
+    <string name="sfs_face_re_purchase_restore_success_text">Purchases restored successfully.</string>
+    <string name="sfs_re_coins_purchase_failed_text">Purchase failed: %s</string>
+    <string name="sfs_face_re_coins_fetching_offerings_err_text">Failed to fetch store offerings. Please try again.</string>
+    <string name="sfs_face_re_coins_unit_text">%d Coins</string>
 
     <!-- App Update -->
-    <string name="app_face_new_update_available_text">New Version Available!</string>
-    <string name="app_face_new_update_sub_title_text">We\'ve been working hard to make your experience even better. Update now to enjoy the latest features and improvements.</string>
-    <string name="app_face_update_now_button_text">Update Now</string>
-    <string name="app_face_better_performance_text">Better Performance</string>
-    <string name="app_face_update_feature_first_desc_text">Faster image processing and smoother experience</string>
-    <string name="app_face_swap_new_features_text">New Features</string>
-    <string name="app_face_update_feature_second_desc_text">Exciting new tools and improved AI results</string>
-    <string name="app_face_bug_fixes_text">Bug Fixes &amp; Security</string>
-    <string name="app_face_update_feature_third_desc_text">Important fixes for a more stable and secure app</string>
+    <string name="sfs_face_re_old_update_available_text">New Version Available!</string>
+    <string name="sfs_face_re_old_update_sub_title_text">We\'ve been working hard to make your experience even better. Update now to enjoy the latest features and improvements.</string>
+    <string name="sfs_face_re_update_now_button_text">Update Now</string>
+    <string name="sfs_face_re_better_performance_text">Better Performance</string>
+    <string name="sfs_face_re_update_feature_first_desc_text">Faster image processing and smoother experience</string>
+    <string name="sfs_face_re_swap_old_features_text">New Features</string>
+    <string name="sfs_face_re_update_feature_second_desc_text">Exciting new tools and improved AI results</string>
+    <string name="sfs_face_re_bug_fixes_text">Bug Fixes &amp; Security</string>
+    <string name="sfs_face_re_update_feature_third_desc_text">Important fixes for a more stable and secure app</string>
 
     <!-- Auto-extracted resources -->
-    <string name="app_face_ai_image_gen_text">AI Image Gen</string>
-    <string name="app_face_ai_turn_your_ideas_text">Turn your ideas</string>
-    <string name="app_face_ai_into_art_text"> Into Art</string>
-    <string name="app_face_describe_what_you_want_text">Describe what you want and watch it come to life.</string>
-    <string name="app_face_ai_text_to_prompt_text">Text Prompt</string>
-    <string name="app_face_ai_describe_your_image_text">Describe your image</string>
-    <string name="app_face_ai_required_text">REQUIRED</string>
-    <string name="app_face_ai_reference_image_text">Reference Image</string>
-    <string name="app_face_ai_guides_the_style_text">Guides the style and composition</string>
-    <string name="app_face_ai_optional_text">OPTIONAL</string>
-    <string name="app_face_ai_tap_to_upload_image_text">Tap to upload image</string>
-    <string name="app_face_ai_png_jpg_supported_text">PNG, JPG supported</string>
-    <string name="app_face_ai_10_coins_text">10 Coins</string>
-    <string name="app_face_ai_generate_image_text">✦  Generate Image</string>
-    <string name="app_face_ai_creating_your_ai_image_text">Creating your AI Image…</string>
-    <string name="app_face_ai_this_may_take_seconds_text">This may take a few seconds</string>
-    <string name="app_face_ai_store_your_balance_text">Your Balance</string>
-    <string name="app_face_ai_credits_text">Credits</string>
-    <string name="app_face_ai_coins_choose_a_package_text">Choose a Package</string>
-    <string name="app_face_ai_coins_instant_delivery_payment_text">Instant delivery • Secure payment via Google Play</string>
-    <string name="app_face_ai_coins_retry_text">Retry</string>
-    <string name="app_no_creations_yet_text">No creations yet</string>
-    <string name="app_available_notice_text">Images are available for 7 days only. Please download your creations before they are automatically removed.</string>
-    <string name="ap_couple_swap_text">Couple Face Swap</string>
-    <string name="app_coins_10_coins_text">10 Coins</string>
+    <string name="sfs_face_re_ai_image_gen_text">AI Image Gen</string>
+    <string name="sfs_face_re_ai_turn_your_ideas_text">Turn your ideas</string>
+    <string name="sfs_face_re_ai_into_art_text"> Into Art</string>
+    <string name="sfs_face_re_describe_what_you_want_text">Describe what you want and watch it come to life.</string>
+    <string name="sfs_face_re_ai_text_to_prompt_text">Text Prompt</string>
+    <string name="sfs_face_re_ai_describe_your_image_text">Describe your image</string>
+    <string name="sfs_face_re_ai_required_text">REQUIRED</string>
+    <string name="sfs_face_re_ai_reference_image_text">Reference Image</string>
+    <string name="sfs_face_re_ai_guides_the_style_text">Guides the style and composition</string>
+    <string name="sfs_face_re_ai_optional_text">OPTIONAL</string>
+    <string name="sfs_face_re_ai_tap_to_upload_image_text">Tap to upload image</string>
+    <string name="sfs_face_re_ai_png_jpg_supported_text">PNG, JPG supported</string>
+    <string name="sfs_face_re_ai_10_coins_text">10 Coins</string>
+    <string name="sfs_face_re_ai_generate_image_text">✦  Generate Image</string>
+    <string name="sfs_face_re_ai_creating_your_ai_image_text">Creating your AI Image…</string>
+    <string name="sfs_face_re_ai_this_may_take_seconds_text">This may take a few seconds</string>
+    <string name="sfs_face_re_ai_store_your_balance_text">Your Balance</string>
+    <string name="sfs_face_re_ai_credits_text">Credits</string>
+    <string name="sfs_face_re_ai_coins_choose_a_package_text">Choose a Package</string>
+    <string name="sfs_face_re_ai_coins_instant_delivery_payment_text">Instant delivery • Secure payment via Google Play</string>
+    <string name="sfs_face_re_ai_coins_retry_text">Retry</string>
+    <string name="sfs_re_no_creations_yet_text">No creations yet</string>
+    <string name="sfs_re_available_notice_text">Images are available for 7 days only. Please download your creations before they are automatically removed.</string>
+    <string name="sfs_ap_couple_swap_text">Couple Face Swap</string>
+    <string name="sfs_re_coins_10_coins_text">10 Coins</string>
 
     <!-- Content Descriptions -->
-    <string name="app_dialog_icon_text">Dialog icon</string>
-    <string name="face_dialog_close_text">Close dialog</string>
-    <string name="face_dialog_image_text">Dialog image</string>
-    <string name="app_face_splash_logo_text">App logo</string>
+    <string name="sfs_re_dlog_icon_text">Dialog icon</string>
+    <string name="sfs_face_dlog_close_text">Close dialog</string>
+    <string name="sfs_face_dlog_image_text">Dialog image</string>
+    <string name="sfs_face_re_spl_logo_text">App logo</string>
 
-    <string name="app_ai_generate_image_text">✦  Generate Image</string>
-    <string name="app_face_couple_text">Couple </string>
-    <string name="app_face_face_swap_text">Face Swap</string>
-    <string name="app_swap_your_face_into_text">Swap your face into any couple or duo photo.</string>
-    <string name="app_couple_target_photo_text">Couple / Target Photo</string>
-    <string name="app_the_photo_you_want_text">The photo you want to swap into</string>
-    <string name="app_face_step_1_text">STEP 1</string>
-    <string name="app_face_tap_to_select_couple_text">Tap to select couple photo</string>
-    <string name="app_any_photo_with_faces_text">Any photo with 1-2 faces</string>
-    <string name="app_your_face_photo_text">Your Face Photo</string>
-    <string name="app_clear_frontal_face_works_text">Clear frontal face works best</string>
-    <string name="app_face_step_2_text">STEP 2</string>
-    <string name="app_face_upload_your_face_photo_text">Upload your face photo</string>
-    <string name="app_text_to_image_text">Text to Image</string>
-    <string name="ai_face_image_10_coins_text">10 Coins</string>
+    <string name="sfs_re_ai_generate_image_text">✦  Generate Image</string>
+    <string name="sfs_face_re_couple_text">Couple </string>
+    <string name="sfs_face_re_face_swap_text">Face Swap</string>
+    <string name="sfs_re_swap_your_face_into_text">Swap your face into any couple or duo photo.</string>
+    <string name="sfs_re_couple_target_photo_text">Couple / Target Photo</string>
+    <string name="sfs_re_the_photo_you_want_text">The photo you want to swap into</string>
+    <string name="sfs_face_re_step_1_text">STEP 1</string>
+    <string name="sfs_face_re_tap_to_select_couple_text">Tap to select couple photo</string>
+    <string name="sfs_re_any_photo_with_faces_text">Any photo with 1-2 faces</string>
+    <string name="sfs_re_your_face_photo_text">Your Face Photo</string>
+    <string name="sfs_re_clear_frontal_face_works_text">Clear frontal face works best</string>
+    <string name="sfs_face_re_step_2_text">STEP 2</string>
+    <string name="sfs_face_re_upload_your_face_photo_text">Upload your face photo</string>
+    <string name="sfs_re_text_to_image_text">Text to Image</string>
+    <string name="sfs_ai_face_image_10_coins_text">10 Coins</string>
 
     <!-- Dialog: Coins -->
-    <string name="app_face_coins_dialog_title_text">Coins Required!</string>
-    <string name="app_coins_dialog_desc_text">Continuing will use 10 coins from your balance. Please confirm to proceed.</string>
-    <string name="app_dialog_action_button_text">Ok, Continue</string>
+    <string name="sfs_face_re_coins_dlog_title_text">Coins Required!</string>
+    <string name="sfs_re_coins_dlog_desc_text">Continuing will use 10 coins from your balance. Please confirm to proceed.</string>
+    <string name="sfs_re_dlog_action_button_text">Ok, Continue</string>
 
-    <string name="ai_face_image_generate_image_text">✦  Generate Image</string>
-    <string name="ai_face_image_text_to_text">Text to </string>
-    <string name="ai_face_image_text">Image</string>
-    <string name="ai_face_image_describe_anything_and_watch_text">Describe anything and watch it come to life.</string>
-    <string name="app_your_prompt_text">Your Prompt</string>
-    <string name="app_be_descriptive_for_best_text">Be descriptive for best results</string>
-    <string name="app_face_required_text">REQUIRED</string>
-    <string name="app_quick_ideas_text">Quick Ideas</string>
-    <string name="app_settings_text">Settings</string>
-    <string name="app_upper_coins_text">COINS</string>
-    <string name="app_coin_history_text">Coin History</string>
-    <string name="app_face_settings_buy_coins_text">Buy Coins</string>
-    <string name="app_face_language_text">Languages</string>
-    <string name="app_face_feedback_text">Feedback</string>
-    <string name="app_face_share_app_text">Share App</string>
-    <string name="app_face_rate_app_text">Rate App</string>
-    <string name="app_face_legal_text">LEGAL</string>
-    <string name="app_terms_and_conditions_text">Terms &amp; Conditions</string>
-    <string name="app_privacy_policy_text">Privacy Policy</string>
-    <string name="app_face_coin_history_face_swap_text">Face Swap</string>
-    <string name="app_coin_transaction_time_text">Today, 12:30 PM</string>
-    <string name="app_permission_required_text">Permission Required</string>
-    <string name="app_face_permission_camera_and_gallery_access_text">Camera and gallery access are needed to upload images. Please enable them in Settings.</string>
-    <string name="app_open_settings_text">Open Settings</string>
-    <string name="app_permission_cancel_text">Cancel</string>
-    <string name="app_face_update_logo_text">🚀</string>
-    <string name="app_face_update_logo_one_text">✨</string>
-    <string name="app_face_update_logo_two_text">🛡️</string>
-    <string name="app_multi_face_swap_text">Multi Face Swap</string>
-    <string name="app_swap_every_text">Swap every </string>
-    <string name="app_face_text">Face</string>
-    <string name="ai_every_face_in_the_text">Every face in the group photo gets swapped at once.</string>
-    <string name="app_group_photo_target_text">Group Photo (Target)</string>
-    <string name="ai_all_faces_detected_automatically_text">All faces detected automatically</string>
+    <string name="sfs_ai_face_image_generate_image_text">✦  Generate Image</string>
+    <string name="sfs_ai_face_image_text_to_text">Text to </string>
+    <string name="sfs_ai_face_image_text">Image</string>
+    <string name="sfs_ai_face_image_describe_anything_and_watch_text">Describe anything and watch it come to life.</string>
+    <string name="sfs_re_your_prompt_text">Your Prompt</string>
+    <string name="sfs_re_be_descriptive_for_best_text">Be descriptive for best results</string>
+    <string name="sfs_face_re_required_text">REQUIRED</string>
+    <string name="sfs_re_quick_ideas_text">Quick Ideas</string>
+    <string name="sfs_re_stngs_text">Settings</string>
+    <string name="sfs_re_upper_coins_text">COINS</string>
+    <string name="sfs_re_coin_history_text">Coin History</string>
+    <string name="sfs_face_re_stngs_buy_coins_text">Buy Coins</string>
+    <string name="sfs_face_re_lnguage_text">Languages</string>
+    <string name="sfs_face_re_feedback_text">Feedback</string>
+    <string name="sfs_face_re_share_re_text">Share App</string>
+    <string name="sfs_face_re_rate_re_text">Rate App</string>
+    <string name="sfs_face_re_legal_text">LEGAL</string>
+    <string name="sfs_re_terms_and_conditions_text">Terms &amp; Conditions</string>
+    <string name="sfs_re_privacy_policy_text">Privacy Policy</string>
+    <string name="sfs_face_re_coin_history_face_swap_text">Face Swap</string>
+    <string name="sfs_re_coin_transaction_time_text">Today, 12:30 PM</string>
+    <string name="sfs_re_permission_required_text">Permission Required</string>
+    <string name="sfs_face_re_permission_camera_and_gallery_access_text">Camera and gallery access are needed to upload images. Please enable them in Settings.</string>
+    <string name="sfs_re_open_stngs_text">Open Settings</string>
+    <string name="sfs_re_permission_cancel_text">Cancel</string>
+    <string name="sfs_face_re_update_logo_text">🚀</string>
+    <string name="sfs_face_re_update_logo_one_text">✨</string>
+    <string name="sfs_face_re_update_logo_two_text">🛡️</string>
+    <string name="sfs_re_multi_face_swap_text">Multi Face Swap</string>
+    <string name="sfs_re_swap_every_text">Swap every </string>
+    <string name="sfs_face_re_text">Face</string>
+    <string name="sfs_ai_every_face_in_the_text">Every face in the group photo gets swapped at once.</string>
+    <string name="sfs_re_group_photo_target_text">Group Photo (Target)</string>
+    <string name="sfs_ai_all_faces_detected_automatically_text">All faces detected automatically</string>
 
-    <string name="ai_multi_face_swap_step_1_text">STEP 1</string>
-    <string name="app_multi_face_swap_tap_to_select_group_text">Tap to select group photo</string>
-    <string name="app_multi_face_swap_all_faces_will_text">All faces will be detected automatically</string>
-    <string name="app_multi_face_swap_your_face_photo_text">Your Face Photo</string>
-    <string name="app_multi_face_swap_clear_frontal_face_works_best_text">Clear frontal face works best</string>
-    <string name="ai_multi_face_swap_step_2_text">STEP 2</string>
-    <string name="app_multi_face_swap_upload_your_face_photo_text">Upload your face photo</string>
-    <string name="app_multi_face_swap_10_coins_text">10 Coins</string>
-    <string name="app_multi_face_swap_generate_image_text">✦  Generate Image</string>
+    <string name="sfs_ai_multi_face_swap_step_1_text">STEP 1</string>
+    <string name="sfs_re_multi_face_swap_tap_to_select_group_text">Tap to select group photo</string>
+    <string name="sfs_re_multi_face_swap_all_faces_will_text">All faces will be detected automatically</string>
+    <string name="sfs_re_multi_face_swap_your_face_photo_text">Your Face Photo</string>
+    <string name="sfs_re_multi_face_swap_clear_frontal_face_works_best_text">Clear frontal face works best</string>
+    <string name="sfs_ai_multi_face_swap_step_2_text">STEP 2</string>
+    <string name="sfs_re_multi_face_swap_upload_your_face_photo_text">Upload your face photo</string>
+    <string name="sfs_re_multi_face_swap_10_coins_text">10 Coins</string>
+    <string name="sfs_re_multi_face_swap_generate_image_text">✦  Generate Image</string>
 
-    <string name="app_face_save_to_gallery_text">Save to Gallery</string>
-    <string name="app_face_your_result_is_ready_text">Your result is ready ✦</string>
-    <string name="app_face_skip_text">Skip</string>
-    <string name="app_header_face_swap_upper">FACE SWAP</string>
-    <string name="app_home_swap_your_face_text">Swap Your Face</string>
-    <string name="app_face_replace_describe_new_background_text">Describe New Background</string>
-    <string name="app_face_replace_be_descriptive_for_best_text">Be descriptive for best results</string>
-    <string name="app_face_replace_step_2_text">STEP 2</string>
-    <string name="app_face_header_section_title_text">Section Title</string>
-    <string name="app_header_see_all_text">See All</string>
-    <string name="app_select_which_face_you_text">Select which face you want to use</string>
-    <string name="app_face_language_english_text">English</string>
+    <string name="sfs_face_re_save_to_gallery_text">Save to Gallery</string>
+    <string name="sfs_face_re_your_result_is_ready_text">Your result is ready ✦</string>
+    <string name="sfs_face_re_skip_text">Skip</string>
+    <string name="sfs_re_header_face_swap_upper">FACE SWAP</string>
+    <string name="sfs_re_dash_swap_your_face_text">Swap Your Face</string>
+    <string name="sfs_face_re_replace_describe_old_bkg_text">Describe New Background</string>
+    <string name="sfs_face_re_replace_be_descriptive_for_best_text">Be descriptive for best results</string>
+    <string name="sfs_face_re_replace_step_2_text">STEP 2</string>
+    <string name="sfs_face_re_header_section_title_text">Section Title</string>
+    <string name="sfs_re_header_see_all_text">See All</string>
+    <string name="sfs_re_select_which_face_you_text">Select which face you want to use</string>
+    <string name="sfs_face_re_lnguage_english_text">English</string>
 
 
-    <string name="app_face_replace_background_text">✦  Replace Background</string>
-    <string name="app_face_replace_text">Replace </string>
-    <string name="app_face_only_background_text">Background</string>
-    <string name="app_face_replace_upload_a_photo_text">Upload a photo and describe your desired background.</string>
-    <string name="app_face_replace_your_photo_text">Your Photo</string>
-    <string name="app_face_replace_subject_should_be_clearly_text">Subject should be clearly visible</string>
-    <string name="app_replace_step_1_text">STEP 1</string>
-    <string name="app_face_replace_tap_to_upload_your_text">Tap to upload your photo</string>
-    <string name="app_face_replace_any_photo_with_text">Any photo with a clear subject</string>
+    <string name="sfs_face_re_replace_bkg_text">✦  Replace Background</string>
+    <string name="sfs_face_re_replace_text">Replace </string>
+    <string name="sfs_face_re_only_bkg_text">Background</string>
+    <string name="sfs_face_re_replace_upload_a_photo_text">Upload a photo and describe your desired background.</string>
+    <string name="sfs_face_re_replace_your_photo_text">Your Photo</string>
+    <string name="sfs_face_re_replace_subject_should_be_clearly_text">Subject should be clearly visible</string>
+    <string name="sfs_re_replace_step_1_text">STEP 1</string>
+    <string name="sfs_face_re_replace_tap_to_upload_your_text">Tap to upload your photo</string>
+    <string name="sfs_face_re_replace_any_photo_with_text">Any photo with a clear subject</string>
 
-    <string name="app_become_anyone_in_just_text">Become anyone in just one tap</string>
-    <string name="app_home_try_now_text">Try Now</string>
-    <string name="app_face_slider_before_text">Before</string>
-    <string name="app_face_slider_after_text">After</string>
-    <string name="app_face_background_replace_text">Background Replace</string>
-    <string name="app_face_replace_10_coins_text">10 Coins</string>
+    <string name="sfs_re_become_anyone_in_just_text">Become anyone in just one tap</string>
+    <string name="sfs_re_dash_try_now_text">Try Now</string>
+    <string name="sfs_face_re_slider_before_text">Before</string>
+    <string name="sfs_face_re_slider_after_text">After</string>
+    <string name="sfs_face_re_bkg_replace_text">Background Replace</string>
+    <string name="sfs_face_re_replace_10_coins_text">10 Coins</string>
 
-    <string name="app_language_text">Languages</string>
-    <string name="app_language_save_text">Save</string>
+    <string name="sfs_re_lnguage_text">Languages</string>
+    <string name="sfs_re_lnguage_save_text">Save</string>
 
-    <string name="app_face_swap_face_text">Face</string>
-    <string name="app_swap_pick_a_template_text">Pick a template, upload your photo — done.</string>
-    <string name="app_swap_target_template_text">Target Template</string>
-    <string name="app_swap_gallery_or_preset_text">Gallery or preset</string>
-    <string name="app_face_failed_to_read_image_text">Failed to read image</string>
-    <string name="app_face_no_image_to_download_text">No image to download</string>
-    <string name="app_face_storage_permission_is_needed_text">Storage permission is needed to save images</string>
-    <string name="app_face_no_image_to_share_text">No image to share</string>
-    <string name="app_swap_step_1_first_text">STEP 1</string>
-    <string name="app_swap_tap_to_select_text">Tap to select template</string>
-    <string name="app_swap_choose_from_gallery_presets_text">Choose from gallery or presets</string>
-    <string name="app_swap_your_face_photo_text">Your Face Photo</string>
-    <string name="app_swap_clear_frontal_photo_works_text">Clear frontal photo works best</string>
-    <string name="app_swap_step_2_second_text">STEP 2</string>
-    <string name="app_swap_ten_coins_text">10 Coins</string>
-    <string name="app_swap_start_swapping_text">✦  Start Swapping</string>
-    <string name="app_enhance_ai_face_enhance_text">AI Face Enhance</string>
-    <string name="app_swap_enhance_ten_coins_text">10 Coins</string>
-    <string name="app_enhance_face_text">✦  Enhance Face</string>
+    <string name="sfs_face_re_swap_face_text">Face</string>
+    <string name="sfs_re_swap_pick_a_template_text">Pick a template, upload your photo — done.</string>
+    <string name="sfs_re_swap_target_template_text">Target Template</string>
+    <string name="sfs_re_swap_gallery_or_preset_text">Gallery or preset</string>
+    <string name="sfs_face_re_failed_to_read_image_text">Failed to read image</string>
+    <string name="sfs_face_re_no_image_to_download_text">No image to download</string>
+    <string name="sfs_face_re_storage_permission_is_needed_text">Storage permission is needed to save images</string>
+    <string name="sfs_face_re_no_image_to_share_text">No image to share</string>
+    <string name="sfs_re_swap_step_1_first_text">STEP 1</string>
+    <string name="sfs_re_swap_tap_to_select_text">Tap to select template</string>
+    <string name="sfs_re_swap_choose_from_gallery_presets_text">Choose from gallery or presets</string>
+    <string name="sfs_re_swap_your_face_photo_text">Your Face Photo</string>
+    <string name="sfs_re_swap_clear_frontal_photo_works_text">Clear frontal photo works best</string>
+    <string name="sfs_re_swap_step_2_second_text">STEP 2</string>
+    <string name="sfs_re_swap_ten_coins_text">10 Coins</string>
+    <string name="sfs_re_swap_start_swapping_text">✦  Start Swapping</string>
+    <string name="sfs_re_enhance_ai_face_enhance_text">AI Face Enhance</string>
+    <string name="sfs_re_swap_enhance_ten_coins_text">10 Coins</string>
+    <string name="sfs_re_enhance_face_text">✦  Enhance Face</string>
 
-    <string name="app_face_please_enter_a_prompt_text">Please enter a prompt to generate</string>
-    <string name="app_face_please_upload_a_photo_text">Please upload a photo first</string>
+    <string name="sfs_face_re_please_enter_a_prompt_text">Please enter a prompt to generate</string>
+    <string name="sfs_face_re_please_upload_a_photo_text">Please upload a photo first</string>
 
-    <string name="app_face_failed_to_prepare_image_text">Failed to prepare image for sharing</string>
-    <string name="app_ai_please_enter_a_prompt_text">Please enter a prompt.</string>
-    <string name="app_enhance_ai_face_text">AI Face </string>
-    <string name="app_enhancer_text">Enhancer</string>
-    <string name="app_enhance_restore_and_sharpen_text">Restore and sharpen facial details using AI.</string>
-    <string name="app_enhance_upload_photo_text">Upload Photo</string>
-    <string name="app_enhance_works_best_with_portraits_and_text">Works best with portraits and selfies</string>
-    <string name="app_enhance_tap_to_upload_text">Tap to upload your photo</string>
-    <string name="app_enhance_portrait_or_selfie_works_text">Portrait or selfie works best</string>
-    <string name="app_enhance_face_restoration_text">✨ GFPGAN Face Restoration</string>
-    <string name="app_enhance_uses_stateoftheart_ai_to_restore_text">Uses state-of-the-art AI to restore blurry or low-quality faces. Perfect for old photos, scanned images, or low-resolution selfies.</string>
-    <string name="app_image_remove_bg_text">Remove BG</string>
-    <string name="app_edit_change_bg_text">Change BG</string>
-    <string name="app_image_enhance_text">Enhance</string>
+    <string name="sfs_face_re_failed_to_prepare_image_text">Failed to prepare image for sharing</string>
+    <string name="sfs_re_ai_please_enter_a_prompt_text">Please enter a prompt.</string>
+    <string name="sfs_re_enhance_ai_face_text">AI Face </string>
+    <string name="sfs_re_enhancer_text">Enhancer</string>
+    <string name="sfs_re_enhance_restore_and_sharpen_text">Restore and sharpen facial details using AI.</string>
+    <string name="sfs_re_enhance_upload_photo_text">Upload Photo</string>
+    <string name="sfs_re_enhance_works_best_with_portraits_and_text">Works best with portraits and selfies</string>
+    <string name="sfs_re_enhance_tap_to_upload_text">Tap to upload your photo</string>
+    <string name="sfs_re_enhance_portrait_or_selfie_works_text">Portrait or selfie works best</string>
+    <string name="sfs_re_enhance_face_restoration_text">✨ GFPGAN Face Restoration</string>
+    <string name="sfs_re_enhance_uses_stateoftheart_ai_to_restore_text">Uses state-of-the-art AI to restore blurry or low-quality faces. Perfect for old photos, scanned images, or low-resolution selfies.</string>
+    <string name="sfs_re_image_rmv_bkg_text">Remove BG</string>
+    <string name="sfs_re_edt_change_bkg_text">Change BG</string>
+    <string name="sfs_re_image_enhance_text">Enhance</string>
 
-    <string name="app_ai_please_upload_your_image_text">Please upload your image.</string>
-    <string name="app_ai_failed_to_read_image_text">Failed to read image.</string>
-    <string name="app_ai_photo_generation_failed_please_text">Image generation failed. Please try again.</string>
-    <string name="app_ai_an_error_occurred_please_text">An error occurred. Please try again.</string>
-    <string name="app_ai_permission_granted_text">✓ Permission granted!</string>
-    <string name="app_ai_please_select_a_target_text">Please select a target template image first</string>
-    <string name="app_ai_please_add_your_face_text">Please add your face photo</string>
-    <string name="app_ai_failed_to_prepare_template_text">Failed to prepare template image</string>
-    <string name="app_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="sfs_re_ai_please_upload_your_image_text">Please upload your image.</string>
+    <string name="sfs_re_ai_failed_to_read_image_text">Failed to read image.</string>
+    <string name="sfs_re_ai_photo_generation_failed_please_text">Image generation failed. Please try again.</string>
+    <string name="sfs_re_ai_an_err_occurred_please_text">An error occurred. Please try again.</string>
+    <string name="sfs_re_ai_permission_granted_text">✓ Permission granted!</string>
+    <string name="sfs_re_ai_please_select_a_target_text">Please select a target template image first</string>
+    <string name="sfs_re_ai_please_add_your_face_text">Please add your face photo</string>
+    <string name="sfs_re_ai_failed_to_prepare_template_text">Failed to prepare template image</string>
+    <string name="sfs_face_re_failed_to_read_face_text">Failed to read face photo</string>
 
     <!-- Download & Share -->
-    <string name="app_face_gallery_save_text">✓ Saved to Gallery!</string>
-    <string name="app_face_image_save_error_text">Failed to save image</string>
-    <string name="app_face_image_share_preparing_text">Preparing to share…</string>
-    <string name="app_face_server_share_text">Share</string>
+    <string name="sfs_face_re_gallery_save_text">✓ Saved to Gallery!</string>
+    <string name="sfs_face_re_image_save_err_text">Failed to save image</string>
+    <string name="sfs_face_re_image_share_preparing_text">Preparing to share…</string>
+    <string name="sfs_face_re_server_share_text">Share</string>
 
-    <string name="app_ai_face_error_occurred_please_text">An error occurred. Please try again.</string>
-    <string name="app_ai_face_operation_failed_please_try_again_text">Operation failed. Please try again.</string>
-    <string name="app_main_app_could_not_load_templates_text">Could not load templates. Pull to retry.</string>
-    <string name="app_ai_face_this_image_link_has_text">This image link has expired</string>
-    <string name="app_face_ai_please_select_a_target_text">Please select a target template image first</string>
-    <string name="app_ai_face_please_add_your_face_text">Please add your face photo</string>
-    <string name="app_failed_to_prepare_target_text">Failed to prepare target template</string>
-    <string name="app_ai_face_failed_to_read_face_text">Failed to read face photo</string>
-    <string name="app_face_ai_face_selected_text">Face Selected</string>
+    <string name="sfs_re_ai_face_err_occurred_please_text">An error occurred. Please try again.</string>
+    <string name="sfs_re_ai_face_operation_failed_please_try_again_text">Operation failed. Please try again.</string>
+    <string name="sfs_re_main_re_could_not_load_templates_text">Could not load templates. Pull to retry.</string>
+    <string name="sfs_re_ai_face_this_image_link_has_text">This image link has expired</string>
+    <string name="sfs_face_re_ai_please_select_a_target_text">Please select a target template image first</string>
+    <string name="sfs_re_ai_face_please_add_your_face_text">Please add your face photo</string>
+    <string name="sfs_re_failed_to_prepare_target_text">Failed to prepare target template</string>
+    <string name="sfs_re_ai_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="sfs_face_re_ai_face_selected_text">Face Selected</string>
 
     <!-- Coin System -->
-    <string name="app_face_dialog_insufficient_coins_text">Insufficient Coins</string>
-    <string name="app_face_dialog_required_coins_cost_text">Required: %s coins</string>
-    <string name="app_face_insufficient_coins_balance_text">Your balance: %s coins</string>
-    <string name="app_total_coins_earned_text">Total Earned</string>
-    <string name="app_face_total_coin_spent_text">Total Spent</string>
-    <string name="app_face_total_coin_balance_text">Coin balance</string>
-    <string name="app_face_buy_coins_text">Buy Coins</string>
-    <string name="app_face_watch_ad_continue_text">Watch Ad to Continue</string>
-    <string name="app_face_coin_history_text">Coin History</string>
-    <string name="app_coin_your_history_text">Your transaction history</string>
-    <string name="app_coin_no_history_text">No transactions yet</string>
-    <string name="app_coin_current_balance_text">Current Balance</string>
+    <string name="sfs_face_re_dlog_insufficient_coins_text">Insufficient Coins</string>
+    <string name="sfs_face_re_dlog_required_coins_cost_text">Required: %s coins</string>
+    <string name="sfs_face_re_insufficient_coins_balance_text">Your balance: %s coins</string>
+    <string name="sfs_re_total_coins_earned_text">Total Earned</string>
+    <string name="sfs_face_re_total_coin_spent_text">Total Spent</string>
+    <string name="sfs_face_re_total_coin_balance_text">Coin balance</string>
+    <string name="sfs_face_re_buy_coins_text">Buy Coins</string>
+    <string name="sfs_face_re_watch_ad_continue_text">Watch Ad to Continue</string>
+    <string name="sfs_face_re_coin_history_text">Coin History</string>
+    <string name="sfs_re_coin_your_history_text">Your transaction history</string>
+    <string name="sfs_re_coin_no_history_text">No transactions yet</string>
+    <string name="sfs_re_coin_current_balance_text">Current Balance</string>
 
-    <string name="app_couple_face_please_select_the_couple_text">Please select the couple/target photo first</string>
-    <string name="app_background_failed_to_read_image_text">Failed to read image</string>
+    <string name="sfs_re_couple_face_please_select_the_couple_text">Please select the couple/target photo first</string>
+    <string name="sfs_re_bkg_failed_to_read_image_text">Failed to read image</string>
 
-    <string name="app_open_no_browser_found_text">No browser found</string>
-    <string name="app_loader_please_wait_generation_text">Please wait, generation in progress...</string>
+    <string name="sfs_re_open_no_browser_found_text">No browser found</string>
+    <string name="sfs_re_loader_please_wait_generation_text">Please wait, generation in progress...</string>
 
-    <string name="app_couple_face_please_upload_your_face_text">Please upload your face photo</string>
-    <string name="app_couple_face_failed_to_prepare_target_text">Failed to prepare target photo</string>
-    <string name="app_background_please_upload_a_photo_text">Please upload a photo first</string>
-    <string name="app_background_please_describe_the_new_text">Please describe the new background</string>
+    <string name="sfs_re_couple_face_please_upload_your_face_text">Please upload your face photo</string>
+    <string name="sfs_re_couple_face_failed_to_prepare_target_text">Failed to prepare target photo</string>
+    <string name="sfs_re_bkg_please_upload_a_photo_text">Please upload a photo first</string>
+    <string name="sfs_re_bkg_please_describe_the_old_text">Please describe the new background</string>
 
-    <string name="app_couple_face_failed_to_read_face_text">Failed to read face photo</string>
-    <string name="app_edit_background_selected_text">Background selected</string>
-    <string name="app_face_no_email_app_found_text">No email app found</string>
+    <string name="sfs_re_couple_face_failed_to_read_face_text">Failed to read face photo</string>
+    <string name="sfs_re_edt_bkg_selected_text">Background selected</string>
+    <string name="sfs_face_re_no_email_re_found_text">No email app found</string>
 
-    <string name="app_splash_bottom_ads_containe_text">This action may contains ads</string>
+    <string name="sfs_re_spl_bottom_ads_containe_text">This action may contains ads</string>
 
-    <string name="app_open_coming_soon_text">Coming soon</string>
-    <string name="app_edit_permission_granted_text">✓ Permission granted!</string>
+    <string name="sfs_re_open_coming_soon_text">Coming soon</string>
+    <string name="sfs_re_edt_permission_granted_text">✓ Permission granted!</string>
 
 
     <!-- Dialog: Server Busy -->
-    <string name="app_server_high_demand_text">We\'re Experiencing High Demand</string>
-    <string name="app_face_server_high_demand_desc_text">Our servers are handling a lot of requests right now. Please wait a moment and try again.</string>
-    <string name="app_face_server_busy_retry_button_text">Try Again</string>
-    <string name="app_face_data_busy_back_button_text">Go Back</string>
+    <string name="sfs_re_server_high_demand_text">We\'re Experiencing High Demand</string>
+    <string name="sfs_face_re_server_high_demand_desc_text">Our servers are handling a lot of requests right now. Please wait a moment and try again.</string>
+    <string name="sfs_face_re_server_busy_retry_button_text">Try Again</string>
+    <string name="sfs_face_re_data_busy_back_button_text">Go Back</string>
 
-    <string name="store_buy_now" translatable="false">Buy Now</string>
+    <string name="sfs_store_buy_now" translatable="false">Buy Now</string>
 
     <!-- ── Paywall Screen ── -->
-    <string name="paywall_premium_label" translatable="false">PREMIUM</string>
-    <string name="paywall_hero_line1" translatable="false">No ads.</string>
-    <string name="paywall_hero_line2" translatable="false">Our best features.</string>
-    <string name="paywall_hero_line3" translatable="false">Try free for 3 days.</string>
-    <string name="paywall_col_basic" translatable="false">Basic</string>
-    <string name="paywall_col_pro" translatable="false">Pro</string>
-    <string name="paywall_feature_no_ads" translatable="false">No Ads</string>
-    <string name="paywall_feature_hd" translatable="false">HD Quality Swaps</string>
-    <string name="paywall_feature_4k" translatable="false">4K Video Generation</string>
-    <string name="paywall_feature_priority" translatable="false">Priority Processing</string>
-    <string name="paywall_cta_trial" translatable="false">3 Day Free Trial</string>
-    <string name="paywall_restore" translatable="false">Restore</string>
-    <string name="paywall_privacy" translatable="false">Privacy Policy</string>
-    <string name="paywall_terms" translatable="false">Terms &amp; Conditions</string>
-    <string name="paywall_close" translatable="false">Close</string>
+    <string name="sfs_paywall_premium_label" translatable="false">PREMIUM</string>
+    <string name="sfs_paywall_hero_line1" translatable="false">No ads.</string>
+    <string name="sfs_paywall_hero_line2" translatable="false">Our best features.</string>
+    <string name="sfs_paywall_hero_line3" translatable="false">Try free for 3 days.</string>
+    <string name="sfs_paywall_col_basic" translatable="false">Basic</string>
+    <string name="sfs_paywall_col_pro" translatable="false">Pro</string>
+    <string name="sfs_paywall_feature_no_ads" translatable="false">No Ads</string>
+    <string name="sfs_paywall_feature_hd" translatable="false">HD Quality Swaps</string>
+    <string name="sfs_paywall_feature_4k" translatable="false">4K Video Generation</string>
+    <string name="sfs_paywall_feature_priority" translatable="false">Priority Processing</string>
+    <string name="sfs_paywall_cta_trial" translatable="false">3 Day Free Trial</string>
+    <string name="sfs_paywall_restore" translatable="false">Restore</string>
+    <string name="sfs_paywall_privacy" translatable="false">Privacy Policy</string>
+    <string name="sfs_paywall_terms" translatable="false">Terms &amp; Conditions</string>
+    <string name="sfs_paywall_close" translatable="false">Close</string>
 
     <!-- Facebook SDK Configurations -->
-    <string name="facebook_app_id" translatable="false">1507525427160676</string>
-    <string name="facebook_client_token" translatable="false">f46cb1d9c367727d6993b1fa760d26e8</string>
+    <string name="sfs_facebook_re_id" translatable="false">1507525427160676</string>
+    <string name="sfs_facebook_client_token" translatable="false">f46cb1d9c367727d6993b1fa760d26e8</string>
 
     <!-- Video Face Swap -->
-    <string name="video_swap_title" translatable="false">Video Face Swap</string>
-    <string name="video_swap_hero_1" translatable="false">Swap your </string>
-    <string name="video_swap_hero_2" translatable="false">Face in Video</string>
-    <string name="video_swap_subtitle" translatable="false">Upload a video and your face photo to swap.</string>
-    <string name="video_swap_upload_video" translatable="false">Upload Video</string>
+    <string name="sfs_mov_swap_title" translatable="false">Video Face Swap</string>
+    <string name="sfs_mov_swap_hero_1" translatable="false">Swap your </string>
+    <string name="sfs_mov_swap_hero_2" translatable="false">Face in Video</string>
+    <string name="sfs_mov_swap_subtitle" translatable="false">Upload a video and your face photo to swap.</string>
+    <string name="sfs_mov_swap_upload_video" translatable="false">Upload Video</string>
 
-    <string name="video_swap_tap_to_select_video" translatable="false">Tap to select video</string>
-    <string name="video_swap_select_from_gallery_or_record" translatable="false">Select from gallery or record a video</string>
-    <string name="video_swap_generate_video" translatable="false">✦  Generate Video</string>
-    <string name="video_swap_please_select_video" translatable="false">Please select a video</string>
+    <string name="sfs_mov_swap_tap_to_select_video" translatable="false">Tap to select video</string>
+    <string name="sfs_mov_swap_select_from_gallery_or_record" translatable="false">Select from gallery or record a video</string>
+    <string name="sfs_mov_swap_generate_video" translatable="false">✦  Generate Video</string>
+    <string name="sfs_mov_swap_please_select_video" translatable="false">Please select a video</string>
 
-    <string name="video_swap_cost_label" translatable="false">%s Coins</string>
+    <string name="sfs_mov_swap_cost_label" translatable="false">%s Coins</string>
 
-    <string name="MainActivity_could_not_load_templates" translatable="false">Could not load templates. Pull to retry.</string>
-    <string name="dialog_api_error_msg" translatable="false">Something went wrong while connecting to our servers. Please try again.</string>
-    <string name="dialog_api_error_title" translatable="false">Connection Error</string>
-    <string name="dialog_no_internet_msg" translatable="false">Please check your internet connection and try again.</string>
+    <string name="sfs_MainActivity_could_not_load_templates" translatable="false">Could not load templates. Pull to retry.</string>
+    <string name="sfs_dlog_api_err_msg" translatable="false">Something went wrong while connecting to our servers. Please try again.</string>
+    <string name="sfs_dlog_api_err_title" translatable="false">Connection Error</string>
+    <string name="sfs_dlog_no_internet_msg" translatable="false">Please check your internet connection and try again.</string>
 
 
-    <string name="login_welcome_back" translatable="false">Welcome Back</string>
-    <string name="login_subtitle" translatable="false">Sign in to continue your creative journey</string>
-    <string name="login_email_hint" translatable="false">Email Address</string>
-    <string name="login_password_hint" translatable="false">Password</string>
-    <string name="login_button" translatable="false">Log In</string>
-    <string name="login_no_account" translatable="false">Don\'t have an account? </string>
-    <string name="login_sign_up_link" translatable="false">Sign Up</string>
-    <string name="login_error_empty_email" translatable="false">Please enter your email</string>
-    <string name="login_error_invalid_email" translatable="false">Please enter a valid email</string>
-    <string name="login_error_empty_password" translatable="false">Please enter your password</string>
-    <string name="login_error_short_password" translatable="false">Password must be at least 6 characters</string>
-    <string name="login_error_failed" translatable="false">Login failed. Please try again.</string>
-    <string name="login_error_wrong_password" translatable="false">Incorrect password. Please try again.</string>
-    <string name="login_error_user_not_found" translatable="false">No account found with this email.</string>
-    <string name="login_error_too_many_requests" translatable="false">Too many attempts. Please try later.</string>
-    <string name="login_logging_in" translatable="false">Logging in…</string>
+    <string name="sfs_login_welcome_back" translatable="false">Welcome Back</string>
+    <string name="sfs_login_subtitle" translatable="false">Sign in to continue your creative journey</string>
+    <string name="sfs_login_email_hint" translatable="false">Email Address</string>
+    <string name="sfs_login_password_hint" translatable="false">Password</string>
+    <string name="sfs_login_button" translatable="false">Log In</string>
+    <string name="sfs_login_no_account" translatable="false">Don\'t have an account? </string>
+    <string name="sfs_login_sign_up_link" translatable="false">Sign Up</string>
+    <string name="sfs_login_err_empty_email" translatable="false">Please enter your email</string>
+    <string name="sfs_login_err_invalid_email" translatable="false">Please enter a valid email</string>
+    <string name="sfs_login_err_empty_password" translatable="false">Please enter your password</string>
+    <string name="sfs_login_err_short_password" translatable="false">Password must be at least 6 characters</string>
+    <string name="sfs_login_err_failed" translatable="false">Login failed. Please try again.</string>
+    <string name="sfs_login_err_wrong_password" translatable="false">Incorrect password. Please try again.</string>
+    <string name="sfs_login_err_user_not_found" translatable="false">No account found with this email.</string>
+    <string name="sfs_login_err_too_many_requests" translatable="false">Too many attempts. Please try later.</string>
+    <string name="sfs_login_login_in" translatable="false">Logging in…</string>
 
-    <string name="signup_create_account" translatable="false">Create Account</string>
-    <string name="signup_subtitle" translatable="false">Join us and start swapping faces today</string>
-    <string name="signup_user_id_label" translatable="false">Your User ID</string>
-    <string name="signup_full_name_hint" translatable="false">Full Name</string>
-    <string name="signup_email_hint" translatable="false">Email Address</string>
-    <string name="signup_password_hint" translatable="false">Password</string>
-    <string name="signup_confirm_password_hint" translatable="false">Confirm Password</string>
-    <string name="signup_button" translatable="false">Create Account</string>
-    <string name="signup_have_account" translatable="false">Already have an account? </string>
-    <string name="signup_login_link" translatable="false">Log In</string>
-    <string name="signup_error_empty_name" translatable="false">Please enter your name</string>
-    <string name="signup_error_short_name" translatable="false">Name must be at least 2 characters</string>
-    <string name="signup_error_empty_email" translatable="false">Please enter your email</string>
-    <string name="signup_error_invalid_email" translatable="false">Please enter a valid email</string>
-    <string name="signup_error_empty_password" translatable="false">Please enter a password</string>
-    <string name="signup_error_short_password" translatable="false">Password must be at least 6 characters</string>
-    <string name="signup_error_empty_confirm" translatable="false">Please confirm your password</string>
-    <string name="signup_error_password_mismatch" translatable="false">Passwords do not match</string>
-    <string name="signup_error_failed" translatable="false">Sign up failed. Please try again.</string>
-    <string name="signup_error_email_exists" translatable="false">An account with this email already exists.</string>
-    <string name="signup_error_weak_password" translatable="false">Password is too weak. Use at least 6 characters.</string>
-    <string name="signup_signing_up" translatable="false">Creating account…</string>
+    <string name="sfs_signup_create_account" translatable="false">Create Account</string>
+    <string name="sfs_signup_subtitle" translatable="false">Join us and start swapping faces today</string>
+    <string name="sfs_signup_user_id_label" translatable="false">Your User ID</string>
+    <string name="sfs_signup_full_name_hint" translatable="false">Full Name</string>
+    <string name="sfs_signup_email_hint" translatable="false">Email Address</string>
+    <string name="sfs_signup_password_hint" translatable="false">Password</string>
+    <string name="sfs_signup_confirm_password_hint" translatable="false">Confirm Password</string>
+    <string name="sfs_signup_button" translatable="false">Create Account</string>
+    <string name="sfs_signup_have_account" translatable="false">Already have an account? </string>
+    <string name="sfs_signup_login_link" translatable="false">Log In</string>
+    <string name="sfs_signup_err_empty_name" translatable="false">Please enter your name</string>
+    <string name="sfs_signup_err_short_name" translatable="false">Name must be at least 2 characters</string>
+    <string name="sfs_signup_err_empty_email" translatable="false">Please enter your email</string>
+    <string name="sfs_signup_err_invalid_email" translatable="false">Please enter a valid email</string>
+    <string name="sfs_signup_err_empty_password" translatable="false">Please enter a password</string>
+    <string name="sfs_signup_err_short_password" translatable="false">Password must be at least 6 characters</string>
+    <string name="sfs_signup_err_empty_confirm" translatable="false">Please confirm your password</string>
+    <string name="sfs_signup_err_password_mismatch" translatable="false">Passwords do not match</string>
+    <string name="sfs_signup_err_failed" translatable="false">Sign up failed. Please try again.</string>
+    <string name="sfs_signup_err_email_exists" translatable="false">An account with this email already exists.</string>
+    <string name="sfs_signup_err_weak_password" translatable="false">Password is too weak. Use at least 6 characters.</string>
+    <string name="sfs_signup_signing_up" translatable="false">Creating account…</string>
 
 
     <!-- Settings: Account Section (APP_EXP == 1) -->
-    <string name="settings_account" translatable="false">Account</string>
-    <string name="settings_edit_name" translatable="false">Edit Name</string>
-    <string name="settings_logout" translatable="false">Log Out</string>
-    <string name="settings_delete_account" translatable="false">Delete Account</string>
-    <string name="settings_logout_confirm_title" translatable="false">Log Out</string>
-    <string name="settings_logout_confirm_msg" translatable="false">Are you sure you want to log out?</string>
-    <string name="settings_delete_confirm_title" translatable="false">Delete Account</string>
-    <string name="settings_delete_confirm_msg" translatable="false">This will permanently delete your account and all associated data. This action cannot be undone.</string>
-    <string name="settings_delete_reauth_title" translatable="false">Verify Identity</string>
-    <string name="settings_delete_reauth_msg" translatable="false">Please enter your password to continue</string>
-    <string name="settings_edit_name_title" translatable="false">Edit Name</string>
-    <string name="settings_edit_name_hint" translatable="false">Enter your name</string>
-    <string name="settings_account_deleted" translatable="false">Account deleted successfully</string>
-    <string name="settings_name_updated" translatable="false">Name updated successfully</string>
-    <string name="settings_error_delete" translatable="false">Failed to delete account. Please try again.</string>
-    <string name="settings_error_update_name" translatable="false">Failed to update name. Please try again.</string>
-    <string name="settings_error_reauth" translatable="false">Incorrect password. Please try again.</string>
+    <string name="sfs_stngs_account" translatable="false">Account</string>
+    <string name="sfs_stngs_edt_name" translatable="false">Edit Name</string>
+    <string name="sfs_stngs_logout" translatable="false">Log Out</string>
+    <string name="sfs_stngs_delete_account" translatable="false">Delete Account</string>
+    <string name="sfs_stngs_logout_confirm_title" translatable="false">Log Out</string>
+    <string name="sfs_stngs_logout_confirm_msg" translatable="false">Are you sure you want to log out?</string>
+    <string name="sfs_stngs_delete_confirm_title" translatable="false">Delete Account</string>
+    <string name="sfs_stngs_delete_confirm_msg" translatable="false">This will permanently delete your account and all associated data. This action cannot be undone.</string>
+    <string name="sfs_stngs_delete_reauth_title" translatable="false">Verify Identity</string>
+    <string name="sfs_stngs_delete_reauth_msg" translatable="false">Please enter your password to continue</string>
+    <string name="sfs_stngs_edt_name_title" translatable="false">Edit Name</string>
+    <string name="sfs_stngs_edt_name_hint" translatable="false">Enter your name</string>
+    <string name="sfs_stngs_account_deleted" translatable="false">Account deleted successfully</string>
+    <string name="sfs_stngs_name_updated" translatable="false">Name updated successfully</string>
+    <string name="sfs_stngs_err_delete" translatable="false">Failed to delete account. Please try again.</string>
+    <string name="sfs_stngs_err_update_name" translatable="false">Failed to update name. Please try again.</string>
+    <string name="sfs_stngs_err_reauth" translatable="false">Incorrect password. Please try again.</string>
 
-    <string name="app_home_hero_badge">AI STUDIO</string>
-    <string name="app_home_hero_title">Transform Your\nPhotos with AI</string>
-    <string name="app_home_hero_subtitle">Swap faces, enhance \u0026 create</string>
-    <string name="app_home_face_swap_cta">Face Swap</string>
-    <string name="app_home_ai_create_cta">AI Create</string>
-    <string name="app_home_explore_templates">Explore Templates</string>
-    <string name="app_home_explore_subtitle">Browse 100+ AI face swap templates</string>
-    <string name="app_home_quick_actions">Quick Actions</string>
-    <string name="app_home_video_swap">Video Swap</string>
-    <string name="app_home_remove_bg">Remove BG</string>
-    <string name="app_home_enhance_face">Enhance</string>
-    <string name="app_home_my_work">My Work</string>
-    <string name="app_template_gallery_title">Templates</string>
+    <string name="sfs_re_dash_hero_badge">AI STUDIO</string>
+    <string name="sfs_re_dash_hero_title">Transform Your\nPhotos with AI</string>
+    <string name="sfs_re_dash_hero_subtitle">Swap faces, enhance \u0026 create</string>
+    <string name="sfs_re_dash_face_swap_cta">Face Swap</string>
+    <string name="sfs_re_dash_ai_create_cta">AI Create</string>
+    <string name="sfs_re_dash_explore_templates">Explore Templates</string>
+    <string name="sfs_re_dash_explore_subtitle">Browse 100+ AI face swap templates</string>
+    <string name="sfs_re_dash_quick_actions">Quick Actions</string>
+    <string name="sfs_re_dash_mov_swap">Video Swap</string>
+    <string name="sfs_re_dash_rmv_bg">Remove BG</string>
+    <string name="sfs_re_dash_enhance_face">Enhance</string>
+    <string name="sfs_re_dash_my_work">My Work</string>
+    <string name="sfs_re_template_gallery_title">Templates</string>
 
 </resources>

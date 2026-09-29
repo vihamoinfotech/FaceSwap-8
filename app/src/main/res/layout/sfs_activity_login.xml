@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_24sdp"
+            android:paddingTop="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_24sdp">
+
+            <!-- App Logo -->
+            <FrameLayout
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sfs_ic_logo_transparent" />
+            </FrameLayout>
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/sfs_re_poppins_bold"
+                android:includeFontPadding="false"
+                android:text="@string/sfs_login_welcome_back"
+                android:textColor="#1A1A2E"
+                android:textSize="@dimen/_24sdp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/sfs_re_poppins_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/sfs_login_subtitle"
+                android:textColor="@color/sfs_re_secondary_text"
+                android:textSize="@dimen/_12sdp" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_28sdp" />
+
+            <!-- Email Input -->
+            <LinearLayout
+                android:id="@+id/emailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sfs_bkg_inpt_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:alpha="0.5"
+                    android:contentDescription="@null"
+                    android:src="@drawable/sfs_face_re_feedback_chat"
+                    app:tint="#1A1A2E" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/sfs_re_poppins_regular"
+                    android:hint="@string/sfs_login_email_hint"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:includeFontPadding="false"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="#1A1A2E"
+                    android:textColorHint="@color/sfs_text_tertiary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <!-- Email Error -->
+            <TextView
+                android:id="@+id/tvEmailError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/sfs_re_poppins_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/sfs_re_err_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_14sdp" />
+
+            <!-- Password Input -->
+            <LinearLayout
+                android:id="@+id/passwordContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sfs_bkg_inpt_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:alpha="0.5"
+                    android:contentDescription="@null"
+                    android:src="@drawable/sfs_face_re_secure_locker"
+                    app:tint="#1A1A2E" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/sfs_re_poppins_regular"
+                    android:hint="@string/sfs_login_password_hint"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="yes"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="#1A1A2E"
+                    android:textColorHint="@color/sfs_text_tertiary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_13sdp" />
+
+                <ImageView
+                    android:id="@+id/btnTogglePassword"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:alpha="0.4"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/sfs_face_re_information_bg"
+                    app:tint="#1A1A2E" />
+            </LinearLayout>
+
+            <!-- Password Error -->
+            <TextView
+                android:id="@+id/tvPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/sfs_re_poppins_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/sfs_re_err_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <!-- General Error Message -->
+            <TextView
+                android:id="@+id/tvGeneralError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sfs_re_poppins_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/sfs_re_err_color"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp" />
+
+            <!-- Login Button -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/sfs_re_button_face_primary_bg"
+                    android:elevation="8dp"
+                    android:fontFamily="@font/sfs_re_poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/sfs_login_button"
+                    android:textColor="@color/sfs_white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/loginProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/sfs_white"
+                    app:indicatorSize="@dimen/_22sdp"
+                    app:trackColor="@android:color/transparent"
+                    app:trackThickness="2.5dp" />
+            </FrameLayout>
+
+            <!-- Spacer (expandable to push bottom content down) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Sign Up Link -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfs_re_poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/sfs_login_no_account"
+                    android:textColor="@color/sfs_re_secondary_text"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvSignUpLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/sfs_re_poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:text="@string/sfs_login_sign_up_link"
+                    android:textColor="@color/sfs_re_primary_brand"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

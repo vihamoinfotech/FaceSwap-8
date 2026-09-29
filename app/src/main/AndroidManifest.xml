@@ -32,16 +32,16 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".AppFaceSwap"
+        android:name=".SFS_RefaceSwap"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/face_data_file_extraction_rules"
+        android:dataExtractionRules="@xml/sfs_face_data_file_extraction_rules"
         android:enableOnBackInvokedCallback="false"
-        android:fullBackupContent="@xml/face_backup_file_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_builder_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:fullBackupContent="@xml/sfs_face_backup_file_rules"
+        android:icon="@mipmap/sfs_ic_launcher"
+        android:label="@string/sfs_re_builder_name"
+        android:roundIcon="@mipmap/sfs_ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FaceSwap">
+        android:theme="@style/SFS_Theme.FaceSwap">
         <property
             android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
             android:value="true" />
@@ -62,10 +62,10 @@
 
         <!-- Splash Screen (Launcher) -->
         <activity
-            android:name=".view.AppFaceSplashActivity"
+            android:name=".view.SFS_RefaceSplActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.FaceSwap.Splash">
+            android:theme="@style/SFS_Theme.FaceSwap.Spl">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -74,124 +74,124 @@
         </activity>
 
         <activity
-            android:name=".view.LoginActivity"
+            android:name=".view.SFS_LgnActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
-            android:name=".view.SignupActivity"
+            android:name=".view.SFS_SgnupActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
-            android:name=".view.EditNameActivity"
+            android:name=".view.SFS_EditNameActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"
             android:exported="false" />
 
         <!-- Main -->
         <activity
-            android:name=".view.AppFaceMainActivity"
+            android:name=".view.SFS_RefaceMainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceOnboardingActivity"
+            android:name=".view.SFS_RefaceIntroingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceAppUpdateActivity"
+            android:name=".view.SFS_RefaceAppUpdateActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceLoadingActivity"
+            android:name=".view.SFS_RefaceLoadingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Features -->
         <activity
-            android:name=".view.AppFaceSectionDetailActivity"
+            android:name=".view.SFS_RefaceSectionDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceTemplateGalleryActivity"
+            android:name=".view.SFS_RefacePosterGalleryActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceSwapActivity"
+            android:name=".view.SFS_RefaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceDownloadShareActivity"
+            android:name=".view.SFS_RefaceDownloadShareActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceFaceSelectionActivity"
+            android:name=".view.SFS_RefaceFaceSelectionActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceEditImageActivity"
+            android:name=".view.SFS_RefaceEditPhotoActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceMultiSwapActivity"
+            android:name=".view.SFS_RefaceMultiSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceMyWorkActivity"
+            android:name=".view.SFS_RefaceMyWorkActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceAiImageGenActivity"
+            android:name=".view.SFS_RefaceAiPhotoGenActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceSettingsActivity"
+            android:name=".view.SFS_RefaceSettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceBackgroundPickerActivity"
+            android:name=".view.SFS_RefaceBackgroundSelectionActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.FaceSwap" />
+            android:theme="@style/SFS_Theme.FaceSwap" />
         <activity
-            android:name=".view.AppFaceStoreActivity"
+            android:name=".view.SFS_RefaceCoinStreActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceCoinHistoryActivity"
+            android:name=".view.SFS_RefaceCoinHistoryActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceLanguageActivity"
+            android:name=".view.SFS_RefaceLanguageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- New AI Tool Activities -->
         <activity
-            android:name=".view.AppFaceFaceEnhanceActivity"
+            android:name=".view.SFS_RefaceFaceEnhanceActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceRemoveBgActivity"
+            android:name=".view.SFS_RefaceRemoveBgActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceCoupleFaceSwapActivity"
+            android:name=".view.SFS_RefaceCoupleFaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceTextToImageActivity"
+            android:name=".view.SFS_RefaceTextToPhotoActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFaceVideoFaceSwapActivity"
+            android:name=".view.SFS_RefaceMovieFaceSwapActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.AppFacePaywallActivity"
+            android:name=".view.SFS_RefacePremiumActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.FaceSwap" />
+            android:theme="@style/SFS_Theme.FaceSwap" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -203,10 +203,10 @@
         <!-- Facebook SDK Metadata Configurations -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+            android:value="@string/sfs_facebook_re_id" />
         <meta-data
             android:name="com.facebook.sdk.ClientToken"
-            android:value="@string/facebook_client_token" />
+            android:value="@string/sfs_facebook_client_token" />
         <meta-data
             android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
             android:value="true" />
@@ -218,7 +218,7 @@
         <!-- These are used when the app is in background/killed and FCM auto-displays -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/app_notification_little" />
+            android:resource="@drawable/sfs_re_notification_little" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="faceswap_push_channel" />
@@ -231,13 +231,13 @@
             tools:replace="android:authorities">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"
+                android:resource="@xml/sfs_file_paths"
                 tools:replace="android:resource" />
         </provider>
 
         <!-- Firebase Messaging Service -->
         <service
-            android:name=".service.AppFaceMyFirebaseMessagingService"
+            android:name=".service.SFS_RefaceMyFierbusMessService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -246,11 +246,11 @@
 
         <!-- Local Notification Receiver -->
         <receiver
-            android:name=".worker.AppFaceLocalNotificationReceiver"
+            android:name=".worker.SFS_RefaceLocalNotiReceiver"
             android:exported="false" />
 
         <activity
-            android:name=".view.VideoPaywallActivity"
+            android:name=".view.SFS_MoviePremiumActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

@@ -118,5 +118,5 @@
 # Firebase Auth & Realtime Database
 -keep class com.google.firebase.auth.** { *; }
 -keep class com.google.firebase.database.** { *; }
--keep class com.perfect.faceeditor.facechanger.io.utils.FirebaseAuthManager { *; }
+-keep class com.perfect.faceeditor.facechanger.io.utils.SFS_FierbusAuthMngr { *; }
 -keep class com.perfect.faceeditor.facechanger.io.utils.FirebaseAuthManager$* { *; }

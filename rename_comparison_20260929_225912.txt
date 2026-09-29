@@ -1,0 +1,787 @@
+================================================================================
+RENAME COMPARISON REPORT
+================================================================================
+
+CLASSES
+--------------------------------------------------------------------------------
+AppFaceActivityNavHelper -> SFS_RefaceActivityNaviHlpr
+AppFaceAiImageGenActivity -> SFS_RefaceAiPhotoGenActivity
+AppFaceApiCall -> SFS_RefaceApiCall
+AppFaceApiClient -> SFS_RefaceApiClient
+AppFaceApiRepository -> SFS_RefaceApiRepo
+AppFaceApiService -> SFS_RefaceApiService
+AppFaceAppDialogController -> SFS_RefaceApDlogController
+AppFaceAppSystem -> SFS_RefaceAppSystem
+AppFaceAppUpdateActivity -> SFS_RefaceAppUpdateActivity
+AppFaceBackgroundPickerActivity -> SFS_RefaceBackgroundSelectionActivity
+AppFaceBeforeAfterSliderView -> SFS_RefaceBeforeAfterSliderView
+AppFaceCoinHistoryActivity -> SFS_RefaceCoinHistoryActivity
+AppFaceCoinHistoryAdapter -> SFS_RefaceCoinHistoryAdapter
+AppFaceCoinManager -> SFS_RefaceCoinMngr
+AppFaceCoupleFaceSwapActivity -> SFS_RefaceCoupleFaceSwapActivity
+AppFaceDashedGradientBorderDrawable -> SFS_RefaceDashedGradientBorderDrawable
+AppFaceDefaultApiCall -> SFS_RefaceDefaultApiCall
+AppFaceDeviceUtils -> SFS_RefaceDeviceUtility
+AppFaceDownloadShareActivity -> SFS_RefaceDownloadShareActivity
+AppFaceEditImageActivity -> SFS_RefaceEditPhotoActivity
+AppFaceEditImageData -> SFS_RefaceEditPhotoData
+AppFaceFaceEnhanceActivity -> SFS_RefaceFaceEnhanceActivity
+AppFaceFaceSelectionActivity -> SFS_RefaceFaceSelectionActivity
+AppFaceFaceSwapResponse -> SFS_RefaceFaceSwapResponse
+AppFaceFacebookEventsManager -> SFS_RefaceFacebookEventsMngr
+AppFaceGalleryCategoryAdapter -> SFS_RefaceGalleryCategoryAdapter
+AppFaceGlideHelper -> SFS_RefaceGlideHlpr
+AppFaceHistoryAdapter -> SFS_RefaceHistoryAdapter
+AppFaceHistoryResponse -> SFS_RefaceHistoryResponse
+AppFaceImagePickerHelper -> SFS_RefacePhotoSelectionHlpr
+AppFaceInstallReferrerInfo -> SFS_RefaceInstallRefrenceInfo
+AppFaceLanguageActivity -> SFS_RefaceLanguageActivity
+AppFaceLanguageAdapter -> SFS_RefaceLanguageAdapter
+AppFaceLanguagePrefs -> SFS_RefaceLanguagePrfrnce
+AppFaceLoadingActivity -> SFS_RefaceLoadingActivity
+AppFaceLocalNotificationReceiver -> SFS_RefaceLocalNotiReceiver
+AppFaceLocaleHelper -> SFS_RefaceLocaleHlpr
+AppFaceMainActivity -> SFS_RefaceMainActivity
+AppFaceMultiSwapActivity -> SFS_RefaceMultiSwapActivity
+AppFaceMyFirebaseMessagingService -> SFS_RefaceMyFierbusMessService
+AppFaceMyWorkActivity -> SFS_RefaceMyWorkActivity
+AppFaceNetworkUtils -> SFS_RefaceNetworkUtility
+AppFaceOnCoinDialogListener -> SFS_RefaceOnCoinDialogListener
+AppFaceOnDialogActionListener -> SFS_RefaceOnDialogActionListener
+AppFaceOnServerBusyListener -> SFS_RefaceOnServerBusyListener
+AppFaceOnboardFrgOne -> SFS_RefaceIntroFrgmentOne
+AppFaceOnboardingActivity -> SFS_RefaceIntroingActivity
+AppFacePaywallActivity -> SFS_RefacePremiumActivity
+AppFacePermissionHelper -> SFS_RefacePermissionHlpr
+AppFacePhotoTipsPrefs -> SFS_RefacePhotoTipsPrfrnce
+AppFacePrismVaultVPgr -> SFS_RefacePrismVaultVPgr
+AppFaceProductsID -> SFS_RefaceItemsID
+AppFacePurchaseListener -> SFS_RefacePurchaseListener
+AppFacePurchaseRepository -> SFS_RefacePurchaseRepo
+AppFaceRatingPrefs -> SFS_RefaceReviewPrfrnce
+AppFaceRemoveBgActivity -> SFS_RefaceRemoveBgActivity
+AppFaceRevenueCatManager -> SFS_RefaceRevCatMngr
+AppFaceSectionData -> SFS_RefaceSectionData
+AppFaceSectionDetailActivity -> SFS_RefaceSectionDetailActivity
+AppFaceSessionManager -> SFS_RefaceSessionMngr
+AppFaceSettingsActivity -> SFS_RefaceSettingsActivity
+AppFaceSplashActivity -> SFS_RefaceSplActivity
+AppFaceSplashDataResponse -> SFS_RefaceSplDataResponse
+AppFaceStaticValue -> SFS_RefaceStaticValue
+AppFaceStoreActivity -> SFS_RefaceCoinStreActivity
+AppFaceStoreAdapter -> SFS_RefaceCoinStreAdapter
+AppFaceSwap -> SFS_RefaceSwap
+AppFaceSwapActivity -> SFS_RefaceSwapActivity
+AppFaceTemplateCache -> SFS_RefacePosterCache
+AppFaceTemplateCategory -> SFS_RefacePosterCategory
+AppFaceTemplateGalleryActivity -> SFS_RefacePosterGalleryActivity
+AppFaceTemplateItem -> SFS_RefacePosterItem
+AppFaceTextToImageActivity -> SFS_RefaceTextToPhotoActivity
+AppFaceTools -> SFS_RefaceUtils
+AppFaceVideoFaceSwapActivity -> SFS_RefaceMovieFaceSwapActivity
+AppFaceVideoFaceSwapResponse -> SFS_RefaceMovieFaceSwapResponse
+AppFaceVideoPickerHelper -> SFS_RefaceMovieSelectionHlpr
+BaseAppActivity -> SFS_BaseAppActivity
+EditNameActivity -> SFS_EditNameActivity
+FirebaseAuthManager -> SFS_FierbusAuthMngr
+LoginActivity -> SFS_LgnActivity
+SignupActivity -> SFS_SgnupActivity
+VideoPaywallActivity -> SFS_MoviePremiumActivity
+
+RESOURCE FILES
+--------------------------------------------------------------------------------
+anim/app_nav_fade_in -> anim/sfs_re_navi_fade_in
+anim/app_nav_fade_out -> anim/sfs_re_navi_fade_out
+anim/app_slide_down_exit -> anim/sfs_re_slide_down_exit
+anim/app_slide_up_enter -> anim/sfs_re_slide_up_enter
+drawable/ads_cta_button_bg -> drawable/sfs_ads_cta_button_bg
+drawable/app_button_face_primary_bg -> drawable/sfs_re_button_face_primary_bg
+drawable/app_button_secondary_bg -> drawable/sfs_re_button_secondary_bg
+drawable/app_buy_button_bg -> drawable/sfs_re_buy_button_bg
+drawable/app_chip_face_unselected_bg -> drawable/sfs_re_chip_face_unselected_bg
+drawable/app_circle_face_dark_bg -> drawable/sfs_re_circle_face_dark_bg
+drawable/app_circle_white_alpha -> drawable/sfs_re_circle_white_alpha
+drawable/app_clear_bg_only_light_border -> drawable/sfs_re_clear_bkg_only_light_border
+drawable/app_dialog_gradient_intro_button_full -> drawable/sfs_re_dlog_gradient_intro_button_full
+drawable/app_face_all_view_layer -> drawable/sfs_face_re_all_view_layer
+drawable/app_face_arrow_back -> drawable/sfs_face_re_arw_back
+drawable/app_face_arrow_back -> drawable/sfs_face_re_arw_back
+drawable/app_face_arrow_back_icon -> drawable/sfs_face_re_arw_back_icon
+drawable/app_face_arrow_right -> drawable/sfs_face_re_arw_right
+drawable/app_face_arrow_right -> drawable/sfs_face_re_arw_right
+drawable/app_face_arrow_right_chevron -> drawable/sfs_face_re_arw_right_chevron
+drawable/app_face_badge_best_value_background -> drawable/sfs_face_re_bfge_best_value_bkg
+drawable/app_face_badge_orange_gradient_bg -> drawable/sfs_face_re_bfge_orange_gradient_bg
+drawable/app_face_badge_pink_gradient_bg -> drawable/sfs_face_re_bfge_pink_gradient_bg
+drawable/app_face_badge_popular_bg -> drawable/sfs_face_re_bfge_popular_bg
+drawable/app_face_bottom_bg_sheet -> drawable/sfs_face_re_bottom_bkg_sheet
+drawable/app_face_bottom_nav_bar_bg -> drawable/sfs_face_re_bottom_navi_bar_bg
+drawable/app_face_change_round -> drawable/sfs_face_re_change_round
+drawable/app_face_checkmark -> drawable/sfs_face_re_checkmark
+drawable/app_face_choose_image -> drawable/sfs_face_re_choose_image
+drawable/app_face_circle_selected_light -> drawable/sfs_face_re_circle_selected_light
+drawable/app_face_circle_translucent_pie -> drawable/sfs_face_re_circle_translucent_pie
+drawable/app_face_close_button_white -> drawable/sfs_face_re_close_button_white
+drawable/app_face_coin_new -> drawable/sfs_face_re_coin_new
+drawable/app_face_color_save_button_gradient -> drawable/sfs_face_re_color_save_button_gradient
+drawable/app_face_common_border_color -> drawable/sfs_face_re_common_border_color
+drawable/app_face_cute_home_girl_ai -> drawable/sfs_face_re_cute_dash_girl_ai
+drawable/app_face_dashed_border_purple -> drawable/sfs_face_re_dashed_border_purple
+drawable/app_face_dialog_button_gradient_horizontal -> drawable/sfs_face_re_dlog_button_gradient_horizontal
+drawable/app_face_dialog_rounded_slight -> drawable/sfs_face_re_dlog_rounded_slight
+drawable/app_face_diamond_premium -> drawable/sfs_face_re_diamond_premium
+drawable/app_face_download_icon -> drawable/sfs_face_re_download_icon
+drawable/app_face_edit_go -> drawable/sfs_face_re_edt_go
+drawable/app_face_enhance_image -> drawable/sfs_face_re_enhance_image
+drawable/app_face_eraser_icon -> drawable/sfs_face_re_eraser_icon
+drawable/app_face_feedback_chat -> drawable/sfs_face_re_feedback_chat
+drawable/app_face_flag_circle_light -> drawable/sfs_face_re_flag_circle_light
+drawable/app_face_frosted_circle_bg -> drawable/sfs_face_re_frosted_circle_bg
+drawable/app_face_gallery_open -> drawable/sfs_face_re_gallery_open
+drawable/app_face_generate_button_square -> drawable/sfs_face_re_generate_button_square
+drawable/app_face_generative_chat_ai -> drawable/sfs_face_re_generative_chat_ai
+drawable/app_face_glass_panel_gray -> drawable/sfs_face_re_glass_panel_gray
+drawable/app_face_gradient_normal_plus -> drawable/sfs_face_re_gradient_normal_plus
+drawable/app_face_information_bg -> drawable/sfs_face_re_information_bg
+drawable/app_face_language_item_selected_color_border -> drawable/sfs_face_re_lnguage_view_selected_color_border
+drawable/app_face_logo_spread_glow_vertical_circle -> drawable/sfs_face_re_logo_spread_glow_vertical_circle
+drawable/app_face_my_work_four -> drawable/sfs_face_re_my_work_four
+drawable/app_face_pick_camera_icon -> drawable/sfs_face_re_pick_camera_icon
+drawable/app_face_premium_bg_footer -> drawable/sfs_face_re_premium_bkg_footer
+drawable/app_face_premium_center_button -> drawable/sfs_face_re_premium_center_button
+drawable/app_face_premium_pro_column_light -> drawable/sfs_face_re_premium_pro_column_light
+drawable/app_face_privacy -> drawable/sfs_face_re_privacy
+drawable/app_face_pro_column_bottom_light -> drawable/sfs_face_re_pro_column_bottom_light
+drawable/app_face_pro_header_light -> drawable/sfs_face_re_pro_header_light
+drawable/app_face_rating_chat -> drawable/sfs_face_re_rating_chat
+drawable/app_face_rotation_face_swap_bg -> drawable/sfs_face_re_rotation_face_swap_bg
+drawable/app_face_second_onboard_image -> drawable/sfs_face_re_second_onboard_image
+drawable/app_face_secure_locker -> drawable/sfs_face_re_secure_locker
+drawable/app_face_settings_header_wheel -> drawable/sfs_face_re_stngs_header_wheel
+drawable/app_face_settings_icon -> drawable/sfs_face_re_stngs_icon
+drawable/app_face_share_ref -> drawable/sfs_face_re_share_ref
+drawable/app_face_slider_handle_horizontal -> drawable/sfs_face_re_slider_handle_horizontal
+drawable/app_face_star_background -> drawable/sfs_face_re_star_bkg
+drawable/app_face_star_center_yellow_filled -> drawable/sfs_face_re_star_center_yellow_filled
+drawable/app_face_terms_conditions -> drawable/sfs_face_re_terms_conditions
+drawable/app_face_tip_upload -> drawable/sfs_face_re_tip_upload
+drawable/app_face_undo_rotate -> drawable/sfs_face_re_undo_rotate
+drawable/app_face_very_first_onboard_image -> drawable/sfs_face_re_very_first_onboard_image
+drawable/app_face_video_paywall_gradient_overlay -> drawable/sfs_face_re_mov_paywall_gradient_overlay
+drawable/app_face_video_reverse_eng -> drawable/sfs_face_re_mov_reverse_eng
+drawable/app_full_slider_label_black -> drawable/sfs_re_full_slider_label_black
+drawable/app_home_explore_templates_bg -> drawable/sfs_re_dash_explore_templates_bg
+drawable/app_home_faceswap_card_purple_border -> drawable/sfs_re_dash_facceedtr_card_purple_border
+drawable/app_home_feature_card_bg -> drawable/sfs_re_dash_feature_card_bg
+drawable/app_home_feature_card_ripple -> drawable/sfs_re_dash_feature_card_ripple
+drawable/app_home_grid_bg_enhance -> drawable/sfs_re_dash_grid_bkg_enhance
+drawable/app_home_grid_bg_my_work -> drawable/sfs_re_dash_grid_bkg_my_work
+drawable/app_home_grid_bg_remove_bg -> drawable/sfs_re_dash_grid_bkg_rmv_bg
+drawable/app_home_grid_bg_video_swap -> drawable/sfs_re_dash_grid_bkg_mov_swap
+drawable/app_home_hero_banner_bg -> drawable/sfs_re_dash_hero_banner_bg
+drawable/app_home_hero_cta_btn_bg -> drawable/sfs_re_dash_hero_cta_btn_bg
+drawable/app_language_iconic -> drawable/sfs_re_lnguage_iconic
+drawable/app_language_item_unselected_blue_border -> drawable/sfs_re_lnguage_view_unselected_blue_border
+drawable/app_language_screen_vertical -> drawable/sfs_re_lnguage_view_vertical
+drawable/app_logo_glow_update -> drawable/sfs_re_logo_glow_update
+drawable/app_middle_face_upload -> drawable/sfs_re_middle_face_upload
+drawable/app_new_splash_gradient_face -> drawable/sfs_re_old_spl_gradient_face
+drawable/app_new_update_glow_face_bg -> drawable/sfs_re_old_update_glow_face_bg
+drawable/app_notification_little -> drawable/sfs_re_notification_little
+drawable/app_permission_dialog_guess_color -> drawable/sfs_re_permission_dlog_guess_color
+drawable/app_pill_face_solid_gradient -> drawable/sfs_re_pill_face_solid_gradient
+drawable/app_plan_face_card_black -> drawable/sfs_re_pro_face_card_black
+drawable/app_plan_face_card_selected_bg -> drawable/sfs_re_pro_face_card_selected_bg
+drawable/app_plan_face_card_unselected_color -> drawable/sfs_re_pro_face_card_unselected_color
+drawable/app_play_face_button -> drawable/sfs_re_play_face_button
+drawable/app_radio_face_selected_bg -> drawable/sfs_re_radio_face_selected_bg
+drawable/app_radio_unselected_circle -> drawable/sfs_re_radio_unselected_circle
+drawable/app_settings_premium_banner_bg -> drawable/sfs_re_stngs_premium_banner_bg
+drawable/app_settings_profile_card_bg -> drawable/sfs_re_stngs_profile_card_bg
+drawable/app_settings_upgrade_pill_bg -> drawable/sfs_re_stngs_upgrade_pill_bg
+drawable/app_shimmer_face_placeholder_bg -> drawable/sfs_re_shmr_face_placeholder_bg
+drawable/app_shimmer_face_rect_placeholder_bg -> drawable/sfs_re_shmr_face_rect_placeholder_bg
+drawable/app_star_center_empty -> drawable/sfs_re_star_center_empty
+drawable/app_store_balance_card_bg -> drawable/sfs_re_store_balance_card_bg
+drawable/app_to_text_prompt_toggle -> drawable/sfs_re_to_text_prompt_toggle
+drawable/app_transparent_close_choose -> drawable/sfs_re_trans_close_choose
+drawable/app_update_face_button_bg -> drawable/sfs_re_update_face_button_bg
+drawable/app_update_face_icon_circle_bg -> drawable/sfs_re_update_face_icon_circle_bg
+drawable/app_update_new_face_feature_card -> drawable/sfs_re_update_old_face_feature_card
+drawable/bg_avatar_circle -> drawable/sfs_bkg_avatar_circle
+drawable/bg_button_danger -> drawable/sfs_bkg_button_danger
+drawable/bg_input_field -> drawable/sfs_bkg_inpt_field
+drawable/bg_input_field_error -> drawable/sfs_bkg_inpt_field_error
+drawable/delete_account -> drawable/sfs_delete_account
+drawable/ic_app_logo -> drawable/sfs_ic_re_logo
+drawable/ic_enhance_face -> drawable/sfs_ic_enhance_face
+drawable/ic_explore_templates -> drawable/sfs_ic_explore_templates
+drawable/ic_launcher_background -> drawable/sfs_ic_launcher_bkg
+drawable/ic_logo_transparent -> drawable/sfs_ic_logo_transparent
+drawable/ic_remove_bg -> drawable/sfs_ic_rmv_bg
+drawable/logout -> drawable/sfs_logout
+font/app_poppins_bold -> font/sfs_re_poppins_bold
+font/app_poppins_extrabold -> font/sfs_re_poppins_extrabold
+font/app_poppins_light -> font/sfs_re_poppins_light
+font/app_poppins_medium -> font/sfs_re_poppins_medium
+font/app_poppins_regular -> font/sfs_re_poppins_regular
+font/app_poppins_semibold -> font/sfs_re_poppins_semibold
+layout/activity_edit_name -> layout/sfs_activity_edt_name
+layout/activity_login -> layout/sfs_activity_login
+layout/activity_signup -> layout/sfs_activity_signup
+layout/activity_video_paywall -> layout/sfs_activity_mov_paywall
+layout/app_background_grid_item -> layout/sfs_re_bkg_grid_view
+layout/app_category_row_item -> layout/sfs_re_category_row_view
+layout/app_coin_transaction_item -> layout/sfs_re_coin_transaction_view
+layout/app_coins_required_dialog -> layout/sfs_re_coins_required_dialog
+layout/app_exit_dialog -> layout/sfs_re_exit_dialog
+layout/app_face_activity_app_update_screen -> layout/sfs_face_reactv__re_update_view
+layout/app_face_activity_enhance_face -> layout/sfs_face_reactv__enhance_face
+layout/app_face_activity_face_swap_screen -> layout/sfs_face_reactv__face_swap_view
+layout/app_face_activity_image_edit -> layout/sfs_face_reactv__image_edt
+layout/app_face_activity_language -> layout/sfs_face_reactv__lnguage
+layout/app_face_activity_main_screen -> layout/sfs_face_reactv__main_view
+layout/app_face_activity_multi_swap_screen -> layout/sfs_face_reactv__multi_swap_view
+layout/app_face_activity_my_work_screen -> layout/sfs_face_reactv__my_work_view
+layout/app_face_activity_onboarding_screen -> layout/sfs_face_reactv__onboarding_view
+layout/app_face_activity_paywall_screen -> layout/sfs_face_reactv__paywall_view
+layout/app_face_activity_remove_bg -> layout/sfs_face_reactv__rmv_bg
+layout/app_face_activity_section_detail_screen -> layout/sfs_face_reactv__section_detail_view
+layout/app_face_activity_selection_face -> layout/sfs_face_reactv__selection_face
+layout/app_face_activity_settings_screen -> layout/sfs_face_reactv__stngs_view
+layout/app_face_activity_share_and_download -> layout/sfs_face_reactv__share_and_download
+layout/app_face_activity_splash_screen -> layout/sfs_face_reactv__spl_view
+layout/app_face_activity_store_screen -> layout/sfs_face_reactv__store_view
+layout/app_face_activity_swap_couple -> layout/sfs_face_reactv__swap_couple
+layout/app_face_activity_template_gallery_screen -> layout/sfs_face_reactv__template_gallery_view
+layout/app_face_activity_text_to_image_screen -> layout/sfs_face_reactv__text_to_image_view
+layout/app_face_activity_video_swap_screen -> layout/sfs_face_reactv__mov_swap_view
+layout/app_face_ai_activity_image_generation -> layout/sfs_face_re_aiactv__image_generation
+layout/app_face_background_picker -> layout/sfs_face_re_bkg_picker
+layout/app_face_before_after_slider_view -> layout/sfs_face_re_before_after_slider_view
+layout/app_face_coin_history_activity -> layout/sfs_face_re_coin_historyactv_
+layout/app_face_common_activity_lottie_loading_screen -> layout/sfs_face_re_commonactv__lottie_loading_view
+layout/app_face_grid_item -> layout/sfs_face_re_grid_view
+layout/app_grid_detail_item -> layout/sfs_re_grid_detail_view
+layout/app_grid_image_item -> layout/sfs_re_grid_image_view
+layout/app_history_item -> layout/sfs_re_history_view
+layout/app_history_loading_item -> layout/sfs_re_history_loading_view
+layout/app_home_header_item -> layout/sfs_re_dash_header_view
+layout/app_image_source_dialog -> layout/sfs_re_image_source_dialog
+layout/app_info_with_images_dialog -> layout/sfs_re_info_with_images_dialog
+layout/app_insufficient_coins_dialog -> layout/sfs_re_insufficient_coins_dialog
+layout/app_language_item -> layout/sfs_re_lnguage_view
+layout/app_onboarding_page_item -> layout/sfs_re_onboarding_page_view
+layout/app_permission_denied_dialog -> layout/sfs_re_permission_denied_dialog
+layout/app_plan_item -> layout/sfs_re_pro_view
+layout/app_rate_app_dialog -> layout/sfs_re_rate_re_dialog
+layout/app_retry_dialog -> layout/sfs_re_retry_dialog
+layout/app_section_header_layout -> layout/sfs_re_section_header_layout
+layout/app_server_busy_dialog -> layout/sfs_re_server_busy_dialog
+layout/app_shimmer_main_category_item -> layout/sfs_re_shmr_main_category_view
+layout/app_video_source_dialog -> layout/sfs_re_mov_source_dialog
+layout/dialog_delete_account_confirm -> layout/sfs_dlog_delete_account_confirm
+layout/dialog_delete_reauth -> layout/sfs_dlog_delete_reauth
+layout/dialog_logout_confirm -> layout/sfs_dlog_logout_confirm
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher -> mipmap/sfs_ic_launcher
+mipmap/ic_launcher_foreground -> mipmap/sfs_ic_launcher_foreground
+mipmap/ic_launcher_foreground -> mipmap/sfs_ic_launcher_foreground
+mipmap/ic_launcher_foreground -> mipmap/sfs_ic_launcher_foreground
+mipmap/ic_launcher_foreground -> mipmap/sfs_ic_launcher_foreground
+mipmap/ic_launcher_foreground -> mipmap/sfs_ic_launcher_foreground
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+mipmap/ic_launcher_round -> mipmap/sfs_ic_launcher_round
+raw/paywall_video -> raw/sfs_paywall_video
+xml/face_backup_file_rules -> xml/sfs_face_backup_file_rules
+xml/face_data_file_extraction_rules -> xml/sfs_face_data_file_extraction_rules
+xml/file_paths -> xml/sfs_file_paths
+
+VALUES KEYS
+--------------------------------------------------------------------------------
+<color name="ads_ad_tag_color"> -> <color name="sfs_ads_ad_tag_color">
+<color name="ads_ad_tag_text_color"> -> <color name="sfs_ads_ad_tag_text_color">
+<color name="ads_background_color"> -> <color name="sfs_ads_bkg_color">
+<color name="ads_cta_text_color"> -> <color name="sfs_ads_cta_text_color">
+<color name="ads_text_color"> -> <color name="sfs_ads_text_color">
+<color name="app_active_navbar"> -> <color name="sfs_re_active_navbar">
+<color name="app_alt_card_background"> -> <color name="sfs_re_alt_card_bkg">
+<color name="app_base_card_background"> -> <color name="sfs_re_base_card_bkg">
+<color name="app_base_raised_surface"> -> <color name="sfs_re_base_raised_surface">
+<color name="app_bg_paywall"> -> <color name="sfs_re_bkg_paywall">
+<color name="app_dark_purple"> -> <color name="sfs_re_dark_purple">
+<color name="app_disabled_text"> -> <color name="sfs_re_disabled_text">
+<color name="app_elevated_surface"> -> <color name="sfs_re_elevated_surface">
+<color name="app_end_badge_best_value"> -> <color name="sfs_re_end_bfge_best_value">
+<color name="app_end_badge_popular"> -> <color name="sfs_re_end_bfge_popular">
+<color name="app_end_dashed_border_gradient"> -> <color name="sfs_re_end_dashed_border_gradient">
+<color name="app_end_gradient"> -> <color name="sfs_re_end_gradient">
+<color name="app_error_color"> -> <color name="sfs_re_err_color">
+<color name="app_footer_bg_paywall"> -> <color name="sfs_re_footer_bkg_paywall">
+<color name="app_footer_border_paywall"> -> <color name="sfs_re_footer_border_paywall">
+<color name="app_glass_fill_paywall"> -> <color name="sfs_re_glass_fill_paywall">
+<color name="app_glass_stroke_paywall"> -> <color name="sfs_re_glass_stroke_paywall">
+<color name="app_highlight_store_card"> -> <color name="sfs_re_highlight_store_card">
+<color name="app_info_color"> -> <color name="sfs_re_info_color">
+<color name="app_item_border_color"> -> <color name="sfs_re_view_border_color">
+<color name="app_light_overlay"> -> <color name="sfs_re_light_overlay">
+<color name="app_main_purple"> -> <color name="sfs_re_main_purple">
+<color name="app_medium_overlay"> -> <color name="sfs_re_medium_overlay">
+<color name="app_middle_gradient"> -> <color name="sfs_re_middle_gradient">
+<color name="app_on_primary_fixed_paywall"> -> <color name="sfs_re_on_primary_fixed_paywall">
+<color name="app_on_primary_paywall"> -> <color name="sfs_re_on_primary_paywall">
+<color name="app_on_surface_paywall"> -> <color name="sfs_re_on_surface_paywall">
+<color name="app_on_surface_variant_paywall"> -> <color name="sfs_re_on_surface_variant_paywall">
+<color name="app_outline_paywall"> -> <color name="sfs_re_outline_paywall">
+<color name="app_outline_variant_paywall"> -> <color name="sfs_re_outline_variant_paywall">
+<color name="app_primary_brand"> -> <color name="sfs_re_primary_brand">
+<color name="app_primary_container_paywall"> -> <color name="sfs_re_primary_container_paywall">
+<color name="app_primary_light_paywall"> -> <color name="sfs_re_primary_light_paywall">
+<color name="app_primary_orange"> -> <color name="sfs_re_primary_orange">
+<color name="app_primary_paywall"> -> <color name="sfs_re_primary_paywall">
+<color name="app_primary_style"> -> <color name="sfs_re_primary_style">
+<color name="app_primary_text"> -> <color name="sfs_re_primary_text">
+<color name="app_pro_column_bg_paywall"> -> <color name="sfs_re_pro_column_bkg_paywall">
+<color name="app_pro_column_border_paywall"> -> <color name="sfs_re_pro_column_border_paywall">
+<color name="app_row_divider_paywall"> -> <color name="sfs_re_row_divider_paywall">
+<color name="app_screen_base_surface"> -> <color name="sfs_re_view_base_surface">
+<color name="app_scrim_overlay"> -> <color name="sfs_re_scrim_overlay">
+<color name="app_secondary_brand"> -> <color name="sfs_re_secondary_brand">
+<color name="app_secondary_orange"> -> <color name="sfs_re_secondary_orange">
+<color name="app_secondary_text"> -> <color name="sfs_re_secondary_text">
+<color name="app_soft_border"> -> <color name="sfs_re_soft_border">
+<color name="app_start_badge_best_value"> -> <color name="sfs_re_start_bfge_best_value">
+<color name="app_start_badge_popular"> -> <color name="sfs_re_start_bfge_popular">
+<color name="app_start_dashed_border_gradient"> -> <color name="sfs_re_start_dashed_border_gradient">
+<color name="app_start_gradient"> -> <color name="sfs_re_start_gradient">
+<color name="app_subtle_divider"> -> <color name="sfs_re_subtle_divider">
+<color name="app_success_color"> -> <color name="sfs_re_success_color">
+<color name="app_surface_container_paywall"> -> <color name="sfs_re_surface_container_paywall">
+<color name="app_tertiary_brand"> -> <color name="sfs_re_tertiary_brand">
+<color name="app_tertiary_text"> -> <color name="sfs_re_tertiary_text">
+<color name="app_theme_dark_background"> -> <color name="sfs_re_theme_dark_bkg">
+<color name="app_warning_color"> -> <color name="sfs_re_warning_color">
+<color name="app_yellow_coin"> -> <color name="sfs_re_yellow_coin">
+<color name="black"> -> <color name="sfs_black">
+<color name="text_disabled"> -> <color name="sfs_text_disabled">
+<color name="text_tertiary"> -> <color name="sfs_text_tertiary">
+<color name="white"> -> <color name="sfs_white">
+<dimen name="ads_body_size"> -> <dimen name="sfs_ads_body_size">
+<dimen name="ads_cta_size"> -> <dimen name="sfs_ads_cta_size">
+<dimen name="ads_headline_size"> -> <dimen name="sfs_ads_headline_size">
+<dimen name="app_card_corner_radius"> -> <dimen name="sfs_re_card_corner_radius">
+<dimen name="app_card_inner_padding"> -> <dimen name="sfs_re_card_inner_padding">
+<dimen name="app_clip_header_text_size_common"> -> <dimen name="sfs_re_clip_header_text_size_common">
+<dimen name="app_clip_home_bottom_bar_margin_bottom_point"> -> <dimen name="sfs_re_clip_dash_bottom_bar_margin_bottom_point">
+<dimen name="app_clip_home_main_scroll_content_bottom_padding_points"> -> <dimen name="sfs_re_clip_dash_main_scroll_content_bottom_padding_points">
+<dimen name="app_clip_home_main_scroll_content_bottom_padding_points_no_ads"> -> <dimen name="sfs_re_clip_dash_main_scroll_content_bottom_padding_points_no_ads">
+<dimen name="app_icon_container_size"> -> <dimen name="sfs_re_icon_container_size">
+<dimen name="app_item_vertical_padding"> -> <dimen name="sfs_re_view_vertical_padding">
+<dimen name="app_screen_padding_horizontal"> -> <dimen name="sfs_re_view_padding_horizontal">
+<dimen name="app_section_gap"> -> <dimen name="sfs_re_section_gap">
+<id name="color"> -> <id name="sfs_color">
+<id name="colorControlActivated"> -> <id name="sfs_colorControlActivated">
+<id name="colorOnPrimary"> -> <id name="sfs_colorOnPrimary">
+<id name="colorOnSecondary"> -> <id name="sfs_colorOnSecondary">
+<id name="colorPrimary"> -> <id name="sfs_colorPrimary">
+<id name="colorPrimaryVariant"> -> <id name="sfs_colorPrimaryVariant">
+<id name="colorSecondary"> -> <id name="sfs_colorSecondary">
+<id name="colorSecondaryVariant"> -> <id name="sfs_colorSecondaryVariant">
+<id name="cornerSize"> -> <id name="sfs_cornerSize">
+<id name="postSplashScreenTheme"> -> <id name="sfs_postSplScreenTheme">
+<id name="windowSplashScreenAnimatedIcon"> -> <id name="sfs_windowSplScreenAnimatedIcon">
+<id name="windowSplashScreenBackground"> -> <id name="sfs_windowSplScreenBackground">
+<string name="MainActivity_could_not_load_templates"> -> <string name="sfs_MainActivity_could_not_load_templates">
+<string name="ai_all_faces_detected_automatically_text"> -> <string name="sfs_ai_all_faces_detected_automatically_text">
+<string name="ai_every_face_in_the_text"> -> <string name="sfs_ai_every_face_in_the_text">
+<string name="ai_face_image_10_coins_text"> -> <string name="sfs_ai_face_image_10_coins_text">
+<string name="ai_face_image_describe_anything_and_watch_text"> -> <string name="sfs_ai_face_image_describe_anything_and_watch_text">
+<string name="ai_face_image_generate_image_text"> -> <string name="sfs_ai_face_image_generate_image_text">
+<string name="ai_face_image_text"> -> <string name="sfs_ai_face_image_text">
+<string name="ai_face_image_text_to_text"> -> <string name="sfs_ai_face_image_text_to_text">
+<string name="ai_multi_face_swap_step_1_text"> -> <string name="sfs_ai_multi_face_swap_step_1_text">
+<string name="ai_multi_face_swap_step_2_text"> -> <string name="sfs_ai_multi_face_swap_step_2_text">
+<string name="ai_swap_face_your_text"> -> <string name="sfs_ai_swap_face_your_text">
+<string name="ap_couple_swap_text"> -> <string name="sfs_ap_couple_swap_text">
+<string name="app_ai_an_error_occurred_please_text"> -> <string name="sfs_re_ai_an_err_occurred_please_text">
+<string name="app_ai_face_error_occurred_please_text"> -> <string name="sfs_re_ai_face_err_occurred_please_text">
+<string name="app_ai_face_failed_to_read_face_text"> -> <string name="sfs_re_ai_face_failed_to_read_face_text">
+<string name="app_ai_face_operation_failed_please_try_again_text"> -> <string name="sfs_re_ai_face_operation_failed_please_try_again_text">
+<string name="app_ai_face_please_add_your_face_text"> -> <string name="sfs_re_ai_face_please_add_your_face_text">
+<string name="app_ai_face_this_image_link_has_text"> -> <string name="sfs_re_ai_face_this_image_link_has_text">
+<string name="app_ai_failed_to_prepare_template_text"> -> <string name="sfs_re_ai_failed_to_prepare_template_text">
+<string name="app_ai_failed_to_read_image_text"> -> <string name="sfs_re_ai_failed_to_read_image_text">
+<string name="app_ai_generate_image_text"> -> <string name="sfs_re_ai_generate_image_text">
+<string name="app_ai_image_text"> -> <string name="sfs_re_ai_image_text">
+<string name="app_ai_permission_granted_text"> -> <string name="sfs_re_ai_permission_granted_text">
+<string name="app_ai_photo_generation_failed_please_text"> -> <string name="sfs_re_ai_photo_generation_failed_please_text">
+<string name="app_ai_please_add_your_face_text"> -> <string name="sfs_re_ai_please_add_your_face_text">
+<string name="app_ai_please_enter_a_prompt_text"> -> <string name="sfs_re_ai_please_enter_a_prompt_text">
+<string name="app_ai_please_select_a_target_text"> -> <string name="sfs_re_ai_please_select_a_target_text">
+<string name="app_ai_please_upload_your_image_text"> -> <string name="sfs_re_ai_please_upload_your_image_text">
+<string name="app_any_photo_with_faces_text"> -> <string name="sfs_re_any_photo_with_faces_text">
+<string name="app_api_error_text"> -> <string name="sfs_re_api_err_text">
+<string name="app_api_error_title_text"> -> <string name="sfs_re_api_err_title_text">
+<string name="app_api_retry_button_text"> -> <string name="sfs_re_api_retry_button_text">
+<string name="app_are_you_sure_you_sure_text"> -> <string name="sfs_re_are_you_sure_you_sure_text">
+<string name="app_available_notice_text"> -> <string name="sfs_re_available_notice_text">
+<string name="app_background_failed_to_read_image_text"> -> <string name="sfs_re_bkg_failed_to_read_image_text">
+<string name="app_background_please_describe_the_new_text"> -> <string name="sfs_re_bkg_please_describe_the_old_text">
+<string name="app_background_please_upload_a_photo_text"> -> <string name="sfs_re_bkg_please_upload_a_photo_text">
+<string name="app_be_descriptive_for_best_text"> -> <string name="sfs_re_be_descriptive_for_best_text">
+<string name="app_become_anyone_in_just_text"> -> <string name="sfs_re_become_anyone_in_just_text">
+<string name="app_builder_name"> -> <string name="sfs_re_builder_name">
+<string name="app_clear_frontal_face_works_text"> -> <string name="sfs_re_clear_frontal_face_works_text">
+<string name="app_coin_btn_restore_purchase_text"> -> <string name="sfs_re_coin_btn_restore_purchase_text">
+<string name="app_coin_current_balance_text"> -> <string name="sfs_re_coin_current_balance_text">
+<string name="app_coin_history_text"> -> <string name="sfs_re_coin_history_text">
+<string name="app_coin_no_history_text"> -> <string name="sfs_re_coin_no_history_text">
+<string name="app_coin_store_second_title_text"> -> <string name="sfs_re_coin_store_second_title_text">
+<string name="app_coin_store_text"> -> <string name="sfs_re_coin_store_text">
+<string name="app_coin_transaction_time_text"> -> <string name="sfs_re_coin_transaction_time_text">
+<string name="app_coin_your_history_text"> -> <string name="sfs_re_coin_your_history_text">
+<string name="app_coins_10_coins_text"> -> <string name="sfs_re_coins_10_coins_text">
+<string name="app_coins_dialog_desc_text"> -> <string name="sfs_re_coins_dlog_desc_text">
+<string name="app_coins_purchase_failed_text"> -> <string name="sfs_re_coins_purchase_failed_text">
+<string name="app_coins_required_10_coins_text"> -> <string name="sfs_re_coins_required_10_coins_text">
+<string name="app_couple_face_failed_to_prepare_target_text"> -> <string name="sfs_re_couple_face_failed_to_prepare_target_text">
+<string name="app_couple_face_failed_to_read_face_text"> -> <string name="sfs_re_couple_face_failed_to_read_face_text">
+<string name="app_couple_face_please_select_the_couple_text"> -> <string name="sfs_re_couple_face_please_select_the_couple_text">
+<string name="app_couple_face_please_upload_your_face_text"> -> <string name="sfs_re_couple_face_please_upload_your_face_text">
+<string name="app_couple_target_photo_text"> -> <string name="sfs_re_couple_target_photo_text">
+<string name="app_dialog_action_button_text"> -> <string name="sfs_re_dlog_action_button_text">
+<string name="app_dialog_icon_text"> -> <string name="sfs_re_dlog_icon_text">
+<string name="app_download_share_text"> -> <string name="sfs_re_download_share_text">
+<string name="app_edit_background_selected_text"> -> <string name="sfs_re_edt_bkg_selected_text">
+<string name="app_edit_change_bg_text"> -> <string name="sfs_re_edt_change_bkg_text">
+<string name="app_edit_image_text"> -> <string name="sfs_re_edt_image_text">
+<string name="app_edit_permission_granted_text"> -> <string name="sfs_re_edt_permission_granted_text">
+<string name="app_edit_text"> -> <string name="sfs_re_edt_text">
+<string name="app_enhance_ai_face_enhance_text"> -> <string name="sfs_re_enhance_ai_face_enhance_text">
+<string name="app_enhance_ai_face_text"> -> <string name="sfs_re_enhance_ai_face_text">
+<string name="app_enhance_face_restoration_text"> -> <string name="sfs_re_enhance_face_restoration_text">
+<string name="app_enhance_face_text"> -> <string name="sfs_re_enhance_face_text">
+<string name="app_enhance_portrait_or_selfie_works_text"> -> <string name="sfs_re_enhance_portrait_or_selfie_works_text">
+<string name="app_enhance_restore_and_sharpen_text"> -> <string name="sfs_re_enhance_restore_and_sharpen_text">
+<string name="app_enhance_tap_to_upload_text"> -> <string name="sfs_re_enhance_tap_to_upload_text">
+<string name="app_enhance_upload_photo_text"> -> <string name="sfs_re_enhance_upload_photo_text">
+<string name="app_enhance_uses_stateoftheart_ai_to_restore_text"> -> <string name="sfs_re_enhance_uses_stateoftheart_ai_to_restore_text">
+<string name="app_enhance_works_best_with_portraits_and_text"> -> <string name="sfs_re_enhance_works_best_with_portraits_and_text">
+<string name="app_enhancer_text"> -> <string name="sfs_re_enhancer_text">
+<string name="app_exit_app_text"> -> <string name="sfs_re_exit_re_text">
+<string name="app_face_ai_10_coins_text"> -> <string name="sfs_face_re_ai_10_coins_text">
+<string name="app_face_ai_coins_choose_a_package_text"> -> <string name="sfs_face_re_ai_coins_choose_a_package_text">
+<string name="app_face_ai_coins_instant_delivery_payment_text"> -> <string name="sfs_face_re_ai_coins_instant_delivery_payment_text">
+<string name="app_face_ai_coins_retry_text"> -> <string name="sfs_face_re_ai_coins_retry_text">
+<string name="app_face_ai_creating_your_ai_image_text"> -> <string name="sfs_face_re_ai_creating_your_ai_image_text">
+<string name="app_face_ai_credits_text"> -> <string name="sfs_face_re_ai_credits_text">
+<string name="app_face_ai_describe_your_image_text"> -> <string name="sfs_face_re_ai_describe_your_image_text">
+<string name="app_face_ai_face_selected_text"> -> <string name="sfs_face_re_ai_face_selected_text">
+<string name="app_face_ai_generate_image_text"> -> <string name="sfs_face_re_ai_generate_image_text">
+<string name="app_face_ai_guides_the_style_text"> -> <string name="sfs_face_re_ai_guides_the_style_text">
+<string name="app_face_ai_image_gen_text"> -> <string name="sfs_face_re_ai_image_gen_text">
+<string name="app_face_ai_into_art_text"> -> <string name="sfs_face_re_ai_into_art_text">
+<string name="app_face_ai_optional_text"> -> <string name="sfs_face_re_ai_optional_text">
+<string name="app_face_ai_please_select_a_target_text"> -> <string name="sfs_face_re_ai_please_select_a_target_text">
+<string name="app_face_ai_png_jpg_supported_text"> -> <string name="sfs_face_re_ai_png_jpg_supported_text">
+<string name="app_face_ai_reference_image_text"> -> <string name="sfs_face_re_ai_reference_image_text">
+<string name="app_face_ai_required_text"> -> <string name="sfs_face_re_ai_required_text">
+<string name="app_face_ai_store_your_balance_text"> -> <string name="sfs_face_re_ai_store_your_balance_text">
+<string name="app_face_ai_tap_to_upload_image_text"> -> <string name="sfs_face_re_ai_tap_to_upload_image_text">
+<string name="app_face_ai_text_to_prompt_text"> -> <string name="sfs_face_re_ai_text_to_prompt_text">
+<string name="app_face_ai_this_may_take_seconds_text"> -> <string name="sfs_face_re_ai_this_may_take_seconds_text">
+<string name="app_face_ai_turn_your_ideas_text"> -> <string name="sfs_face_re_ai_turn_your_ideas_text">
+<string name="app_face_back_text"> -> <string name="sfs_face_re_back_text">
+<string name="app_face_background_replace_text"> -> <string name="sfs_face_re_bkg_replace_text">
+<string name="app_face_better_performance_text"> -> <string name="sfs_face_re_better_performance_text">
+<string name="app_face_bug_fixes_text"> -> <string name="sfs_face_re_bug_fixes_text">
+<string name="app_face_buy_coins_text"> -> <string name="sfs_face_re_buy_coins_text">
+<string name="app_face_coin_buy_now_text"> -> <string name="sfs_face_re_coin_buy_now_text">
+<string name="app_face_coin_current_balance_text"> -> <string name="sfs_face_re_coin_current_balance_text">
+<string name="app_face_coin_history_face_swap_text"> -> <string name="sfs_face_re_coin_history_face_swap_text">
+<string name="app_face_coin_history_text"> -> <string name="sfs_face_re_coin_history_text">
+<string name="app_face_coins_dialog_title_text"> -> <string name="sfs_face_re_coins_dlog_title_text">
+<string name="app_face_coins_fetching_offerings_error_text"> -> <string name="sfs_face_re_coins_fetching_offerings_err_text">
+<string name="app_face_coins_purchase_success_text"> -> <string name="sfs_face_re_coins_purchase_success_text">
+<string name="app_face_coins_unit_text"> -> <string name="sfs_face_re_coins_unit_text">
+<string name="app_face_couple_text"> -> <string name="sfs_face_re_couple_text">
+<string name="app_face_data_busy_back_button_text"> -> <string name="sfs_face_re_data_busy_back_button_text">
+<string name="app_face_describe_what_you_want_text"> -> <string name="sfs_face_re_describe_what_you_want_text">
+<string name="app_face_dialog_insufficient_coins_text"> -> <string name="sfs_face_re_dlog_insufficient_coins_text">
+<string name="app_face_dialog_required_coins_cost_text"> -> <string name="sfs_face_re_dlog_required_coins_cost_text">
+<string name="app_face_face_swap_text"> -> <string name="sfs_face_re_face_swap_text">
+<string name="app_face_failed_to_prepare_image_text"> -> <string name="sfs_face_re_failed_to_prepare_image_text">
+<string name="app_face_failed_to_read_face_text"> -> <string name="sfs_face_re_failed_to_read_face_text">
+<string name="app_face_failed_to_read_image_text"> -> <string name="sfs_face_re_failed_to_read_image_text">
+<string name="app_face_feedback_text"> -> <string name="sfs_face_re_feedback_text">
+<string name="app_face_gallery_save_text"> -> <string name="sfs_face_re_gallery_save_text">
+<string name="app_face_header_section_title_text"> -> <string name="sfs_face_re_header_section_title_text">
+<string name="app_face_image_save_error_text"> -> <string name="sfs_face_re_image_save_err_text">
+<string name="app_face_image_share_preparing_text"> -> <string name="sfs_face_re_image_share_preparing_text">
+<string name="app_face_insufficient_coins_balance_text"> -> <string name="sfs_face_re_insufficient_coins_balance_text">
+<string name="app_face_language_english_text"> -> <string name="sfs_face_re_lnguage_english_text">
+<string name="app_face_language_text"> -> <string name="sfs_face_re_lnguage_text">
+<string name="app_face_legal_text"> -> <string name="sfs_face_re_legal_text">
+<string name="app_face_multi_popular_text"> -> <string name="sfs_face_re_multi_popular_text">
+<string name="app_face_multiple_swap_hint_text"> -> <string name="sfs_face_re_multiple_swap_hint_text">
+<string name="app_face_my_work_hint_text"> -> <string name="sfs_face_re_my_work_hint_text">
+<string name="app_face_nav_multi_swap_text"> -> <string name="sfs_face_re_navi_multi_swap_text">
+<string name="app_face_nav_my_work_text"> -> <string name="sfs_face_re_navi_my_work_text">
+<string name="app_face_new_update_available_text"> -> <string name="sfs_face_re_old_update_available_text">
+<string name="app_face_new_update_sub_title_text"> -> <string name="sfs_face_re_old_update_sub_title_text">
+<string name="app_face_no_email_app_found_text"> -> <string name="sfs_face_re_no_email_re_found_text">
+<string name="app_face_no_image_to_download_text"> -> <string name="sfs_face_re_no_image_to_download_text">
+<string name="app_face_no_image_to_share_text"> -> <string name="sfs_face_re_no_image_to_share_text">
+<string name="app_face_no_internet_title_text"> -> <string name="sfs_face_re_no_internet_title_text">
+<string name="app_face_only_background_text"> -> <string name="sfs_face_re_only_bkg_text">
+<string name="app_face_permission_camera_and_gallery_access_text"> -> <string name="sfs_face_re_permission_camera_and_gallery_access_text">
+<string name="app_face_please_enter_a_prompt_text"> -> <string name="sfs_face_re_please_enter_a_prompt_text">
+<string name="app_face_please_upload_a_photo_text"> -> <string name="sfs_face_re_please_upload_a_photo_text">
+<string name="app_face_purchase_restore_success_text"> -> <string name="sfs_face_re_purchase_restore_success_text">
+<string name="app_face_rate_app_text"> -> <string name="sfs_face_re_rate_re_text">
+<string name="app_face_replace_10_coins_text"> -> <string name="sfs_face_re_replace_10_coins_text">
+<string name="app_face_replace_any_photo_with_text"> -> <string name="sfs_face_re_replace_any_photo_with_text">
+<string name="app_face_replace_background_text"> -> <string name="sfs_face_re_replace_bkg_text">
+<string name="app_face_replace_be_descriptive_for_best_text"> -> <string name="sfs_face_re_replace_be_descriptive_for_best_text">
+<string name="app_face_replace_describe_new_background_text"> -> <string name="sfs_face_re_replace_describe_old_bkg_text">
+<string name="app_face_replace_step_2_text"> -> <string name="sfs_face_re_replace_step_2_text">
+<string name="app_face_replace_subject_should_be_clearly_text"> -> <string name="sfs_face_re_replace_subject_should_be_clearly_text">
+<string name="app_face_replace_tap_to_upload_your_text"> -> <string name="sfs_face_re_replace_tap_to_upload_your_text">
+<string name="app_face_replace_text"> -> <string name="sfs_face_re_replace_text">
+<string name="app_face_replace_upload_a_photo_text"> -> <string name="sfs_face_re_replace_upload_a_photo_text">
+<string name="app_face_replace_your_photo_text"> -> <string name="sfs_face_re_replace_your_photo_text">
+<string name="app_face_required_text"> -> <string name="sfs_face_re_required_text">
+<string name="app_face_save_to_gallery_text"> -> <string name="sfs_face_re_save_to_gallery_text">
+<string name="app_face_server_busy_retry_button_text"> -> <string name="sfs_face_re_server_busy_retry_button_text">
+<string name="app_face_server_high_demand_desc_text"> -> <string name="sfs_face_re_server_high_demand_desc_text">
+<string name="app_face_server_share_text"> -> <string name="sfs_face_re_server_share_text">
+<string name="app_face_settings_buy_coins_text"> -> <string name="sfs_face_re_stngs_buy_coins_text">
+<string name="app_face_settings_text"> -> <string name="sfs_face_re_stngs_text">
+<string name="app_face_share_app_text"> -> <string name="sfs_face_re_share_re_text">
+<string name="app_face_skip_text"> -> <string name="sfs_face_re_skip_text">
+<string name="app_face_slider_after_text"> -> <string name="sfs_face_re_slider_after_text">
+<string name="app_face_slider_before_text"> -> <string name="sfs_face_re_slider_before_text">
+<string name="app_face_source_take_photo_text"> -> <string name="sfs_face_re_source_take_photo_text">
+<string name="app_face_splash_logo_text"> -> <string name="sfs_face_re_spl_logo_text">
+<string name="app_face_step_1_text"> -> <string name="sfs_face_re_step_1_text">
+<string name="app_face_step_2_text"> -> <string name="sfs_face_re_step_2_text">
+<string name="app_face_storage_permission_is_needed_text"> -> <string name="sfs_face_re_storage_permission_is_needed_text">
+<string name="app_face_swap_face_text"> -> <string name="sfs_face_re_swap_face_text">
+<string name="app_face_swap_new_features_text"> -> <string name="sfs_face_re_swap_old_features_text">
+<string name="app_face_tap_to_select_couple_text"> -> <string name="sfs_face_re_tap_to_select_couple_text">
+<string name="app_face_text"> -> <string name="sfs_face_re_text">
+<string name="app_face_title_my_work_text"> -> <string name="sfs_face_re_title_my_work_text">
+<string name="app_face_total_coin_balance_text"> -> <string name="sfs_face_re_total_coin_balance_text">
+<string name="app_face_total_coin_spent_text"> -> <string name="sfs_face_re_total_coin_spent_text">
+<string name="app_face_update_feature_first_desc_text"> -> <string name="sfs_face_re_update_feature_first_desc_text">
+<string name="app_face_update_feature_second_desc_text"> -> <string name="sfs_face_re_update_feature_second_desc_text">
+<string name="app_face_update_feature_third_desc_text"> -> <string name="sfs_face_re_update_feature_third_desc_text">
+<string name="app_face_update_logo_one_text"> -> <string name="sfs_face_re_update_logo_one_text">
+<string name="app_face_update_logo_text"> -> <string name="sfs_face_re_update_logo_text">
+<string name="app_face_update_logo_two_text"> -> <string name="sfs_face_re_update_logo_two_text">
+<string name="app_face_update_now_button_text"> -> <string name="sfs_face_re_update_now_button_text">
+<string name="app_face_upload_your_face_photo_text"> -> <string name="sfs_face_re_upload_your_face_photo_text">
+<string name="app_face_watch_ad_continue_text"> -> <string name="sfs_face_re_watch_ad_continue_text">
+<string name="app_face_your_result_is_ready_text"> -> <string name="sfs_face_re_your_result_is_ready_text">
+<string name="app_failed_to_prepare_target_text"> -> <string name="sfs_re_failed_to_prepare_target_text">
+<string name="app_group_photo_target_text"> -> <string name="sfs_re_group_photo_target_text">
+<string name="app_header_face_swap_upper"> -> <string name="sfs_re_header_face_swap_upper">
+<string name="app_header_see_all_text"> -> <string name="sfs_re_header_see_all_text">
+<string name="app_home_ai_create_cta"> -> <string name="sfs_re_dash_ai_create_cta">
+<string name="app_home_enhance_face"> -> <string name="sfs_re_dash_enhance_face">
+<string name="app_home_explore_subtitle"> -> <string name="sfs_re_dash_explore_subtitle">
+<string name="app_home_explore_templates"> -> <string name="sfs_re_dash_explore_templates">
+<string name="app_home_face_swap_cta"> -> <string name="sfs_re_dash_face_swap_cta">
+<string name="app_home_hero_badge"> -> <string name="sfs_re_dash_hero_badge">
+<string name="app_home_hero_subtitle"> -> <string name="sfs_re_dash_hero_subtitle">
+<string name="app_home_hero_title"> -> <string name="sfs_re_dash_hero_title">
+<string name="app_home_my_work"> -> <string name="sfs_re_dash_my_work">
+<string name="app_home_quick_actions"> -> <string name="sfs_re_dash_quick_actions">
+<string name="app_home_remove_bg"> -> <string name="sfs_re_dash_rmv_bg">
+<string name="app_home_swap_your_face_text"> -> <string name="sfs_re_dash_swap_your_face_text">
+<string name="app_home_try_now_text"> -> <string name="sfs_re_dash_try_now_text">
+<string name="app_home_video_swap"> -> <string name="sfs_re_dash_mov_swap">
+<string name="app_image_enhance_text"> -> <string name="sfs_re_image_enhance_text">
+<string name="app_image_remove_bg_text"> -> <string name="sfs_re_image_rmv_bkg_text">
+<string name="app_info_dialog_button_text"> -> <string name="sfs_re_info_dlog_button_text">
+<string name="app_info_dialog_message_text"> -> <string name="sfs_re_info_dlog_message_text">
+<string name="app_info_dialog_title_text"> -> <string name="sfs_re_info_dlog_title_text">
+<string name="app_insufficient_your_balance_coins_text"> -> <string name="sfs_re_insufficient_your_balance_coins_text">
+<string name="app_language_save_text"> -> <string name="sfs_re_lnguage_save_text">
+<string name="app_language_text"> -> <string name="sfs_re_lnguage_text">
+<string name="app_leaving_so_soon_text"> -> <string name="sfs_re_leaving_so_soon_text">
+<string name="app_loader_please_wait_generation_text"> -> <string name="sfs_re_loader_please_wait_generation_text">
+<string name="app_main_app_could_not_load_templates_text"> -> <string name="sfs_re_main_re_could_not_load_templates_text">
+<string name="app_main_face_swap_text"> -> <string name="sfs_re_main_face_swap_text">
+<string name="app_main_work_text"> -> <string name="sfs_re_main_work_text">
+<string name="app_multi_face_swap_10_coins_text"> -> <string name="sfs_re_multi_face_swap_10_coins_text">
+<string name="app_multi_face_swap_all_faces_will_text"> -> <string name="sfs_re_multi_face_swap_all_faces_will_text">
+<string name="app_multi_face_swap_clear_frontal_face_works_best_text"> -> <string name="sfs_re_multi_face_swap_clear_frontal_face_works_best_text">
+<string name="app_multi_face_swap_generate_image_text"> -> <string name="sfs_re_multi_face_swap_generate_image_text">
+<string name="app_multi_face_swap_tap_to_select_group_text"> -> <string name="sfs_re_multi_face_swap_tap_to_select_group_text">
+<string name="app_multi_face_swap_text"> -> <string name="sfs_re_multi_face_swap_text">
+<string name="app_multi_face_swap_upload_your_face_photo_text"> -> <string name="sfs_re_multi_face_swap_upload_your_face_photo_text">
+<string name="app_multi_face_swap_your_face_photo_text"> -> <string name="sfs_re_multi_face_swap_your_face_photo_text">
+<string name="app_multi_swap_video_text"> -> <string name="sfs_re_multi_swap_mov_text">
+<string name="app_nav_face_ai_image"> -> <string name="sfs_re_navi_face_ai_image">
+<string name="app_nav_face_swap_text"> -> <string name="sfs_re_navi_face_swap_text">
+<string name="app_no_creations_yet_text"> -> <string name="sfs_re_no_creations_yet_text">
+<string name="app_no_internet_desc_text"> -> <string name="sfs_re_no_internet_desc_text">
+<string name="app_onboard_continue_text"> -> <string name="sfs_re_onboard_continue_text">
+<string name="app_onboard_first_subtitle_text"> -> <string name="sfs_re_onboard_first_subtitle_text">
+<string name="app_onboard_first_text"> -> <string name="sfs_re_onboard_first_text">
+<string name="app_onboard_get_started_text"> -> <string name="sfs_re_onboard_get_started_text">
+<string name="app_onboard_second_subtitle_text"> -> <string name="sfs_re_onboard_second_subtitle_text">
+<string name="app_onboard_second_text"> -> <string name="sfs_re_onboard_second_text">
+<string name="app_open_coming_soon_text"> -> <string name="sfs_re_open_coming_soon_text">
+<string name="app_open_no_browser_found_text"> -> <string name="sfs_re_open_no_browser_found_text">
+<string name="app_open_settings_text"> -> <string name="sfs_re_open_stngs_text">
+<string name="app_permission_cancel_text"> -> <string name="sfs_re_permission_cancel_text">
+<string name="app_permission_required_text"> -> <string name="sfs_re_permission_required_text">
+<string name="app_picker_choose_background_text"> -> <string name="sfs_re_picker_choose_bkg_text">
+<string name="app_picker_tap_any_background_to_apply_text"> -> <string name="sfs_re_picker_tap_any_bkg_to_apply_text">
+<string name="app_privacy_policy_text"> -> <string name="sfs_re_privacy_policy_text">
+<string name="app_quick_ideas_text"> -> <string name="sfs_re_quick_ideas_text">
+<string name="app_replace_step_1_text"> -> <string name="sfs_re_replace_step_1_text">
+<string name="app_select_face_text"> -> <string name="sfs_re_select_face_text">
+<string name="app_select_which_face_you_text"> -> <string name="sfs_re_select_which_face_you_text">
+<string name="app_server_high_demand_text"> -> <string name="sfs_re_server_high_demand_text">
+<string name="app_settings_text"> -> <string name="sfs_re_stngs_text">
+<string name="app_single_face_swap_text"> -> <string name="sfs_re_single_face_swap_text">
+<string name="app_source_cancel_text"> -> <string name="sfs_re_source_cancel_text">
+<string name="app_source_choose_from_gallery_text"> -> <string name="sfs_re_source_choose_from_gallery_text">
+<string name="app_source_choose_image_text"> -> <string name="sfs_re_source_choose_image_text">
+<string name="app_source_select_from_your_photos_text"> -> <string name="sfs_re_source_select_from_your_photos_text">
+<string name="app_source_use_your_camera_text"> -> <string name="sfs_re_source_use_your_camera_text">
+<string name="app_splash_bottom_ads_containe_text"> -> <string name="sfs_re_spl_bottom_ads_containe_text">
+<string name="app_stay_in_app_text"> -> <string name="sfs_re_stay_in_re_text">
+<string name="app_swap_choose_from_gallery_presets_text"> -> <string name="sfs_re_swap_choose_from_gallery_presets_text">
+<string name="app_swap_clear_frontal_photo_works_text"> -> <string name="sfs_re_swap_clear_frontal_photo_works_text">
+<string name="app_swap_enhance_ten_coins_text"> -> <string name="sfs_re_swap_enhance_ten_coins_text">
+<string name="app_swap_every_text"> -> <string name="sfs_re_swap_every_text">
+<string name="app_swap_gallery_or_preset_text"> -> <string name="sfs_re_swap_gallery_or_preset_text">
+<string name="app_swap_pick_a_template_text"> -> <string name="sfs_re_swap_pick_a_template_text">
+<string name="app_swap_start_swapping_text"> -> <string name="sfs_re_swap_start_swapping_text">
+<string name="app_swap_step_1_first_text"> -> <string name="sfs_re_swap_step_1_first_text">
+<string name="app_swap_step_2_second_text"> -> <string name="sfs_re_swap_step_2_second_text">
+<string name="app_swap_tap_to_select_text"> -> <string name="sfs_re_swap_tap_to_select_text">
+<string name="app_swap_target_template_text"> -> <string name="sfs_re_swap_target_template_text">
+<string name="app_swap_ten_coins_text"> -> <string name="sfs_re_swap_ten_coins_text">
+<string name="app_swap_your_face_into_text"> -> <string name="sfs_re_swap_your_face_into_text">
+<string name="app_swap_your_face_photo_text"> -> <string name="sfs_re_swap_your_face_photo_text">
+<string name="app_template_gallery_title"> -> <string name="sfs_re_template_gallery_title">
+<string name="app_terms_and_conditions_text"> -> <string name="sfs_re_terms_and_conditions_text">
+<string name="app_text_to_image_text"> -> <string name="sfs_re_text_to_image_text">
+<string name="app_the_photo_you_want_text"> -> <string name="sfs_re_the_photo_you_want_text">
+<string name="app_total_coins_earned_text"> -> <string name="sfs_re_total_coins_earned_text">
+<string name="app_upper_coins_text"> -> <string name="sfs_re_upper_coins_text">
+<string name="app_video_swap_text"> -> <string name="sfs_re_mov_swap_text">
+<string name="app_your_face_photo_text"> -> <string name="sfs_re_your_face_photo_text">
+<string name="app_your_prompt_text"> -> <string name="sfs_re_your_prompt_text">
+<string name="dialog_api_error_msg"> -> <string name="sfs_dlog_api_err_msg">
+<string name="dialog_api_error_title"> -> <string name="sfs_dlog_api_err_title">
+<string name="dialog_no_internet_msg"> -> <string name="sfs_dlog_no_internet_msg">
+<string name="face_app_best_value_text"> -> <string name="sfs_face_re_best_value_text">
+<string name="face_dialog_close_text"> -> <string name="sfs_face_dlog_close_text">
+<string name="face_dialog_image_text"> -> <string name="sfs_face_dlog_image_text">
+<string name="facebook_app_id"> -> <string name="sfs_facebook_re_id">
+<string name="facebook_client_token"> -> <string name="sfs_facebook_client_token">
+<string name="login_button"> -> <string name="sfs_login_button">
+<string name="login_email_hint"> -> <string name="sfs_login_email_hint">
+<string name="login_error_empty_email"> -> <string name="sfs_login_err_empty_email">
+<string name="login_error_empty_password"> -> <string name="sfs_login_err_empty_password">
+<string name="login_error_failed"> -> <string name="sfs_login_err_failed">
+<string name="login_error_invalid_email"> -> <string name="sfs_login_err_invalid_email">
+<string name="login_error_short_password"> -> <string name="sfs_login_err_short_password">
+<string name="login_error_too_many_requests"> -> <string name="sfs_login_err_too_many_requests">
+<string name="login_error_user_not_found"> -> <string name="sfs_login_err_user_not_found">
+<string name="login_error_wrong_password"> -> <string name="sfs_login_err_wrong_password">
+<string name="login_logging_in"> -> <string name="sfs_login_login_in">
+<string name="login_no_account"> -> <string name="sfs_login_no_account">
+<string name="login_password_hint"> -> <string name="sfs_login_password_hint">
+<string name="login_sign_up_link"> -> <string name="sfs_login_sign_up_link">
+<string name="login_subtitle"> -> <string name="sfs_login_subtitle">
+<string name="login_welcome_back"> -> <string name="sfs_login_welcome_back">
+<string name="paywall_close"> -> <string name="sfs_paywall_close">
+<string name="paywall_col_basic"> -> <string name="sfs_paywall_col_basic">
+<string name="paywall_col_pro"> -> <string name="sfs_paywall_col_pro">
+<string name="paywall_cta_trial"> -> <string name="sfs_paywall_cta_trial">
+<string name="paywall_feature_4k"> -> <string name="sfs_paywall_feature_4k">
+<string name="paywall_feature_hd"> -> <string name="sfs_paywall_feature_hd">
+<string name="paywall_feature_no_ads"> -> <string name="sfs_paywall_feature_no_ads">
+<string name="paywall_feature_priority"> -> <string name="sfs_paywall_feature_priority">
+<string name="paywall_hero_line1"> -> <string name="sfs_paywall_hero_line1">
+<string name="paywall_hero_line2"> -> <string name="sfs_paywall_hero_line2">
+<string name="paywall_hero_line3"> -> <string name="sfs_paywall_hero_line3">
+<string name="paywall_premium_label"> -> <string name="sfs_paywall_premium_label">
+<string name="paywall_privacy"> -> <string name="sfs_paywall_privacy">
+<string name="paywall_restore"> -> <string name="sfs_paywall_restore">
+<string name="paywall_terms"> -> <string name="sfs_paywall_terms">
+<string name="settings_account"> -> <string name="sfs_stngs_account">
+<string name="settings_account_deleted"> -> <string name="sfs_stngs_account_deleted">
+<string name="settings_delete_account"> -> <string name="sfs_stngs_delete_account">
+<string name="settings_delete_confirm_msg"> -> <string name="sfs_stngs_delete_confirm_msg">
+<string name="settings_delete_confirm_title"> -> <string name="sfs_stngs_delete_confirm_title">
+<string name="settings_delete_reauth_msg"> -> <string name="sfs_stngs_delete_reauth_msg">
+<string name="settings_delete_reauth_title"> -> <string name="sfs_stngs_delete_reauth_title">
+<string name="settings_edit_name"> -> <string name="sfs_stngs_edt_name">
+<string name="settings_edit_name_hint"> -> <string name="sfs_stngs_edt_name_hint">
+<string name="settings_edit_name_title"> -> <string name="sfs_stngs_edt_name_title">
+<string name="settings_error_delete"> -> <string name="sfs_stngs_err_delete">
+<string name="settings_error_reauth"> -> <string name="sfs_stngs_err_reauth">
+<string name="settings_error_update_name"> -> <string name="sfs_stngs_err_update_name">
+<string name="settings_logout"> -> <string name="sfs_stngs_logout">
+<string name="settings_logout_confirm_msg"> -> <string name="sfs_stngs_logout_confirm_msg">
+<string name="settings_logout_confirm_title"> -> <string name="sfs_stngs_logout_confirm_title">
+<string name="settings_name_updated"> -> <string name="sfs_stngs_name_updated">
+<string name="signup_button"> -> <string name="sfs_signup_button">
+<string name="signup_confirm_password_hint"> -> <string name="sfs_signup_confirm_password_hint">
+<string name="signup_create_account"> -> <string name="sfs_signup_create_account">
+<string name="signup_email_hint"> -> <string name="sfs_signup_email_hint">
+<string name="signup_error_email_exists"> -> <string name="sfs_signup_err_email_exists">
+<string name="signup_error_empty_confirm"> -> <string name="sfs_signup_err_empty_confirm">
+<string name="signup_error_empty_email"> -> <string name="sfs_signup_err_empty_email">
+<string name="signup_error_empty_name"> -> <string name="sfs_signup_err_empty_name">
+<string name="signup_error_empty_password"> -> <string name="sfs_signup_err_empty_password">
+<string name="signup_error_failed"> -> <string name="sfs_signup_err_failed">
+<string name="signup_error_invalid_email"> -> <string name="sfs_signup_err_invalid_email">
+<string name="signup_error_password_mismatch"> -> <string name="sfs_signup_err_password_mismatch">
+<string name="signup_error_short_name"> -> <string name="sfs_signup_err_short_name">
+<string name="signup_error_short_password"> -> <string name="sfs_signup_err_short_password">
+<string name="signup_error_weak_password"> -> <string name="sfs_signup_err_weak_password">
+<string name="signup_full_name_hint"> -> <string name="sfs_signup_full_name_hint">
+<string name="signup_have_account"> -> <string name="sfs_signup_have_account">
+<string name="signup_login_link"> -> <string name="sfs_signup_login_link">
+<string name="signup_password_hint"> -> <string name="sfs_signup_password_hint">
+<string name="signup_signing_up"> -> <string name="sfs_signup_signing_up">
+<string name="signup_subtitle"> -> <string name="sfs_signup_subtitle">
+<string name="signup_user_id_label"> -> <string name="sfs_signup_user_id_label">
+<string name="store_buy_now"> -> <string name="sfs_store_buy_now">
+<string name="video_swap_cost_label"> -> <string name="sfs_mov_swap_cost_label">
+<string name="video_swap_generate_video"> -> <string name="sfs_mov_swap_generate_video">
+<string name="video_swap_hero_1"> -> <string name="sfs_mov_swap_hero_1">
+<string name="video_swap_hero_2"> -> <string name="sfs_mov_swap_hero_2">
+<string name="video_swap_please_select_video"> -> <string name="sfs_mov_swap_please_select_video">
+<string name="video_swap_select_from_gallery_or_record"> -> <string name="sfs_mov_swap_select_from_gallery_or_record">
+<string name="video_swap_subtitle"> -> <string name="sfs_mov_swap_subtitle">
+<string name="video_swap_tap_to_select_video"> -> <string name="sfs_mov_swap_tap_to_select_video">
+<string name="video_swap_title"> -> <string name="sfs_mov_swap_title">
+<string name="video_swap_upload_video"> -> <string name="sfs_mov_swap_upload_video">
+<style name="Base.Theme.FaceSwap"> -> <style name="SFS_Base.Theme.FaceSwap">
+<style name="CircleImage"> -> <style name="SFS_CirclePhoto">
+<style name="HeaderTextStyle"> -> <style name="SFS_HeaderTextStyle">
+<style name="RoundedCornerImage"> -> <style name="SFS_RoundedCornerPhoto">
+<style name="RoundedImageMedium"> -> <style name="SFS_RoundedPhotoMedium">
+<style name="SectionLabelStyle"> -> <style name="SFS_SectionLabelStyle">
+<style name="SettingsRowTextStyle"> -> <style name="SFS_SettingsRowTextStyle">
+<style name="SubtitleTextStyle"> -> <style name="SFS_SubtitleTextStyle">
+<style name="Theme.FaceSwap"> -> <style name="SFS_Theme.FaceSwap">
+<style name="Theme.FaceSwap.Splash"> -> <style name="SFS_Theme.FaceSwap.Spl">
