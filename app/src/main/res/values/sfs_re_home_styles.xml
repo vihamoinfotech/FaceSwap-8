@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SFS_HomeV2ToolCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">108dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/sfs_re_home_v2_tool_card</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="SFS_HomeV2IconFrame">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+    <style name="SFS_HomeV2Icon">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
+
+    <style name="SFS_HomeV2ToolTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sfs_re_jakarta_extrabold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#1C2944</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="SFS_HomeV2ToolSubtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:fontFamily">@font/sfs_re_jakarta_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#778198</item>
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+</resources>

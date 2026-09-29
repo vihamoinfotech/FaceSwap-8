@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/sfs_re_theme_dark_bkg">
+    android:background="#F7F8FC">
 
-    <!-- Background placeholder — src set programmatically if needed -->
     <ImageView
         android:id="@+id/ivBackground"
         android:layout_width="match_parent"
@@ -21,58 +19,40 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- ── Header ── -->
         <RelativeLayout
             android:id="@+id/mainActContent"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_56sdp"
-            android:paddingHorizontal="@dimen/_16sdp">
+            android:layout_height="72dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="16dp">
 
-            <!-- Left: Logo + App name -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:gravity="center_vertical"
                 android:orientation="vertical">
-
-<!--                <TextView-->
-<!--                    android:layout_width="@dimen/_40sdp"-->
-<!--                    android:layout_height="@dimen/_32sdp"-->
-<!--                    android:text="AI"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:fontFamily="@font/sfs_re_poppins_bold"-->
-<!--                    android:textSize="@dimen/_18sdp"-->
-<!--                    android:background="@drawable/sfs_re_pill_face_solid_gradient_ai"-->
-<!--                    android:includeFontPadding="false"-->
-<!--                    android:textColor="#FFFFFF" />-->
-
-<!--                <TextView-->
-<!--                    style="@style/SFS_HeaderTextStyle"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="@dimen/_5sdp"-->
-<!--                    android:textSize="@dimen/_18sdp"-->
-<!--                    android:fontFamily="@font/sfs_re_poppins_bold"-->
-<!--                    android:includeFontPadding="false"-->
-<!--                    android:text="Welcome"-->
-<!--                    android:textColor="#1A1A2E" />-->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:textSize="@dimen/_18sdp"
-                    android:fontFamily="@font/sfs_re_poppins_bold"
+                    android:fontFamily="@font/sfs_re_jakarta_bold"
                     android:includeFontPadding="false"
-                    android:text="Face Swap"
-                    android:textColor="#1A1A2E" />
+                    android:text="@string/sfs_re_home_brand"
+                    android:textColor="#18243E"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/sfs_re_jakarta_medium"
+                    android:includeFontPadding="false"
+                    android:text="@string/sfs_re_home_brand_subtitle"
+                    android:textColor="#758096"
+                    android:textSize="10sp" />
             </LinearLayout>
 
-            <!-- Right: Coin pill + Settings button -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,339 +61,405 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <!-- Coin balance pill (visibility controlled by Java) -->
                 <LinearLayout
                     android:id="@+id/coinBalancePill"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_32sdp"
-                    android:layout_marginEnd="@dimen/_8sdp"
-                    android:background="@drawable/sfs_re_pill_face_solid_gradient"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/sfs_re_home_v2_coin"
+                    android:clickable="true"
+                    android:contentDescription="@string/sfs_face_re_total_coin_balance_text"
+                    android:focusable="true"
                     android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/_8sdp"
-                    android:paddingVertical="@dimen/_4sdp"
-                    android:visibility="visible">
+                    android:minWidth="70dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
 
                     <ImageView
-                        android:layout_width="@dimen/_20sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:contentDescription="@string/sfs_face_re_total_coin_balance_text"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:contentDescription="@null"
                         android:src="@drawable/sfs_face_re_coin_new" />
 
                     <TextView
                         android:id="@+id/tvCoinBalance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_4sdp"
-                        android:fontFamily="@font/sfs_re_poppins_semibold"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/sfs_re_jakarta_extrabold"
                         android:includeFontPadding="false"
-                        android:paddingEnd="@dimen/_2sdp"
                         android:text="0"
-                        android:textColor="#FFFFFF"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textColor="#443008"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
                 <FrameLayout
                     android:id="@+id/btnSettings"
                     android:layout_width="44dp"
                     android:layout_height="44dp"
-                    android:background="@drawable/sfs_face_re_all_view_layer"
+                    android:background="@drawable/sfs_re_home_v2_settings"
                     android:clickable="true"
                     android:contentDescription="@string/sfs_face_re_stngs_text"
                     android:focusable="true"
                     android:foreground="?attr/selectableItemBackgroundBorderless">
 
                     <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:contentDescription="@null"
                         android:src="@drawable/sfs_face_re_stngs_header_wheel"
-                        app:tint="#1A1A2E" />
-
+                        app:tint="#34425C" />
                 </FrameLayout>
-
             </LinearLayout>
         </RelativeLayout>
 
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@color/sfs_re_subtle_divider" />
-
-        <!-- Ad banner slot -->
         <FrameLayout
             android:id="@+id/ad_view_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- Scrollable content area -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <!-- New Feature Hub Content -->
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignWithParentIfMissing="true"
-                android:layout_above="@+id/second_ad_view_container"
+                android:layout_above="@id/second_ad_view_container"
                 android:clipToPadding="false"
-                android:overScrollMode="never"
-                android:paddingBottom="@dimen/_16sdp">
+                android:fillViewport="true"
+                android:overScrollMode="never">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingBottom="@dimen/_24sdp">
+                    android:paddingBottom="28dp">
 
-                    <!-- Hero Banner -->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="17dp"-->
+<!--                        android:layout_marginTop="13dp"-->
+<!--                        android:layout_marginEnd="17dp"-->
+<!--                        android:fontFamily="@font/sfs_re_jakarta_bold"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:text="@string/sfs_re_home_heading"-->
+<!--                        android:textColor="#18243E"-->
+<!--                        android:textSize="23sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="17dp"-->
+<!--                        android:layout_marginTop="3dp"-->
+<!--                        android:layout_marginEnd="17dp"-->
+<!--                        android:fontFamily="@font/sfs_re_jakarta_regular"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:text="@string/sfs_re_home_heading_subtitle"-->
+<!--                        android:textColor="#6A778D"-->
+<!--                        android:textSize="12sp" />-->
+
                     <include layout="@layout/sfs_re_dash_header_view" />
 
-                    <!-- Explore Templates Card -->
-                    <RelativeLayout
-                        android:id="@+id/cardExploreTemplates"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:layout_marginBottom="@dimen/_16sdp"
-                        android:background="@drawable/sfs_re_dash_explore_templates_bg"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:paddingHorizontal="@dimen/_14sdp"
-                        android:paddingVertical="@dimen/_16sdp">
-
-                        <ImageView
-                            android:id="@+id/ivTemplateIcon"
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/sfs_ic_explore_templates" />
+                        android:layout_height="62dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="@dimen/_12sdp"
-                            android:layout_toEndOf="@id/ivTemplateIcon"
-                            android:orientation="vertical">
+                            android:id="@+id/btnAiCreate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/sfs_re_home_v2_ai"
+                            android:clickable="true"
+                            android:contentDescription="@string/sfs_re_dash_ai_create_cta"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/sfs_re_poppins_bold"
-                                android:includeFontPadding="false"
-                                android:text="@string/sfs_re_dash_explore_templates"
-                                android:textColor="#FFFFFF"
-                                android:textSize="@dimen/_14sdp" />
+                            <FrameLayout
+                                android:id="@+id/aiCreateIconTile"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:background="@drawable/sfs_re_home_v3_ai_icon">
+                                <ImageView
+                                    android:layout_width="21dp"
+                                    android:layout_height="21dp"
+                                    android:layout_gravity="center"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/sfs_face_re_generative_chat_ai"
+                                    app:tint="#FFFFFF" />
+                            </FrameLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:fontFamily="@font/sfs_re_poppins_regular"
-                                android:includeFontPadding="false"
-                                android:text="@string/sfs_re_dash_explore_subtitle"
-                                android:textColor="#F3E8FF"
-                                android:textSize="@dimen/_10sdp" />
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    style="@style/SFS_HomeV2ToolTitle"
+                                    android:id="@+id/tvHomeAiTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/sfs_re_dash_ai_create_cta"
+                                    android:textColor="#302862" />
+                                <TextView
+                                    style="@style/SFS_HomeV2ToolSubtitle"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="2"
+                                    android:text="@string/sfs_re_home_ai_subtitle"
+                                    android:textColor="#7369A1" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="@dimen/_16sdp"
-                            android:layout_height="@dimen/_16sdp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:src="@drawable/sfs_face_re_arw_right"
-                            app:tint="#FFFFFF" />
-                    </RelativeLayout>
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
 
-                    <!-- Quick Actions Label -->
+                        <LinearLayout
+                            android:id="@+id/cardExploreTemplates"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/sfs_re_home_v2_templates"
+                            android:clickable="true"
+                            android:contentDescription="@string/sfs_re_dash_explore_templates"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/ivTemplateIcon"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:background="@drawable/sfs_re_home_v3_template_icon"
+                                android:contentDescription="@null"
+                                android:padding="8dp"
+                                android:src="@drawable/sfs_ic_explore_templates"
+                                app:tint="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    style="@style/SFS_HomeV2ToolTitle"
+                                    android:id="@+id/tvHomeTemplatesTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:includeFontPadding="false"
+                                    android:text="@string/sfs_re_home_templates_title"
+                                    android:textColor="#604514" />
+                                <TextView
+                                    style="@style/SFS_HomeV2ToolSubtitle"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="2"
+                                    android:text="@string/sfs_re_home_templates_subtitle"
+                                    android:textColor="#8A6A30" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="17dp"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:background="@drawable/sfs_re_home_v3_section_pill"-->
+<!--                        android:fontFamily="@font/sfs_re_jakarta_medium"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:letterSpacing="0.08"-->
+<!--                        android:paddingHorizontal="10dp"-->
+<!--                        android:paddingVertical="5dp"-->
+<!--                        android:text="@string/sfs_re_home_tools_badge"-->
+<!--                        android:textColor="#5A48B5"-->
+<!--                        android:textSize="9sp" />-->
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/_16sdp"
-                        android:layout_marginBottom="@dimen/_8sdp"
-                        android:fontFamily="@font/sfs_re_poppins_bold"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="17dp"
+                        android:fontFamily="@font/sfs_re_jakarta_extrabold"
                         android:includeFontPadding="false"
                         android:text="@string/sfs_re_dash_quick_actions"
-                        android:textColor="#1A1A2E"
-                        android:textSize="@dimen/_14sdp" />
+                        android:textColor="#18243E"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
 
-                    <!-- Quick Actions Grid -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginBottom="7dp"
+                        android:fontFamily="@font/sfs_re_jakarta_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/sfs_re_home_tools_subtitle"
+                        android:textColor="#6A778D"
+                        android:textSize="@dimen/_9sdp" />
+
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
                         android:columnCount="2"
                         android:rowCount="2">
 
-                        <!-- Video Swap Card -->
                         <FrameLayout
                             android:id="@+id/cardVideoSwap"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_margin="@dimen/_4sdp"
-                            android:background="@drawable/sfs_re_dash_grid_bkg_mov_swap"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="@drawable/sfs_re_dash_feature_card_ripple">
+                            style="@style/SFS_HomeV2ToolCard"
+                            android:background="@drawable/sfs_re_home_v3_card_video"
+                            android:contentDescription="@string/sfs_re_home_video_premium">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:paddingVertical="@dimen/_16sdp">
-
-                                <ImageView
-                                    android:layout_width="@dimen/_24sdp"
-                                    android:layout_height="@dimen/_24sdp"
-                                    android:src="@drawable/sfs_face_re_mov_reverse_eng"
-                                    app:tint="#6366F1" />
-
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <FrameLayout
+                                    style="@style/SFS_HomeV2IconFrame"
+                                    android:background="@drawable/sfs_re_home_v2_icon_video">
+                                    <ImageView
+                                        style="@style/SFS_HomeV2Icon"
+                                        android:src="@drawable/sfs_face_re_mov_reverse_eng"
+                                        app:tint="#FFFFFF" />
+                                </FrameLayout>
                                 <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/_8sdp"
-                                    android:fontFamily="@font/sfs_re_poppins_semibold"
-                                    android:includeFontPadding="false"
+                                    style="@style/SFS_HomeV2ToolTitle"
                                     android:text="@string/sfs_re_dash_mov_swap"
-                                    android:textColor="#6366F1"
-                                    android:textSize="@dimen/_11sdp" />
+                                    android:layout_marginTop="@dimen/_7sdp"
+                                    android:textColor="#68344A" />
+                                <TextView
+                                    style="@style/SFS_HomeV2ToolSubtitle"
+                                    android:text="@string/sfs_re_home_video_subtitle"
+                                    android:textColor="#8F5B72" />
                             </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="top|end"
+                                android:background="@drawable/sfs_re_home_v3_premium_badge"
+                                android:fontFamily="@font/sfs_re_jakarta_bold"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:paddingHorizontal="9dp"
+                                android:text="@string/sfs_re_home_premium_badge"
+                                android:textColor="#4D3004"
+                                android:textSize="9sp" />
                         </FrameLayout>
 
-                        <!-- Remove BG Card -->
-                        <FrameLayout
+                        <LinearLayout
                             android:id="@+id/cardRemoveBg"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_margin="@dimen/_4sdp"
-                            android:background="@drawable/sfs_re_dash_grid_bkg_rmv_bg"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="@drawable/sfs_re_dash_feature_card_ripple">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:paddingVertical="@dimen/_16sdp">
-
+                            style="@style/SFS_HomeV2ToolCard"
+                            android:background="@drawable/sfs_re_home_v3_card_remove"
+                            android:contentDescription="@string/sfs_re_dash_rmv_bg">
+                            <FrameLayout
+                                style="@style/SFS_HomeV2IconFrame"
+                                android:background="@drawable/sfs_re_home_v2_icon_remove">
                                 <ImageView
-                                    android:layout_width="@dimen/_24sdp"
-                                    android:layout_height="@dimen/_24sdp"
+                                    style="@style/SFS_HomeV2Icon"
                                     android:src="@drawable/sfs_ic_rmv_bg"
-                                    app:tint="#06B6D4" />
+                                    app:tint="#FFFFFF" />
+                            </FrameLayout>
+                            <TextView
+                                style="@style/SFS_HomeV2ToolTitle"
+                                android:text="@string/sfs_re_dash_rmv_bg"
+                                android:layout_marginTop="@dimen/_7sdp"
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/_8sdp"
-                                    android:fontFamily="@font/sfs_re_poppins_semibold"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sfs_re_dash_rmv_bg"
-                                    android:textColor="#06B6D4"
-                                    android:textSize="@dimen/_11sdp" />
-                            </LinearLayout>
-                        </FrameLayout>
+                                android:textColor="#134E50" />
+                            <TextView
+                                style="@style/SFS_HomeV2ToolSubtitle"
+                                android:text="@string/sfs_re_home_remove_subtitle"
+                                android:textColor="#3F706D" />
+                        </LinearLayout>
 
-                        <!-- Enhance Card -->
-                        <FrameLayout
+                        <LinearLayout
                             android:id="@+id/cardEnhanceFace"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_margin="@dimen/_4sdp"
-                            android:background="@drawable/sfs_re_dash_grid_bkg_enhance"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="@drawable/sfs_re_dash_feature_card_ripple">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:paddingVertical="@dimen/_16sdp">
-
+                            style="@style/SFS_HomeV2ToolCard"
+                            android:background="@drawable/sfs_re_home_v3_card_enhance"
+                            android:contentDescription="@string/sfs_re_dash_enhance_face">
+                            <FrameLayout
+                                style="@style/SFS_HomeV2IconFrame"
+                                android:background="@drawable/sfs_re_home_v2_icon_enhance">
                                 <ImageView
-                                    android:layout_width="@dimen/_24sdp"
-                                    android:layout_height="@dimen/_24sdp"
+                                    style="@style/SFS_HomeV2Icon"
                                     android:src="@drawable/sfs_ic_enhance_face"
-                                    app:tint="#FF8A3D" />
+                                    app:tint="#FFFFFF" />
+                            </FrameLayout>
+                            <TextView
+                                style="@style/SFS_HomeV2ToolTitle"
+                                android:text="@string/sfs_re_dash_enhance_face"
+                                android:layout_marginTop="@dimen/_7sdp"
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/_8sdp"
-                                    android:fontFamily="@font/sfs_re_poppins_semibold"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sfs_re_dash_enhance_face"
-                                    android:textColor="#FF8A3D"
-                                    android:textSize="@dimen/_11sdp" />
-                            </LinearLayout>
-                        </FrameLayout>
+                                android:textColor="#683C2B" />
+                            <TextView
+                                style="@style/SFS_HomeV2ToolSubtitle"
+                                android:text="@string/sfs_re_home_enhance_subtitle"
+                                android:textColor="#805C4C" />
+                        </LinearLayout>
 
-                        <!-- My Work Card -->
-                        <FrameLayout
+                        <LinearLayout
                             android:id="@+id/cardMyWork"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_margin="@dimen/_4sdp"
-                            android:background="@drawable/sfs_re_dash_grid_bkg_my_work"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:foreground="@drawable/sfs_re_dash_feature_card_ripple">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:paddingVertical="@dimen/_16sdp">
-
+                            style="@style/SFS_HomeV2ToolCard"
+                            android:background="@drawable/sfs_re_home_v3_card_work"
+                            android:contentDescription="@string/sfs_re_dash_my_work">
+                            <FrameLayout
+                                style="@style/SFS_HomeV2IconFrame"
+                                android:background="@drawable/sfs_re_home_v2_icon_work">
                                 <ImageView
-                                    android:layout_width="@dimen/_24sdp"
-                                    android:layout_height="@dimen/_24sdp"
+                                    style="@style/SFS_HomeV2Icon"
                                     android:src="@drawable/sfs_face_re_my_work_four"
-                                    app:tint="#8B5CF6" />
+                                    app:tint="#FFFFFF" />
+                            </FrameLayout>
+                            <TextView
+                                style="@style/SFS_HomeV2ToolTitle"
+                                android:text="@string/sfs_re_dash_my_work"
+                                android:layout_marginTop="@dimen/_7sdp"
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="@dimen/_8sdp"
-                                    android:fontFamily="@font/sfs_re_poppins_semibold"
-                                    android:includeFontPadding="false"
-                                    android:text="@string/sfs_re_dash_my_work"
-                                    android:textColor="#8B5CF6"
-                                    android:textSize="@dimen/_11sdp" />
-                            </LinearLayout>
-                        </FrameLayout>
-
+                                android:textColor="#353B70" />
+                            <TextView
+                                style="@style/SFS_HomeV2ToolSubtitle"
+                                android:text="@string/sfs_re_home_work_subtitle"
+                                android:textColor="#5C6695" />
+                        </LinearLayout>
                     </GridLayout>
-
                 </LinearLayout>
             </ScrollView>
-
-
 
             <FrameLayout
                 android:id="@+id/second_ad_view_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:layout_marginBottom="@dimen/_2sdp" />
-
+                android:layout_alignParentBottom="true" />
         </RelativeLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

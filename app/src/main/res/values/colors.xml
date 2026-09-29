@@ -49,6 +49,7 @@
     <color name="sfs_re_start_dashed_border_gradient">#6366F1</color>
     <color name="sfs_re_end_dashed_border_gradient">#06B6D4</color>
     <color name="sfs_re_main_purple">#6366F1</color>
+    <color name="sfs_re_main_btn">#16243F</color>
     <color name="sfs_re_dark_purple">#EEF2FF</color>
 
     <!-- ═══ GRADIENTS ═══ -->

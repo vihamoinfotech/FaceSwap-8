@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginBottom="@dimen/_8sdp"
-        android:fontFamily="@font/sfs_re_poppins_semibold"
+        android:fontFamily="@font/sfs_re_manrope_semibold"
         android:includeFontPadding="false"
         android:text="Choose Video Source"
         android:textColor="#1A1A2E"
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sfs_re_poppins_semibold"
+                android:fontFamily="@font/sfs_re_manrope_semibold"
                 android:includeFontPadding="false"
                 android:text="Record Video"
                 android:textColor="#1A1A2E"
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sfs_re_poppins_regular"
+                android:fontFamily="@font/sfs_re_manrope_regular"
                 android:includeFontPadding="false"
                 android:text="Use your camera to record"
                 android:textColor="@color/sfs_re_tertiary_text"
@@ -131,7 +131,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sfs_re_poppins_semibold"
+                android:fontFamily="@font/sfs_re_manrope_semibold"
                 android:includeFontPadding="false"
                 android:text="Choose from Gallery"
                 android:textColor="#1A1A2E"
@@ -140,7 +140,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/sfs_re_poppins_regular"
+                android:fontFamily="@font/sfs_re_manrope_regular"
                 android:includeFontPadding="false"
                 android:text="Select from your videos"
                 android:textColor="@color/sfs_re_tertiary_text"
@@ -165,7 +165,7 @@
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:background="@drawable/sfs_face_re_common_border_color"
         android:elevation="8dp"
-                    android:fontFamily="@font/sfs_re_poppins_medium"
+                    android:fontFamily="@font/sfs_re_manrope_medium"
         android:gravity="center"
         android:includeFontPadding="false"
         android:text="@string/sfs_re_source_cancel_text"

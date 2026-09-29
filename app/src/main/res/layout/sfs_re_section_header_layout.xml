@@ -23,7 +23,7 @@
             android:textColor="#1A1A2E"
             android:textSize="@dimen/_15sdp"
             android:maxLines="1"
-            android:fontFamily="@font/sfs_re_poppins_bold"
+            android:fontFamily="@font/sfs_re_manrope_bold"
             android:includeFontPadding="false"
             android:text="@string/sfs_face_re_header_section_title_text" />
 
@@ -55,7 +55,7 @@
             android:textColor="#1A1A2E"
             android:includeFontPadding="false"
             android:textSize="@dimen/_10sdp"
-            android:fontFamily="@font/sfs_re_poppins_semibold"/>
+            android:fontFamily="@font/sfs_re_manrope_semibold"/>
 
         <ImageView
             android:layout_width="10dp"

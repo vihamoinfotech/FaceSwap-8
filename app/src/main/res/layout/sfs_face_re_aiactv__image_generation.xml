@@ -79,7 +79,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/sfs_re_poppins_bold"
+                        android:fontFamily="@font/sfs_re_manrope_bold"
                         android:includeFontPadding="false"
                         android:text="@string/sfs_face_re_ai_turn_your_ideas_text"
                         android:textColor="#1A1A2E"
@@ -88,7 +88,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/sfs_re_poppins_bold"
+                        android:fontFamily="@font/sfs_re_manrope_bold"
                         android:includeFontPadding="false"
                         android:text=" "
                         android:textColor="#1A1A2E"
@@ -97,7 +97,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/sfs_re_poppins_extrabold"
+                        android:fontFamily="@font/sfs_re_manrope_extrabold"
                         android:includeFontPadding="false"
                         android:text="@string/sfs_face_re_ai_into_art_text"
                         android:textColor="@color/sfs_re_primary_brand"
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_20sdp"
-                    android:fontFamily="@font/sfs_re_poppins_regular"
+                    android:fontFamily="@font/sfs_re_manrope_regular"
                     android:includeFontPadding="false"
                     android:text="@string/sfs_face_re_describe_what_you_want_text"
                     android:textColor="@color/sfs_re_tertiary_text"
@@ -150,7 +150,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/sfs_re_poppins_semibold"
+                                android:fontFamily="@font/sfs_re_manrope_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_text_to_prompt_text"
                                 android:textColor="#1A1A2E"
@@ -159,7 +159,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/sfs_re_poppins_regular"
+                                android:fontFamily="@font/sfs_re_manrope_regular"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_describe_your_image_text"
                                 android:textColor="@color/sfs_re_tertiary_text"
@@ -170,7 +170,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/sfs_face_re_bfge_orange_gradient_bg"
-                            android:fontFamily="@font/sfs_re_poppins_semibold"
+                            android:fontFamily="@font/sfs_re_manrope_semibold"
                             android:includeFontPadding="false"
                             android:paddingHorizontal="@dimen/_9sdp"
                             android:paddingVertical="@dimen/_3sdp"
@@ -185,7 +185,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/_16sdp"
                         android:background="@drawable/sfs_re_clear_bkg_only_light_border"
-                        android:fontFamily="@font/sfs_re_poppins_regular"
+                        android:fontFamily="@font/sfs_re_manrope_regular"
                         android:gravity="top|start"
                         android:hint="e.g. A cyberpunk samurai in neon rain, cinematic lighting, 8K..."
                         android:includeFontPadding="false"
@@ -240,7 +240,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/sfs_re_poppins_semibold"
+                                android:fontFamily="@font/sfs_re_manrope_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_reference_image_text"
                                 android:textColor="#1A1A2E"
@@ -249,7 +249,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/sfs_re_poppins_regular"
+                                android:fontFamily="@font/sfs_re_manrope_regular"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_guides_the_style_text"
                                 android:textColor="@color/sfs_re_tertiary_text"
@@ -259,7 +259,7 @@
 <!--                        <TextView-->
 <!--                            android:layout_width="wrap_content"-->
 <!--                            android:layout_height="wrap_content"-->
-<!--                            android:fontFamily="@font/sfs_re_poppins_regular"-->
+<!--                            android:fontFamily="@font/sfs_re_manrope_regular"-->
 <!--                            android:includeFontPadding="false"-->
 <!--                            android:paddingHorizontal="@dimen/_9sdp"-->
 <!--                            android:paddingVertical="@dimen/_3sdp"-->
@@ -293,7 +293,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_10sdp"
-                                android:fontFamily="@font/sfs_re_poppins_semibold"
+                                android:fontFamily="@font/sfs_re_manrope_semibold"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_tap_to_upload_image_text"
                                 android:textColor="#1A1A2E"
@@ -303,7 +303,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_4sdp"
-                                android:fontFamily="@font/sfs_re_poppins_regular"
+                                android:fontFamily="@font/sfs_re_manrope_regular"
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="@string/sfs_face_re_ai_png_jpg_supported_text"
@@ -365,7 +365,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_4sdp"
-                        android:fontFamily="@font/sfs_re_poppins_semibold"
+                        android:fontFamily="@font/sfs_re_manrope_semibold"
                         android:includeFontPadding="false"
                         android:text="@string/sfs_face_re_ai_10_coins_text"
                         android:textColor="#1A1A2E"
@@ -379,7 +379,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="24dp"
                     android:background="@drawable/sfs_face_re_generate_button_square"
-                    android:fontFamily="@font/sfs_re_poppins_semibold"
+                    android:fontFamily="@font/sfs_re_manrope_semibold"
                     android:includeFontPadding="false"
                     android:letterSpacing="0.02"
                     android:text="@string/sfs_face_re_ai_generate_image_text"

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-
-    <solid android:color="@color/sfs_re_main_purple" />
+    <gradient
+        android:angle="135"
+        android:startColor="@color/sfs_re_start_gradient"
+        android:centerColor="@color/sfs_re_middle_gradient"
+        android:endColor="@color/sfs_re_end_gradient" />
 
     <corners android:radius="@dimen/_25sdp" />
 

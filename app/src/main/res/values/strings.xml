@@ -423,18 +423,38 @@
     <string name="sfs_stngs_err_update_name" translatable="false">Failed to update name. Please try again.</string>
     <string name="sfs_stngs_err_reauth" translatable="false">Incorrect password. Please try again.</string>
 
-    <string name="sfs_re_dash_hero_badge">AI STUDIO</string>
-    <string name="sfs_re_dash_hero_title">Transform Your\nPhotos with AI</string>
-    <string name="sfs_re_dash_hero_subtitle">Swap faces, enhance \u0026 create</string>
+    <string name="sfs_re_dash_hero_badge">YOUR CREATIVE STUDIO</string>
+    <string name="sfs_re_dash_hero_title">Swap faces in\nseconds</string>
+    <string name="sfs_re_dash_hero_subtitle">Start with a photo, or create with AI</string>
     <string name="sfs_re_dash_face_swap_cta">Face Swap</string>
     <string name="sfs_re_dash_ai_create_cta">AI Create</string>
     <string name="sfs_re_dash_explore_templates">Explore Templates</string>
-    <string name="sfs_re_dash_explore_subtitle">Browse 100+ AI face swap templates</string>
-    <string name="sfs_re_dash_quick_actions">Quick Actions</string>
-    <string name="sfs_re_dash_mov_swap">Video Swap</string>
-    <string name="sfs_re_dash_rmv_bg">Remove BG</string>
-    <string name="sfs_re_dash_enhance_face">Enhance</string>
+    <string name="sfs_re_dash_explore_subtitle">Ready-to-use looks for your next swap</string>
+    <string name="sfs_re_dash_quick_actions">More ways to create</string>
+    <string name="sfs_re_dash_mov_swap">Video FaceSwap</string>
+    <string name="sfs_re_dash_rmv_bg">Remove Background</string>
+    <string name="sfs_re_dash_enhance_face">Enhance Face</string>
     <string name="sfs_re_dash_my_work">My Work</string>
+    <string name="sfs_re_home_brand">FaceSwap</string>
+    <string name="sfs_re_home_brand_subtitle">CREATE SOMETHING NEW</string>
+    <string name="sfs_re_home_coins_label">coins</string>
+    <string name="sfs_re_home_heading">Your creative studio</string>
+    <string name="sfs_re_home_heading_subtitle">Choose a tool to start creating.</string>
+    <string name="sfs_re_home_featured_label">FEATURED TOOL</string>
+    <string name="sfs_re_home_hero_title">Face swaps,\nmade simple.</string>
+    <string name="sfs_re_home_hero_subtitle">Pick a photo and make the moment yours.</string>
+    <string name="sfs_re_home_start_face_swap">Start Face Swap</string>
+    <string name="sfs_re_home_ai_subtitle">Create from an idea</string>
+    <string name="sfs_re_home_templates_title">Templates</string>
+    <string name="sfs_re_home_templates_subtitle">Pick a ready look</string>
+    <string name="sfs_re_home_tools_subtitle">Explore more tools for every edit.</string>
+    <string name="sfs_re_home_tools_badge">CREATIVE TOOLBOX</string>
+    <string name="sfs_re_home_premium_badge">★ PREMIUM</string>
+    <string name="sfs_re_home_video_premium">Video Swap, Premium feature</string>
+    <string name="sfs_re_home_video_subtitle">Swap faces in video</string>
+    <string name="sfs_re_home_remove_subtitle">Cut out your subject</string>
+    <string name="sfs_re_home_enhance_subtitle">Sharpen a portrait</string>
+    <string name="sfs_re_home_work_subtitle">See your creations</string>
     <string name="sfs_re_template_gallery_title">Templates</string>
 
 </resources>

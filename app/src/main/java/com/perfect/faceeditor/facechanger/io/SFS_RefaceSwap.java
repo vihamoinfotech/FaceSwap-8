@@ -159,16 +159,16 @@ public class SFS_RefaceSwap extends Application {
 
     private void initializeAdsSdk() {
 
-        Typeface poppinsReg = ResourcesCompat.getFont(this, R.font.sfs_re_poppins_regular);
-        Typeface poppinsMed = ResourcesCompat.getFont(this, R.font.sfs_re_poppins_medium);
-        Typeface poppinsBold = ResourcesCompat.getFont(this, R.font.sfs_re_poppins_semibold);
+        Typeface manropeRegular = ResourcesCompat.getFont(this, R.font.sfs_re_manrope_regular);
+        Typeface manropeMedium = ResourcesCompat.getFont(this, R.font.sfs_re_manrope_medium);
+        Typeface manropeSemibold = ResourcesCompat.getFont(this, R.font.sfs_re_manrope_semibold);
 
         // Configure AD SDK with custom styling
         AdConfig config = new AdConfig.Builder()
                 .muteVideoAds(true)
-                .fontRegular(poppinsReg)
-                .fontMedium(poppinsMed)
-                .fontBold(poppinsBold)
+                .fontRegular(manropeRegular)
+                .fontMedium(manropeMedium)
+                .fontBold(manropeSemibold)
                 .build();
 
         // Initialize once
