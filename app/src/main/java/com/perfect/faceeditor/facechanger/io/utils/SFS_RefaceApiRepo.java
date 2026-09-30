@@ -31,7 +31,7 @@ import java.util.Map;
  */
 public final class SFS_RefaceApiRepo {
 
-    private static final String BASE_URL = SFS_RefaceAppSystem.isDebugMode() ? "https://acc-aifacestudio.runasp.net" : "https://faceswap.runasp.net";
+    private static final String BASE_URL = SFS_RefaceAppSystem.isDebugMode() ? "https://acc-aifacestudio.runasp.net" : "https://faceeditorio.premiumasp.net";
     private static final int IMAGE_PROCESS_TIMEOUT_MS = 180_000; // 3 minutes
 
     private SFS_RefaceApiRepo() { /* non-instantiable */ }
