@@ -2,6 +2,9 @@ package com.perfect.faceeditor.facechanger.io.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -64,7 +67,7 @@ public class SFS_RefaceSplActivity extends AppCompatActivity {
         setContentView(R.layout.sfs_face_reactv__spl_view);
         SFS_RefaceUtils.setEdgetoEdge(getWindow(), findViewById(android.R.id.content), true, true);
 
-        startTime = System.currentTimeMillis();
+        startTime = SystemClock.elapsedRealtime();
 
         // Initialise API base URL
         SFS_RefaceApiRepo.initialise();
@@ -228,6 +231,13 @@ public class SFS_RefaceSplActivity extends AppCompatActivity {
      * has been displayed for at least {@link #MIN_DISPLAY_MS}.
      */
     private void navigateAfterMinDisplayTime() {
+        if (hasNavigated || isFinishing()) return;
+        long remainingMs = MIN_DISPLAY_MS - (SystemClock.elapsedRealtime() - startTime);
+        if (remainingMs > 0) {
+            new Handler(Looper.getMainLooper()).postDelayed(this::navigateAfterMinDisplayTime, remainingMs);
+            return;
+        }
+
         int APP_EXP = GlobleMMKVManager.getInstance().getInt(SFS_RefaceStaticValue.APP_EXP, 1);
         if (APP_EXP == 1) {
             moveToNextScreen();

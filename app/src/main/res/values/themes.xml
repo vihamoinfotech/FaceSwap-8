@@ -1,13 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="SFS_Base.Theme.FaceSwap" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:fontFamily">@font/sfs_re_manrope_regular</item>
-        <item name="fontFamily">@font/sfs_re_manrope_regular</item>
         <item name="android:windowBackground">@color/sfs_re_theme_dark_bkg</item>
     </style>
 
     <style name="SFS_Theme.FaceSwap" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:fontFamily">@font/sfs_re_manrope_regular</item>
-        <item name="fontFamily">@font/sfs_re_manrope_regular</item>
         <item name="android:windowBackground">@color/sfs_re_theme_dark_bkg</item>
         <item name="colorPrimary">@color/sfs_re_primary_brand</item>
         <item name="colorPrimaryVariant">#FFFFFF</item>
