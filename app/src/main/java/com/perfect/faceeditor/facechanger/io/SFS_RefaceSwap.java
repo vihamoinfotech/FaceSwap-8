@@ -34,7 +34,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 import com.perfect.faceeditor.facechanger.io.worker.SFS_RefaceLocalNotiReceiver;
-import com.perfect.faceeditor.facechanger.io.controller.SFS_RefaceFacebookEventsMngr;
 
 
 public class SFS_RefaceSwap extends Application {
@@ -54,8 +53,8 @@ public class SFS_RefaceSwap extends Application {
         instance = this;
 
         // Initialize Facebook Events SDK and log App Open
-        SFS_RefaceFacebookEventsMngr.getInstance().init(this);
-        SFS_RefaceFacebookEventsMngr.getInstance().logAppOpen(this);
+//        SFS_RefaceFacebookEventsMngr.getInstance().init(this);
+//        SFS_RefaceFacebookEventsMngr.getInstance().logAppOpen(this);
 
         // TODO: Reverse Engineering Security Enable Here
         // Anti-reverse engineering security checks

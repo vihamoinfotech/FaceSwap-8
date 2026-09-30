@@ -44,7 +44,7 @@ public class SFS_RefaceLocalNotiReceiver extends BroadcastReceiver {
                 PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_ONE_SHOT);
 
         // Large icon = full-color app icon (shown in expanded notification)
-        Bitmap largeIcon = BitmapFactory.decodeResource(context.getResources(), R.mipmap.sfs_ic_launcher);
+        Bitmap largeIcon = BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.drawable.sfs_ic_logo_transparent)       // Monochromatic silhouette

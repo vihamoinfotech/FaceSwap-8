@@ -8,6 +8,9 @@ public class SFS_RefaceStaticValue {
 
     public final static String FIREBASE_DEVICE_ID = "FIREBASE_DEVICE_ID";
     public final static String FIREBASE_USER_ID = "FIREBASE_USER_ID";
+    public final static String TERMS_CONDITION = "https://aifaceswap8.blogspot.com/2026/09/terms-conditions.html";
+    public final static String PRIVACY_POLICY = "https://aifaceswap8.blogspot.com/2026/09/privacy-policy.html";
+
 
 
 }

@@ -114,7 +114,7 @@ public class SFS_RefaceMyFierbusMessService extends FirebaseMessagingService {
                 PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_ONE_SHOT);
 
         // Large icon = full-color app icon (shown in expanded notification)
-        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.sfs_ic_launcher);
+        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.sfs_ic_logo_transparent)       // Monochromatic silhouette

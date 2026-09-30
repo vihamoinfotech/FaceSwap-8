@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "926854475640",
-    "project_id": "face-editor-ai-face-swap-2",
-    "storage_bucket": "face-editor-ai-face-swap-2.firebasestorage.app"
+    "project_number": "1042642636846",
+    "project_id": "faceswap8-f27dc",
+    "storage_bucket": "faceswap8-f27dc.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:926854475640:android:a2448d4330b71fc5efe28d",
+        "mobilesdk_app_id": "1:1042642636846:android:4abfe4599f353794030fbf",
         "android_client_info": {
-          "package_name": "com.facechanger.faceswap.enhance"
+          "package_name": "com.perfect.faceeditor.facechanger.io"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD9J3inSqdM5DRLeZdNZcMQ7Pt7rQtuysI"
+          "current_key": "AIzaSyBkTGAF9KnIypNBPfVWtEFT51eVJ2AtOgQ"
         }
       ],
       "services": {

@@ -86,7 +86,6 @@ dependencies {
     implementation("com.airbnb.android:lottie:6.7.1")
     implementation("com.revenuecat.purchases:purchases:10.16.0")
     implementation("com.facebook.shimmer:shimmer:0.5.0")
-    implementation("com.facebook.android:facebook-android-sdk:18.3.0")
     implementation(libs.androidx.core.splashscreen)
     implementation("com.google.firebase:firebase-messaging")
 

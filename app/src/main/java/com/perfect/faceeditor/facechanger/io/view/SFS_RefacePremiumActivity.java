@@ -18,7 +18,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.perfect.faceeditor.facechanger.io.R;
-import com.perfect.faceeditor.facechanger.io.controller.SFS_RefaceFacebookEventsMngr;
 import com.perfect.faceeditor.facechanger.io.controller.SFS_RefacePurchaseListener;
 import com.perfect.faceeditor.facechanger.io.controller.SFS_RefaceRevCatMngr;
 import com.perfect.faceeditor.facechanger.io.utils.SFS_RefaceLocaleHlpr;
@@ -264,10 +263,10 @@ public class SFS_RefacePremiumActivity extends AppCompatActivity {
         });
 
         // Privacy Policy
-        btnPrivacy.setOnClickListener(v -> openUrl("https://resumebuilder-2.blogspot.com/2026/06/privacy-faceswap-2.html"));
+        btnPrivacy.setOnClickListener(v -> openUrl(SFS_RefaceStaticValue.PRIVACY_POLICY));
 
         // Terms
-        btnTerms.setOnClickListener(v -> openUrl("resumebuilder-2.blogspot.com/2026/06/terms-faceswap-2.html"));
+        btnTerms.setOnClickListener(v -> openUrl(SFS_RefaceStaticValue.TERMS_CONDITION));
     }
 
     // ───────────────────────────────── Animations ──
@@ -327,7 +326,7 @@ public class SFS_RefacePremiumActivity extends AppCompatActivity {
                 String productId = subscriptionPackage.getProduct().getId();
                 double price = subscriptionPackage.getProduct().getPrice().getAmountMicros() / 1000000.0;
                 String currencyCode = subscriptionPackage.getProduct().getPrice().getCurrencyCode();
-                SFS_RefaceFacebookEventsMngr.getInstance().logSubscriptionPurchased(productId, price, currencyCode);
+//                SFS_RefaceFacebookEventsMngr.getInstance().logSubscriptionPurchased(productId, price, currencyCode);
             }
         } catch (Exception e) {
             Log.e("PaywallActivity", "Failed to log Facebook purchase event", e);

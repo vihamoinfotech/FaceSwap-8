@@ -40,7 +40,7 @@ public class SFS_RefaceRevCatMngr {
     }
 
     public void init(Application application) {
-        String apiKey = "goog_rCTNhqJUFtdbFmEyroPPRUdJmmj";
+        String apiKey = "goog_GRsulAZGTYZSGUStDcffZoFwxZk";
 
         Purchases.setDebugLogsEnabled(true);
 
