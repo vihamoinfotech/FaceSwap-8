@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FaceSwap"
+rootProject.name = "FaceSwap-8"
 include(":app")

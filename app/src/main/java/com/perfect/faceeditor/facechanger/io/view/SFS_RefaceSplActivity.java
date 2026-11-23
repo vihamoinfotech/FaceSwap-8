@@ -142,6 +142,7 @@ public class SFS_RefaceSplActivity extends AppCompatActivity {
                         if (response.isSuccess() && response.getData() != null) {
                             SFS_RefaceSessionMngr.getInstance().initialize(response.getData());
                             Log.d(TAG, "Session initialized — token acquired" + responseBody);
+                            AdManager.getInstance().onConfigApiResponse(responseBody);
 
                             if (SFS_RefaceAppSystem.isDebugMode()) {
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.APP_EXP, 0);
@@ -155,8 +156,6 @@ public class SFS_RefaceSplActivity extends AppCompatActivity {
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.IS_PRM_PRC_SHOW,
                                         response.getData().getIs_prm_prc_show());
                             }
-
-                            AdManager.getInstance().onConfigApiResponse(responseBody);
 
                             Log.w(TAG, "APP_UPDATE: IS_LATEST" + response.getData().isLatest());
 

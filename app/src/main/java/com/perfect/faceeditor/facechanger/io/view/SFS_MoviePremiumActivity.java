@@ -87,7 +87,7 @@ public class SFS_MoviePremiumActivity extends AppCompatActivity {
         Uri videoUri = null;
 
         // 1. Check raw resource (res/raw/sfs_paywall_video.mp4)
-        int rawResId = getResources().getIdentifier("paywall_video", "raw", getPackageName());
+        int rawResId = getResources().getIdentifier("sfs_paywall_video", "raw", getPackageName());
         if (rawResId != 0) {
             videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + rawResId);
         }

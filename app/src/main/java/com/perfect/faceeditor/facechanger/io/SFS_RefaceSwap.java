@@ -52,14 +52,6 @@ public class SFS_RefaceSwap extends Application {
 
         instance = this;
 
-        // Initialize Facebook Events SDK and log App Open
-//        SFS_RefaceFacebookEventsMngr.getInstance().init(this);
-//        SFS_RefaceFacebookEventsMngr.getInstance().logAppOpen(this);
-
-        // TODO: Reverse Engineering Security Enable Here
-        // Anti-reverse engineering security checks
-        // SecurityUtils.runComprehensiveSecurityCheck(this);
-
         if (!SFS_RefaceAppSystem.isDebugMode()) {
             FirebaseApp.initializeApp(this);
 

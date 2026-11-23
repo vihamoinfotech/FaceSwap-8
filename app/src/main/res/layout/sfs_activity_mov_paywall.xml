@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -55,7 +54,7 @@
             android:includeFontPadding="false"
             android:text="Unlimited Creativity"
             android:textAlignment="center"
-            android:textColor="#1A1A2E"
+            android:textColor="#F7F7F7"
             android:textSize="@dimen/_18sdp"
             android:visibility="visible" />
 
@@ -71,7 +70,7 @@
             android:includeFontPadding="false"
             android:text=""
             android:textAlignment="center"
-            android:textColor="@color/sfs_re_secondary_text"
+            android:textColor="@color/sfs_re_disabled_text"
             android:textSize="@dimen/_11sdp"
             android:visibility="visible" />
 
@@ -101,7 +100,7 @@
         android:includeFontPadding="false"
         android:paddingVertical="@dimen/_12sdp"
         android:text=""
-        android:textColor="#1A1A2E"
+        android:textColor="#FFFFFF"
         android:textSize="@dimen/_14sdp" />
 
     <LinearLayout

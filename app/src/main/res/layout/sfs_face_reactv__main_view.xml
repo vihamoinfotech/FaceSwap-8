@@ -182,6 +182,7 @@
                             android:background="@drawable/sfs_re_home_v2_ai"
                             android:clickable="true"
                             android:contentDescription="@string/sfs_re_dash_ai_create_cta"
+                            android:layout_marginEnd="@dimen/_10sdp"
                             android:focusable="true"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -228,10 +229,6 @@
                                     android:textColor="#7369A1" />
                             </LinearLayout>
                         </LinearLayout>
-
-                        <Space
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent" />
 
                         <LinearLayout
                             android:id="@+id/cardExploreTemplates"

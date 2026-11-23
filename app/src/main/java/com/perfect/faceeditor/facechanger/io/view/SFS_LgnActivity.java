@@ -183,6 +183,7 @@ public class SFS_LgnActivity extends SFS_BaseAppActivity {
                             SFS_RefaceSessionMngr
                                     .getInstance().initialize(response.getData());
                             Log.d(TAG, "Session initialized — token acquired" + responseBody);
+                            AdManager.getInstance().onConfigApiResponse(responseBody);
 
                             if (SFS_RefaceAppSystem.isDebugMode()) {
                                 GlobleMMKVManager.getInstance().putInt(SFS_RefaceStaticValue.APP_EXP, 1);
@@ -200,8 +201,6 @@ public class SFS_LgnActivity extends SFS_BaseAppActivity {
                             if (SFS_FierbusAuthMngr.getInstance().isLoggedIn()) {
                                 SFS_FierbusAuthMngr.getInstance().updateUserCoin(SFS_RefaceSessionMngr.getInstance().getCurrentCredits());
                             }
-
-                            AdManager.getInstance().onConfigApiResponse(responseBody);
 
                             Log.w(TAG, "APP_UPDATE: IS_LATEST" + response.getData().isLatest());
 

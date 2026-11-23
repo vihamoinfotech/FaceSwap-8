@@ -204,7 +204,6 @@ public class SFS_RefaceMainActivity extends SFS_BaseAppActivity {
                     startActivity(intent);
                 }));
             }
-
         }
 
         // Explore Templates Card

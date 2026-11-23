@@ -95,12 +95,12 @@ public class SFS_RefaceCoinStreAdapter extends RecyclerView.Adapter<SFS_RefaceCo
     private void applyBadge(ViewHolder holder, int position) {
         int totalItems = packages.size();
 
-        if (totalItems >= 3 && position == totalItems - 2) {
+        if (totalItems >= 2 && position == 1) {
             // Most Popular badge
             holder.tvBadge.setVisibility(View.VISIBLE);
             holder.tvBadge.setText(R.string.sfs_face_re_multi_popular_text);
             holder.tvBadge.setBackgroundResource(R.drawable.sfs_face_re_bfge_popular_bg);
-        } else if (totalItems >= 2 && position == totalItems - 1) {
+        } else if (totalItems >= 2 && position == 0) {
             // Best Value badge
             holder.tvBadge.setVisibility(View.VISIBLE);
             holder.tvBadge.setText(R.string.sfs_face_re_best_value_text);

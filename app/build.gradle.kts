@@ -19,13 +19,12 @@ android {
         targetSdk = 36
 
 
-//        versionCode = 1 // todo live
+//        versionCode = 2 // todo live
 //        versionName = "1.0" // todo live
 
         versionCode = 1 // todo remove
         versionName = "0.1" // todo remove
 
-//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -54,10 +53,10 @@ android {
 dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
-    implementation("com.google.android.gms:play-services-ads:25.4.0")
+    implementation("com.google.android.gms:play-services-ads:25.5.0")
     implementation("com.tencent:mmkv-static:1.3.16")
 
-    implementation("com.google.code.gson:gson:2.14.0")
+    implementation("com.google.code.gson:gson:2.15.0")
     implementation("com.intuit.sdp:sdp-android:1.1.1")
     implementation("androidx.lifecycle:lifecycle-process:2.11.0")
     implementation("androidx.lifecycle:lifecycle-common-java8:2.11.0")
@@ -65,7 +64,7 @@ dependencies {
 
     implementation("com.android.installreferrer:installreferrer:2.2")
 
-    implementation(platform("com.google.firebase:firebase-bom:34.17.0"))
+    implementation(platform("com.google.firebase:firebase-bom:35.2.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.firebase.crashlytics)
@@ -84,7 +83,7 @@ dependencies {
     implementation("com.intuit.sdp:sdp-android:1.1.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("com.airbnb.android:lottie:6.7.1")
-    implementation("com.revenuecat.purchases:purchases:10.16.0")
+    implementation("com.revenuecat.purchases:purchases:11.3.0")
     implementation("com.facebook.shimmer:shimmer:0.5.0")
     implementation(libs.androidx.core.splashscreen)
     implementation("com.google.firebase:firebase-messaging")
